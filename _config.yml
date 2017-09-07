@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Oak Ridge National Laboratory - Advanced Manufacturing Office Tools
 email: accawigk@ornl.gov
-description: > # this means to ignore newlines until "baseurl:"
+description: #this means to ignore newlines until "baseurl:"
 A set of The DOE AMO has undertaken an effort to refactor legacy tools that 
 were written for the Windows platform into a modern environment. The legacy 
 tools (listed and available for download below) were written in a variety of 
