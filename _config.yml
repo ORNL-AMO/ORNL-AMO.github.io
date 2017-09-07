@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Oak Ridge National Laboratory - Advanced Manufacturing Office Tools
 email: accawigk@ornl.gov
-description: A set of The DOE AMO has undertaken an effort to refactor legacy tools that were written for the Windows platform into a modern environment. The legacy tools (listed and available for download below) were written in a variety of programming languages, and the source code considered proprietary, making it difficult to keep these tools current with the rapidly changing IT infrastructure. This new effort, expected to be completed in late 2018, will provide for an extensively more user-friendly, modern and versatile set of tools. Additionally there will be more interoperability between the individual tools, and the entire suite will be accessible in an open source environment. 
+description: AMO’s energy system and energy management software tools help manufacturers increase energy efficiency at the plant-level and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and improve efficiency in any facility by accessing the tools available here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
