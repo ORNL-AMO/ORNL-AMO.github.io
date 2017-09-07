@@ -13,16 +13,22 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Oak Ridge National Laboratory - Advanced Manufacturing Office Tools
+email: accawigk@ornl.gov
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+A set of The DOE AMO has undertaken an effort to refactor legacy tools that 
+were written for the Windows platform into a modern environment. The legacy 
+tools (listed and available for download below) were written in a variety of 
+programming languages, and the source code considered proprietary, making it 
+difficult to keep these tools current with the rapidly changing IT infrastructure. 
+This new effort, expected to be completed in late 2018, will provide for an 
+extensively more user-friendly, modern and versatile set of tools. Additionally 
+there will be more interoperability between the individual tools, and the entire 
+suite will be accessible in an open source environment. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+#twitter_username: jekyllrb
+github_username:  gaccawi
 
 # Build settings
 markdown: kramdown
