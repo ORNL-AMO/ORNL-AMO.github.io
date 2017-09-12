@@ -1,34 +1,163 @@
-<script type="text/javascript" language="javascript">
-    function UserAction() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/latest", false);
-        xhttp.setRequestHeader("Content-type", "application/json");
-        xhttp.send();
-        var response = JSON.parse(xhttp.responseText);
-        console.log(response);
-        let version = document.createTextNode(' ' +response.name);
-        document.getElementById('title').appendChild(version);
-        if (response.assets) {
-            response.assets.forEach(function (element) {
-                var a = document.createElement('a');
-                var list = document.getElementById('download-list');
-                var newItem = document.createElement('li');
-                a.textContent = element.name;
-                a.setAttribute("href", element.browser_download_url);
-                newItem.appendChild(a);
-                list.appendChild(newItem);
-            }, this);
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AMO Tools</title>
+</head>
+
+<body id="body" onload="GetDesktop()">
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+        <div class="jumbotron banner">
+            <h2 class="display-3">AMO Tools Download Center</h2>
+            <p class="lead">
+                AMO’s energy system and energy management software tools help manufacturers increase energy efficiency at the plant-level
+                and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and improve
+                efficiency in any facility by accessing the tools available here.
+            </p>
+            <p class="pull-right">Oak Ridge National Laboratory - Advanced Manufacturing Office Tools</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <div id="desktop-list-group" class="list-group">
+                    <div class="list-group-item download-title">
+                        <h5>Desktop Application Downloads:<span class="badge badge-success float-right" id="desktop-title"></span></h5>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-5">
+                <div id="suite-list-group" class="list-group">
+                    <div class="list-group-item download-title">
+                        <h5>Suite Downloads:<span class="badge badge-success float-right" id="suite-title"></span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" language="javascript">
+        function GetDesktop() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            console.log(response);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('desktop-title').appendChild(version);
+            if (response.assets) {
+                response.assets.forEach(function (element) {
+                    let debTest = isExt(element.name, '.deb');
+                    if (debTest) {
+                        addDesktopListItem(element, 'AMO Desktop Linux (.deb)');
+                    }
+                    let tarTest = isExt(element.name, '.tar.gz');
+                    if (tarTest) {
+                        addDesktopListItem(element, 'AMO Desktop Linux (.tar.gz)');
+                    }
+                    let dmgTest = isExt(element.name, '.dmg');
+                    if (dmgTest) {
+                        addDesktopListItem(element, 'AMO Desktop Mac (.dmg)');
+                    }
+                    let zipTest = isExt(element.name, '.ext');
+                    if (zipTest) {
+                        addDesktopListItem(element.name, 'AMO Desktop Mac (.ext)');
+                    }
+                    let exeTest = isExt(element.name, '.exe');
+                    if (exeTest) {
+                        addDesktopListItem(element, 'AMO Desktop Windows (.exe)');
+                    }
+                }, this);
+            }
+            GetSuite();
+            //let lastUpdated = document.createTextNode('Published: ' + response.published_at);
+            //document.getElementById('last-updated').appendChild(lastUpdated);
         }
-        let lastUpdated = document.createTextNode('Published: ' + response.published_at);
-        document.getElementById('last-updated').appendChild(lastUpdated);
-    }
 
-</script>
+        function GetSuite() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Suite/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            console.log(response);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('suite-title').appendChild(version);
+            if (response.assets) {
+                response.assets.forEach(function (element) {
+                    let debTest = isExt(element.name, '.deb');
+                    if (debTest) {
+                        addSuiteListItem(element, 'AMO Suite Linux (.deb)');
+                    }
+                    let tarTest = isExt(element.name, '.tar.gz');
+                    if (tarTest) {
+                        addSuiteListItem(element, 'AMO Suite Linux (.tar.gz)');
+                    }
+                    let dmgTest = isExt(element.name, '.dmg');
+                    if (dmgTest) {
+                        addSuiteListItem(element, 'AMO Suite Mac (.dmg)');
+                    }
+                    let zipTest = isExt(element.name, '.ext');
+                    if (zipTest) {
+                        addSuiteListItem(element.name, 'AMO Suite Mac (.ext)');
+                    }
+                    let exeTest = isExt(element.name, '.exe');
+                    if (exeTest) {
+                        addSuiteListItem(element, 'AMO Suite Windows (.exe)');
+                    }
+                }, this);
+            }
+        }
 
-<body id="body" onload="UserAction()">
-    <h1 id="title">Downloads:</h1>
-    <ul id="download-list">
 
-    </ul>
-    <p id="last-updated"></p>
+        function isExt(name, ext) {
+            let debExp = name.indexOf(ext);
+            if (debExp !== -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function addDesktopListItem(element, label) {
+            var a = document.createElement('a');
+            var list = document.getElementById('desktop-list-group');
+            a.textContent = label;
+            a.className = "list-group-item list-group-item-action";
+            a.setAttribute("href", element.browser_download_url);
+            list.appendChild(a);
+        }
+        function addSuiteListItem(element, label) {
+            var a = document.createElement('a');
+            var list = document.getElementById('suite-list-group');
+            a.textContent = label;
+            a.className = "list-group-item list-group-item-action";
+            a.setAttribute("href", element.browser_download_url);
+            list.appendChild(a);
+        }
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .download-title {
+            background-color: #D5F5E3;
+        }
+
+        .banner {
+            background-color: #7CC110;
+            color: white;
+        }
+    </style>
+
+
 </body>
+
+</html>
