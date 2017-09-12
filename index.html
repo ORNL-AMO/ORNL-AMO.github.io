@@ -1,7 +1,7 @@
 <script type="text/javascript" language="javascript">
     function UserAction() {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Suite/releases/latest", false);
+        xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/latest", false);
         xhttp.setRequestHeader("Content-type", "application/json");
         xhttp.send();
         var response = JSON.parse(xhttp.responseText);
