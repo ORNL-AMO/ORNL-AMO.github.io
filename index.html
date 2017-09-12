@@ -9,7 +9,8 @@
 <body id="body" onload="GetDesktop()">
     <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
         <div class="jumbotron banner">
-            <h2 class="display-3">AMO Tools Download Center</h2>
+            <h2 class="display-3">AMO Tools Download Center <img src="./DOE-banner-color.png" class="rounded float-right" style="width: 10%;"></img>
+            </h2>
             <p class="lead">
                 AMO’s energy system and energy management software tools help manufacturers increase energy efficiency at the plant-level
                 and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and improve
@@ -39,7 +40,7 @@
         <div class="row justify-content-center" style="padding-top: 15px;">
             <div class="col-5">
                 <div id="enpi-list-group" class="list-group">
-                    <div class="list-group-item enpi-title">
+                    <div class="list-group-item download-title">
                         <h5>EnPI Downloads:<span class="badge badge-success float-right" id="enpi-title"></span></h5>
                     </div>
 
@@ -47,7 +48,7 @@
             </div>
             <div class="col-5">
                 <div id="phastex-list-group" class="list-group">
-                    <div class="list-group-item phast-title">
+                    <div class="list-group-item download-title">
                         <h5>PHASTEx Downloads:<span class="badge badge-success float-right" id="phastex-title"></span></h5>
                     </div>
 
@@ -63,10 +64,13 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
+            console.log(response)
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('desktop-title').appendChild(version);
             if (response.assets) {
+                let totalDownloads = 0;
                 response.assets.forEach(function (element) {
+                    totalDownloads = totalDownloads + element.download_count;
                     let debTest = isExt(element.name, '.deb');
                     if (debTest) {
                         addDesktopListItem(element, 'AMO Desktop Linux (.deb)');
@@ -81,15 +85,22 @@
                     }
                     let zipTest = isExt(element.name, '.zip');
                     if (zipTest) {
-                        addDesktopListItem(element.name, 'AMO Desktop Mac (.zip)');
+                        addDesktopListItem(element, 'AMO Desktop Mac (.zip)');
                     }
                     let exeTest = isExt(element.name, '.exe');
                     if (exeTest) {
                         addDesktopListItem(element, 'AMO Desktop Windows (.exe)');
                     }
                 }, this);
+                var div = document.createElement('div');
+                var list = document.getElementById('desktop-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
             }
             GetSuite();
+            GetENPI();
+            GetPHASTEx();
             //let lastUpdated = document.createTextNode('Published: ' + response.published_at);
             //document.getElementById('last-updated').appendChild(lastUpdated);
         }
@@ -103,7 +114,9 @@
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('suite-title').appendChild(version);
             if (response.assets) {
+                let totalDownloads = 0;
                 response.assets.forEach(function (element) {
+                    totalDownloads = totalDownloads + element.download_count;
                     let debTest = isExt(element.name, '.deb');
                     if (debTest) {
                         addSuiteListItem(element, 'AMO Suite Linux (.deb)');
@@ -125,9 +138,12 @@
                         addSuiteListItem(element, 'AMO Suite Windows (.exe)');
                     }
                 }, this);
+                var div = document.createElement('div');
+                var list = document.getElementById('suite-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
             }
-            GetENPI();
-            GetPHASTEx();
         }
 
 
@@ -140,11 +156,13 @@
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('enpi-title').appendChild(version);
             if (response.assets) {
+                let totalDownloads = 0;
                 response.assets.forEach(function (element) {
+                    totalDownloads = totalDownloads + element.download_count;
                     var label = 'EnPI';
-                    if(isExt(element.name, '64')){
+                    if (isExt(element.name, '64')) {
                         label = 'EnPI (64.msi)';
-                    }else if(isExt(element.name, '86')){
+                    } else if (isExt(element.name, '86')) {
                         label = 'EnPI (86.msi)';
                     }
                     var a = document.createElement('a');
@@ -154,11 +172,16 @@
                     a.setAttribute("href", element.browser_download_url);
                     list.appendChild(a);
                 })
+                var div = document.createElement('div');
+                var list = document.getElementById('enpi-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
             }
         }
 
         function GetPHASTEx() {
-           var xhttp = new XMLHttpRequest();
+            var xhttp = new XMLHttpRequest();
             xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/PHASTEx/releases/latest", false);
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
@@ -166,7 +189,9 @@
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('phastex-title').appendChild(version);
             if (response.assets) {
+                let totalDownloads = 0;
                 response.assets.forEach(function (element) {
+                    totalDownloads = totalDownloads + element.download_count;
                     var label = 'PHASTEx (.xlsm)';
                     var a = document.createElement('a');
                     var list = document.getElementById('phastex-list-group');
@@ -175,6 +200,11 @@
                     a.setAttribute("href", element.browser_download_url);
                     list.appendChild(a);
                 })
+                var div = document.createElement('div');
+                var list = document.getElementById('phastex-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
             }
         }
 
@@ -215,20 +245,37 @@
 
     <style>
         .download-title {
-            background-color: #D5F5E3;
+            background-color: #7CC110;
+            color: white;
+            font-weight: bold;
         }
 
-        .phast-title{
-            background-color: #E59866;
+        /*.phast-title {
+            background-color: #7CC110;
+            color: white;
+            font-weight: bold;
         }
 
-        .enpi-title{
-            background-color: #D2B4DE;
-        }
+        .enpi-title {
+            background-color: #7CC110;
+            color: white;
+            font-weight: bold;
+        }*/
 
         .banner {
             background-color: #7CC110;
             color: white;
+        }
+
+        .total-downloads {
+            background-color: #196F3D;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .badge-success{
+            background-color: #196F3D !important;
         }
     </style>
 
