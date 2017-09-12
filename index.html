@@ -35,6 +35,26 @@
                 </div>
             </div>
         </div>
+
+        <div class="row justify-content-center" style="padding-top: 15px;">
+            <div class="col-5">
+                <div id="enpi-list-group" class="list-group">
+                    <div class="list-group-item enpi-title">
+                        <h5>EnPI Downloads:<span class="badge badge-success float-right" id="enpi-title"></span></h5>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-5">
+                <div id="phastex-list-group" class="list-group">
+                    <div class="list-group-item phast-title">
+                        <h5>PHASTEx Downloads:<span class="badge badge-success float-right" id="phastex-title"></span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
     <script type="text/javascript" language="javascript">
         function GetDesktop() {
@@ -43,7 +63,6 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-            console.log(response);
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('desktop-title').appendChild(version);
             if (response.assets) {
@@ -81,7 +100,6 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-            console.log(response);
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('suite-title').appendChild(version);
             if (response.assets) {
@@ -108,8 +126,57 @@
                     }
                 }, this);
             }
+            GetENPI();
+            GetPHASTEx();
         }
 
+
+        function GetENPI() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/EnPI/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('enpi-title').appendChild(version);
+            if (response.assets) {
+                response.assets.forEach(function (element) {
+                    var label = 'EnPI';
+                    if(isExt(element.name, '64')){
+                        label = 'EnPI (64.msi)';
+                    }else if(isExt(element.name, '86')){
+                        label = 'EnPI (86.msi)';
+                    }
+                    var a = document.createElement('a');
+                    var list = document.getElementById('enpi-list-group');
+                    a.textContent = label;
+                    a.className = "list-group-item list-group-item-action";
+                    a.setAttribute("href", element.browser_download_url);
+                    list.appendChild(a);
+                })
+            }
+        }
+
+        function GetPHASTEx() {
+           var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/PHASTEx/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('phastex-title').appendChild(version);
+            if (response.assets) {
+                response.assets.forEach(function (element) {
+                    var label = 'PHASTEx (.xlsm)';
+                    var a = document.createElement('a');
+                    var list = document.getElementById('phastex-list-group');
+                    a.textContent = label;
+                    a.className = "list-group-item list-group-item-action";
+                    a.setAttribute("href", element.browser_download_url);
+                    list.appendChild(a);
+                })
+            }
+        }
 
         function isExt(name, ext) {
             let debExp = name.indexOf(ext);
@@ -149,6 +216,14 @@
     <style>
         .download-title {
             background-color: #D5F5E3;
+        }
+
+        .phast-title{
+            background-color: #E59866;
+        }
+
+        .enpi-title{
+            background-color: #D2B4DE;
         }
 
         .banner {
