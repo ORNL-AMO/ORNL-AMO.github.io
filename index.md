@@ -6,5 +6,5 @@ layout: default
 
 {% for repository in site.github.public_repositories %}
   * {{ repository.name }}
-  * {{ repository.description}}
+  * {{ repository.downloads_url}}
 {% endfor %}
