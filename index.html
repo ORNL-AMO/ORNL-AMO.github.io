@@ -18,38 +18,50 @@
             </p>
             <p class="float-right">Oak Ridge National Laboratory - Advanced Manufacturing Office Tools</p>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-5">
+        <div class="row justify-content-center" style="margin-bottom: 25px;">
+            <div class="col-8">
                 <div id="desktop-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5>Desktop Application Downloads:<span class="badge badge-success float-right" id="desktop-title"></span></h5>
+                        <h5><b>Desktop Application Downloads:</b><span class="badge badge-success float-right" id="desktop-title"></span></h5>
+                        <p class="details">AMO-Tools-Desktop is an energy efficiency calculation application for use with industrial equipment
+                            such as pumps, furnaces, fans, and motors, as well as for industrial systems such as steam.
+                        </p>
+                        <p class="details">Choose the proper installer to download for your operating system, and then run the installer after
+                            the download is finished to begin optimizing your facility</p>
+                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Desktop">https://github.com/ORNL-AMO/AMO-Tools-Desktop</a></p>
                     </div>
 
                 </div>
-            </div>
-            <div class="col-5">
-                <div id="suite-list-group" class="list-group">
+                <div id="suite-list-group" class="list-group list-group-spacer">
                     <div class="list-group-item download-title">
-                        <h5>Suite Downloads:<span class="badge badge-success float-right" id="suite-title"></span></h5>
+                        <h5><b>Suite Downloads:</b><span class="badge badge-success float-right" id="suite-title"></span></h5>
+                        <p class="details">This is a pre-release version of the U.S. Department of Energy (DOE) Advanced Manufacturing Office
+                            (AMO) Tools Suite.</p>
+                        <p class="details">The suite can be installed locally using a downloaded version from the list below by running the
+                            following command: <b>npm install /path/to/download</b></p>
+                        <p class="details">The suite can also be installed from npm: <b>npm install amo-tools-suite</b></p>
+                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Suite">https://github.com/ORNL-AMO/AMO-Tools-Suite</a></p>
                     </div>
 
                 </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center" style="padding-top: 15px;">
-            <div class="col-5">
-                <div id="enpi-list-group" class="list-group">
+                <div id="enpi-list-group" class="list-group list-group-spacer">
                     <div class="list-group-item download-title">
-                        <h5>EnPI Downloads:<span class="badge badge-success float-right" id="enpi-title"></span></h5>
+                        <h5><b>EnPI Downloads:</b><span class="badge badge-success float-right" id="enpi-title"></span></h5>
+                        <p class="details">The EnPI V5.0 is a regression analysis based tool designed to help plant and corporate managers establish
+                            a normalized baseline of energy consumption and track annual progress of energy performance indicators
+                            (EnPIs).
+                        </p>
+                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/EnPI">https://github.com/ORNL-AMO/EnPI</a></p>
                     </div>
 
                 </div>
-            </div>
-            <div class="col-5">
-                <div id="phastex-list-group" class="list-group">
+                <div id="phastex-list-group" class="list-group list-group-spacer">
                     <div class="list-group-item download-title">
-                        <h5>PHASTEx Downloads:<span class="badge badge-success float-right" id="phastex-title"></span></h5>
+                        <h5><b>PHASTEx Downloads:</b><span class="badge badge-success float-right" id="phastex-title"></span></h5>
+                        <p class="details">PHASTex (Process Heating Assessment and Survey Tool - Excel Version) is an Excel workbook for calculating
+                            energy efficiency in industrial fuel-fired furnaces.</p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel</p>
+                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PHASTEx">https://github.com/ORNL-AMO/PHASTEx</a></p>
                     </div>
 
                 </div>
@@ -250,17 +262,9 @@
             font-weight: bold;
         }
 
-        /*.phast-title {
-            background-color: #7CC110;
-            color: white;
-            font-weight: bold;
+        .list-group-spacer {
+            margin-top: 22px;
         }
-
-        .enpi-title {
-            background-color: #7CC110;
-            color: white;
-            font-weight: bold;
-        }*/
 
         .banner {
             background-color: #7CC110;
@@ -274,8 +278,24 @@
             text-align: right;
         }
 
-        .badge-success{
+        .badge-success {
             background-color: #196F3D !important;
+        }
+
+        .list-group-item-action:hover {
+            background-color: #D6EAF8;
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .details {
+            font-size: 90%;
+            font-weight: 400;
+        }
+
+        body{
+            background-color: #D5D8DC;
         }
     </style>
 
