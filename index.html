@@ -140,21 +140,21 @@
                 let totalDownloads = 0;
                 response.assets.forEach(function (element) {
                     totalDownloads = totalDownloads + element.download_count;
-                    let debTest = isExt(element.name, '.deb');
-                    if (debTest) {
-                        addSuiteListItem(element, 'AMO Suite Linux (.deb)');
+                    let zTest = isExt(element.name, '.Z');
+                    if (zTest) {
+                        addSuiteListItem(element, 'AMO Suite Linux (.Z)');
                     }
                     let tarTest = isExt(element.name, '.tar.gz');
-                    if (tarTest) {
+                    let macTest = isExt(element.name, 'Darwin');
+                    if (tarTest && !macTest) {
                         addSuiteListItem(element, 'AMO Suite Linux (.tar.gz)');
                     }
-                    let dmgTest = isExt(element.name, '.dmg');
-                    if (dmgTest) {
-                        addSuiteListItem(element, 'AMO Suite Mac (.dmg)');
+                    if(tarTest && macTest){
+                        addSuiteListItem(element, 'AMO Suite Mac (.tar.gz)');
                     }
-                    let zipTest = isExt(element.name, '.zip');
-                    if (zipTest) {
-                        addSuiteListItem(element.name, 'AMO Suite Mac (.zip)');
+                    let shTest = isExt(element.name, '.sh');
+                    if (shTest) {
+                        addSuiteListItem(element, 'AMO Suite Mac (.sh)');
                     }
                     let exeTest = isExt(element.name, '.exe');
                     if (exeTest) {
