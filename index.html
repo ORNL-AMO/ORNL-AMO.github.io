@@ -76,7 +76,7 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-            console.log(response)
+           // console.log(response)
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('desktop-title').appendChild(version);
             if (response.assets) {
