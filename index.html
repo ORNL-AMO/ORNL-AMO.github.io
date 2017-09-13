@@ -16,7 +16,17 @@
                 and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and improve
                 efficiency in any facility by accessing the tools available here.
             </p>
-            <p class="float-right">Oak Ridge National Laboratory - Advanced Manufacturing Office Tools</p>
+
+            <div class="row justify-content-end">
+                <div class="col">
+                    <div class="float-right">Oak Ridge National Laboratory - Advanced Manufacturing Office Tools</div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col">
+                    <div class="float-right">For feedback on any of the tools please email: <a href="accawigk@ornl.gov">ORNL-AMO Tools Support</a></div>
+                </div>
+            </div>
         </div>
         <div class="row justify-content-center" style="margin-bottom: 25px;">
             <div class="col-8">
@@ -26,6 +36,7 @@
                         <p class="details">AMO-Tools-Desktop is an energy efficiency calculation application for use with industrial equipment
                             such as pumps, furnaces, fans, and motors, as well as for industrial systems such as steam.
                         </p>
+                        <p class="details">The application is based on AMO legacy tools, such as PSAT, PHAST, FSAT and the SSMT.</p>
                         <p class="details">Choose the proper installer to download for your operating system, and then run the installer after
                             the download is finished to begin optimizing your facility</p>
                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Desktop">https://github.com/ORNL-AMO/AMO-Tools-Desktop</a></p>
@@ -40,7 +51,7 @@
                         <p class="details">The suite can be installed locally using a downloaded version from the list below by running the
                             following command: <b>npm install /path/to/download</b></p>
                         <p class="details">The suite can also be installed from npm: <b>npm install amo-tools-suite</b></p>
-                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Suite">https://github.com/ORNL-AMO/AMO-Tools-Suite</a></p>
+                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Suite">https://github.com/ORNL-AMO/AMO-Tools-Suite</a></p>
                     </div>
 
                 </div>
@@ -76,7 +87,7 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-           // console.log(response)
+            // console.log(response)
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('desktop-title').appendChild(version);
             if (response.assets) {
@@ -294,7 +305,7 @@
             font-weight: 400;
         }
 
-        body{
+        body {
             background-color: #D5D8DC;
         }
     </style>
