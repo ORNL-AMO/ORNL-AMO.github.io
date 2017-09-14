@@ -9,9 +9,9 @@
 <body id="body" onload="GetDesktop()">
     <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
         <div class="jumbotron banner">
-            <h2 class="display-3">AMO Tools Download Center <img src="./DOE-banner-color.png" class="rounded float-right" style="width: 10%; margin-bottom: 15px;"></img>
-            </h2>
-            <p class="lead">
+            <h3 class="display-3">AMO Tools Download Center <img src="./DOE-banner-color.png" class="rounded float-right" style="width: 10%; margin-bottom: 15px;"></img>
+            </h3>
+            <p class="lead" style="width: 75%;">
                 AMO’s energy system and energy management software tools help manufacturers increase energy efficiency at the plant-level
                 and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and improve
                 efficiency in any facility by accessing the tools available here.
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row justify-content-center" style="margin-bottom: 25px;">
-            <div class="col-8">
+            <div class="col-5">
                 <div id="desktop-list-group" class="list-group">
                     <div class="list-group-item download-title">
                         <h5><b>Desktop Application Downloads:</b><span class="badge badge-success float-right" id="desktop-title"></span></h5>
@@ -43,7 +43,9 @@
                     </div>
 
                 </div>
-                <div id="suite-list-group" class="list-group list-group-spacer">
+            </div>
+            <div class="col-5">
+                <div id="suite-list-group" class="list-group">
                     <div class="list-group-item download-title">
                         <h5><b>Suite Downloads:</b><span class="badge badge-success float-right" id="suite-title"></span></h5>
                         <p class="details">This is a pre-release version of the U.S. Department of Energy (DOE) Advanced Manufacturing Office
@@ -55,7 +57,11 @@
                     </div>
 
                 </div>
-                <div id="enpi-list-group" class="list-group list-group-spacer">
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin-bottom: 25px;">
+            <div class="col-5">
+                <div id="enpi-list-group" class="list-group">
                     <div class="list-group-item download-title">
                         <h5><b>EnPI Downloads:</b><span class="badge badge-success float-right" id="enpi-title"></span></h5>
                         <p class="details">The EnPI V5.0 is a regression analysis based tool designed to help plant and corporate managers establish
@@ -66,7 +72,9 @@
                     </div>
 
                 </div>
-                <div id="phastex-list-group" class="list-group list-group-spacer">
+            </div>
+            <div class="col-5">
+                <div id="phastex-list-group" class="list-group">
                     <div class="list-group-item download-title">
                         <h5><b>PHASTEx Downloads:</b><span class="badge badge-success float-right" id="phastex-title"></span></h5>
                         <p class="details">PHASTex (Process Heating Assessment and Survey Tool - Excel Version) is an Excel workbook for calculating
@@ -149,7 +157,7 @@
                     if (tarTest && !macTest) {
                         addSuiteListItem(element, 'AMO Suite Linux (.tar.gz)');
                     }
-                    if(tarTest && macTest){
+                    if (tarTest && macTest) {
                         addSuiteListItem(element, 'AMO Suite Mac (.tar.gz)');
                     }
                     let shTest = isExt(element.name, '.sh');
@@ -268,18 +276,19 @@
 
     <style>
         .download-title {
-            background-color: #7CC110;
-            color: white;
+            border-color: #7CC110;
+            border-width: 10px;
+
             font-weight: bold;
         }
 
-        .list-group-spacer {
-            margin-top: 22px;
+        a{
+            color: #196F3D;
         }
-
         .banner {
-            background-color: #7CC110;
-            color: white;
+            border-color: #7CC110;
+            border-width: 10px;
+            border-style: solid;
         }
 
         .total-downloads {
@@ -297,7 +306,7 @@
             background-color: #D6EAF8;
             cursor: pointer;
             text-decoration: underline;
-            color: blue;
+            color: #196F3D;
         }
 
         .details {
