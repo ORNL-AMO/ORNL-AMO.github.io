@@ -32,7 +32,12 @@
             <div class="col-5">
                 <div id="desktop-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>Desktop Application Downloads:</b><span class="badge badge-success float-right" id="desktop-title"></span></h5>
+                        <div class="row align-items-center">
+                            <div class="col-2"><img src="./desktop-icon.png" class="rounded float-left" style="width: 100%; margin-bottom: 10px;"></div>
+                            <div class="col-10">
+                                <h5><b>Desktop Application Downloads</b><span class="badge badge-success float-right" id="desktop-title"></span></h5>
+                            </div>
+                        </div>
                         <p class="details">AMO-Tools-Desktop is an energy efficiency calculation application for use with industrial equipment
                             such as pumps, furnaces, fans, and motors, as well as for industrial systems such as steam.
                         </p>
@@ -47,7 +52,14 @@
             <div class="col-5">
                 <div id="suite-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>Suite Downloads:</b><span class="badge badge-success float-right" id="suite-title"></span></h5>
+                        <div class="row align-items-center">
+                            <div class="col-2"><img src="./suite-icon.png" class="rounded float-left" style="width: 100%; margin-bottom: 10px;"></div>
+                            <div class="col-10">
+                                <h5><b>Tools Suite Downloads</b>
+                                    <span class="badge badge-success float-right" id="suite-title"></span>
+                                </h5>
+                            </div>
+                        </div>
                         <p class="details">This is a pre-release version of the U.S. Department of Energy (DOE) Advanced Manufacturing Office
                             (AMO) Tools Suite.</p>
                         <p class="details">The suite can be installed locally using a downloaded version from the list below by running the
@@ -63,7 +75,7 @@
             <div class="col-5">
                 <div id="enpi-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>EnPI Downloads:</b><span class="badge badge-success float-right" id="enpi-title"></span></h5>
+                        <h5><b>EnPI Downloads</b><span class="badge badge-success float-right" id="enpi-title"></span></h5>
                         <p class="details">The EnPI V5.0 is a regression analysis based tool designed to help plant and corporate managers establish
                             a normalized baseline of energy consumption and track annual progress of energy performance indicators
                             (EnPIs).
@@ -76,7 +88,7 @@
             <div class="col-5">
                 <div id="phastex-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>PHASTEx Downloads:</b><span class="badge badge-success float-right" id="phastex-title"></span></h5>
+                        <h5><b>PHASTEx Downloads</b><span class="badge badge-success float-right" id="phastex-title"></span></h5>
                         <p class="details">PHASTex (Process Heating Assessment and Survey Tool - Excel Version) is an Excel workbook for calculating
                             energy efficiency in industrial fuel-fired furnaces.</p>
                         <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel</p>
@@ -282,9 +294,10 @@
             font-weight: bold;
         }
 
-        a{
+        a {
             color: #196F3D;
         }
+
         .banner {
             border-color: #7CC110;
             border-width: 10px;
