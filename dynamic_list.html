@@ -6,8 +6,6 @@
         xhttp.setRequestHeader("Content-type", "application/json");
         xhttp.send();
         var response = JSON.parse(xhttp.responseText);
-        console.log(response);
-        console.log(response.upload_url);
         var listElement = document.createElement("ul");
 
         if (response.assets) {
