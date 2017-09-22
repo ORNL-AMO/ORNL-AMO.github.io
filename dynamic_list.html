@@ -1,0 +1,56 @@
+<html><head>
+<script type="text/javascript" language="javascript">
+    function GetLinks() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/latest", false);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send();
+        var response = JSON.parse(xhttp.responseText);
+        console.log(response);
+        console.log(response.upload_url);
+        var listElement = document.createElement("ul");
+
+        if (response.assets) {
+            response.assets.forEach(function (element) {
+                if (IsExt(element.name, '.exe')) {
+                    var listItem = document.createElement("li");
+                    var linkItem = document.createElement('a');
+                    linkItem.textContent = "Windows Compatible Version";
+                    linkItem.setAttribute("href", element.browser_download_url);
+                    listItem.appendChild(linkItem);
+                    listElement.appendChild(listItem);
+                }
+                else if (IsExt(element.name, '.dmg')) {
+                    var listItem = document.createElement("li");
+                    var linkItem = document.createElement('a');
+                    linkItem.textContent = "Mac Compatible Version";
+                    linkItem.setAttribute("href", element.browser_download_url);
+                    listItem.appendChild(linkItem);
+                    listElement.appendChild(listItem);
+                }
+                else if (IsExt(element.name, '.deb')) {
+                    var listItem = document.createElement("li");
+                    var linkItem = document.createElement('a');
+                    linkItem.textContent = "Linux Compatible Version";
+                    linkItem.setAttribute("href", element.browser_download_url);
+                    listItem.appendChild(linkItem);
+                    listElement.appendChild(listItem);
+                }
+            })
+        }
+        var linkList = document.getElementById("linklist");
+        linkList.appendChild(listElement);
+    }
+    function IsExt(name, ext) {
+        if (name.indexOf(ext) !== -1 )
+            return true;
+        return false;
+    }
+</script>
+</head>
+<body onload="GetLinks()">
+    <div id="linklist">
+
+    </div>
+</body>
+</html>
