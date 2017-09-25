@@ -99,6 +99,30 @@
             </div>
         </div>
 
+        <div class="row justify-content-center" style="margin-bottom: 25px;">
+            <div class="col-5">
+                <div id="pepex-list-group" class="list-group">
+                    <div class="list-group-item download-title">
+                        <h5><b>PEPEx Downloads</b><span class="badge badge-success float-right" id="pepex-title"></span></h5>
+                        <p class="details">Plant Energy Profiler - Excel Version Tool</p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel</p>
+                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PEPEx">https://github.com/ORNL-AMO/PEPEx</a></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-5">
+                <div id="desktop-digitizer-list-group" class="list-group">
+                    <div class="list-group-item download-title">
+                        <h5><b>Desktop Digitizer Downloads</b><span class="badge badge-success float-right" id="desktop-digitizer-title"></span></h5>
+                        <p class="details">The Desktop Digitizer is an electron based desktop application allowing the user to digitize curves. It is based off the WebPlotDigitizer by Ankit Rohatgi.</p>
+                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/Desktop-Digitizer">https://github.com/ORNL-AMO/Desktop-Digitizer</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <script type="text/javascript" language="javascript">
         function GetDesktop() {
@@ -144,6 +168,8 @@
             GetSuite();
             GetENPI();
             GetPHASTEx();
+            GetDesktopDigitizer()
+            GetPEPEx();
             //let lastUpdated = document.createTextNode('Published: ' + response.published_at);
             //document.getElementById('last-updated').appendChild(lastUpdated);
         }
@@ -189,7 +215,6 @@
             }
         }
 
-
         function GetENPI() {
             var xhttp = new XMLHttpRequest();
             xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/EnPI/releases/latest", false);
@@ -204,9 +229,9 @@
                     totalDownloads = totalDownloads + element.download_count;
                     var label = 'EnPI';
                     if (isExt(element.name, '64')) {
-                        label = 'EnPI (64.msi)';
+                        label = 'EnPI Windows 64-bit (64.msi)';
                     } else if (isExt(element.name, '86')) {
-                        label = 'EnPI (86.msi)';
+                        label = 'EnPI Windows 32-bit (86.msi)';
                     }
                     var a = document.createElement('a');
                     var list = document.getElementById('enpi-list-group');
@@ -251,9 +276,92 @@
             }
         }
 
+        function GetPEPEx() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/PEPEx/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            console.log(response);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('pepex-title').appendChild(version);
+            if (response.assets) {
+                let totalDownloads = 0;
+                response.assets.forEach(function (element) {
+                    let xlText = isExt(element.name, '.xlsm');
+                    if (xlText) {
+                        totalDownloads = totalDownloads + element.download_count;
+                        var label = 'PEPEx (.xlsm)';
+                        var a = document.createElement('a');
+                        var list = document.getElementById('pepex-list-group');
+                        a.textContent = label;
+                        a.className = "list-group-item list-group-item-action";
+                        a.setAttribute("href", element.browser_download_url);
+                        list.appendChild(a);
+                    }
+                })
+                var div = document.createElement('div');
+                var list = document.getElementById('pepex-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
+            }
+        }
+
+
+        function GetDesktopDigitizer() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/Desktop-Digitizer/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            console.log(response);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('desktop-digitizer-title').appendChild(version);
+            if (response.assets) {
+                let totalDownloads = 0;
+                response.assets.forEach(function (element) {
+                    totalDownloads = totalDownloads + element.download_count;
+                    let debTest = isExt(element.name, '.deb');
+                    if (debTest) {
+                        var a = document.createElement('a');
+                        var list = document.getElementById('desktop-digitizer-list-group');
+                        a.textContent = 'Desktop Digitizer Linux (.deb)';
+                        a.className = "list-group-item list-group-item-action";
+                        a.setAttribute("href", element.browser_download_url);
+                        list.appendChild(a);
+                    }
+                    let dmgTest = isExt(element.name, '.dmg');
+                    if (dmgTest) {
+                        var a = document.createElement('a');
+                        var list = document.getElementById('desktop-digitizer-list-group');
+                        a.textContent = 'Desktop Digitizer Mac (.dmg)';
+                        a.className = "list-group-item list-group-item-action";
+                        a.setAttribute("href", element.browser_download_url);
+                        list.appendChild(a);
+                    }
+                    let exeTest = isExt(element.name, '.exe');
+                    if (exeTest) {
+                        var a = document.createElement('a');
+                        var list = document.getElementById('desktop-digitizer-list-group');
+                        a.textContent = 'Desktop Digitizer Windows (.exe)';
+                        a.className = "list-group-item list-group-item-action";
+                        a.setAttribute("href", element.browser_download_url);
+                        list.appendChild(a);
+
+                    }
+                }, this);
+                var div = document.createElement('div');
+                var list = document.getElementById('desktop-digitizer-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
+            }
+        }
+
         function isExt(name, ext) {
-            let debExp = name.indexOf(ext);
-            if (debExp !== -1) {
+            let extExp = name.indexOf(ext);
+            if (extExp !== -1) {
                 return true;
             } else {
                 return false;
