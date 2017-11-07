@@ -1,0 +1,366 @@
+\hypertarget{class_turbine}{}\section{Turbine Class Reference}
+\label{class_turbine}\index{Turbine@{Turbine}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_turbine_a9fd7beba6c6f071e228fbe3e07969d2b}\label{class_turbine_a9fd7beba6c6f071e228fbe3e07969d2b}} 
+enum {\bfseries Solve} \{ \newline
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}, 
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}, 
+\newline
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}
+ \}
+\item 
+\mbox{\Hypertarget{class_turbine_a5db4f65cf2539e3837684d53221ade12}\label{class_turbine_a5db4f65cf2539e3837684d53221ade12}} 
+enum {\bfseries Turbine\+Property} \{ \newline
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}, 
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}, 
+\newline
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}
+ \}
+\item 
+\mbox{\Hypertarget{class_turbine_a9fd7beba6c6f071e228fbe3e07969d2b}\label{class_turbine_a9fd7beba6c6f071e228fbe3e07969d2b}} 
+enum {\bfseries Solve} \{ \newline
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}, 
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}, 
+\newline
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}
+ \}
+\item 
+\mbox{\Hypertarget{class_turbine_a5db4f65cf2539e3837684d53221ade12}\label{class_turbine_a5db4f65cf2539e3837684d53221ade12}} 
+enum {\bfseries Turbine\+Property} \{ \newline
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}, 
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}, 
+\newline
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}
+ \}
+\item 
+\mbox{\Hypertarget{class_turbine_a9fd7beba6c6f071e228fbe3e07969d2b}\label{class_turbine_a9fd7beba6c6f071e228fbe3e07969d2b}} 
+enum {\bfseries Solve} \{ \newline
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}, 
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}, 
+\newline
+{\bfseries Outlet\+Properties}, 
+{\bfseries Isentropic\+Efficiency}
+ \}
+\item 
+\mbox{\Hypertarget{class_turbine_a5db4f65cf2539e3837684d53221ade12}\label{class_turbine_a5db4f65cf2539e3837684d53221ade12}} 
+enum {\bfseries Turbine\+Property} \{ \newline
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}, 
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}, 
+\newline
+{\bfseries Mass\+Flow}, 
+{\bfseries Power\+Out}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_turbine_a3c3c871b9fe57d48dd06b109794381dc}\label{class_turbine_a3c3c871b9fe57d48dd06b109794381dc}} 
+{\bfseries Turbine} (Solve solve\+For, double inlet\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity, double inlet\+Quantity\+Value, Turbine\+Property turbine\+Property, double isentropic\+Efficiency, double generator\+Efficiency, double mass\+Flow\+Or\+Power\+Out, double outlet\+Steam\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_a1ec182906c075407882de542954d9030}\label{class_turbine_a1ec182906c075407882de542954d9030}} 
+{\bfseries Turbine} (Solve solve\+For, double inlet\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity, double inlet\+Quantity\+Value, Turbine\+Property turbine\+Property, double generator\+Efficiency, double mass\+Flow\+Or\+Power\+Out, double outlet\+Steam\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} outlet\+Quantity, double outlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_a58c73057a4b890eab2af2b42c82484e6}\label{class_turbine_a58c73057a4b890eab2af2b42c82484e6}} 
+Solve {\bfseries get\+Solve\+For} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a148ad3877851f1c3931d8a6771d750c5}\label{class_turbine_a148ad3877851f1c3931d8a6771d750c5}} 
+double {\bfseries get\+Inlet\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a5d907859de4acc153a32bd443238b445}\label{class_turbine_a5d907859de4acc153a32bd443238b445}} 
+double {\bfseries get\+Isentropic\+Efficiency} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a92266fd994310d1842ba37c05bc40bf8}\label{class_turbine_a92266fd994310d1842ba37c05bc40bf8}} 
+double {\bfseries get\+Generator\+Efficiency} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a820a090d264b96ee84f717555545c287}\label{class_turbine_a820a090d264b96ee84f717555545c287}} 
+double {\bfseries get\+Mass\+Flow\+Or\+Power\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a1589b2364a553db7aaa875bb543d171d}\label{class_turbine_a1589b2364a553db7aaa875bb543d171d}} 
+double {\bfseries get\+Outlet\+Steam\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ac9e91d9539cea5cd1e0037c397c28c78}\label{class_turbine_ac9e91d9539cea5cd1e0037c397c28c78}} 
+\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} {\bfseries get\+Inlet\+Quantity} () const
+\item 
+\mbox{\Hypertarget{class_turbine_acd3e98ab67754b652de97498d9bec6d2}\label{class_turbine_acd3e98ab67754b652de97498d9bec6d2}} 
+\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} {\bfseries get\+Outlet\+Quantity} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a3d8a3f317fa71abb3404144371615725}\label{class_turbine_a3d8a3f317fa71abb3404144371615725}} 
+double {\bfseries get\+Inlet\+Quantity\+Value} () const
+\item 
+\mbox{\Hypertarget{class_turbine_aca98f128213e02e95dfd6f4b2ad8de4e}\label{class_turbine_aca98f128213e02e95dfd6f4b2ad8de4e}} 
+double {\bfseries get\+Outlet\+Quantity\+Value} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a14f6eff49b501aa8c5a22d404dbeaac0}\label{class_turbine_a14f6eff49b501aa8c5a22d404dbeaac0}} 
+Turbine\+Property {\bfseries get\+Turbine\+Property} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a575f5527de69f57d4f344f3c66ee898d}\label{class_turbine_a575f5527de69f57d4f344f3c66ee898d}} 
+std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Inlet\+Properties} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ae6ac54bac33feff9d06800acdefacf9d}\label{class_turbine_ae6ac54bac33feff9d06800acdefacf9d}} 
+std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Outlet\+Properties} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ae5d55a7b882e4780d490d43409f8f06c}\label{class_turbine_ae5d55a7b882e4780d490d43409f8f06c}} 
+double {\bfseries get\+Inlet\+Energy\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_aa20c0f9dd81cd9bfd5eda77f588516b5}\label{class_turbine_aa20c0f9dd81cd9bfd5eda77f588516b5}} 
+double {\bfseries get\+Outlet\+Energy\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a89585cc2fbfdbe67d539eae08c369fa2}\label{class_turbine_a89585cc2fbfdbe67d539eae08c369fa2}} 
+double {\bfseries get\+Power\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a143fc660274e0d65ccb8fc55cc2caf83}\label{class_turbine_a143fc660274e0d65ccb8fc55cc2caf83}} 
+double {\bfseries get\+Energy\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a4893a203dbbf9db9ca77a0b278c4c118}\label{class_turbine_a4893a203dbbf9db9ca77a0b278c4c118}} 
+double {\bfseries get\+Mass\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a96f54a8fc572dae6c5298289de890f4d}\label{class_turbine_a96f54a8fc572dae6c5298289de890f4d}} 
+void {\bfseries set\+Solve\+For} (Solve solve\+For)
+\item 
+\mbox{\Hypertarget{class_turbine_a04996baab9a40d449a69c737c00be8e4}\label{class_turbine_a04996baab9a40d449a69c737c00be8e4}} 
+void {\bfseries set\+Inlet\+Pressure} (double inlet\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_ae67daa481ef48bcf8aef84bcccb4611d}\label{class_turbine_ae67daa481ef48bcf8aef84bcccb4611d}} 
+void {\bfseries set\+Isentropic\+Efficiency} (double isentropic\+Efficiency)
+\item 
+\mbox{\Hypertarget{class_turbine_a51e9c5050a5be51b86dc23e690bd3f40}\label{class_turbine_a51e9c5050a5be51b86dc23e690bd3f40}} 
+void {\bfseries set\+Generator\+Efficiency} (double generator\+Efficiency)
+\item 
+\mbox{\Hypertarget{class_turbine_a73522631e2eeefa8ea14d5b537e3e760}\label{class_turbine_a73522631e2eeefa8ea14d5b537e3e760}} 
+void {\bfseries set\+Mass\+Flow\+Or\+Power\+Out} (double mass\+Flow\+Or\+Power\+Out)
+\item 
+\mbox{\Hypertarget{class_turbine_ab9612657de02e4523492b687917b4091}\label{class_turbine_ab9612657de02e4523492b687917b4091}} 
+void {\bfseries set\+Outlet\+Steam\+Pressure} (double outlet\+Steam\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_aecc05c70870fb11bbc0bb4fe5d8438bd}\label{class_turbine_aecc05c70870fb11bbc0bb4fe5d8438bd}} 
+void {\bfseries set\+Inlet\+Quantity} (\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity)
+\item 
+\mbox{\Hypertarget{class_turbine_ad5ff4ba1657aac9519a6841336ec571c}\label{class_turbine_ad5ff4ba1657aac9519a6841336ec571c}} 
+void {\bfseries set\+Outlet\+Quantity} (\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} outlet\+Quantity)
+\item 
+\mbox{\Hypertarget{class_turbine_ac01a053462c83e21ecc2158e75477542}\label{class_turbine_ac01a053462c83e21ecc2158e75477542}} 
+void {\bfseries set\+Inlet\+Quantity\+Value} (double inlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_ab37326068f633280de8f8144b9c8eb89}\label{class_turbine_ab37326068f633280de8f8144b9c8eb89}} 
+void {\bfseries set\+Outlet\+Quantity\+Value} (double outlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_abb3f16cefe52f4e9c7b32b2bb17a68ee}\label{class_turbine_abb3f16cefe52f4e9c7b32b2bb17a68ee}} 
+void {\bfseries set\+Turbine\+Property} (Turbine\+Property turbine\+Property)
+\item 
+\mbox{\Hypertarget{class_turbine_a3c3c871b9fe57d48dd06b109794381dc}\label{class_turbine_a3c3c871b9fe57d48dd06b109794381dc}} 
+{\bfseries Turbine} (Solve solve\+For, double inlet\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity, double inlet\+Quantity\+Value, Turbine\+Property turbine\+Property, double isentropic\+Efficiency, double generator\+Efficiency, double mass\+Flow\+Or\+Power\+Out, double outlet\+Steam\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_a1ec182906c075407882de542954d9030}\label{class_turbine_a1ec182906c075407882de542954d9030}} 
+{\bfseries Turbine} (Solve solve\+For, double inlet\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity, double inlet\+Quantity\+Value, Turbine\+Property turbine\+Property, double generator\+Efficiency, double mass\+Flow\+Or\+Power\+Out, double outlet\+Steam\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} outlet\+Quantity, double outlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_a58c73057a4b890eab2af2b42c82484e6}\label{class_turbine_a58c73057a4b890eab2af2b42c82484e6}} 
+Solve {\bfseries get\+Solve\+For} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a148ad3877851f1c3931d8a6771d750c5}\label{class_turbine_a148ad3877851f1c3931d8a6771d750c5}} 
+double {\bfseries get\+Inlet\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a5d907859de4acc153a32bd443238b445}\label{class_turbine_a5d907859de4acc153a32bd443238b445}} 
+double {\bfseries get\+Isentropic\+Efficiency} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a92266fd994310d1842ba37c05bc40bf8}\label{class_turbine_a92266fd994310d1842ba37c05bc40bf8}} 
+double {\bfseries get\+Generator\+Efficiency} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a820a090d264b96ee84f717555545c287}\label{class_turbine_a820a090d264b96ee84f717555545c287}} 
+double {\bfseries get\+Mass\+Flow\+Or\+Power\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a1589b2364a553db7aaa875bb543d171d}\label{class_turbine_a1589b2364a553db7aaa875bb543d171d}} 
+double {\bfseries get\+Outlet\+Steam\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ac9e91d9539cea5cd1e0037c397c28c78}\label{class_turbine_ac9e91d9539cea5cd1e0037c397c28c78}} 
+\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} {\bfseries get\+Inlet\+Quantity} () const
+\item 
+\mbox{\Hypertarget{class_turbine_acd3e98ab67754b652de97498d9bec6d2}\label{class_turbine_acd3e98ab67754b652de97498d9bec6d2}} 
+\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} {\bfseries get\+Outlet\+Quantity} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a3d8a3f317fa71abb3404144371615725}\label{class_turbine_a3d8a3f317fa71abb3404144371615725}} 
+double {\bfseries get\+Inlet\+Quantity\+Value} () const
+\item 
+\mbox{\Hypertarget{class_turbine_aca98f128213e02e95dfd6f4b2ad8de4e}\label{class_turbine_aca98f128213e02e95dfd6f4b2ad8de4e}} 
+double {\bfseries get\+Outlet\+Quantity\+Value} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a14f6eff49b501aa8c5a22d404dbeaac0}\label{class_turbine_a14f6eff49b501aa8c5a22d404dbeaac0}} 
+Turbine\+Property {\bfseries get\+Turbine\+Property} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a575f5527de69f57d4f344f3c66ee898d}\label{class_turbine_a575f5527de69f57d4f344f3c66ee898d}} 
+std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Inlet\+Properties} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ae6ac54bac33feff9d06800acdefacf9d}\label{class_turbine_ae6ac54bac33feff9d06800acdefacf9d}} 
+std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Outlet\+Properties} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ae5d55a7b882e4780d490d43409f8f06c}\label{class_turbine_ae5d55a7b882e4780d490d43409f8f06c}} 
+double {\bfseries get\+Inlet\+Energy\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_aa20c0f9dd81cd9bfd5eda77f588516b5}\label{class_turbine_aa20c0f9dd81cd9bfd5eda77f588516b5}} 
+double {\bfseries get\+Outlet\+Energy\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a89585cc2fbfdbe67d539eae08c369fa2}\label{class_turbine_a89585cc2fbfdbe67d539eae08c369fa2}} 
+double {\bfseries get\+Power\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a143fc660274e0d65ccb8fc55cc2caf83}\label{class_turbine_a143fc660274e0d65ccb8fc55cc2caf83}} 
+double {\bfseries get\+Energy\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a4893a203dbbf9db9ca77a0b278c4c118}\label{class_turbine_a4893a203dbbf9db9ca77a0b278c4c118}} 
+double {\bfseries get\+Mass\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a96f54a8fc572dae6c5298289de890f4d}\label{class_turbine_a96f54a8fc572dae6c5298289de890f4d}} 
+void {\bfseries set\+Solve\+For} (Solve solve\+For)
+\item 
+\mbox{\Hypertarget{class_turbine_a04996baab9a40d449a69c737c00be8e4}\label{class_turbine_a04996baab9a40d449a69c737c00be8e4}} 
+void {\bfseries set\+Inlet\+Pressure} (double inlet\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_ae67daa481ef48bcf8aef84bcccb4611d}\label{class_turbine_ae67daa481ef48bcf8aef84bcccb4611d}} 
+void {\bfseries set\+Isentropic\+Efficiency} (double isentropic\+Efficiency)
+\item 
+\mbox{\Hypertarget{class_turbine_a51e9c5050a5be51b86dc23e690bd3f40}\label{class_turbine_a51e9c5050a5be51b86dc23e690bd3f40}} 
+void {\bfseries set\+Generator\+Efficiency} (double generator\+Efficiency)
+\item 
+\mbox{\Hypertarget{class_turbine_a73522631e2eeefa8ea14d5b537e3e760}\label{class_turbine_a73522631e2eeefa8ea14d5b537e3e760}} 
+void {\bfseries set\+Mass\+Flow\+Or\+Power\+Out} (double mass\+Flow\+Or\+Power\+Out)
+\item 
+\mbox{\Hypertarget{class_turbine_ab9612657de02e4523492b687917b4091}\label{class_turbine_ab9612657de02e4523492b687917b4091}} 
+void {\bfseries set\+Outlet\+Steam\+Pressure} (double outlet\+Steam\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_aecc05c70870fb11bbc0bb4fe5d8438bd}\label{class_turbine_aecc05c70870fb11bbc0bb4fe5d8438bd}} 
+void {\bfseries set\+Inlet\+Quantity} (\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity)
+\item 
+\mbox{\Hypertarget{class_turbine_ad5ff4ba1657aac9519a6841336ec571c}\label{class_turbine_ad5ff4ba1657aac9519a6841336ec571c}} 
+void {\bfseries set\+Outlet\+Quantity} (\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} outlet\+Quantity)
+\item 
+\mbox{\Hypertarget{class_turbine_ac01a053462c83e21ecc2158e75477542}\label{class_turbine_ac01a053462c83e21ecc2158e75477542}} 
+void {\bfseries set\+Inlet\+Quantity\+Value} (double inlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_ab37326068f633280de8f8144b9c8eb89}\label{class_turbine_ab37326068f633280de8f8144b9c8eb89}} 
+void {\bfseries set\+Outlet\+Quantity\+Value} (double outlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_abb3f16cefe52f4e9c7b32b2bb17a68ee}\label{class_turbine_abb3f16cefe52f4e9c7b32b2bb17a68ee}} 
+void {\bfseries set\+Turbine\+Property} (Turbine\+Property turbine\+Property)
+\item 
+\mbox{\Hypertarget{class_turbine_a3c3c871b9fe57d48dd06b109794381dc}\label{class_turbine_a3c3c871b9fe57d48dd06b109794381dc}} 
+{\bfseries Turbine} (Solve solve\+For, double inlet\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity, double inlet\+Quantity\+Value, Turbine\+Property turbine\+Property, double isentropic\+Efficiency, double generator\+Efficiency, double mass\+Flow\+Or\+Power\+Out, double outlet\+Steam\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_a1ec182906c075407882de542954d9030}\label{class_turbine_a1ec182906c075407882de542954d9030}} 
+{\bfseries Turbine} (Solve solve\+For, double inlet\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity, double inlet\+Quantity\+Value, Turbine\+Property turbine\+Property, double generator\+Efficiency, double mass\+Flow\+Or\+Power\+Out, double outlet\+Steam\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} outlet\+Quantity, double outlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_a58c73057a4b890eab2af2b42c82484e6}\label{class_turbine_a58c73057a4b890eab2af2b42c82484e6}} 
+Solve {\bfseries get\+Solve\+For} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a148ad3877851f1c3931d8a6771d750c5}\label{class_turbine_a148ad3877851f1c3931d8a6771d750c5}} 
+double {\bfseries get\+Inlet\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a5d907859de4acc153a32bd443238b445}\label{class_turbine_a5d907859de4acc153a32bd443238b445}} 
+double {\bfseries get\+Isentropic\+Efficiency} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a92266fd994310d1842ba37c05bc40bf8}\label{class_turbine_a92266fd994310d1842ba37c05bc40bf8}} 
+double {\bfseries get\+Generator\+Efficiency} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a820a090d264b96ee84f717555545c287}\label{class_turbine_a820a090d264b96ee84f717555545c287}} 
+double {\bfseries get\+Mass\+Flow\+Or\+Power\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a1589b2364a553db7aaa875bb543d171d}\label{class_turbine_a1589b2364a553db7aaa875bb543d171d}} 
+double {\bfseries get\+Outlet\+Steam\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ac9e91d9539cea5cd1e0037c397c28c78}\label{class_turbine_ac9e91d9539cea5cd1e0037c397c28c78}} 
+\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} {\bfseries get\+Inlet\+Quantity} () const
+\item 
+\mbox{\Hypertarget{class_turbine_acd3e98ab67754b652de97498d9bec6d2}\label{class_turbine_acd3e98ab67754b652de97498d9bec6d2}} 
+\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} {\bfseries get\+Outlet\+Quantity} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a3d8a3f317fa71abb3404144371615725}\label{class_turbine_a3d8a3f317fa71abb3404144371615725}} 
+double {\bfseries get\+Inlet\+Quantity\+Value} () const
+\item 
+\mbox{\Hypertarget{class_turbine_aca98f128213e02e95dfd6f4b2ad8de4e}\label{class_turbine_aca98f128213e02e95dfd6f4b2ad8de4e}} 
+double {\bfseries get\+Outlet\+Quantity\+Value} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a14f6eff49b501aa8c5a22d404dbeaac0}\label{class_turbine_a14f6eff49b501aa8c5a22d404dbeaac0}} 
+Turbine\+Property {\bfseries get\+Turbine\+Property} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a575f5527de69f57d4f344f3c66ee898d}\label{class_turbine_a575f5527de69f57d4f344f3c66ee898d}} 
+std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Inlet\+Properties} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ae6ac54bac33feff9d06800acdefacf9d}\label{class_turbine_ae6ac54bac33feff9d06800acdefacf9d}} 
+std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Outlet\+Properties} () const
+\item 
+\mbox{\Hypertarget{class_turbine_ae5d55a7b882e4780d490d43409f8f06c}\label{class_turbine_ae5d55a7b882e4780d490d43409f8f06c}} 
+double {\bfseries get\+Inlet\+Energy\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_aa20c0f9dd81cd9bfd5eda77f588516b5}\label{class_turbine_aa20c0f9dd81cd9bfd5eda77f588516b5}} 
+double {\bfseries get\+Outlet\+Energy\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a89585cc2fbfdbe67d539eae08c369fa2}\label{class_turbine_a89585cc2fbfdbe67d539eae08c369fa2}} 
+double {\bfseries get\+Power\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a143fc660274e0d65ccb8fc55cc2caf83}\label{class_turbine_a143fc660274e0d65ccb8fc55cc2caf83}} 
+double {\bfseries get\+Energy\+Out} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a4893a203dbbf9db9ca77a0b278c4c118}\label{class_turbine_a4893a203dbbf9db9ca77a0b278c4c118}} 
+double {\bfseries get\+Mass\+Flow} () const
+\item 
+\mbox{\Hypertarget{class_turbine_a96f54a8fc572dae6c5298289de890f4d}\label{class_turbine_a96f54a8fc572dae6c5298289de890f4d}} 
+void {\bfseries set\+Solve\+For} (Solve solve\+For)
+\item 
+\mbox{\Hypertarget{class_turbine_a04996baab9a40d449a69c737c00be8e4}\label{class_turbine_a04996baab9a40d449a69c737c00be8e4}} 
+void {\bfseries set\+Inlet\+Pressure} (double inlet\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_ae67daa481ef48bcf8aef84bcccb4611d}\label{class_turbine_ae67daa481ef48bcf8aef84bcccb4611d}} 
+void {\bfseries set\+Isentropic\+Efficiency} (double isentropic\+Efficiency)
+\item 
+\mbox{\Hypertarget{class_turbine_a51e9c5050a5be51b86dc23e690bd3f40}\label{class_turbine_a51e9c5050a5be51b86dc23e690bd3f40}} 
+void {\bfseries set\+Generator\+Efficiency} (double generator\+Efficiency)
+\item 
+\mbox{\Hypertarget{class_turbine_a73522631e2eeefa8ea14d5b537e3e760}\label{class_turbine_a73522631e2eeefa8ea14d5b537e3e760}} 
+void {\bfseries set\+Mass\+Flow\+Or\+Power\+Out} (double mass\+Flow\+Or\+Power\+Out)
+\item 
+\mbox{\Hypertarget{class_turbine_ab9612657de02e4523492b687917b4091}\label{class_turbine_ab9612657de02e4523492b687917b4091}} 
+void {\bfseries set\+Outlet\+Steam\+Pressure} (double outlet\+Steam\+Pressure)
+\item 
+\mbox{\Hypertarget{class_turbine_aecc05c70870fb11bbc0bb4fe5d8438bd}\label{class_turbine_aecc05c70870fb11bbc0bb4fe5d8438bd}} 
+void {\bfseries set\+Inlet\+Quantity} (\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} inlet\+Quantity)
+\item 
+\mbox{\Hypertarget{class_turbine_ad5ff4ba1657aac9519a6841336ec571c}\label{class_turbine_ad5ff4ba1657aac9519a6841336ec571c}} 
+void {\bfseries set\+Outlet\+Quantity} (\hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} outlet\+Quantity)
+\item 
+\mbox{\Hypertarget{class_turbine_ac01a053462c83e21ecc2158e75477542}\label{class_turbine_ac01a053462c83e21ecc2158e75477542}} 
+void {\bfseries set\+Inlet\+Quantity\+Value} (double inlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_ab37326068f633280de8f8144b9c8eb89}\label{class_turbine_ab37326068f633280de8f8144b9c8eb89}} 
+void {\bfseries set\+Outlet\+Quantity\+Value} (double outlet\+Quantity\+Value)
+\item 
+\mbox{\Hypertarget{class_turbine_abb3f16cefe52f4e9c7b32b2bb17a68ee}\label{class_turbine_abb3f16cefe52f4e9c7b32b2bb17a68ee}} 
+void {\bfseries set\+Turbine\+Property} (Turbine\+Property turbine\+Property)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Turbine.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/ssmt/Turbine.\+h\item 
+src/ssmt/Turbine.\+cpp\end{DoxyCompactItemize}

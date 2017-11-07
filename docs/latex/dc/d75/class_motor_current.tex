@@ -1,0 +1,262 @@
+\hypertarget{class_motor_current}{}\section{Motor\+Current Class Reference}
+\label{class_motor_current}\index{Motor\+Current@{Motor\+Current}}
+
+
+Contains the declaration of \hyperlink{class_motor_current}{Motor\+Current} class including the getters and setters as well as the calculators for motor current.  
+
+
+
+
+{\ttfamily \#include $<$Motor\+Current.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}{Motor\+Current} (double motor\+Rated\+Power, double motor\+R\+PM, \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} line\+Frequency, \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class} efficiency\+Class, double specified\+Efficiency, double load\+Factor, double rated\+Voltage, double full\+Load\+Amps)
+\item 
+double \hyperlink{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}{calculate} ()
+\begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_motor_current}{Motor\+Current} class. \hyperlink{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}{calculate()}\+: Calculates the motor current for a given value of load factor. \end{DoxyCompactList}\item 
+double \hyperlink{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}{get\+Estimated\+F\+LA} ()
+\item 
+\hyperlink{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}{Motor\+Current} (double motor\+Rated\+Power, double motor\+R\+PM, \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} line\+Frequency, \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class} efficiency\+Class, double specified\+Efficiency, double load\+Factor, double rated\+Voltage, double full\+Load\+Amps)
+\item 
+double \hyperlink{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}{calculate} ()
+\item 
+double \hyperlink{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}{get\+Estimated\+F\+LA} ()
+\item 
+\hyperlink{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}{Motor\+Current} (double motor\+Rated\+Power, double motor\+R\+PM, \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} line\+Frequency, \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class} efficiency\+Class, double specified\+Efficiency, double load\+Factor, double rated\+Voltage, double full\+Load\+Amps)
+\item 
+double \hyperlink{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}{calculate} ()
+\item 
+double \hyperlink{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}{get\+Estimated\+F\+LA} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the declaration of \hyperlink{class_motor_current}{Motor\+Current} class including the getters and setters as well as the calculators for motor current. 
+
+\begin{DoxyAuthor}{Author}
+Subhankar Mishra (mishras) 
+
+Gina Accawi (accawigk) 
+\end{DoxyAuthor}
+
+
+\begin{DoxyAuthor}{Author}
+Subhankar Mishra (mishras) 
+
+Gina Accawi (accawigk) 
+\end{DoxyAuthor}
+
+
+\begin{DoxyAuthor}{Author}
+Subhankar Mishra (mishras) 
+
+Gina Accawi (accawigk) 
+\end{DoxyAuthor}
+
+
+Definition at line 15 of file Motor\+Current.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}\label{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}} 
+\index{Motor\+Current@{Motor\+Current}!Motor\+Current@{Motor\+Current}}
+\index{Motor\+Current@{Motor\+Current}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{Motor\+Current()}{MotorCurrent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Motor\+Current\+::\+Motor\+Current (\begin{DoxyParamCaption}\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{motor\+R\+PM,  }\item[{\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}}]{line\+Frequency,  }\item[{\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{load\+Factor,  }\item[{double}]{rated\+Voltage,  }\item[{double}]{full\+Load\+Amps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em motor\+Rated\+Power} & double, Rated power of motor in hp \\
+\hline
+{\em motor\+R\+PM} & double, R\+PM of motor. \\
+\hline
+{\em line\+Frequency} & \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}, classification of line Frequency of motor in Hz \\
+\hline
+{\em efficiency\+Class} & \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}, Efficiency class of motor. \\
+\hline
+{\em specified\+Efficiency} & double, Specified efficiency of motor when the efficiency class = S\+P\+E\+C\+I\+F\+I\+ED as \% \\
+\hline
+{\em load\+Factor} & double, load factor -\/ unitless \\
+\hline
+{\em rated\+Voltage} & double, Rated voltage of the motor in Volts \\
+\hline
+{\em full\+Load\+Amps} & double, Current at full load in Amps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Motor\+Current.\+h.
+
+\mbox{\Hypertarget{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}\label{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}} 
+\index{Motor\+Current@{Motor\+Current}!Motor\+Current@{Motor\+Current}}
+\index{Motor\+Current@{Motor\+Current}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{Motor\+Current()}{MotorCurrent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Motor\+Current\+::\+Motor\+Current (\begin{DoxyParamCaption}\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{motor\+R\+PM,  }\item[{\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}}]{line\+Frequency,  }\item[{\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{load\+Factor,  }\item[{double}]{rated\+Voltage,  }\item[{double}]{full\+Load\+Amps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em motor\+Rated\+Power} & double, Rated power of motor in hp \\
+\hline
+{\em motor\+R\+PM} & double, R\+PM of motor. \\
+\hline
+{\em line\+Frequency} & \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}, classification of line Frequency of motor in Hz \\
+\hline
+{\em efficiency\+Class} & \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}, Efficiency class of motor. \\
+\hline
+{\em specified\+Efficiency} & double, Specified efficiency of motor when the efficiency class = S\+P\+E\+C\+I\+F\+I\+ED as \% \\
+\hline
+{\em load\+Factor} & double, load factor -\/ unitless \\
+\hline
+{\em rated\+Voltage} & double, Rated voltage of the motor in Volts \\
+\hline
+{\em full\+Load\+Amps} & double, Current at full load in Amps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Motor\+Current.\+h.
+
+\mbox{\Hypertarget{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}\label{class_motor_current_a099860ac4021ce07ec5b033b3bcf37e4}} 
+\index{Motor\+Current@{Motor\+Current}!Motor\+Current@{Motor\+Current}}
+\index{Motor\+Current@{Motor\+Current}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{Motor\+Current()}{MotorCurrent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Motor\+Current\+::\+Motor\+Current (\begin{DoxyParamCaption}\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{motor\+R\+PM,  }\item[{\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}}]{line\+Frequency,  }\item[{\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{load\+Factor,  }\item[{double}]{rated\+Voltage,  }\item[{double}]{full\+Load\+Amps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em motor\+Rated\+Power} & double, Rated power of motor in hp \\
+\hline
+{\em motor\+R\+PM} & double, R\+PM of motor. \\
+\hline
+{\em line\+Frequency} & \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}, classification of line Frequency of motor in Hz \\
+\hline
+{\em efficiency\+Class} & \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}, Efficiency class of motor. \\
+\hline
+{\em specified\+Efficiency} & double, Specified efficiency of motor when the efficiency class = S\+P\+E\+C\+I\+F\+I\+ED as \% \\
+\hline
+{\em load\+Factor} & double, load factor -\/ unitless \\
+\hline
+{\em rated\+Voltage} & double, Rated voltage of the motor in Volts \\
+\hline
+{\em full\+Load\+Amps} & double, Current at full load in Amps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Motor\+Current.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}\label{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}} 
+\index{Motor\+Current@{Motor\+Current}!calculate@{calculate}}
+\index{calculate@{calculate}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double Motor\+Current\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Contains the definition of functions of \hyperlink{class_motor_current}{Motor\+Current} class. \hyperlink{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}{calculate()}\+: Calculates the motor current for a given value of load factor. 
+
+calculates the motor current at a given load factor. \begin{DoxyReturn}{Returns}
+double, motor current in amps
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Subhankar Mishra (mishras) 
+
+Gina Accawi (accawigk) 
+\end{DoxyAuthor}
+Calculates the motor current for a given value of load factor. Given the load\% calculate the Amps. Pick the 0,25,50\% motor current values and do a 2nd order polynomial fit. Use the fit coefficients to populate, in 1\% load intervals, the current range from 0 to 25\% load
+
+Pick the 25,50,75,100,and 125\% motor current values and do a 4th order polynomial fit. Use the fit coefficients to popluate, in 1\% load intervals, from 26 to 125\% load
+
+Pick the 75, 100, and 125\% motor current values and do a 2nd order polynomial fit. Use the fit coefficients to populate, in 1\% load intervals, the current range from 126 to 150\% load \begin{DoxyReturn}{Returns}
+motor current 
+\end{DoxyReturn}
+Adjustment based on the rated voltage.
+
+Adjustment based on the specified F\+LA 
+
+Definition at line 29 of file Motor\+Current.\+cpp.
+
+\mbox{\Hypertarget{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}\label{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}} 
+\index{Motor\+Current@{Motor\+Current}!calculate@{calculate}}
+\index{calculate@{calculate}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double Motor\+Current\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+calculates the motor current at a given load factor. \begin{DoxyReturn}{Returns}
+double, motor current in amps 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}\label{class_motor_current_a18e545d2c82f1fe247cc501eda2ce857}} 
+\index{Motor\+Current@{Motor\+Current}!calculate@{calculate}}
+\index{calculate@{calculate}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double Motor\+Current\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+calculates the motor current at a given load factor. \begin{DoxyReturn}{Returns}
+double, motor current in amps 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}\label{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}} 
+\index{Motor\+Current@{Motor\+Current}!get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}}
+\index{get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double Motor\+Current\+::get\+Estimated\+F\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the estimated full load amp
+
+\begin{DoxyReturn}{Returns}
+double, estimated current at full load in Amps 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Motor\+Current.\+h.
+
+\mbox{\Hypertarget{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}\label{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}} 
+\index{Motor\+Current@{Motor\+Current}!get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}}
+\index{get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double Motor\+Current\+::get\+Estimated\+F\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the estimated full load amp
+
+\begin{DoxyReturn}{Returns}
+double, estimated current at full load in Amps 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Motor\+Current.\+h.
+
+\mbox{\Hypertarget{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}\label{class_motor_current_a0f845ec03585b21a8e476ed3e63f365f}} 
+\index{Motor\+Current@{Motor\+Current}!get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}}
+\index{get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}!Motor\+Current@{Motor\+Current}}
+\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double Motor\+Current\+::get\+Estimated\+F\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the estimated full load amp
+
+\begin{DoxyReturn}{Returns}
+double, estimated current at full load in Amps 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Motor\+Current.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/calculator/motor/Motor\+Current.\+h\item 
+src/calculator/motor/Motor\+Current.\+cpp\end{DoxyCompactItemize}
