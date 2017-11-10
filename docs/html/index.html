@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.6</span>
+   &#160;<span id="projectnumber">v.0.2.7</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -69,9 +69,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>AMO Tools Suite is a cross-platform collection of calculations and tools to support industrial equipment modeling.</p>
-<p>To run tests for the node addon: npm run test.</p>
-<p>To run C++ unit tests: cmake &ndash;build &ndash;target amo_tools_suite_tests</p>
-<p>To create C++ artifacts: cmake .. from target directory, then make, then make package </p>
+<p>See our hosted documentation for the latest release at <a href="https://ornl-amo.github.io/">ornl-amo.github.io</a></p>
+<p>To generate documentation: <code>doxygen Doxygen.in</code></p>
+<p>To build node modules: <code>npm install</code> or if already installed, <code>node-gyp rebuild</code> to update modules.</p>
+<p>To run tests for the node addon: <code>npm run test</code></p>
+<p>To edit the CMakeCache: <code>ccmake .</code> from project root directory, enable desired build options, then <code>make</code> to build.</p>
+<p>To build C++ unit tests directly: <code>cmake --build . --target amo_tools_suite_tests</code> from project root directory.</p>
+<p>To create an installer package: <code>ccmake .</code> from project root directory, then enable the <code>BUILD_PACKAGE</code> flag, then <code>cmake ./</code> then <code>make package</code> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
