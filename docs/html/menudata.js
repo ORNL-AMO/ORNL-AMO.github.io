@@ -52,14 +52,7 @@ var menudata={children:[
 {text:"p",url:"functions_vars.html#index_p"},
 {text:"s",url:"functions_vars.html#index_s"},
 {text:"t",url:"functions_vars.html#index_t"}]},
-{text:"Enumerations",url:"functions_enum.html",children:[
-{text:"d",url:"functions_enum.html#index_d"},
-{text:"e",url:"functions_enum.html#index_e"},
-{text:"g",url:"functions_enum.html#index_g"},
-{text:"l",url:"functions_enum.html#index_l"},
-{text:"o",url:"functions_enum.html#index_o"},
-{text:"s",url:"functions_enum.html#index_s"},
-{text:"t",url:"functions_enum.html#index_t"}]}]}]},
+{text:"Enumerations",url:"functions_enum.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[

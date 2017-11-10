@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.6</span>
+   &#160;<span id="projectnumber">v.0.2.7</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -72,37 +72,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac82f530412021ace928a7e95c1295d06"><td class="memItemLeft" align="right" valign="top"><a id="ac82f530412021ace928a7e95c1295d06"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> { <br />
-&#160;&#160;<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>, 
-<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>, 
-<br />
-&#160;&#160;<b>PercentAvgkWhElectricCostAvoided</b>, 
+<tr class="memitem:ac82f530412021ace928a7e95c1295d06"><td class="memItemLeft" align="right" valign="top"><a id="ac82f530412021ace928a7e95c1295d06"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> { <b>PercentAvgkWhElectricCostAvoided</b>, 
 <b>StandbyRate</b>
-<br />
- }</td></tr>
-<tr class="separator:ac82f530412021ace928a7e95c1295d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82f530412021ace928a7e95c1295d06"><td class="memItemLeft" align="right" valign="top"><a id="ac82f530412021ace928a7e95c1295d06"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> { <br />
-&#160;&#160;<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>, 
-<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>, 
-<br />
-&#160;&#160;<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>
-<br />
- }</td></tr>
-<tr class="separator:ac82f530412021ace928a7e95c1295d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82f530412021ace928a7e95c1295d06"><td class="memItemLeft" align="right" valign="top"><a id="ac82f530412021ace928a7e95c1295d06"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> { <br />
-&#160;&#160;<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>, 
-<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>, 
-<br />
-&#160;&#160;<b>PercentAvgkWhElectricCostAvoided</b>, 
-<b>StandbyRate</b>
-<br />
  }</td></tr>
 <tr class="separator:ac82f530412021ace928a7e95c1295d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -222,240 +193,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setAvgThermalDemand</
 <tr class="memitem:a625efb308ccd22c8bdf75f082ff7bae2"><td class="memItemLeft" align="right" valign="top"><a id="a625efb308ccd22c8bdf75f082ff7bae2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setNetCHPpower</b> (double netCHPpower)</td></tr>
 <tr class="separator:a625efb308ccd22c8bdf75f082ff7bae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea45a2afd5189214fbf720e53d587640"><td class="memItemLeft" align="right" valign="top"><a id="aea45a2afd5189214fbf720e53d587640"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CHP</b> (double annualOperatingHours, double annualElectricityConsumption, double annualThermalDemand, double boilerThermalFuelCosts, double avgElectricityCosts, Option calculationOption, double boilerThermalFuelCostsCHPcase, double CHPfuelCosts, double percentAvgkWhElectricCostAvoidedOrStandbyRate, double displacedThermalEfficiency, double chpAvailability, double thermalUtilization)</td></tr>
-<tr class="separator:aea45a2afd5189214fbf720e53d587640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b448b253454087f9e98124aa716715f"><td class="memItemLeft" align="right" valign="top"><a id="a9b448b253454087f9e98124aa716715f"></a>
-std::unordered_map&lt; std::string, double &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getCostInfo</b> () const</td></tr>
-<tr class="separator:a9b448b253454087f9e98124aa716715f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb03f1f40db034babf883a1e00ed2a3"><td class="memItemLeft" align="right" valign="top"><a id="aeeb03f1f40db034babf883a1e00ed2a3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAnnualOperatingHours</b> () const</td></tr>
-<tr class="separator:aeeb03f1f40db034babf883a1e00ed2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37d544d03c45668a9dc5d502cdcb6137"><td class="memItemLeft" align="right" valign="top"><a id="a37d544d03c45668a9dc5d502cdcb6137"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAnnualElectricityConsumption</b> () const</td></tr>
-<tr class="separator:a37d544d03c45668a9dc5d502cdcb6137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849a576483b92b131ebfc0615e1e0bdb"><td class="memItemLeft" align="right" valign="top"><a id="a849a576483b92b131ebfc0615e1e0bdb"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAnnualThermalDemand</b> () const</td></tr>
-<tr class="separator:a849a576483b92b131ebfc0615e1e0bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6c6638b1be7c2df8ba4b406c3b2b94"><td class="memItemLeft" align="right" valign="top"><a id="a9f6c6638b1be7c2df8ba4b406c3b2b94"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getBoilerThermalFuelCosts</b> () const</td></tr>
-<tr class="separator:a9f6c6638b1be7c2df8ba4b406c3b2b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00929ba5d10367258dc1dc437eda88e3"><td class="memItemLeft" align="right" valign="top"><a id="a00929ba5d10367258dc1dc437eda88e3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpFuelCosts</b> () const</td></tr>
-<tr class="separator:a00929ba5d10367258dc1dc437eda88e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc5ac0eb3d7ce42f77f26b3973f6c9f"><td class="memItemLeft" align="right" valign="top"><a id="a2bc5ac0eb3d7ce42f77f26b3973f6c9f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAvgElectricityCosts</b> () const</td></tr>
-<tr class="separator:a2bc5ac0eb3d7ce42f77f26b3973f6c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858f0201818f637331e0d06d3171bee7"><td class="memItemLeft" align="right" valign="top"><a id="a858f0201818f637331e0d06d3171bee7"></a>
-Option&#160;</td><td class="memItemRight" valign="bottom"><b>getCalculationOption</b> () const</td></tr>
-<tr class="separator:a858f0201818f637331e0d06d3171bee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace1d96aacf328bd62f01e0eceaae19f6"><td class="memItemLeft" align="right" valign="top"><a id="ace1d96aacf328bd62f01e0eceaae19f6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getBoilerThermalFuelCostsCHPcase</b> () const</td></tr>
-<tr class="separator:ace1d96aacf328bd62f01e0eceaae19f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79607b304d1e50a9421de043b7a9e7b"><td class="memItemLeft" align="right" valign="top"><a id="ad79607b304d1e50a9421de043b7a9e7b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getPercentAvgkWhElectricCostAvoided</b> () const</td></tr>
-<tr class="separator:ad79607b304d1e50a9421de043b7a9e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a195f0ffe163404077b56a5e5db8eb59c"><td class="memItemLeft" align="right" valign="top"><a id="a195f0ffe163404077b56a5e5db8eb59c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getStandbyRate</b> () const</td></tr>
-<tr class="separator:a195f0ffe163404077b56a5e5db8eb59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b1b0e6a0d7f3181b3c1dfb590ab523"><td class="memItemLeft" align="right" valign="top"><a id="a66b1b0e6a0d7f3181b3c1dfb590ab523"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getDisplacedThermalEfficiency</b> () const</td></tr>
-<tr class="separator:a66b1b0e6a0d7f3181b3c1dfb590ab523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d38e08a7815211361d334263832cad6"><td class="memItemLeft" align="right" valign="top"><a id="a1d38e08a7815211361d334263832cad6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpElectricEfficiency</b> () const</td></tr>
-<tr class="separator:a1d38e08a7815211361d334263832cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e271f59d6315088416123c6e794e09"><td class="memItemLeft" align="right" valign="top"><a id="a13e271f59d6315088416123c6e794e09"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpThermalOutput</b> () const</td></tr>
-<tr class="separator:a13e271f59d6315088416123c6e794e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd1ea13cd48f5af48799891a52634340"><td class="memItemLeft" align="right" valign="top"><a id="abd1ea13cd48f5af48799891a52634340"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpAvailability</b> () const</td></tr>
-<tr class="separator:abd1ea13cd48f5af48799891a52634340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27fd9e66e208e6b3f28fdfe182d6c32"><td class="memItemLeft" align="right" valign="top"><a id="aa27fd9e66e208e6b3f28fdfe182d6c32"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getThermalUtilization</b> () const</td></tr>
-<tr class="separator:aa27fd9e66e208e6b3f28fdfe182d6c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f9a97a010669c5ffed9339c54a36c6"><td class="memItemLeft" align="right" valign="top"><a id="a79f9a97a010669c5ffed9339c54a36c6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAvgPowerDemand</b> () const</td></tr>
-<tr class="separator:a79f9a97a010669c5ffed9339c54a36c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f8975488324e4aa3517c9e01334f4bf"><td class="memItemLeft" align="right" valign="top"><a id="a5f8975488324e4aa3517c9e01334f4bf"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAvgThermalDemand</b> () const</td></tr>
-<tr class="separator:a5f8975488324e4aa3517c9e01334f4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317f3df613b61f401bc5c4b69fddd0cf"><td class="memItemLeft" align="right" valign="top"><a id="a317f3df613b61f401bc5c4b69fddd0cf"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getNetCHPpower</b> () const</td></tr>
-<tr class="separator:a317f3df613b61f401bc5c4b69fddd0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b9d3ba01f7e243bcde31bd5fdff9e0a"><td class="memItemLeft" align="right" valign="top"><a id="a1b9d3ba01f7e243bcde31bd5fdff9e0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnnualOperatingHours</b> (double annualOperatingHours)</td></tr>
-<tr class="separator:a1b9d3ba01f7e243bcde31bd5fdff9e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306aa3de555bb7dbd79e7aeb1658713e"><td class="memItemLeft" align="right" valign="top"><a id="a306aa3de555bb7dbd79e7aeb1658713e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnnualElectricityConsumption</b> (double annualElectricityConsumption)</td></tr>
-<tr class="separator:a306aa3de555bb7dbd79e7aeb1658713e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7abaae6cf4d62059eff750498d70076"><td class="memItemLeft" align="right" valign="top"><a id="aa7abaae6cf4d62059eff750498d70076"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnnualThermalDemand</b> (double annualThermalDemand)</td></tr>
-<tr class="separator:aa7abaae6cf4d62059eff750498d70076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13c93cd6b6bba4d52b2f8fd10638724e"><td class="memItemLeft" align="right" valign="top"><a id="a13c93cd6b6bba4d52b2f8fd10638724e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBoilerThermalFuelCosts</b> (double boilerThermalFuelCosts)</td></tr>
-<tr class="separator:a13c93cd6b6bba4d52b2f8fd10638724e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419c9eaf0ad6009bb3dd753e4b1dd63b"><td class="memItemLeft" align="right" valign="top"><a id="a419c9eaf0ad6009bb3dd753e4b1dd63b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpFuelCosts</b> (double chpFuelCosts)</td></tr>
-<tr class="separator:a419c9eaf0ad6009bb3dd753e4b1dd63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad953f7558bf3a38816e29d9ffaf6273c"><td class="memItemLeft" align="right" valign="top"><a id="ad953f7558bf3a38816e29d9ffaf6273c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAvgElectricityCosts</b> (double avgElectricityCosts)</td></tr>
-<tr class="separator:ad953f7558bf3a38816e29d9ffaf6273c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa71c23fa4b58c03c3337b57ba0d56d"><td class="memItemLeft" align="right" valign="top"><a id="abfa71c23fa4b58c03c3337b57ba0d56d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCalculationOption</b> (Option calculationOption, double percentAvgkWhElectricCostAvoidedOrStandbyRate)</td></tr>
-<tr class="separator:abfa71c23fa4b58c03c3337b57ba0d56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319f1e915035b2dface2dbad67c65017"><td class="memItemLeft" align="right" valign="top"><a id="a319f1e915035b2dface2dbad67c65017"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBoilerThermalFuelCostsCHPcase</b> (double boilerThermalFuelCostsCHPcase)</td></tr>
-<tr class="separator:a319f1e915035b2dface2dbad67c65017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a002b9e405c3a1777b306430cd1bbbec3"><td class="memItemLeft" align="right" valign="top"><a id="a002b9e405c3a1777b306430cd1bbbec3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPercentAvgkWhElectricCostAvoided</b> (double percentAvgkWhElectricCostAvoided)</td></tr>
-<tr class="separator:a002b9e405c3a1777b306430cd1bbbec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25d489d5d3e336f7286c0124f81d3c5"><td class="memItemLeft" align="right" valign="top"><a id="ac25d489d5d3e336f7286c0124f81d3c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setStandbyRate</b> (double standbyRate)</td></tr>
-<tr class="separator:ac25d489d5d3e336f7286c0124f81d3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f80ede27800dfdeb0493e0501823fde"><td class="memItemLeft" align="right" valign="top"><a id="a6f80ede27800dfdeb0493e0501823fde"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDisplacedThermalEfficiency</b> (double displacedThermalEfficiency)</td></tr>
-<tr class="separator:a6f80ede27800dfdeb0493e0501823fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63de982e8324e669ea8a6712a30a6ce4"><td class="memItemLeft" align="right" valign="top"><a id="a63de982e8324e669ea8a6712a30a6ce4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpElectricEfficiency</b> (double chpElectricEfficiency)</td></tr>
-<tr class="separator:a63de982e8324e669ea8a6712a30a6ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b132e4e600df80fa87c0e7b680733b7"><td class="memItemLeft" align="right" valign="top"><a id="a4b132e4e600df80fa87c0e7b680733b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpThermalOutput</b> (double chpThermalOutput)</td></tr>
-<tr class="separator:a4b132e4e600df80fa87c0e7b680733b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc3c1f0e0b67564a56b5863c1abf974"><td class="memItemLeft" align="right" valign="top"><a id="a0dc3c1f0e0b67564a56b5863c1abf974"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpAvailability</b> (double chpAvailability)</td></tr>
-<tr class="separator:a0dc3c1f0e0b67564a56b5863c1abf974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8917dfa8b8a68244d0ffe3fd3ca1d13f"><td class="memItemLeft" align="right" valign="top"><a id="a8917dfa8b8a68244d0ffe3fd3ca1d13f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setThermalUtilization</b> (double thermalUtilization)</td></tr>
-<tr class="separator:a8917dfa8b8a68244d0ffe3fd3ca1d13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3183df776744f6871fb59b07553d2c"><td class="memItemLeft" align="right" valign="top"><a id="a4f3183df776744f6871fb59b07553d2c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAvgPowerDemand</b> (double avgPowerDemand)</td></tr>
-<tr class="separator:a4f3183df776744f6871fb59b07553d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0036fd3fc3154adc0fdba0ede8277bee"><td class="memItemLeft" align="right" valign="top"><a id="a0036fd3fc3154adc0fdba0ede8277bee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAvgThermalDemand</b> (double avgThermalDemand)</td></tr>
-<tr class="separator:a0036fd3fc3154adc0fdba0ede8277bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625efb308ccd22c8bdf75f082ff7bae2"><td class="memItemLeft" align="right" valign="top"><a id="a625efb308ccd22c8bdf75f082ff7bae2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setNetCHPpower</b> (double netCHPpower)</td></tr>
-<tr class="separator:a625efb308ccd22c8bdf75f082ff7bae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea45a2afd5189214fbf720e53d587640"><td class="memItemLeft" align="right" valign="top"><a id="aea45a2afd5189214fbf720e53d587640"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CHP</b> (double annualOperatingHours, double annualElectricityConsumption, double annualThermalDemand, double boilerThermalFuelCosts, double avgElectricityCosts, Option calculationOption, double boilerThermalFuelCostsCHPcase, double CHPfuelCosts, double percentAvgkWhElectricCostAvoidedOrStandbyRate, double displacedThermalEfficiency, double chpAvailability, double thermalUtilization)</td></tr>
-<tr class="separator:aea45a2afd5189214fbf720e53d587640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b448b253454087f9e98124aa716715f"><td class="memItemLeft" align="right" valign="top"><a id="a9b448b253454087f9e98124aa716715f"></a>
-std::unordered_map&lt; std::string, double &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getCostInfo</b> () const</td></tr>
-<tr class="separator:a9b448b253454087f9e98124aa716715f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb03f1f40db034babf883a1e00ed2a3"><td class="memItemLeft" align="right" valign="top"><a id="aeeb03f1f40db034babf883a1e00ed2a3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAnnualOperatingHours</b> () const</td></tr>
-<tr class="separator:aeeb03f1f40db034babf883a1e00ed2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37d544d03c45668a9dc5d502cdcb6137"><td class="memItemLeft" align="right" valign="top"><a id="a37d544d03c45668a9dc5d502cdcb6137"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAnnualElectricityConsumption</b> () const</td></tr>
-<tr class="separator:a37d544d03c45668a9dc5d502cdcb6137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849a576483b92b131ebfc0615e1e0bdb"><td class="memItemLeft" align="right" valign="top"><a id="a849a576483b92b131ebfc0615e1e0bdb"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAnnualThermalDemand</b> () const</td></tr>
-<tr class="separator:a849a576483b92b131ebfc0615e1e0bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6c6638b1be7c2df8ba4b406c3b2b94"><td class="memItemLeft" align="right" valign="top"><a id="a9f6c6638b1be7c2df8ba4b406c3b2b94"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getBoilerThermalFuelCosts</b> () const</td></tr>
-<tr class="separator:a9f6c6638b1be7c2df8ba4b406c3b2b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00929ba5d10367258dc1dc437eda88e3"><td class="memItemLeft" align="right" valign="top"><a id="a00929ba5d10367258dc1dc437eda88e3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpFuelCosts</b> () const</td></tr>
-<tr class="separator:a00929ba5d10367258dc1dc437eda88e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc5ac0eb3d7ce42f77f26b3973f6c9f"><td class="memItemLeft" align="right" valign="top"><a id="a2bc5ac0eb3d7ce42f77f26b3973f6c9f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAvgElectricityCosts</b> () const</td></tr>
-<tr class="separator:a2bc5ac0eb3d7ce42f77f26b3973f6c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858f0201818f637331e0d06d3171bee7"><td class="memItemLeft" align="right" valign="top"><a id="a858f0201818f637331e0d06d3171bee7"></a>
-Option&#160;</td><td class="memItemRight" valign="bottom"><b>getCalculationOption</b> () const</td></tr>
-<tr class="separator:a858f0201818f637331e0d06d3171bee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace1d96aacf328bd62f01e0eceaae19f6"><td class="memItemLeft" align="right" valign="top"><a id="ace1d96aacf328bd62f01e0eceaae19f6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getBoilerThermalFuelCostsCHPcase</b> () const</td></tr>
-<tr class="separator:ace1d96aacf328bd62f01e0eceaae19f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79607b304d1e50a9421de043b7a9e7b"><td class="memItemLeft" align="right" valign="top"><a id="ad79607b304d1e50a9421de043b7a9e7b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getPercentAvgkWhElectricCostAvoided</b> () const</td></tr>
-<tr class="separator:ad79607b304d1e50a9421de043b7a9e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a195f0ffe163404077b56a5e5db8eb59c"><td class="memItemLeft" align="right" valign="top"><a id="a195f0ffe163404077b56a5e5db8eb59c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getStandbyRate</b> () const</td></tr>
-<tr class="separator:a195f0ffe163404077b56a5e5db8eb59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b1b0e6a0d7f3181b3c1dfb590ab523"><td class="memItemLeft" align="right" valign="top"><a id="a66b1b0e6a0d7f3181b3c1dfb590ab523"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getDisplacedThermalEfficiency</b> () const</td></tr>
-<tr class="separator:a66b1b0e6a0d7f3181b3c1dfb590ab523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d38e08a7815211361d334263832cad6"><td class="memItemLeft" align="right" valign="top"><a id="a1d38e08a7815211361d334263832cad6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpElectricEfficiency</b> () const</td></tr>
-<tr class="separator:a1d38e08a7815211361d334263832cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e271f59d6315088416123c6e794e09"><td class="memItemLeft" align="right" valign="top"><a id="a13e271f59d6315088416123c6e794e09"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpThermalOutput</b> () const</td></tr>
-<tr class="separator:a13e271f59d6315088416123c6e794e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd1ea13cd48f5af48799891a52634340"><td class="memItemLeft" align="right" valign="top"><a id="abd1ea13cd48f5af48799891a52634340"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getChpAvailability</b> () const</td></tr>
-<tr class="separator:abd1ea13cd48f5af48799891a52634340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27fd9e66e208e6b3f28fdfe182d6c32"><td class="memItemLeft" align="right" valign="top"><a id="aa27fd9e66e208e6b3f28fdfe182d6c32"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getThermalUtilization</b> () const</td></tr>
-<tr class="separator:aa27fd9e66e208e6b3f28fdfe182d6c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f9a97a010669c5ffed9339c54a36c6"><td class="memItemLeft" align="right" valign="top"><a id="a79f9a97a010669c5ffed9339c54a36c6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAvgPowerDemand</b> () const</td></tr>
-<tr class="separator:a79f9a97a010669c5ffed9339c54a36c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f8975488324e4aa3517c9e01334f4bf"><td class="memItemLeft" align="right" valign="top"><a id="a5f8975488324e4aa3517c9e01334f4bf"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getAvgThermalDemand</b> () const</td></tr>
-<tr class="separator:a5f8975488324e4aa3517c9e01334f4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317f3df613b61f401bc5c4b69fddd0cf"><td class="memItemLeft" align="right" valign="top"><a id="a317f3df613b61f401bc5c4b69fddd0cf"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getNetCHPpower</b> () const</td></tr>
-<tr class="separator:a317f3df613b61f401bc5c4b69fddd0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b9d3ba01f7e243bcde31bd5fdff9e0a"><td class="memItemLeft" align="right" valign="top"><a id="a1b9d3ba01f7e243bcde31bd5fdff9e0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnnualOperatingHours</b> (double annualOperatingHours)</td></tr>
-<tr class="separator:a1b9d3ba01f7e243bcde31bd5fdff9e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306aa3de555bb7dbd79e7aeb1658713e"><td class="memItemLeft" align="right" valign="top"><a id="a306aa3de555bb7dbd79e7aeb1658713e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnnualElectricityConsumption</b> (double annualElectricityConsumption)</td></tr>
-<tr class="separator:a306aa3de555bb7dbd79e7aeb1658713e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7abaae6cf4d62059eff750498d70076"><td class="memItemLeft" align="right" valign="top"><a id="aa7abaae6cf4d62059eff750498d70076"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnnualThermalDemand</b> (double annualThermalDemand)</td></tr>
-<tr class="separator:aa7abaae6cf4d62059eff750498d70076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13c93cd6b6bba4d52b2f8fd10638724e"><td class="memItemLeft" align="right" valign="top"><a id="a13c93cd6b6bba4d52b2f8fd10638724e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBoilerThermalFuelCosts</b> (double boilerThermalFuelCosts)</td></tr>
-<tr class="separator:a13c93cd6b6bba4d52b2f8fd10638724e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419c9eaf0ad6009bb3dd753e4b1dd63b"><td class="memItemLeft" align="right" valign="top"><a id="a419c9eaf0ad6009bb3dd753e4b1dd63b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpFuelCosts</b> (double chpFuelCosts)</td></tr>
-<tr class="separator:a419c9eaf0ad6009bb3dd753e4b1dd63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad953f7558bf3a38816e29d9ffaf6273c"><td class="memItemLeft" align="right" valign="top"><a id="ad953f7558bf3a38816e29d9ffaf6273c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAvgElectricityCosts</b> (double avgElectricityCosts)</td></tr>
-<tr class="separator:ad953f7558bf3a38816e29d9ffaf6273c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa71c23fa4b58c03c3337b57ba0d56d"><td class="memItemLeft" align="right" valign="top"><a id="abfa71c23fa4b58c03c3337b57ba0d56d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCalculationOption</b> (Option calculationOption, double percentAvgkWhElectricCostAvoidedOrStandbyRate)</td></tr>
-<tr class="separator:abfa71c23fa4b58c03c3337b57ba0d56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319f1e915035b2dface2dbad67c65017"><td class="memItemLeft" align="right" valign="top"><a id="a319f1e915035b2dface2dbad67c65017"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBoilerThermalFuelCostsCHPcase</b> (double boilerThermalFuelCostsCHPcase)</td></tr>
-<tr class="separator:a319f1e915035b2dface2dbad67c65017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a002b9e405c3a1777b306430cd1bbbec3"><td class="memItemLeft" align="right" valign="top"><a id="a002b9e405c3a1777b306430cd1bbbec3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPercentAvgkWhElectricCostAvoided</b> (double percentAvgkWhElectricCostAvoided)</td></tr>
-<tr class="separator:a002b9e405c3a1777b306430cd1bbbec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25d489d5d3e336f7286c0124f81d3c5"><td class="memItemLeft" align="right" valign="top"><a id="ac25d489d5d3e336f7286c0124f81d3c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setStandbyRate</b> (double standbyRate)</td></tr>
-<tr class="separator:ac25d489d5d3e336f7286c0124f81d3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f80ede27800dfdeb0493e0501823fde"><td class="memItemLeft" align="right" valign="top"><a id="a6f80ede27800dfdeb0493e0501823fde"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDisplacedThermalEfficiency</b> (double displacedThermalEfficiency)</td></tr>
-<tr class="separator:a6f80ede27800dfdeb0493e0501823fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63de982e8324e669ea8a6712a30a6ce4"><td class="memItemLeft" align="right" valign="top"><a id="a63de982e8324e669ea8a6712a30a6ce4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpElectricEfficiency</b> (double chpElectricEfficiency)</td></tr>
-<tr class="separator:a63de982e8324e669ea8a6712a30a6ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b132e4e600df80fa87c0e7b680733b7"><td class="memItemLeft" align="right" valign="top"><a id="a4b132e4e600df80fa87c0e7b680733b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpThermalOutput</b> (double chpThermalOutput)</td></tr>
-<tr class="separator:a4b132e4e600df80fa87c0e7b680733b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc3c1f0e0b67564a56b5863c1abf974"><td class="memItemLeft" align="right" valign="top"><a id="a0dc3c1f0e0b67564a56b5863c1abf974"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChpAvailability</b> (double chpAvailability)</td></tr>
-<tr class="separator:a0dc3c1f0e0b67564a56b5863c1abf974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8917dfa8b8a68244d0ffe3fd3ca1d13f"><td class="memItemLeft" align="right" valign="top"><a id="a8917dfa8b8a68244d0ffe3fd3ca1d13f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setThermalUtilization</b> (double thermalUtilization)</td></tr>
-<tr class="separator:a8917dfa8b8a68244d0ffe3fd3ca1d13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3183df776744f6871fb59b07553d2c"><td class="memItemLeft" align="right" valign="top"><a id="a4f3183df776744f6871fb59b07553d2c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAvgPowerDemand</b> (double avgPowerDemand)</td></tr>
-<tr class="separator:a4f3183df776744f6871fb59b07553d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0036fd3fc3154adc0fdba0ede8277bee"><td class="memItemLeft" align="right" valign="top"><a id="a0036fd3fc3154adc0fdba0ede8277bee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAvgThermalDemand</b> (double avgThermalDemand)</td></tr>
-<tr class="separator:a0036fd3fc3154adc0fdba0ede8277bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625efb308ccd22c8bdf75f082ff7bae2"><td class="memItemLeft" align="right" valign="top"><a id="a625efb308ccd22c8bdf75f082ff7bae2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setNetCHPpower</b> (double netCHPpower)</td></tr>
-<tr class="separator:a625efb308ccd22c8bdf75f082ff7bae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dd/d97/___c_pack___packages_2_darwin_2_s_t_g_z_2amo__tools__suite--_darwin-x86__64_2amo__tools__suite_2e84c75fa64b0f68ea27f488c6b317925_source.html#l00009">9</a> of file <a class="el" href="../../dd/d97/___c_pack___packages_2_darwin_2_s_t_g_z_2amo__tools__suite--_darwin-x86__64_2amo__tools__suite_2e84c75fa64b0f68ea27f488c6b317925_source.html">CHP.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dde/_c_h_p_8h_source.html#l00009">9</a> of file <a class="el" href="../../df/dde/_c_h_p_8h_source.html">CHP.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>_CPack_Packages/Darwin/STGZ/amo_tools_suite--Darwin-x86_64/amo_tools_suite/include/calculator/util/<a class="el" href="../../dd/d97/___c_pack___packages_2_darwin_2_s_t_g_z_2amo__tools__suite--_darwin-x86__64_2amo__tools__suite_2e84c75fa64b0f68ea27f488c6b317925_source.html">CHP.h</a></li>
+<li>include/calculator/util/<a class="el" href="../../df/dde/_c_h_p_8h_source.html">CHP.h</a></li>
 <li>src/calculator/util/<a class="el" href="../../dd/d5c/_c_h_p_8cpp_source.html">CHP.cpp</a></li>
 </ul>
 </div><!-- contents -->
