@@ -201,7 +201,8 @@
                     }
                     let shTest = isExt(element.name, '.sh');
                     if (shTest) {
-                        addSuiteListItem(element, 'AMO Suite Mac (.sh)');
+                        const s = (macTest) ? 'Mac (.sh)' : 'Linux (.sh)';
+                        addSuiteListItem(element, 'AMO Suite ' + s);
                     }
                     let exeTest = isExt(element.name, '.exe');
                     if (exeTest) {
