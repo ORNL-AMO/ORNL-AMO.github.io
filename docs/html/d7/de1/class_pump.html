@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.7</span>
+   &#160;<span id="projectnumber">v.0.2.9</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -94,7 +94,9 @@ Public Types</h2></td></tr>
 </td></tr>
 <tr class="separator:aef354601ce4218258cc898b35a1e90ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32bf0ade131a11bb3b3fb374f638e983"><td class="memItemLeft" align="right" valign="top"><a id="a32bf0ade131a11bb3b3fb374f638e983"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de1/class_pump.html#a32bf0ade131a11bb3b3fb374f638e983">Drive</a> { <b>DIRECT_DRIVE</b>, 
-<b>BELT_DRIVE</b>
+<b>V_BELT_DRIVE</b>, 
+<b>N_V_BELT_DRIVE</b>, 
+<b>S_BELT_DRIVE</b>
  }<tr class="memdesc:a32bf0ade131a11bb3b3fb374f638e983"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum class for drive types <br /></td></tr>
 </td></tr>
 <tr class="separator:a32bf0ade131a11bb3b3fb374f638e983"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,7 +231,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00064">64</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00066">66</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +261,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the achievable efficiency of the pump at specified operating conditions</p>
 <dl class="section return"><dt>Returns</dt><dd>double, achievable efficiency as % </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00110">110</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00112">112</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +290,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the type of drive the pump uses from either direct or belt drive</p>
 <dl class="section return"><dt>Returns</dt><dd>Drive, classification of drive type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00146">146</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00148">148</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +319,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the type of pump speed from either fixed or not fixed</p>
 <dl class="section return"><dt>Returns</dt><dd>Speed, classification of pump speed type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00222">222</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00224">224</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +348,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the kinematic viscosity of the fluid being pumped</p>
 <dl class="section return"><dt>Returns</dt><dd>double, kinematic viscosity in centistokes </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00165">165</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00167">167</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +398,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the specific gravity</p>
 <dl class="section return"><dt>Returns</dt><dd>double, specific gravity - unitless </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00184">184</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00186">186</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +427,7 @@ Public Member Functions</h2></td></tr>
 <p>Get number of pump stages</p>
 <dl class="section return"><dt>Returns</dt><dd>int, number of pump stages </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00203">203</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00205">205</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -454,7 +456,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the style of the pump being used</p>
 <dl class="section return"><dt>Returns</dt><dd>Style, classification of style of pump </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00091">91</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00093">93</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +491,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00120">120</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00122">122</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +526,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00156">156</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00158">158</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -559,7 +561,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00232">232</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00234">234</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +596,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00175">175</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00177">177</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +631,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00137">137</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00139">139</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +666,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00194">194</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00196">196</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +701,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00213">213</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00215">215</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
@@ -734,7 +736,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00101">101</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/df0/_pump_8h_source.html#l00103">103</a> of file <a class="el" href="../../d4/df0/_pump_8h_source.html">Pump.h</a>.</p>
 
 </div>
 </div>
