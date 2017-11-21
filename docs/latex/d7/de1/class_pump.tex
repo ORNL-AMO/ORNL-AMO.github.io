@@ -27,7 +27,9 @@ enum \hyperlink{class_pump_aef354601ce4218258cc898b35a1e90ff}{Style} \{ \newline
 \item 
 \mbox{\Hypertarget{class_pump_a32bf0ade131a11bb3b3fb374f638e983}\label{class_pump_a32bf0ade131a11bb3b3fb374f638e983}} 
 enum \hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Drive} \{ {\bfseries D\+I\+R\+E\+C\+T\+\_\+\+D\+R\+I\+VE}, 
-{\bfseries B\+E\+L\+T\+\_\+\+D\+R\+I\+VE}
+{\bfseries V\+\_\+\+B\+E\+L\+T\+\_\+\+D\+R\+I\+VE}, 
+{\bfseries N\+\_\+\+V\+\_\+\+B\+E\+L\+T\+\_\+\+D\+R\+I\+VE}, 
+{\bfseries S\+\_\+\+B\+E\+L\+T\+\_\+\+D\+R\+I\+VE}
  \}\begin{DoxyCompactList}\small\item\em enum class for drive types \end{DoxyCompactList}
 \item 
 \mbox{\Hypertarget{class_pump_ae443603074ebca82f0b89209482d10b6}\label{class_pump_ae443603074ebca82f0b89209482d10b6}} 
@@ -109,7 +111,7 @@ Constructor
 \end{DoxyParams}
 
 
-Definition at line 64 of file Pump.\+h.
+Definition at line 66 of file Pump.\+h.
 
 
 
@@ -127,7 +129,7 @@ double, achievable efficiency as \%
 \end{DoxyReturn}
 
 
-Definition at line 110 of file Pump.\+h.
+Definition at line 112 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a7eae412e42d0a3351408391cd5fbef4e}\label{class_pump_a7eae412e42d0a3351408391cd5fbef4e}} 
 \index{Pump@{Pump}!get\+Drive@{get\+Drive}}
@@ -142,7 +144,7 @@ Drive, classification of drive type
 \end{DoxyReturn}
 
 
-Definition at line 146 of file Pump.\+h.
+Definition at line 148 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_ae9a63b7e616ba2ef7723d1040af241b4}\label{class_pump_ae9a63b7e616ba2ef7723d1040af241b4}} 
 \index{Pump@{Pump}!get\+Fixed\+Speed@{get\+Fixed\+Speed}}
@@ -157,7 +159,7 @@ Speed, classification of pump speed type
 \end{DoxyReturn}
 
 
-Definition at line 222 of file Pump.\+h.
+Definition at line 224 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a7b834ffb06cbfd643043e3a26ca1af6e}\label{class_pump_a7b834ffb06cbfd643043e3a26ca1af6e}} 
 \index{Pump@{Pump}!get\+Kviscosity@{get\+Kviscosity}}
@@ -172,7 +174,7 @@ double, kinematic viscosity in centistokes
 \end{DoxyReturn}
 
 
-Definition at line 165 of file Pump.\+h.
+Definition at line 167 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a66870deae37979d64a910b89c6977b26}\label{class_pump_a66870deae37979d64a910b89c6977b26}} 
 \index{Pump@{Pump}!get\+Rpm@{get\+Rpm}}
@@ -202,7 +204,7 @@ double, specific gravity -\/ unitless
 \end{DoxyReturn}
 
 
-Definition at line 184 of file Pump.\+h.
+Definition at line 186 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a2a8754f53b289dc41f3220adc4eb56e1}\label{class_pump_a2a8754f53b289dc41f3220adc4eb56e1}} 
 \index{Pump@{Pump}!get\+Stage\+Count@{get\+Stage\+Count}}
@@ -217,7 +219,7 @@ int, number of pump stages
 \end{DoxyReturn}
 
 
-Definition at line 203 of file Pump.\+h.
+Definition at line 205 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_ab75d877769b5232c5ab7b4d92940579a}\label{class_pump_ab75d877769b5232c5ab7b4d92940579a}} 
 \index{Pump@{Pump}!get\+Style@{get\+Style}}
@@ -232,7 +234,7 @@ Style, classification of style of pump
 \end{DoxyReturn}
 
 
-Definition at line 91 of file Pump.\+h.
+Definition at line 93 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a183f83fcc4b77e330451000df4d91046}\label{class_pump_a183f83fcc4b77e330451000df4d91046}} 
 \index{Pump@{Pump}!set\+Achievable\+Efficiency@{set\+Achievable\+Efficiency}}
@@ -249,7 +251,7 @@ Set the achievable efficiency of the pump at specified operating conditions
 \end{DoxyParams}
 
 
-Definition at line 120 of file Pump.\+h.
+Definition at line 122 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a54b6fc1aa44cc8377914ccb94738723a}\label{class_pump_a54b6fc1aa44cc8377914ccb94738723a}} 
 \index{Pump@{Pump}!set\+Drive@{set\+Drive}}
@@ -266,7 +268,7 @@ Set the type of drive the pump uses from either direct or belt drive
 \end{DoxyParams}
 
 
-Definition at line 156 of file Pump.\+h.
+Definition at line 158 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a9e74b484f468a14076fb12d8b991e24b}\label{class_pump_a9e74b484f468a14076fb12d8b991e24b}} 
 \index{Pump@{Pump}!set\+Fixed\+Speed\+\_\+@{set\+Fixed\+Speed\+\_\+}}
@@ -283,7 +285,7 @@ Set the type of pump speed from either fixed or not fixed
 \end{DoxyParams}
 
 
-Definition at line 232 of file Pump.\+h.
+Definition at line 234 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a26d1d10908f91137f5148540ceb6520a}\label{class_pump_a26d1d10908f91137f5148540ceb6520a}} 
 \index{Pump@{Pump}!set\+Kviscosity\+\_\+@{set\+Kviscosity\+\_\+}}
@@ -300,7 +302,7 @@ Set the kinematic viscosity of the fluid being pumped
 \end{DoxyParams}
 
 
-Definition at line 175 of file Pump.\+h.
+Definition at line 177 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a7478d85c3b89cda275b039673603a785}\label{class_pump_a7478d85c3b89cda275b039673603a785}} 
 \index{Pump@{Pump}!set\+Rpm@{set\+Rpm}}
@@ -317,7 +319,7 @@ Set the R\+PM of pump to define operation speed
 \end{DoxyParams}
 
 
-Definition at line 137 of file Pump.\+h.
+Definition at line 139 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a9b9773b74e0e56acece38107ab547728}\label{class_pump_a9b9773b74e0e56acece38107ab547728}} 
 \index{Pump@{Pump}!set\+Sg@{set\+Sg}}
@@ -334,7 +336,7 @@ Set the specific gravity
 \end{DoxyParams}
 
 
-Definition at line 194 of file Pump.\+h.
+Definition at line 196 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a28943405616a792c970b7e9bbf01c1b2}\label{class_pump_a28943405616a792c970b7e9bbf01c1b2}} 
 \index{Pump@{Pump}!set\+Stage\+Count@{set\+Stage\+Count}}
@@ -351,7 +353,7 @@ Set number of pump stages
 \end{DoxyParams}
 
 
-Definition at line 213 of file Pump.\+h.
+Definition at line 215 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a4852cb47f40a46ba84c7dff91d1abd53}\label{class_pump_a4852cb47f40a46ba84c7dff91d1abd53}} 
 \index{Pump@{Pump}!set\+Style@{set\+Style}}
@@ -368,7 +370,7 @@ Set the style of pump being used
 \end{DoxyParams}
 
 
-Definition at line 101 of file Pump.\+h.
+Definition at line 103 of file Pump.\+h.
 
 
 
