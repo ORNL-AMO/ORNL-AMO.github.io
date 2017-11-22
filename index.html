@@ -138,26 +138,31 @@
             if (response.assets) {
                 let totalDownloads = 0;
                 response.assets.forEach(function (element) {
-                    totalDownloads = totalDownloads + element.download_count;
+                    
                     let debTest = isExt(element.name, '.deb');
                     if (debTest) {
                         addDesktopListItem(element, 'AMO Desktop Linux (.deb)');
+                        totalDownloads = totalDownloads + element.download_count;
                     }
                     let tarTest = isExt(element.name, '.tar.gz');
                     if (tarTest) {
                         addDesktopListItem(element, 'AMO Desktop Linux (.tar.gz)');
+                        totalDownloads = totalDownloads + element.download_count;
                     }
                     let dmgTest = isExt(element.name, '.dmg');
                     if (dmgTest) {
                         addDesktopListItem(element, 'AMO Desktop Mac (.dmg)');
+                        totalDownloads = totalDownloads + element.download_count;
                     }
                     let zipTest = isExt(element.name, '.zip');
                     if (zipTest) {
                         addDesktopListItem(element, 'AMO Desktop Mac (.zip)');
+                        totalDownloads = totalDownloads + element.download_count;
                     }
                     let exeTest = isExt(element.name, '.exe');
                     if (exeTest) {
                         addDesktopListItem(element, 'AMO Desktop Windows (.exe)');
+                        totalDownloads = totalDownloads + element.download_count;
                     }
                 }, this);
                 var div = document.createElement('div');
