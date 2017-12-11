@@ -341,11 +341,21 @@
                     totalDownloads = totalDownloads + element.download_count;
                     let zTest = isExt(element.name, '.zip');
                     if (zTest) {
-                        addSuiteListItem(element, 'Source Code (.zip)');
+                        var a = document.createElement('a');
+                        var list = document.getElementById('sankey-diagram-list-group');
+                        a.textContent = 'Dynamic Sankey Source(.zip)';
+                        a.className = "list-group-item list-group-item-action";
+                        a.setAttribute("href", element.browser_download_url);
+                        list.appendChild(a);
                     }
                     let tarTest = isExt(element.name, '.tar.gz');
                     if (tarTest) {
-                        addSuiteListItem(element, 'Source Code (.tar.gz)');
+                        var a = document.createElement('a');
+                        var list = document.getElementById('sankey-diagram-list-group');
+                        a.textContent = 'Dynamic Sankey Source(.tar.gz)';
+                        a.className = "list-group-item list-group-item-action";
+                        a.setAttribute("href", element.browser_download_url);
+                        list.appendChild(a);
                     }
                 }, this);
                 var div = document.createElement('div');
