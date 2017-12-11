@@ -122,7 +122,18 @@
                 </div>
             </div>
         </div>
-
+        <div class="row justify-content-center" style="margin-bottom: 25px;">
+            <div class="col-5">
+                <div id="sankey-diagram-list-group" class="list-group">
+                    <div class="list-group-item download-title">
+                        <h5><b>Sankey Diagram Downloads</b><span class="badge badge-success float-right" id="sankey-diagram-title"></span></h5>
+                        <p class="details">The Dynamic Sankey is a web-based tool to allow users to create custom Sankey diagrams.A Sankey Diagram is often used to show flow through a system. Currently, the Sankey Diagram takes inputs through the input boxes associated with each arrow. From there, the Sankey Diagram should detect changes and re-adjust itself to reflect those changes. The colored gradient of the Sankey also reflect the flow through the system.</p>
+                        <p class="details">Try out a hosted version for yourself <a href="https://hyperion.ornl.gov/Dynamic-Sankey-develop/">here</a>.</p>
+                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/Dynamic-Sankey">https://github.com/ORNL-AMO/Dynamic-Sankey</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <script type="text/javascript" language="javascript">
@@ -309,6 +320,35 @@
                 })
                 var div = document.createElement('div');
                 var list = document.getElementById('pepex-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
+            }
+        }
+
+        function GetDynamicSankey() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/Dynamic-Sankey/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('suite-title').appendChild(version);
+            if (response.assets) {
+                let totalDownloads = 0;
+                response.assets.forEach(function (element) {
+                    totalDownloads = totalDownloads + element.download_count;
+                    let zTest = isExt(element.name, '.zip');
+                    if (zTest) {
+                        addSuiteListItem(element, 'Source Code (.zip)');
+                    }
+                    let tarTest = isExt(element.name, '.tar.gz');
+                    if (tarTest) {
+                        addSuiteListItem(element, 'Source Code (.tar.gz)');
+                    }
+                }, this);
+                var div = document.createElement('div');
+                var list = document.getElementById('suite-list-group');
                 div.textContent = 'Total Downloads: ' + totalDownloads;
                 div.className = "list-group-item total-downloads";
                 list.appendChild(div);
