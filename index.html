@@ -334,7 +334,7 @@
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
             let version = document.createTextNode(' ' + response.tag_name);
-            document.getElementById('dynamic-sankey-title').appendChild(version);
+            document.getElementById('sankey-diagram-title').appendChild(version);
             if (response.assets) {
                 let totalDownloads = 0;
                 response.assets.forEach(function (element) {
@@ -349,7 +349,7 @@
                     }
                 }, this);
                 var div = document.createElement('div');
-                var list = document.getElementById('dynamic-sankey-list-group');
+                var list = document.getElementById('sankey-diagram-list-group');
                 div.textContent = 'Total Downloads: ' + totalDownloads;
                 div.className = "list-group-item total-downloads";
                 list.appendChild(div);
