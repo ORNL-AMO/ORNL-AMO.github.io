@@ -66,6 +66,8 @@ void \hyperlink{class_solid_liquid_flue_gas_material_adf052dd1bdceeab710a4986b1f
 \item 
 static double \hyperlink{class_solid_liquid_flue_gas_material_a57ddf04184687f8efe031986b591ad6b}{calculate\+Excess\+Air\+From\+Flue\+Gas\+O2} (double flue\+Gas\+O2, double carbon, double hydrogen, double sulphur, double inert\+Ash, double o2, double moisture, double nitrogen, double moisture\+In\+Air\+Combustion)
 \item 
+static double \hyperlink{class_solid_liquid_flue_gas_material_ae299abc71cd64822ad05af1a9b1a2ec1}{calculate\+Flue\+Gas\+O2} (const double excess\+Air, const double carbon, const double hydrogen, const double sulphur, const double inert\+Ash, const double o2, const double moisture, const double nitrogen, const double moisture\+In\+Air\+Combustion)
+\item 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_aa6f11cd466965e30af4f8c30d7a5f402}\label{class_solid_liquid_flue_gas_material_aa6f11cd466965e30af4f8c30d7a5f402}} 
 static double {\bfseries calculate\+Heating\+Value\+Fuel} (double carbon, double hydrogen, double sulphur, double inert\+Ash, double o2, double moisture, double nitrogen)
 \end{DoxyCompactItemize}
@@ -132,6 +134,19 @@ double, calculated excess air percentage
 
 Definition at line 4 of file Solid\+Liquid\+Flue\+Gas\+Material.\+cpp.
 
+\mbox{\Hypertarget{class_solid_liquid_flue_gas_material_ae299abc71cd64822ad05af1a9b1a2ec1}\label{class_solid_liquid_flue_gas_material_ae299abc71cd64822ad05af1a9b1a2ec1}} 
+\index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!calculate\+Flue\+Gas\+O2@{calculate\+Flue\+Gas\+O2}}
+\index{calculate\+Flue\+Gas\+O2@{calculate\+Flue\+Gas\+O2}!Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}}
+\subsubsection{\texorpdfstring{calculate\+Flue\+Gas\+O2()}{calculateFlueGasO2()}}
+{\footnotesize\ttfamily double Solid\+Liquid\+Flue\+Gas\+Material\+::calculate\+Flue\+Gas\+O2 (\begin{DoxyParamCaption}\item[{const double}]{excess\+Air,  }\item[{const double}]{carbon,  }\item[{const double}]{hydrogen,  }\item[{const double}]{sulphur,  }\item[{const double}]{inert\+Ash,  }\item[{const double}]{o2,  }\item[{const double}]{moisture,  }\item[{const double}]{nitrogen,  }\item[{const double}]{moisture\+In\+Air\+Combustion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates excess air percentage given flue gas O2 levels \begin{DoxyReturn}{Returns}
+double, calculated excess air percentage 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file Solid\+Liquid\+Flue\+Gas\+Material.\+cpp.
+
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_ab233d4e27397cc74fbe2d3084e4e6f7c}\label{class_solid_liquid_flue_gas_material_ab233d4e27397cc74fbe2d3084e4e6f7c}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Ash\+Discharge\+Temperature@{get\+Ash\+Discharge\+Temperature}}
 \index{get\+Ash\+Discharge\+Temperature@{get\+Ash\+Discharge\+Temperature}!Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}}
@@ -143,7 +158,7 @@ double, ash discharge temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 119 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 126 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a7b8a98111943d30094e2d6950f7f2ec1}\label{class_solid_liquid_flue_gas_material_a7b8a98111943d30094e2d6950f7f2ec1}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Carbon@{get\+Carbon}}
@@ -156,7 +171,7 @@ double, \% of carbon in fuel
 \end{DoxyReturn}
 
 
-Definition at line 131 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 138 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a8757b831e5a2ef26dbb0cf271c0e8207}\label{class_solid_liquid_flue_gas_material_a8757b831e5a2ef26dbb0cf271c0e8207}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Combustion\+Air\+Temperature@{get\+Combustion\+Air\+Temperature}}
@@ -169,7 +184,7 @@ double, combustion air temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 101 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 108 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a49e7bb4ebc45897c81b6f38610ceaf02}\label{class_solid_liquid_flue_gas_material_a49e7bb4ebc45897c81b6f38610ceaf02}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Excess\+Air@{get\+Excess\+Air}}
@@ -182,7 +197,7 @@ double, excess air as \%
 \end{DoxyReturn}
 
 
-Definition at line 95 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 102 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_aba4604158b3c624496d7de4b5fb511e2}\label{class_solid_liquid_flue_gas_material_aba4604158b3c624496d7de4b5fb511e2}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Flue\+Gas\+Temperature@{get\+Flue\+Gas\+Temperature}}
@@ -195,7 +210,7 @@ double, cfurnace flue gas temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 89 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 96 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a629ecc7104b6bfbb696d9478c4b48e7a}\label{class_solid_liquid_flue_gas_material_a629ecc7104b6bfbb696d9478c4b48e7a}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Fuel\+Temperature@{get\+Fuel\+Temperature}}
@@ -208,7 +223,7 @@ double, fuel temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 107 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 114 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_af7d36673e49f9b5eb631fc04227883d6}\label{class_solid_liquid_flue_gas_material_af7d36673e49f9b5eb631fc04227883d6}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Heat\+Loss@{get\+Heat\+Loss}}
@@ -221,7 +236,7 @@ double, total heat loss in btu/hr
 \end{DoxyReturn}
 
 
-Definition at line 59 of file Solid\+Liquid\+Flue\+Gas\+Material.\+cpp.
+Definition at line 87 of file Solid\+Liquid\+Flue\+Gas\+Material.\+cpp.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a26af2edd53c50b071648d03bc6442fb6}\label{class_solid_liquid_flue_gas_material_a26af2edd53c50b071648d03bc6442fb6}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Hydrogen@{get\+Hydrogen}}
@@ -234,7 +249,7 @@ double, \% of hydrogen in fuel
 \end{DoxyReturn}
 
 
-Definition at line 137 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 144 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_afb124b546137da7ba99e31616198e0c8}\label{class_solid_liquid_flue_gas_material_afb124b546137da7ba99e31616198e0c8}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+ID@{get\+ID}}
@@ -247,7 +262,7 @@ int, ID of the substance
 \end{DoxyReturn}
 
 
-Definition at line 77 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 84 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a0549b32b7b5423267d5f59cc96b98127}\label{class_solid_liquid_flue_gas_material_a0549b32b7b5423267d5f59cc96b98127}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Inert\+Ash@{get\+Inert\+Ash}}
@@ -260,7 +275,7 @@ double, \% of inert ash in fuel
 \end{DoxyReturn}
 
 
-Definition at line 149 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 156 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_accf3c8be942d0ba244f6eabab6e7012b}\label{class_solid_liquid_flue_gas_material_accf3c8be942d0ba244f6eabab6e7012b}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Moisture@{get\+Moisture}}
@@ -273,7 +288,7 @@ double, \% of moisture in fuel
 \end{DoxyReturn}
 
 
-Definition at line 161 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 168 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_ae3d9780851b8217ed2885753f11ec18b}\label{class_solid_liquid_flue_gas_material_ae3d9780851b8217ed2885753f11ec18b}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Moisture\+In\+Air\+Combustion@{get\+Moisture\+In\+Air\+Combustion}}
@@ -286,7 +301,7 @@ double, moisture in air combustion in \%
 \end{DoxyReturn}
 
 
-Definition at line 113 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 120 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a76159a5d9d609f0e0131f7bca3b60ebc}\label{class_solid_liquid_flue_gas_material_a76159a5d9d609f0e0131f7bca3b60ebc}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Nitrogen@{get\+Nitrogen}}
@@ -299,7 +314,7 @@ double, \% of nitrogen in fuel
 \end{DoxyReturn}
 
 
-Definition at line 167 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 174 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a08d588e576f605d3f9925cb649e1105e}\label{class_solid_liquid_flue_gas_material_a08d588e576f605d3f9925cb649e1105e}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+O2@{get\+O2}}
@@ -312,7 +327,7 @@ double, \% of O2 in fuel
 \end{DoxyReturn}
 
 
-Definition at line 155 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 162 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a6e07a23fb05c15c7e5dba39334988de8}\label{class_solid_liquid_flue_gas_material_a6e07a23fb05c15c7e5dba39334988de8}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Substance@{get\+Substance}}
@@ -325,7 +340,7 @@ string, name of the substance
 \end{DoxyReturn}
 
 
-Definition at line 83 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 90 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_abe35d8ff283bfa5aadcf00f9906025ae}\label{class_solid_liquid_flue_gas_material_abe35d8ff283bfa5aadcf00f9906025ae}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Sulphur@{get\+Sulphur}}
@@ -338,7 +353,7 @@ double, \% of sulfer in fuel
 \end{DoxyReturn}
 
 
-Definition at line 143 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 150 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a53ac34a949168a35297ab3afb9eb2c7b}\label{class_solid_liquid_flue_gas_material_a53ac34a949168a35297ab3afb9eb2c7b}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!get\+Unburned\+Carbon\+In\+Ash@{get\+Unburned\+Carbon\+In\+Ash}}
@@ -351,7 +366,7 @@ double, \% of unburned carbon in ash
 \end{DoxyReturn}
 
 
-Definition at line 125 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 132 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_ad29543a88737c3d051c7d824287bc791}\label{class_solid_liquid_flue_gas_material_ad29543a88737c3d051c7d824287bc791}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Ash\+Discharge\+Temperature@{set\+Ash\+Discharge\+Temperature}}
@@ -366,7 +381,7 @@ Sets the ash discharge temperature
 \end{DoxyParams}
 
 
-Definition at line 215 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 222 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a626dfbc9ba87abff99e5c5a8204d69c6}\label{class_solid_liquid_flue_gas_material_a626dfbc9ba87abff99e5c5a8204d69c6}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Combustion\+Air\+Temperature@{set\+Combustion\+Air\+Temperature}}
@@ -381,7 +396,7 @@ Sets the combustion air temperature
 \end{DoxyParams}
 
 
-Definition at line 197 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 204 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a7a3f9f77d267afc05f5fde1da9329ec5}\label{class_solid_liquid_flue_gas_material_a7a3f9f77d267afc05f5fde1da9329ec5}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Excess\+Air@{set\+Excess\+Air}}
@@ -396,7 +411,7 @@ Sets the excess air percentage
 \end{DoxyParams}
 
 
-Definition at line 191 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 198 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_ae647700dbff5ccea7938b2117f2c3156}\label{class_solid_liquid_flue_gas_material_ae647700dbff5ccea7938b2117f2c3156}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Flue\+Gas\+Temperature@{set\+Flue\+Gas\+Temperature}}
@@ -411,7 +426,7 @@ Sets the furnace flue gas temperature
 \end{DoxyParams}
 
 
-Definition at line 185 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 192 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a420ba1234c5f8c4b93f190b61046a589}\label{class_solid_liquid_flue_gas_material_a420ba1234c5f8c4b93f190b61046a589}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Fuel\+Temperature@{set\+Fuel\+Temperature}}
@@ -426,7 +441,7 @@ Sets the fuel temperature
 \end{DoxyParams}
 
 
-Definition at line 203 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 210 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a6046d06703bd496745121b62eab4f40f}\label{class_solid_liquid_flue_gas_material_a6046d06703bd496745121b62eab4f40f}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+ID@{set\+ID}}
@@ -441,7 +456,7 @@ Sets the ID of substance
 \end{DoxyParams}
 
 
-Definition at line 173 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 180 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a1a5f1bd3008e78cce62edb8aca642284}\label{class_solid_liquid_flue_gas_material_a1a5f1bd3008e78cce62edb8aca642284}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Moisture\+In\+Air\+Combustion@{set\+Moisture\+In\+Air\+Combustion}}
@@ -456,7 +471,7 @@ Sets the moisture in air combustion
 \end{DoxyParams}
 
 
-Definition at line 209 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 216 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a54be915432c1300c4d8eaf7bf2be361f}\label{class_solid_liquid_flue_gas_material_a54be915432c1300c4d8eaf7bf2be361f}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Substance@{set\+Substance}}
@@ -471,7 +486,7 @@ Sets the name of substance
 \end{DoxyParams}
 
 
-Definition at line 179 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 186 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_adf052dd1bdceeab710a4986b1fd874b9}\label{class_solid_liquid_flue_gas_material_adf052dd1bdceeab710a4986b1fd874b9}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!set\+Unburned\+Carbon\+In\+Ash@{set\+Unburned\+Carbon\+In\+Ash}}
@@ -486,7 +501,7 @@ Sets the percentage of unburned carbon in ash
 \end{DoxyParams}
 
 
-Definition at line 221 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
+Definition at line 228 of file Solid\+Liquid\+Flue\+Gas\+Material.\+h.
 
 
 

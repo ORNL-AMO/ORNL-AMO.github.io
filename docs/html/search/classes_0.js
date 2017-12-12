@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['addltravplane',['AddlTravPlane',['../d6/dc1/class_addl_trav_plane.html',1,'']]],
   ['annualcost',['AnnualCost',['../d1/d73/class_annual_cost.html',1,'']]],
   ['annualenergy',['AnnualEnergy',['../d9/d4e/class_annual_energy.html',1,'']]],
   ['atmosphere',['Atmosphere',['../d1/d12/class_atmosphere.html',1,'']]],

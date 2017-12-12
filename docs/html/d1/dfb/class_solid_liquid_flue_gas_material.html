@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.9</span>
+   &#160;<span id="projectnumber">v.0.2.11</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a57ddf04184687f8efe031986b591ad6b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html#a57ddf04184687f8efe031986b591ad6b">calculateExcessAirFromFlueGasO2</a> (double flueGasO2, double carbon, double hydrogen, double sulphur, double inertAsh, double o2, double moisture, double nitrogen, double moistureInAirCombustion)</td></tr>
 <tr class="separator:a57ddf04184687f8efe031986b591ad6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae299abc71cd64822ad05af1a9b1a2ec1"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html#ae299abc71cd64822ad05af1a9b1a2ec1">calculateFlueGasO2</a> (const double excessAir, const double carbon, const double hydrogen, const double sulphur, const double inertAsh, const double o2, const double moisture, const double nitrogen, const double moistureInAirCombustion)</td></tr>
+<tr class="separator:ae299abc71cd64822ad05af1a9b1a2ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f11cd466965e30af4f8c30d7a5f402"><td class="memItemLeft" align="right" valign="top"><a id="aa6f11cd466965e30af4f8c30d7a5f402"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>calculateHeatingValueFuel</b> (double carbon, double hydrogen, double sulphur, double inertAsh, double o2, double moisture, double nitrogen)</td></tr>
 <tr class="separator:aa6f11cd466965e30af4f8c30d7a5f402"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,6 +357,87 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 
 </div>
 </div>
+<a id="ae299abc71cd64822ad05af1a9b1a2ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae299abc71cd64822ad05af1a9b1a2ec1">&#9670;&nbsp;</a></span>calculateFlueGasO2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SolidLiquidFlueGasMaterial::calculateFlueGasO2 </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>excessAir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>carbon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>hydrogen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>sulphur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>inertAsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>o2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>moisture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>nitrogen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>moistureInAirCombustion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculates excess air percentage given flue gas O2 levels </p><dl class="section return"><dt>Returns</dt><dd>double, calculated excess air percentage </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d70/_solid_liquid_flue_gas_material_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d4/d70/_solid_liquid_flue_gas_material_8cpp_source.html">SolidLiquidFlueGasMaterial.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ab233d4e27397cc74fbe2d3084e4e6f7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab233d4e27397cc74fbe2d3084e4e6f7c">&#9670;&nbsp;</a></span>getAshDischargeTemperature()</h2>
 
@@ -379,7 +462,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the ash discharge temperature </p><dl class="section return"><dt>Returns</dt><dd>double, ash discharge temperature in °F </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00119">119</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00126">126</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +490,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the percentage of carbon uin fuel </p><dl class="section return"><dt>Returns</dt><dd>double, % of carbon in fuel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00131">131</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00138">138</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +518,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the combustion air temperature </p><dl class="section return"><dt>Returns</dt><dd>double, combustion air temperature in °F </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00101">101</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00108">108</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -463,7 +546,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the excess air percentage </p><dl class="section return"><dt>Returns</dt><dd>double, excess air as % </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00095">95</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00102">102</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -491,7 +574,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the furnace flue gas temperature </p><dl class="section return"><dt>Returns</dt><dd>double, cfurnace flue gas temperature in °F </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00089">89</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00096">96</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +602,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the fuel temperature </p><dl class="section return"><dt>Returns</dt><dd>double, fuel temperature in °F </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00107">107</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00114">114</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +622,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the total heat loss </p><dl class="section return"><dt>Returns</dt><dd>double, total heat loss in btu/hr </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d70/_solid_liquid_flue_gas_material_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d4/d70/_solid_liquid_flue_gas_material_8cpp_source.html">SolidLiquidFlueGasMaterial.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d70/_solid_liquid_flue_gas_material_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d4/d70/_solid_liquid_flue_gas_material_8cpp_source.html">SolidLiquidFlueGasMaterial.cpp</a>.</p>
 
 </div>
 </div>
@@ -567,7 +650,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the percentage of hydrogen in fuel </p><dl class="section return"><dt>Returns</dt><dd>double, % of hydrogen in fuel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00137">137</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00144">144</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -595,7 +678,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the ID of substance </p><dl class="section return"><dt>Returns</dt><dd>int, ID of the substance </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00077">77</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00084">84</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -623,7 +706,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the percentage of inert ash in fuel </p><dl class="section return"><dt>Returns</dt><dd>double, % of inert ash in fuel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00149">149</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00156">156</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -651,7 +734,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the percentage of moisture in fuel </p><dl class="section return"><dt>Returns</dt><dd>double, % of moisture in fuel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00161">161</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00168">168</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +762,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the moisture in air combustion </p><dl class="section return"><dt>Returns</dt><dd>double, moisture in air combustion in % </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00113">113</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00120">120</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +790,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the percentage of nitrogen in fuel </p><dl class="section return"><dt>Returns</dt><dd>double, % of nitrogen in fuel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00167">167</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00174">174</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -735,7 +818,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the percentage of O2 in fuel </p><dl class="section return"><dt>Returns</dt><dd>double, % of O2 in fuel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00155">155</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00162">162</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -763,7 +846,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the name of the substance </p><dl class="section return"><dt>Returns</dt><dd>string, name of the substance </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00083">83</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00090">90</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +874,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the percentage of sulfer in fuel </p><dl class="section return"><dt>Returns</dt><dd>double, % of sulfer in fuel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00143">143</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00150">150</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -819,7 +902,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Gets the unburned carbon in ash </p><dl class="section return"><dt>Returns</dt><dd>double, % of unburned carbon in ash </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00125">125</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00132">132</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +936,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00215">215</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00222">222</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -887,7 +970,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00197">197</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00204">204</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -921,7 +1004,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00191">191</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00198">198</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -955,7 +1038,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00185">185</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00192">192</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1072,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00203">203</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00210">210</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1106,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00173">173</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00180">180</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1140,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00209">209</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00216">216</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1174,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00179">179</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00186">186</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1208,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00221">221</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html#l00228">228</a> of file <a class="el" href="../../db/d60/_solid_liquid_flue_gas_material_8h_source.html">SolidLiquidFlueGasMaterial.h</a>.</p>
 
 </div>
 </div>

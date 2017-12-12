@@ -4,6 +4,8 @@ var searchData=
   ['pf1',['pf1',['../db/d39/class_motor_shaft_power.html#a6c2e6d5aeaa82a151ebf7465f8c6b43b',1,'MotorShaftPower']]],
   ['pf2',['pf2',['../db/d39/class_motor_shaft_power.html#a19bb0a5684b294ad7daa4c2bdfcbb7f5',1,'MotorShaftPower']]],
   ['pi_5f',['PI_',['../d5/dc5/class_head_tool_base.html#aa988ceec07264b1865d5d708b97b7450',1,'HeadToolBase']]],
+  ['planar',['Planar',['../d2/ddc/class_planar.html',1,'']]],
+  ['planedata',['PlaneData',['../df/d02/class_plane_data.html',1,'']]],
   ['point',['Point',['../d0/d69/class_point.html',1,'']]],
   ['poles',['Poles',['../de/dd5/class_poles.html',1,'Poles'],['../de/dd5/class_poles.html#aade5d01dab7a461e582449e5bb17f6d6',1,'Poles::Poles()']]],
   ['power',['power',['../db/d39/class_motor_shaft_power.html#ad2d47aeac567a2049fa51d2bd653a122',1,'MotorShaftPower']]],
