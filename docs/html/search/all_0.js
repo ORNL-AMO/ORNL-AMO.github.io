@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['addltravplane',['AddlTravPlane',['../d6/dc1/class_addl_trav_plane.html',1,'']]],
   ['annualcost',['AnnualCost',['../d1/d73/class_annual_cost.html',1,'AnnualCost'],['../d1/d73/class_annual_cost.html#a723513a7074d1799e2bf410b60b3146f',1,'AnnualCost::AnnualCost()']]],
   ['annualcost_5f',['annualCost_',['../d9/dbd/struct_p_s_a_t_result_1_1result__.html#abccf2d1c8dabf109df4c3c369cb24365',1,'PSATResult::result_']]],
   ['annualenergy',['AnnualEnergy',['../d9/d4e/class_annual_energy.html',1,'AnnualEnergy'],['../d9/d4e/class_annual_energy.html#a5e446ce85879bafeac8fc992cb5b9ed7',1,'AnnualEnergy::AnnualEnergy()']]],

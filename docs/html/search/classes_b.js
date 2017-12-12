@@ -12,5 +12,6 @@ var searchData=
   ['optimalpumpshaftpower',['OptimalPumpShaftPower',['../dd/d1e/class_optimal_pump_shaft_power.html',1,'']]],
   ['optimalspecificspeed',['OptimalSpecificSpeed',['../d5/dab/class_optimal_specific_speed.html',1,'']]],
   ['optimalspecificspeedcorrection',['OptimalSpecificSpeedCorrection',['../d8/d0f/class_optimal_specific_speed_correction.html',1,'']]],
-  ['optimizationrating',['OptimizationRating',['../d9/d1a/class_optimization_rating.html',1,'']]]
+  ['optimizationrating',['OptimizationRating',['../d9/d1a/class_optimization_rating.html',1,'']]],
+  ['outletmstplane',['OutletMstPlane',['../d6/de6/class_outlet_mst_plane.html',1,'']]]
 ];

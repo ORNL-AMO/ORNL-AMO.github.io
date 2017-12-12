@@ -6,6 +6,7 @@ var searchData=
   ['calculateestimatedfla',['calculateEstimatedFLA',['../db/d39/class_motor_shaft_power.html#a120b76be1b3b9fc3d67e37ecee0eb767',1,'MotorShaftPower']]],
   ['calculateexcessairfromfluegaso2',['calculateExcessAirFromFlueGasO2',['../d1/dfb/class_solid_liquid_flue_gas_material.html#a57ddf04184687f8efe031986b591ad6b',1,'SolidLiquidFlueGasMaterial']]],
   ['calculateexisting',['calculateExisting',['../dd/de8/class_p_s_a_t_result.html#a594e019e535fb402d6d0441d50f8b697',1,'PSATResult']]],
+  ['calculatefluegaso2',['calculateFlueGasO2',['../d1/dfb/class_solid_liquid_flue_gas_material.html#ae299abc71cd64822ad05af1a9b1a2ec1',1,'SolidLiquidFlueGasMaterial']]],
   ['calculatemodified',['calculateModified',['../dd/de8/class_p_s_a_t_result.html#afbb68257a28c1b853d26faf3227461cc',1,'PSATResult']]],
   ['calculateoptimal',['calculateOptimal',['../dd/de8/class_p_s_a_t_result.html#a25d50cd89b326f18449496a56d54f472',1,'PSATResult']]],
   ['calculatepower',['calculatePower',['../db/d39/class_motor_shaft_power.html#a4a2756922b290bec13550110aac25b8c',1,'MotorShaftPower']]],
