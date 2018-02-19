@@ -1,0 +1,79 @@
+\hypertarget{class_compressor_1_1_pneumatic_valve}{}\section{Compressor\+:\+:Pneumatic\+Valve Class Reference}
+\label{class_compressor_1_1_pneumatic_valve}\index{Compressor\+::\+Pneumatic\+Valve@{Compressor\+::\+Pneumatic\+Valve}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_compressor_1_1_pneumatic_valve_a8c883ff13640780f40d026984e9116f7}{Pneumatic\+Valve} (double inlet\+Pressure, double outlet\+Pressure)
+\item 
+\hyperlink{class_compressor_1_1_pneumatic_valve_adc3d621e933c23b13d1f20378704336b}{Pneumatic\+Valve} (double inlet\+Pressure, double outlet\+Pressure, double flow\+Rate)
+\item 
+double \hyperlink{class_compressor_1_1_pneumatic_valve_aa9e11ab6f1e75730519a69fccfaa53c2}{calculate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 316 of file Compressed\+Air.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_compressor_1_1_pneumatic_valve_a8c883ff13640780f40d026984e9116f7}\label{class_compressor_1_1_pneumatic_valve_a8c883ff13640780f40d026984e9116f7}} 
+\index{Compressor\+::\+Pneumatic\+Valve@{Compressor\+::\+Pneumatic\+Valve}!Pneumatic\+Valve@{Pneumatic\+Valve}}
+\index{Pneumatic\+Valve@{Pneumatic\+Valve}!Compressor\+::\+Pneumatic\+Valve@{Compressor\+::\+Pneumatic\+Valve}}
+\subsubsection{\texorpdfstring{Pneumatic\+Valve()}{PneumaticValve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Compressor\+::\+Pneumatic\+Valve\+::\+Pneumatic\+Valve (\begin{DoxyParamCaption}\item[{double}]{inlet\+Pressure,  }\item[{double}]{outlet\+Pressure }\end{DoxyParamCaption})}
+
+Constructor for \hyperlink{class_compressor_1_1_pneumatic_valve}{Compressor\+::\+Pneumatic\+Valve} -\/ Can be used for finding flow rate for a pipe with flow coefficient Cv = 1 
+\begin{DoxyParams}{Parameters}
+{\em inlet\+Pressure} & double, psi \\
+\hline
+{\em outlet\+Pressure} & double, psi \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 149 of file Compressed\+Air.\+cpp.
+
+\mbox{\Hypertarget{class_compressor_1_1_pneumatic_valve_adc3d621e933c23b13d1f20378704336b}\label{class_compressor_1_1_pneumatic_valve_adc3d621e933c23b13d1f20378704336b}} 
+\index{Compressor\+::\+Pneumatic\+Valve@{Compressor\+::\+Pneumatic\+Valve}!Pneumatic\+Valve@{Pneumatic\+Valve}}
+\index{Pneumatic\+Valve@{Pneumatic\+Valve}!Compressor\+::\+Pneumatic\+Valve@{Compressor\+::\+Pneumatic\+Valve}}
+\subsubsection{\texorpdfstring{Pneumatic\+Valve()}{PneumaticValve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Compressor\+::\+Pneumatic\+Valve\+::\+Pneumatic\+Valve (\begin{DoxyParamCaption}\item[{double}]{inlet\+Pressure,  }\item[{double}]{outlet\+Pressure,  }\item[{double}]{flow\+Rate }\end{DoxyParamCaption})}
+
+Constructor for \hyperlink{class_compressor_1_1_pneumatic_valve}{Compressor\+::\+Pneumatic\+Valve} -\/ used for finding the flow coefficient (Cv) when the flow rate is known 
+\begin{DoxyParams}{Parameters}
+{\em inlet\+Pressure} & double, \\
+\hline
+{\em outlet\+Pressure} & double, \\
+\hline
+{\em flow\+Rate} & double, \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 155 of file Compressed\+Air.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_compressor_1_1_pneumatic_valve_aa9e11ab6f1e75730519a69fccfaa53c2}\label{class_compressor_1_1_pneumatic_valve_aa9e11ab6f1e75730519a69fccfaa53c2}} 
+\index{Compressor\+::\+Pneumatic\+Valve@{Compressor\+::\+Pneumatic\+Valve}!calculate@{calculate}}
+\index{calculate@{calculate}!Compressor\+::\+Pneumatic\+Valve@{Compressor\+::\+Pneumatic\+Valve}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily double Compressor\+::\+Pneumatic\+Valve\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+flow\+Rate or flow coefficient depending on which constructor was used 
+\end{DoxyReturn}
+
+
+Definition at line 159 of file Compressed\+Air.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/calculator/util/Compressed\+Air.\+h\item 
+src/calculator/util/Compressed\+Air.\+cpp\end{DoxyCompactItemize}

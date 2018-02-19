@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.11</span>
+   &#160;<span id="projectnumber">v.0.2.14</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -76,13 +76,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace098c4a684eb4926b20322cf65da32d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#ace098c4a684eb4926b20322cf65da32d">EstimateFLA</a> (double motorRatedPower, double motorRPM, <a class="el" href="../../d1/d6b/class_motor.html#acee1bdf1b684ad36cb80dc2829d9fcee">Motor::LineFrequency</a> lineFrequency, <a class="el" href="../../d1/d6b/class_motor.html#afa022971ae062406a9f588c601673d4e">Motor::EfficiencyClass</a> efficiencyClass, double specifiedEfficiency, double ratedVoltage)</td></tr>
+<tr class="memitem:ace098c4a684eb4926b20322cf65da32d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#ace098c4a684eb4926b20322cf65da32d">EstimateFLA</a> (double motorRatedPower, double motorRPM, Motor::LineFrequency lineFrequency, Motor::EfficiencyClass efficiencyClass, double specifiedEfficiency, double ratedVoltage)</td></tr>
 <tr class="separator:ace098c4a684eb4926b20322cf65da32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8601d58dbeab855ade2e3f06ccf6cec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#ae8601d58dbeab855ade2e3f06ccf6cec">calculate</a> ()</td></tr>
-<tr class="memdesc:ae8601d58dbeab855ade2e3f06ccf6cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the definition of functions of <a class="el" href="../../d0/d8c/class_estimate_f_l_a.html" title="EstimateFLA class. This contains the prototypes for the Estimate FLA calculator and 25% interval valu...">EstimateFLA</a> class. <a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#ae8601d58dbeab855ade2e3f06ccf6cec" title="Contains the definition of functions of EstimateFLA class. calculate(): Calculates the estimated FLA ...">calculate()</a>: Calculates the estimated FLA and 25% interval values of Current.  <a href="#ae8601d58dbeab855ade2e3f06ccf6cec">More...</a><br /></td></tr>
-<tr class="separator:ae8601d58dbeab855ade2e3f06ccf6cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84bebf788da566929b85d3deb8fd9755"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#a84bebf788da566929b85d3deb8fd9755">getEstimatedFLA</a> ()</td></tr>
-<tr class="separator:a84bebf788da566929b85d3deb8fd9755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b9f73ef39f297c0358440523d14fca"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#a89b9f73ef39f297c0358440523d14fca">calculate</a> ()</td></tr>
+<tr class="separator:a89b9f73ef39f297c0358440523d14fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb6eef313c8184f52b9ca038fbeddaa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#adcb6eef313c8184f52b9ca038fbeddaa">getEstimatedFLA</a> () const</td></tr>
+<tr class="separator:adcb6eef313c8184f52b9ca038fbeddaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d0/d8c/class_estimate_f_l_a.html" title="EstimateFLA class. This contains the prototypes for the Estimate FLA calculator and 25% interval valu...">EstimateFLA</a> class. This contains the prototypes for the Estimate FLA calculator and 25% interval value calculator. </p>
@@ -116,13 +115,13 @@ Gina Accawi (accawigk) </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d6b/class_motor.html#acee1bdf1b684ad36cb80dc2829d9fcee">Motor::LineFrequency</a>&#160;</td>
+          <td class="paramtype">Motor::LineFrequency&#160;</td>
           <td class="paramname"><em>lineFrequency</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d6b/class_motor.html#afa022971ae062406a9f588c601673d4e">Motor::EfficiencyClass</a>&#160;</td>
+          <td class="paramtype">Motor::EfficiencyClass&#160;</td>
           <td class="paramname"><em>efficiencyClass</em>, </td>
         </tr>
         <tr>
@@ -153,8 +152,8 @@ Gina Accawi (accawigk) </dd></dl>
   <table class="params">
     <tr><td class="paramname">motorRatedPower</td><td>double, rated power of motor in hp </td></tr>
     <tr><td class="paramname">motorRPM</td><td>double, RPM of motor </td></tr>
-    <tr><td class="paramname">lineFrequency</td><td><a class="el" href="../../d1/d6b/class_motor.html#acee1bdf1b684ad36cb80dc2829d9fcee" title="Classifications of line frequency. ">Motor::LineFrequency</a>, line frequency of motor in 50Hz or 60Hz </td></tr>
-    <tr><td class="paramname">efficiencyClass</td><td><a class="el" href="../../d1/d6b/class_motor.html#afa022971ae062406a9f588c601673d4e" title="Classifications of efficiency classes. ">Motor::EfficiencyClass</a>, Efficiency class of motor </td></tr>
+    <tr><td class="paramname">lineFrequency</td><td>Motor::LineFrequency, line frequency of motor in 50Hz or 60Hz </td></tr>
+    <tr><td class="paramname">efficiencyClass</td><td>Motor::EfficiencyClass, Efficiency class of motor </td></tr>
     <tr><td class="paramname">specifiedEfficiency</td><td>double, specified efficiency of motor as defined by % </td></tr>
     <tr><td class="paramname">ratedVoltage</td><td>double, rated voltage of motor in volts </td></tr>
   </table>
@@ -166,70 +165,40 @@ Gina Accawi (accawigk) </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae8601d58dbeab855ade2e3f06ccf6cec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8601d58dbeab855ade2e3f06ccf6cec">&#9670;&nbsp;</a></span>calculate()</h2>
+<a id="a89b9f73ef39f297c0358440523d14fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b9f73ef39f297c0358440523d14fca">&#9670;&nbsp;</a></span>calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; EstimateFLA::calculate </td>
+          <td class="memname">std::array&lt; double, 6 &gt; EstimateFLA::calculate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Contains the definition of functions of <a class="el" href="../../d0/d8c/class_estimate_f_l_a.html" title="EstimateFLA class. This contains the prototypes for the Estimate FLA calculator and 25% interval valu...">EstimateFLA</a> class. <a class="el" href="../../d0/d8c/class_estimate_f_l_a.html#ae8601d58dbeab855ade2e3f06ccf6cec" title="Contains the definition of functions of EstimateFLA class. calculate(): Calculates the estimated FLA ...">calculate()</a>: Calculates the estimated FLA and 25% interval values of Current. </p>
-<p>Calculates the 25% interval </p><dl class="section return"><dt>Returns</dt><dd>25% interval values of current.</dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Subhankar Mishra (mishras) </dd>
-<dd>
-Gina Accawi (accawigk) </dd></dl>
-<p>Estimating FLA methodology</p><ul>
-<li>PSAT has four different methods of estimating FLA, with the four methods corresponding to the four efficiency choices.<ul>
-<li>For Standard Efficiency selection, it selects the FLA for the motor size and speed class that has been selected. For example, the SE FLA for a 200 hp 4-pole motor is 228.6 amps.</li>
-<li>For Energy Efficient selection, it selects the FLA for the motor size and speed class that has been selected. For example, the EE FLA for a 200 hp 4-pole motor is 225.8 amps.</li>
-<li>For Average Efficiency selection, it averages the FLA for Energy Efficient and Standard Efficiency choices. The average of the two values listed above is 227.2 amps, which is what PSAT returns.</li>
-<li><p class="startli">For a case where the efficiency has been specified, there is a multiple step process:</p><ol type="1">
-<li>The absolute value of the differences between the specified efficiency and the efficiency values for EE and SE motors are calculated</li>
-<li>Pick the smaller of the two absolute values, and use the nominal efficiency of that selection going forward</li>
-<li>Divide the selected (EE or SE) efficiency by the specified efficiency and then multiply that by the FLA for the corresponding selection. See the example below.</li>
-</ol>
-<p class="startli">EE SE Specified Choose: Full load efficiency 95.63 93.92 95.0 EE Full load amps (FLA) 225.8 228.6 227.3</p>
-</li>
-</ul>
-</li>
-</ul>
-<p>In this case, the specified efficiency is closer to the EE value, so the EE FLA and EE efficiency values are used.</p>
-<p>Equation for the calculation is: Estimated FLA (specified efficiency) =EE FLA * (EE full load efficiency / Specified efficiency) or, if the specified efficiency is closer to SE, Estimated FLA (specified efficiency) =SE FLA * (SE full load efficiency / Specified efficiency)</p>
-<p>Nameplate voltage adjustment If the motor nameplate is other than 460 V, the Estimate FLA process includes one more adjustment Use an example of a motor known to have a 575 volt rating, but the FLA is not readable and the user wants to Estimate the FLA The process is the same as above, except that the estimated FLA is adjusted in inverse proportion to the rated voltage.</p>
-<p>Estimated FLA (575) = Estimated FLA (460) * (460/575) Estimated FLA (575)= 181.8</p>
-<dl class="section return"><dt>Returns</dt><dd>25% interval values of current. </dd></dl>
-<p>Calculate the number of poles based on the RPM</p>
-<p>Index for the arrays based on the pole</p>
-<p>Calculate basic FLA value. There is better way to do this. =$B13*(C$4+(C$5*EXP(-C$6*$B13))+(C$7*EXP(-C$8*$B13)))</p>
+<p>Calculates the 25% interval </p><dl class="section return"><dt>Returns</dt><dd>std::array&lt;double, 6&gt;, 25% interval values of current. </dd></dl>
+<p>Calculate the number of poles based on the RPM and use it as an index</p>
+<p>Calculate basic FLA value</p>
 <p>Calculate EE multiplier</p>
 <p>Calculate SE multiplier</p>
 <p>Calculate EE or SE values</p>
-<p>Select partial load multipliers based on pole. There is better way to do this.</p>
-<p>Calculating Multiplier for partial loads in 25% intervals</p>
-<p>Calculating the 25% interval Amps</p>
+<p>Calculating Multiplier for partial loads in 25% intervals via lambda function</p>
 <p>For a case where the efficiency has been specified, there is a multiple step process:</p><ol type="1">
 <li>The absolute value of the differences between the specified efficiency and the efficiency values for EE and SE motors are calculated</li>
 <li>Pick the smaller of the two absolute values, and use the nominal efficiency of that selection going forward</li>
 <li>Divide the selected (EE or SE) efficiency by the specified efficiency and then multiply that by the FLA for the corresponding selection.</li>
 </ol>
-<p>SE is the nominal efficiency</p>
-<p>EE is the nominal efficiency</p>
-<p>Estimated FLA refers to the 100% value. </p>
+<p>EE is the nominal efficiency </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d82/_estimate_f_l_a_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../da/d82/_estimate_f_l_a_8cpp_source.html">EstimateFLA.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d82/_estimate_f_l_a_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../da/d82/_estimate_f_l_a_8cpp_source.html">EstimateFLA.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a84bebf788da566929b85d3deb8fd9755"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84bebf788da566929b85d3deb8fd9755">&#9670;&nbsp;</a></span>getEstimatedFLA()</h2>
+<a id="adcb6eef313c8184f52b9ca038fbeddaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb6eef313c8184f52b9ca038fbeddaa">&#9670;&nbsp;</a></span>getEstimatedFLA()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +210,7 @@ Gina Accawi (accawigk) </dd></dl>
           <td class="memname">double EstimateFLA::getEstimatedFLA </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>

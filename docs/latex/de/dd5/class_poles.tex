@@ -12,7 +12,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_poles_aade5d01dab7a461e582449e5bb17f6d6}{Poles} (double motor\+Rpm, \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} line\+Freq)
+\hyperlink{class_poles_aade5d01dab7a461e582449e5bb17f6d6}{Poles} (double motor\+Rpm, Motor\+::\+Line\+Frequency line\+Freq)
 \item 
 int \hyperlink{class_poles_a23988f68100374c8277dca81ab06f724}{calculate} ()
 \end{DoxyCompactItemize}
@@ -37,13 +37,13 @@ Definition at line 16 of file Poles.\+h.
 \index{Poles@{Poles}!Poles@{Poles}}
 \index{Poles@{Poles}!Poles@{Poles}}
 \subsubsection{\texorpdfstring{Poles()}{Poles()}}
-{\footnotesize\ttfamily Poles\+::\+Poles (\begin{DoxyParamCaption}\item[{double}]{motor\+Rpm,  }\item[{\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}}]{line\+Freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Poles\+::\+Poles (\begin{DoxyParamCaption}\item[{double}]{motor\+Rpm,  }\item[{Motor\+::\+Line\+Frequency}]{line\+Freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor 
 \begin{DoxyParams}{Parameters}
 {\em motor\+Rpm} & double, R\+PM of motor. \\
 \hline
-{\em line\+Freq} & \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}, Line frequency of motor as either 50\+Hz or 60\+Hz. \\
+{\em line\+Freq} & Motor\+::\+Line\+Frequency, Line frequency of motor as either 50\+Hz or 60\+Hz. \\
 \hline
 \end{DoxyParams}
 
@@ -59,14 +59,12 @@ Definition at line 23 of file Poles.\+h.
 \subsubsection{\texorpdfstring{calculate()}{calculate()}}
 {\footnotesize\ttfamily int Poles\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Calculates the number of poles
-
-\begin{DoxyReturn}{Returns}
+Calculates the number of poles \begin{DoxyReturn}{Returns}
 int, number of poles 
 \end{DoxyReturn}
 
 
-Definition at line 8 of file Poles.\+cpp.
+Definition at line 4 of file Poles.\+cpp.
 
 
 

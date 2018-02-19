@@ -7,7 +7,7 @@
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+}
+struct \hyperlink{struct_p_s_a_t_result_1_1result}{result}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -20,11 +20,11 @@ double \hyperlink{class_p_s_a_t_result_a14fc75c2e0e92f74e3df1b97ed13b496}{get\+A
 \item 
 double \hyperlink{class_p_s_a_t_result_aa0a7001461408fcb06a6c22ce2d064db}{get\+Optimization\+Rating} () const
 \item 
-const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+} \& \hyperlink{class_p_s_a_t_result_a4da660959f368bdf0951728c9c5f931b}{get\+Existing} () const
+const \hyperlink{struct_p_s_a_t_result_1_1result}{result} \& \hyperlink{class_p_s_a_t_result_aa0140a6dc6c2682680633cbd90737278}{get\+Existing} () const
 \item 
-const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+} \& \hyperlink{class_p_s_a_t_result_ae43bb3b001e2746292d0dd0d6cebcfdd}{get\+Modified} () const
+const \hyperlink{struct_p_s_a_t_result_1_1result}{result} \& \hyperlink{class_p_s_a_t_result_a2a477033ed957ddac39ae1e5e7df38a8}{get\+Modified} () const
 \item 
-const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+} \& \hyperlink{class_p_s_a_t_result_af587235430371a05799c60e81aa8dfad}{get\+Optimal} () const
+const \hyperlink{struct_p_s_a_t_result_1_1result}{result} \& \hyperlink{class_p_s_a_t_result_a755c1b708e4f684ee0cc5d6ca9292286}{get\+Optimal} () const
 \item 
 double \hyperlink{class_p_s_a_t_result_a594e019e535fb402d6d0441d50f8b697}{calculate\+Existing} ()
 \item 
@@ -82,7 +82,7 @@ Constructor
 \end{DoxyParams}
 
 
-Definition at line 61 of file P\+S\+A\+T\+Result.\+h.
+Definition at line 60 of file P\+S\+A\+T\+Result.\+h.
 
 
 
@@ -121,7 +121,7 @@ Steps for calculating the modified values\+:
 \item Calculate annual energy and energy cost 10.\+Calculate annual savings potential and optimization rating
 \end{DoxyEnumerate}
 
-Definition at line 129 of file P\+S\+A\+T\+Result.\+cpp.
+Definition at line 127 of file P\+S\+A\+T\+Result.\+cpp.
 
 \mbox{\Hypertarget{class_p_s_a_t_result_a25d50cd89b326f18449496a56d54f472}\label{class_p_s_a_t_result_a25d50cd89b326f18449496a56d54f472}} 
 \index{P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}!calculate\+Optimal@{calculate\+Optimal}}
@@ -153,59 +153,51 @@ Definition at line 76 of file P\+S\+A\+T\+Result.\+cpp.
 \subsubsection{\texorpdfstring{get\+Annual\+Savings\+Potential()}{getAnnualSavingsPotential()}}
 {\footnotesize\ttfamily double P\+S\+A\+T\+Result\+::get\+Annual\+Savings\+Potential (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the annual savings potential
-
-\begin{DoxyReturn}{Returns}
+Gets the annual savings potential \begin{DoxyReturn}{Returns}
 double, annual savings potential in \$/year 
 \end{DoxyReturn}
 
 
-Definition at line 110 of file P\+S\+A\+T\+Result.\+h.
+Definition at line 105 of file P\+S\+A\+T\+Result.\+h.
 
-\mbox{\Hypertarget{class_p_s_a_t_result_a4da660959f368bdf0951728c9c5f931b}\label{class_p_s_a_t_result_a4da660959f368bdf0951728c9c5f931b}} 
+\mbox{\Hypertarget{class_p_s_a_t_result_aa0140a6dc6c2682680633cbd90737278}\label{class_p_s_a_t_result_aa0140a6dc6c2682680633cbd90737278}} 
 \index{P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}!get\+Existing@{get\+Existing}}
 \index{get\+Existing@{get\+Existing}!P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}}
 \subsubsection{\texorpdfstring{get\+Existing()}{getExisting()}}
-{\footnotesize\ttfamily const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+}\& P\+S\+A\+T\+Result\+::get\+Existing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily const \hyperlink{struct_p_s_a_t_result_1_1result}{result}\& P\+S\+A\+T\+Result\+::get\+Existing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the existing conditions
-
-\begin{DoxyReturn}{Returns}
-const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+}, existing conditions 
+Gets the existing conditions \begin{DoxyReturn}{Returns}
+const result, existing conditions 
 \end{DoxyReturn}
 
 
-Definition at line 130 of file P\+S\+A\+T\+Result.\+h.
+Definition at line 121 of file P\+S\+A\+T\+Result.\+h.
 
-\mbox{\Hypertarget{class_p_s_a_t_result_ae43bb3b001e2746292d0dd0d6cebcfdd}\label{class_p_s_a_t_result_ae43bb3b001e2746292d0dd0d6cebcfdd}} 
+\mbox{\Hypertarget{class_p_s_a_t_result_a2a477033ed957ddac39ae1e5e7df38a8}\label{class_p_s_a_t_result_a2a477033ed957ddac39ae1e5e7df38a8}} 
 \index{P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}!get\+Modified@{get\+Modified}}
 \index{get\+Modified@{get\+Modified}!P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}}
 \subsubsection{\texorpdfstring{get\+Modified()}{getModified()}}
-{\footnotesize\ttfamily const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+}\& P\+S\+A\+T\+Result\+::get\+Modified (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily const \hyperlink{struct_p_s_a_t_result_1_1result}{result}\& P\+S\+A\+T\+Result\+::get\+Modified (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the modified conditions
-
-\begin{DoxyReturn}{Returns}
-const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+}, modified conditions 
+Gets the modified conditions \begin{DoxyReturn}{Returns}
+const result, modified conditions 
 \end{DoxyReturn}
 
 
-Definition at line 140 of file P\+S\+A\+T\+Result.\+h.
+Definition at line 129 of file P\+S\+A\+T\+Result.\+h.
 
-\mbox{\Hypertarget{class_p_s_a_t_result_af587235430371a05799c60e81aa8dfad}\label{class_p_s_a_t_result_af587235430371a05799c60e81aa8dfad}} 
+\mbox{\Hypertarget{class_p_s_a_t_result_a755c1b708e4f684ee0cc5d6ca9292286}\label{class_p_s_a_t_result_a755c1b708e4f684ee0cc5d6ca9292286}} 
 \index{P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}!get\+Optimal@{get\+Optimal}}
 \index{get\+Optimal@{get\+Optimal}!P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}}
 \subsubsection{\texorpdfstring{get\+Optimal()}{getOptimal()}}
-{\footnotesize\ttfamily const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+}\& P\+S\+A\+T\+Result\+::get\+Optimal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily const \hyperlink{struct_p_s_a_t_result_1_1result}{result}\& P\+S\+A\+T\+Result\+::get\+Optimal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the optimal conditions
-
-\begin{DoxyReturn}{Returns}
-const \hyperlink{struct_p_s_a_t_result_1_1result__}{result\+\_\+}, optimal conditions 
+Gets the optimal conditions \begin{DoxyReturn}{Returns}
+const result, optimal conditions 
 \end{DoxyReturn}
 
 
-Definition at line 150 of file P\+S\+A\+T\+Result.\+h.
+Definition at line 137 of file P\+S\+A\+T\+Result.\+h.
 
 \mbox{\Hypertarget{class_p_s_a_t_result_aa0a7001461408fcb06a6c22ce2d064db}\label{class_p_s_a_t_result_aa0a7001461408fcb06a6c22ce2d064db}} 
 \index{P\+S\+A\+T\+Result@{P\+S\+A\+T\+Result}!get\+Optimization\+Rating@{get\+Optimization\+Rating}}
@@ -213,14 +205,12 @@ Definition at line 150 of file P\+S\+A\+T\+Result.\+h.
 \subsubsection{\texorpdfstring{get\+Optimization\+Rating()}{getOptimizationRating()}}
 {\footnotesize\ttfamily double P\+S\+A\+T\+Result\+::get\+Optimization\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the optimization rating
-
-\begin{DoxyReturn}{Returns}
+Gets the optimization rating \begin{DoxyReturn}{Returns}
 double, optimization rating as \% 
 \end{DoxyReturn}
 
 
-Definition at line 120 of file P\+S\+A\+T\+Result.\+h.
+Definition at line 113 of file P\+S\+A\+T\+Result.\+h.
 
 
 
