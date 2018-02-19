@@ -14,6 +14,5 @@ var searchData=
   ['flowcalculationsenergyuse',['FlowCalculationsEnergyUse',['../d4/db7/class_flow_calculations_energy_use.html',1,'']]],
   ['flowtraverse',['FlowTraverse',['../dc/dd3/class_flow_traverse.html',1,'']]],
   ['fluidpower',['FluidPower',['../d3/df4/class_fluid_power.html',1,'']]],
-  ['fuelfiredenergyequivalency',['FuelFiredEnergyEquivalency',['../d7/d3c/class_fuel_fired_energy_equivalency.html',1,'']]],
-  ['furnace',['Furnace',['../d1/da9/class_furnace.html',1,'']]]
+  ['fuelfiredenergyequivalency',['FuelFiredEnergyEquivalency',['../d7/d3c/class_fuel_fired_energy_equivalency.html',1,'']]]
 ];

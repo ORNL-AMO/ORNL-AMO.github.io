@@ -7,6 +7,5 @@ var searchData=
   ['flashtank_2ecpp',['FlashTank.cpp',['../de/d0d/_flash_tank_8cpp.html',1,'']]],
   ['flashtank_2eh',['FlashTank.h',['../d6/d57/_flash_tank_8h.html',1,'']]],
   ['flowcalculationsenergyuse_2ecpp',['FlowCalculationsEnergyUse.cpp',['../d8/d95/_flow_calculations_energy_use_8cpp.html',1,'']]],
-  ['flowcalculationsenergyuse_2eh',['FlowCalculationsEnergyUse.h',['../d1/d29/_flow_calculations_energy_use_8h.html',1,'']]],
-  ['furnace_2eh',['Furnace.h',['../d2/db4/_furnace_8h.html',1,'']]]
+  ['flowcalculationsenergyuse_2eh',['FlowCalculationsEnergyUse.h',['../d1/d29/_flow_calculations_energy_use_8h.html',1,'']]]
 ];

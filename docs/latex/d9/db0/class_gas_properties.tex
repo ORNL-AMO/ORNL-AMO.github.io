@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_gas_properties_a95b506951beca31785d5207ff744ead9}{Gas\+Properties} (std\+::function$<$ double(double t) $>$ specific\+Heat, const double molecular\+Weight, const double specific\+Weight, const double comp\+Percent, const double comp\+By\+Vol, const int o2\+Generated, const int heating\+Value, const double h2o\+Generated, const double co2\+Generated)
+\hyperlink{class_gas_properties_a8959cd25ac00e9e0e75cd957eca74e5e}{Gas\+Properties} (std\+::function$<$ double(double t) $>$ specific\+Heat, const double molecular\+Weight, const double specific\+Weight, const double comp\+Percent, const double comp\+By\+Vol, const int o2\+Generated, const int heating\+Value, const int heating\+Value\+Volume, const double h2o\+Generated, const double co2\+Generated)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -25,11 +25,11 @@ Definition at line 25 of file Gas\+Flue\+Gas\+Material.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_gas_properties_a95b506951beca31785d5207ff744ead9}\label{class_gas_properties_a95b506951beca31785d5207ff744ead9}} 
+\mbox{\Hypertarget{class_gas_properties_a8959cd25ac00e9e0e75cd957eca74e5e}\label{class_gas_properties_a8959cd25ac00e9e0e75cd957eca74e5e}} 
 \index{Gas\+Properties@{Gas\+Properties}!Gas\+Properties@{Gas\+Properties}}
 \index{Gas\+Properties@{Gas\+Properties}!Gas\+Properties@{Gas\+Properties}}
 \subsubsection{\texorpdfstring{Gas\+Properties()}{GasProperties()}}
-{\footnotesize\ttfamily Gas\+Properties\+::\+Gas\+Properties (\begin{DoxyParamCaption}\item[{std\+::function$<$ double(double t) $>$}]{specific\+Heat,  }\item[{const double}]{molecular\+Weight,  }\item[{const double}]{specific\+Weight,  }\item[{const double}]{comp\+Percent,  }\item[{const double}]{comp\+By\+Vol,  }\item[{const int}]{o2\+Generated,  }\item[{const int}]{heating\+Value,  }\item[{const double}]{h2o\+Generated,  }\item[{const double}]{co2\+Generated }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Gas\+Properties\+::\+Gas\+Properties (\begin{DoxyParamCaption}\item[{std\+::function$<$ double(double t) $>$}]{specific\+Heat,  }\item[{const double}]{molecular\+Weight,  }\item[{const double}]{specific\+Weight,  }\item[{const double}]{comp\+Percent,  }\item[{const double}]{comp\+By\+Vol,  }\item[{const int}]{o2\+Generated,  }\item[{const int}]{heating\+Value,  }\item[{const int}]{heating\+Value\+Volume,  }\item[{const double}]{h2o\+Generated,  }\item[{const double}]{co2\+Generated }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor 
 \begin{DoxyParams}{Parameters}
@@ -45,7 +45,9 @@ Constructor
 \hline
 {\em o2\+Generated} & double, O2 generated in g/mol \\
 \hline
-{\em heating\+Value} & double, heating value in btu/lb \\
+{\em heating\+Value} & int, heating value in btu/lb \\
+\hline
+{\em heating\+Value\+Volume} & int, heating value in Btu/scf \\
 \hline
 {\em h2o\+Generated} & double, H2O generated in g/mol \\
 \hline
@@ -54,7 +56,7 @@ Constructor
 \end{DoxyParams}
 
 
-Definition at line 40 of file Gas\+Flue\+Gas\+Material.\+h.
+Definition at line 41 of file Gas\+Flue\+Gas\+Material.\+h.
 
 
 

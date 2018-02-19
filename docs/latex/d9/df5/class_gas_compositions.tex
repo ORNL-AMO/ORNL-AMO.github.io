@@ -14,6 +14,9 @@ double \hyperlink{class_gas_compositions_a2028a42c136e057a6153b7bfa68d63e6}{get\
 \mbox{\Hypertarget{class_gas_compositions_a7ebcdf1c991bd70f28eb845e45d62afd}\label{class_gas_compositions_a7ebcdf1c991bd70f28eb845e45d62afd}} 
 double {\bfseries get\+Heating\+Value} () const
 \item 
+\mbox{\Hypertarget{class_gas_compositions_a78803a5c2508df3fd679dca0eb378480}\label{class_gas_compositions_a78803a5c2508df3fd679dca0eb378480}} 
+double {\bfseries get\+Heating\+Value\+Volume} () const
+\item 
 \mbox{\Hypertarget{class_gas_compositions_a4f891acb4f8dc3992703155c6ba7ccb0}\label{class_gas_compositions_a4f891acb4f8dc3992703155c6ba7ccb0}} 
 double {\bfseries get\+Specific\+Gravity} () const
 \item 
@@ -43,7 +46,7 @@ class {\bfseries S\+Q\+Lite}
 \subsection{Detailed Description}
 Gas Compositions class Contains the gas compositions of a gas mixture. 
 
-Definition at line 72 of file Gas\+Flue\+Gas\+Material.\+h.
+Definition at line 74 of file Gas\+Flue\+Gas\+Material.\+h.
 
 
 
@@ -85,7 +88,7 @@ Constructor for \hyperlink{class_gas_compositions}{Gas\+Compositions} with which
 \end{DoxyParams}
 
 
-Definition at line 92 of file Gas\+Flue\+Gas\+Material.\+h.
+Definition at line 94 of file Gas\+Flue\+Gas\+Material.\+h.
 
 
 
@@ -96,11 +99,9 @@ Definition at line 92 of file Gas\+Flue\+Gas\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Gas\+By\+Vol()}{getGasByVol()}}
 {\footnotesize\ttfamily double Gas\+Compositions\+::get\+Gas\+By\+Vol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{gas\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the gas by its name
-
-
+Gets the gas by its name 
 \begin{DoxyParams}{Parameters}
-{\em gas\+Name} & const string, name of gas\\
+{\em gas\+Name} & const string, name of gas \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -108,7 +109,7 @@ double, composition by volume as \%
 \end{DoxyReturn}
 
 
-Definition at line 136 of file Gas\+Flue\+Gas\+Material.\+h.
+Definition at line 137 of file Gas\+Flue\+Gas\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_compositions_a9668decdb2b5065c8ee3c59c207b9d51}\label{class_gas_compositions_a9668decdb2b5065c8ee3c59c207b9d51}} 
 \index{Gas\+Compositions@{Gas\+Compositions}!get\+ID@{get\+ID}}
@@ -116,9 +117,7 @@ Definition at line 136 of file Gas\+Flue\+Gas\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
 {\footnotesize\ttfamily int Gas\+Compositions\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the ID of gas
-
-\begin{DoxyReturn}{Returns}
+Gets the ID of gas \begin{DoxyReturn}{Returns}
 int, ID of gas 
 \end{DoxyReturn}
 
@@ -131,9 +130,7 @@ Definition at line 162 of file Gas\+Flue\+Gas\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Substance()}{getSubstance()}}
 {\footnotesize\ttfamily std\+::string Gas\+Compositions\+::get\+Substance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Gets the name of substance
-
-\begin{DoxyReturn}{Returns}
+Gets the name of substance \begin{DoxyReturn}{Returns}
 string, name of substance 
 \end{DoxyReturn}
 
@@ -146,16 +143,14 @@ Definition at line 13 of file Gas\+Flue\+Gas\+Material.\+cpp.
 \subsubsection{\texorpdfstring{set\+I\+D()}{setID()}}
 {\footnotesize\ttfamily void Gas\+Compositions\+::set\+ID (\begin{DoxyParamCaption}\item[{const int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the ID of gas
-
-
+Sets the ID of gas 
 \begin{DoxyParams}{Parameters}
 {\em id} & const int, ID number for gas \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 172 of file Gas\+Flue\+Gas\+Material.\+h.
+Definition at line 170 of file Gas\+Flue\+Gas\+Material.\+h.
 
 
 

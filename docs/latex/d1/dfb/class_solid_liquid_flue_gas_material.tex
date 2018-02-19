@@ -66,7 +66,7 @@ void \hyperlink{class_solid_liquid_flue_gas_material_adf052dd1bdceeab710a4986b1f
 \item 
 static double \hyperlink{class_solid_liquid_flue_gas_material_a57ddf04184687f8efe031986b591ad6b}{calculate\+Excess\+Air\+From\+Flue\+Gas\+O2} (double flue\+Gas\+O2, double carbon, double hydrogen, double sulphur, double inert\+Ash, double o2, double moisture, double nitrogen, double moisture\+In\+Air\+Combustion)
 \item 
-static double \hyperlink{class_solid_liquid_flue_gas_material_ae299abc71cd64822ad05af1a9b1a2ec1}{calculate\+Flue\+Gas\+O2} (const double excess\+Air, const double carbon, const double hydrogen, const double sulphur, const double inert\+Ash, const double o2, const double moisture, const double nitrogen, const double moisture\+In\+Air\+Combustion)
+static double \hyperlink{class_solid_liquid_flue_gas_material_a39dbc6f412ce2ec739ed8107fbdc68a7}{calculate\+Flue\+Gas\+O2} (double excess\+Air, double carbon, double hydrogen, double sulphur, double inert\+Ash, double o2, double moisture, double nitrogen, double moisture\+In\+Air\+Combustion)
 \item 
 \mbox{\Hypertarget{class_solid_liquid_flue_gas_material_aa6f11cd466965e30af4f8c30d7a5f402}\label{class_solid_liquid_flue_gas_material_aa6f11cd466965e30af4f8c30d7a5f402}} 
 static double {\bfseries calculate\+Heating\+Value\+Fuel} (double carbon, double hydrogen, double sulphur, double inert\+Ash, double o2, double moisture, double nitrogen)
@@ -97,7 +97,7 @@ Constructor for the \hyperlink{class_solid_liquid_flue_gas_material}{Solid\+Liqu
 
 
 \begin{DoxyParams}{Parameters}
-{\em flue\+Gas\+Temperature} & -\/ double, \hyperlink{class_furnace}{Furnace} Flue Gas Temperature in °F \\
+{\em flue\+Gas\+Temperature} & -\/ double, Furnace Flue Gas Temperature in °F \\
 \hline
 {\em excess\+Air} & -\/ double, Percent Excess Air, expressed in normal percentage (i.\+e. 9\% as 9 instead of 0.\+09) \\
 \hline
@@ -134,11 +134,11 @@ double, calculated excess air percentage
 
 Definition at line 4 of file Solid\+Liquid\+Flue\+Gas\+Material.\+cpp.
 
-\mbox{\Hypertarget{class_solid_liquid_flue_gas_material_ae299abc71cd64822ad05af1a9b1a2ec1}\label{class_solid_liquid_flue_gas_material_ae299abc71cd64822ad05af1a9b1a2ec1}} 
+\mbox{\Hypertarget{class_solid_liquid_flue_gas_material_a39dbc6f412ce2ec739ed8107fbdc68a7}\label{class_solid_liquid_flue_gas_material_a39dbc6f412ce2ec739ed8107fbdc68a7}} 
 \index{Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}!calculate\+Flue\+Gas\+O2@{calculate\+Flue\+Gas\+O2}}
 \index{calculate\+Flue\+Gas\+O2@{calculate\+Flue\+Gas\+O2}!Solid\+Liquid\+Flue\+Gas\+Material@{Solid\+Liquid\+Flue\+Gas\+Material}}
 \subsubsection{\texorpdfstring{calculate\+Flue\+Gas\+O2()}{calculateFlueGasO2()}}
-{\footnotesize\ttfamily double Solid\+Liquid\+Flue\+Gas\+Material\+::calculate\+Flue\+Gas\+O2 (\begin{DoxyParamCaption}\item[{const double}]{excess\+Air,  }\item[{const double}]{carbon,  }\item[{const double}]{hydrogen,  }\item[{const double}]{sulphur,  }\item[{const double}]{inert\+Ash,  }\item[{const double}]{o2,  }\item[{const double}]{moisture,  }\item[{const double}]{nitrogen,  }\item[{const double}]{moisture\+In\+Air\+Combustion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily double Solid\+Liquid\+Flue\+Gas\+Material\+::calculate\+Flue\+Gas\+O2 (\begin{DoxyParamCaption}\item[{double}]{excess\+Air,  }\item[{double}]{carbon,  }\item[{double}]{hydrogen,  }\item[{double}]{sulphur,  }\item[{double}]{inert\+Ash,  }\item[{double}]{o2,  }\item[{double}]{moisture,  }\item[{double}]{nitrogen,  }\item[{double}]{moisture\+In\+Air\+Combustion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Calculates excess air percentage given flue gas O2 levels \begin{DoxyReturn}{Returns}
 double, calculated excess air percentage 

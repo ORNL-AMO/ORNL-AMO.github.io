@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.11</span>
+   &#160;<span id="projectnumber">v.0.2.14</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -134,8 +134,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a57ddf04184687f8efe031986b591ad6b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html#a57ddf04184687f8efe031986b591ad6b">calculateExcessAirFromFlueGasO2</a> (double flueGasO2, double carbon, double hydrogen, double sulphur, double inertAsh, double o2, double moisture, double nitrogen, double moistureInAirCombustion)</td></tr>
 <tr class="separator:a57ddf04184687f8efe031986b591ad6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae299abc71cd64822ad05af1a9b1a2ec1"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html#ae299abc71cd64822ad05af1a9b1a2ec1">calculateFlueGasO2</a> (const double excessAir, const double carbon, const double hydrogen, const double sulphur, const double inertAsh, const double o2, const double moisture, const double nitrogen, const double moistureInAirCombustion)</td></tr>
-<tr class="separator:ae299abc71cd64822ad05af1a9b1a2ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39dbc6f412ce2ec739ed8107fbdc68a7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html#a39dbc6f412ce2ec739ed8107fbdc68a7">calculateFlueGasO2</a> (double excessAir, double carbon, double hydrogen, double sulphur, double inertAsh, double o2, double moisture, double nitrogen, double moistureInAirCombustion)</td></tr>
+<tr class="separator:a39dbc6f412ce2ec739ed8107fbdc68a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f11cd466965e30af4f8c30d7a5f402"><td class="memItemLeft" align="right" valign="top"><a id="aa6f11cd466965e30af4f8c30d7a5f402"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>calculateHeatingValueFuel</b> (double carbon, double hydrogen, double sulphur, double inertAsh, double o2, double moisture, double nitrogen)</td></tr>
 <tr class="separator:aa6f11cd466965e30af4f8c30d7a5f402"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,7 +259,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 <p>Constructor for the <a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html">SolidLiquidFlueGasMaterial</a> losses with all inputs specified</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flueGasTemperature</td><td>- double, <a class="el" href="../../d1/da9/class_furnace.html">Furnace</a> Flue Gas Temperature in °F </td></tr>
+    <tr><td class="paramname">flueGasTemperature</td><td>- double, Furnace Flue Gas Temperature in °F </td></tr>
     <tr><td class="paramname">excessAir</td><td>- double, Percent Excess Air, expressed in normal percentage (i.e. 9% as 9 instead of 0.09) </td></tr>
     <tr><td class="paramname">combustionAirTemperature</td><td>- double, Combustion Air Temperature in °F </td></tr>
     <tr><td class="paramname">fuelTemperature</td><td>- double, fuel Temperature in °F </td></tr>
@@ -357,8 +357,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 
 </div>
 </div>
-<a id="ae299abc71cd64822ad05af1a9b1a2ec1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae299abc71cd64822ad05af1a9b1a2ec1">&#9670;&nbsp;</a></span>calculateFlueGasO2()</h2>
+<a id="a39dbc6f412ce2ec739ed8107fbdc68a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39dbc6f412ce2ec739ed8107fbdc68a7">&#9670;&nbsp;</a></span>calculateFlueGasO2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,55 +369,55 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
         <tr>
           <td class="memname">double SolidLiquidFlueGasMaterial::calculateFlueGasO2 </td>
           <td>(</td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>excessAir</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>carbon</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>hydrogen</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>sulphur</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>inertAsh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>o2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>moisture</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>nitrogen</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>moistureInAirCombustion</em>&#160;</td>
         </tr>
         <tr>

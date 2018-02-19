@@ -14,21 +14,21 @@ Contains the declaration of \hyperlink{class_motor_power_factor}{Motor\+Power\+F
 \item 
 \hyperlink{class_motor_power_factor_a1a2509240f0f759952debf47b7ef3a14}{Motor\+Power\+Factor} (double motor\+Rated\+Power, double load\+Factor, double motor\+Current, double motor\+Efficiency, double rated\+Voltage)
 \item 
-\hyperlink{class_motor_power_factor_ab48906ae429e7c6f05cebaed14fe2ca1}{Motor\+Power\+Factor} (\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} line\+Frequency, double motor\+Rpm, \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class} efficiency\+Class, double specified\+Efficiency, double motor\+Rated\+Power, double load\+Factor, double motor\+Current, double motor\+Efficiency, double rated\+Voltage)
+\hyperlink{class_motor_power_factor_ab48906ae429e7c6f05cebaed14fe2ca1}{Motor\+Power\+Factor} (Motor\+::\+Line\+Frequency line\+Frequency, double motor\+Rpm, Motor\+::\+Efficiency\+Class efficiency\+Class, double specified\+Efficiency, double motor\+Rated\+Power, double load\+Factor, double motor\+Current, double motor\+Efficiency, double rated\+Voltage)
 \item 
 double \hyperlink{class_motor_power_factor_ac9d5742db4a371bc4e15d5b29d335b6e}{calculate} ()
 \begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_motor_power_factor}{Motor\+Power\+Factor} class. \hyperlink{class_motor_power_factor_ac9d5742db4a371bc4e15d5b29d335b6e}{calculate()}\+: Calculates the motor power factor given a load factor. \end{DoxyCompactList}\item 
-\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} \hyperlink{class_motor_power_factor_aa4cdc420b1f611bcb9f4a69c69c1fabf}{get\+Line\+Frequency} () const
+Motor\+::\+Line\+Frequency \hyperlink{class_motor_power_factor_aa4cdc420b1f611bcb9f4a69c69c1fabf}{get\+Line\+Frequency} () const
 \item 
-void \hyperlink{class_motor_power_factor_a5186ccae4191cfc5b2b7c3bdbd166563}{set\+Line\+Frequency} (\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} line\+Frequency)
+void \hyperlink{class_motor_power_factor_a5186ccae4191cfc5b2b7c3bdbd166563}{set\+Line\+Frequency} (Motor\+::\+Line\+Frequency line\+Frequency)
 \item 
 double \hyperlink{class_motor_power_factor_acc7e144fc6c05446141cb0e07be03d70}{get\+Motor\+Rpm} () const
 \item 
 void \hyperlink{class_motor_power_factor_a4154bf52c6c9c9e5fb2f0985d7ae3531}{set\+Motor\+Rpm} (double motor\+Rpm)
 \item 
-\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class} \hyperlink{class_motor_power_factor_a1ce98cb6ae9fbf09b05b4b6bd75e5c71}{get\+Efficiency\+Class} () const
+Motor\+::\+Efficiency\+Class \hyperlink{class_motor_power_factor_a1ce98cb6ae9fbf09b05b4b6bd75e5c71}{get\+Efficiency\+Class} () const
 \item 
-void \hyperlink{class_motor_power_factor_add3125243d7f11131abc4e1d172ffdfc}{set\+Efficiency\+Class} (\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class} efficiency\+Class)
+void \hyperlink{class_motor_power_factor_add3125243d7f11131abc4e1d172ffdfc}{set\+Efficiency\+Class} (Motor\+::\+Efficiency\+Class efficiency\+Class)
 \end{DoxyCompactItemize}
 
 
@@ -72,15 +72,15 @@ Definition at line 27 of file Motor\+Power\+Factor.\+h.
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!Motor\+Power\+Factor@{Motor\+Power\+Factor}}
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!Motor\+Power\+Factor@{Motor\+Power\+Factor}}
 \subsubsection{\texorpdfstring{Motor\+Power\+Factor()}{MotorPowerFactor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Motor\+Power\+Factor\+::\+Motor\+Power\+Factor (\begin{DoxyParamCaption}\item[{\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}}]{line\+Frequency,  }\item[{double}]{motor\+Rpm,  }\item[{\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{load\+Factor,  }\item[{double}]{motor\+Current,  }\item[{double}]{motor\+Efficiency,  }\item[{double}]{rated\+Voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Motor\+Power\+Factor\+::\+Motor\+Power\+Factor (\begin{DoxyParamCaption}\item[{Motor\+::\+Line\+Frequency}]{line\+Frequency,  }\item[{double}]{motor\+Rpm,  }\item[{Motor\+::\+Efficiency\+Class}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{load\+Factor,  }\item[{double}]{motor\+Current,  }\item[{double}]{motor\+Efficiency,  }\item[{double}]{rated\+Voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor when the load factor is 0. When the load factor is zero, you need to calculate the efficiency 0.\+25 load factor, hence the extra parameters. 
 \begin{DoxyParams}{Parameters}
-{\em line\+Frequency} & \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}, classification of line frequency in Hz \\
+{\em line\+Frequency} & Motor\+::\+Line\+Frequency, classification of line frequency in Hz \\
 \hline
 {\em motor\+Rpm} & double, R\+PM of motor \\
 \hline
-{\em efficiency\+Class} & \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}, efficiency class of motor \\
+{\em efficiency\+Class} & Motor\+::\+Efficiency\+Class, efficiency class of motor \\
 \hline
 {\em specified\+Efficiency} & double, specified efficiency as \% \\
 \hline
@@ -112,9 +112,7 @@ Definition at line 55 of file Motor\+Power\+Factor.\+h.
 
 Contains the definition of functions of \hyperlink{class_motor_power_factor}{Motor\+Power\+Factor} class. \hyperlink{class_motor_power_factor_ac9d5742db4a371bc4e15d5b29d335b6e}{calculate()}\+: Calculates the motor power factor given a load factor. 
 
-Calculates the motor power factor
-
-\begin{DoxyReturn}{Returns}
+Calculates the motor power factor \begin{DoxyReturn}{Returns}
 double, power factor -\/ unitless
 \end{DoxyReturn}
 \begin{DoxyAuthor}{Author}
@@ -132,31 +130,27 @@ Definition at line 15 of file Motor\+Power\+Factor.\+cpp.
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!get\+Efficiency\+Class@{get\+Efficiency\+Class}}
 \index{get\+Efficiency\+Class@{get\+Efficiency\+Class}!Motor\+Power\+Factor@{Motor\+Power\+Factor}}
 \subsubsection{\texorpdfstring{get\+Efficiency\+Class()}{getEfficiencyClass()}}
-{\footnotesize\ttfamily \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class} Motor\+Power\+Factor\+::get\+Efficiency\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Motor\+::\+Efficiency\+Class Motor\+Power\+Factor\+::get\+Efficiency\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the efficiency class
-
-\begin{DoxyReturn}{Returns}
-\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}, efficiency class of motor 
+Gets the efficiency class \begin{DoxyReturn}{Returns}
+Motor\+::\+Efficiency\+Class, efficiency class of motor 
 \end{DoxyReturn}
 
 
-Definition at line 127 of file Motor\+Power\+Factor.\+h.
+Definition at line 119 of file Motor\+Power\+Factor.\+h.
 
 \mbox{\Hypertarget{class_motor_power_factor_aa4cdc420b1f611bcb9f4a69c69c1fabf}\label{class_motor_power_factor_aa4cdc420b1f611bcb9f4a69c69c1fabf}} 
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!get\+Line\+Frequency@{get\+Line\+Frequency}}
 \index{get\+Line\+Frequency@{get\+Line\+Frequency}!Motor\+Power\+Factor@{Motor\+Power\+Factor}}
 \subsubsection{\texorpdfstring{get\+Line\+Frequency()}{getLineFrequency()}}
-{\footnotesize\ttfamily \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency} Motor\+Power\+Factor\+::get\+Line\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Motor\+::\+Line\+Frequency Motor\+Power\+Factor\+::get\+Line\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the line frequency
-
-\begin{DoxyReturn}{Returns}
-\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}, classification of line frequency in Hz 
+Gets the line frequency \begin{DoxyReturn}{Returns}
+Motor\+::\+Line\+Frequency, classification of line frequency in Hz 
 \end{DoxyReturn}
 
 
-Definition at line 89 of file Motor\+Power\+Factor.\+h.
+Definition at line 87 of file Motor\+Power\+Factor.\+h.
 
 \mbox{\Hypertarget{class_motor_power_factor_acc7e144fc6c05446141cb0e07be03d70}\label{class_motor_power_factor_acc7e144fc6c05446141cb0e07be03d70}} 
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!get\+Motor\+Rpm@{get\+Motor\+Rpm}}
@@ -164,48 +158,42 @@ Definition at line 89 of file Motor\+Power\+Factor.\+h.
 \subsubsection{\texorpdfstring{get\+Motor\+Rpm()}{getMotorRpm()}}
 {\footnotesize\ttfamily double Motor\+Power\+Factor\+::get\+Motor\+Rpm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the motor R\+PM
-
-\begin{DoxyReturn}{Returns}
+Gets the motor R\+PM \begin{DoxyReturn}{Returns}
 double, motor R\+PM 
 \end{DoxyReturn}
 
 
-Definition at line 108 of file Motor\+Power\+Factor.\+h.
+Definition at line 103 of file Motor\+Power\+Factor.\+h.
 
 \mbox{\Hypertarget{class_motor_power_factor_add3125243d7f11131abc4e1d172ffdfc}\label{class_motor_power_factor_add3125243d7f11131abc4e1d172ffdfc}} 
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!set\+Efficiency\+Class@{set\+Efficiency\+Class}}
 \index{set\+Efficiency\+Class@{set\+Efficiency\+Class}!Motor\+Power\+Factor@{Motor\+Power\+Factor}}
 \subsubsection{\texorpdfstring{set\+Efficiency\+Class()}{setEfficiencyClass()}}
-{\footnotesize\ttfamily void Motor\+Power\+Factor\+::set\+Efficiency\+Class (\begin{DoxyParamCaption}\item[{\hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}}]{efficiency\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Motor\+Power\+Factor\+::set\+Efficiency\+Class (\begin{DoxyParamCaption}\item[{Motor\+::\+Efficiency\+Class}]{efficiency\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the efficiency class of motor
-
-
+Sets the efficiency class of motor 
 \begin{DoxyParams}{Parameters}
-{\em efficiency\+Class} & \hyperlink{class_motor_afa022971ae062406a9f588c601673d4e}{Motor\+::\+Efficiency\+Class}, efficiency class of motor \\
+{\em efficiency\+Class} & Motor\+::\+Efficiency\+Class, efficiency class of motor \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 137 of file Motor\+Power\+Factor.\+h.
+Definition at line 127 of file Motor\+Power\+Factor.\+h.
 
 \mbox{\Hypertarget{class_motor_power_factor_a5186ccae4191cfc5b2b7c3bdbd166563}\label{class_motor_power_factor_a5186ccae4191cfc5b2b7c3bdbd166563}} 
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!set\+Line\+Frequency@{set\+Line\+Frequency}}
 \index{set\+Line\+Frequency@{set\+Line\+Frequency}!Motor\+Power\+Factor@{Motor\+Power\+Factor}}
 \subsubsection{\texorpdfstring{set\+Line\+Frequency()}{setLineFrequency()}}
-{\footnotesize\ttfamily void Motor\+Power\+Factor\+::set\+Line\+Frequency (\begin{DoxyParamCaption}\item[{\hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}}]{line\+Frequency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Motor\+Power\+Factor\+::set\+Line\+Frequency (\begin{DoxyParamCaption}\item[{Motor\+::\+Line\+Frequency}]{line\+Frequency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the line frequency
-
-
+Sets the line frequency 
 \begin{DoxyParams}{Parameters}
-{\em line\+Frequency} & \hyperlink{class_motor_acee1bdf1b684ad36cb80dc2829d9fcee}{Motor\+::\+Line\+Frequency}, classification of line frequency in Hz \\
+{\em line\+Frequency} & Motor\+::\+Line\+Frequency, classification of line frequency in Hz \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 99 of file Motor\+Power\+Factor.\+h.
+Definition at line 95 of file Motor\+Power\+Factor.\+h.
 
 \mbox{\Hypertarget{class_motor_power_factor_a4154bf52c6c9c9e5fb2f0985d7ae3531}\label{class_motor_power_factor_a4154bf52c6c9c9e5fb2f0985d7ae3531}} 
 \index{Motor\+Power\+Factor@{Motor\+Power\+Factor}!set\+Motor\+Rpm@{set\+Motor\+Rpm}}
@@ -213,16 +201,14 @@ Definition at line 99 of file Motor\+Power\+Factor.\+h.
 \subsubsection{\texorpdfstring{set\+Motor\+Rpm()}{setMotorRpm()}}
 {\footnotesize\ttfamily void Motor\+Power\+Factor\+::set\+Motor\+Rpm (\begin{DoxyParamCaption}\item[{double}]{motor\+Rpm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the motor R\+PM
-
-
+Sets the motor R\+PM 
 \begin{DoxyParams}{Parameters}
 {\em motor\+Rpm} & double, R\+PM of motor \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 118 of file Motor\+Power\+Factor.\+h.
+Definition at line 111 of file Motor\+Power\+Factor.\+h.
 
 
 

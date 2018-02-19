@@ -15,31 +15,31 @@ enum \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estima
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_field_data_a33158a88d05e657bd2c8007bae875454}{Field\+Data} (double flow\+Rate, double head, \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method} load\+Estimation\+Method, double motor\+Power, double motor\+Amps, double voltage)
+\hyperlink{class_field_data_a43df27dd87a19f495f7eb82729de9e31}{Field\+Data} (const double flow\+Rate, const double head, const \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method} load\+Estimation\+Method, const double motor\+Power, const double motor\+Amps, const double voltage)
 \item 
 \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method} \hyperlink{class_field_data_ae213fa76dd005d7fd251ef26beecd311}{get\+Load\+Estimation\+Method} () const
 \item 
-void \hyperlink{class_field_data_a7d1103b1832956d96146cbe26fb34a6d}{set\+Load\+Estimation\+Method} (\hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method} load\+Estimation\+Method)
+void \hyperlink{class_field_data_a0c820da908989c650ebe5e9be640fd85}{set\+Load\+Estimation\+Method} (const \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method} load\+Estimation\+Method)
 \item 
 double \hyperlink{class_field_data_a59b3261a5162b002d7b73a2d35561bd0}{get\+Flow\+Rate} () const
 \item 
-void \hyperlink{class_field_data_ad25c3e5a76b4e493e82d3f70cc3c0ed9}{set\+Flow\+Rate} (double flow\+Rate)
+void \hyperlink{class_field_data_a35231cce497c4b69b683d76dd2c78991}{set\+Flow\+Rate} (const double flow\+Rate)
 \item 
 double \hyperlink{class_field_data_ac3e8e0b2de226c858b6c92cdb454bd0d}{get\+Head} () const
 \item 
-void \hyperlink{class_field_data_ac72a4f958930000bab0e2b772ee26711}{set\+Head} (double head)
+void \hyperlink{class_field_data_af36f740ce0eb703903a18b5e2d8e0571}{set\+Head} (const double head)
 \item 
 double \hyperlink{class_field_data_a3e8e1bf84bbd00b9b52b803147968c81}{get\+Motor\+Power} () const
 \item 
-void \hyperlink{class_field_data_a078e6b4899e7046008ccc9de59bd0272}{set\+Motor\+Power} (double motor\+Power)
+void \hyperlink{class_field_data_a0263d25bc216482b0663b02d0af680a8}{set\+Motor\+Power} (const double motor\+Power)
 \item 
 double \hyperlink{class_field_data_ad2b4fffb00fa7cfa6f69487e1034989a}{get\+Motor\+Amps} () const
 \item 
-void \hyperlink{class_field_data_a4f9373e8a215853b08bbe6a1915fb1a9}{set\+Motor\+Amps} (double motor\+Amps)
+void \hyperlink{class_field_data_a9139b100e363d8a632669ac5d6ee7152}{set\+Motor\+Amps} (const double motor\+Amps)
 \item 
 double \hyperlink{class_field_data_a1e8a55965e6cbd8c7b49c0dd5fbee002}{get\+Voltage} () const
 \item 
-void \hyperlink{class_field_data_a02735cc6956a3fce97bab645ef15dabc}{set\+Voltage} (double voltage)
+void \hyperlink{class_field_data_a8e610f5861b66a36b1e4df2047d21245}{set\+Voltage} (const double voltage)
 \end{DoxyCompactItemize}
 
 
@@ -51,11 +51,11 @@ Definition at line 21 of file Field\+Data.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_field_data_a33158a88d05e657bd2c8007bae875454}\label{class_field_data_a33158a88d05e657bd2c8007bae875454}} 
+\mbox{\Hypertarget{class_field_data_a43df27dd87a19f495f7eb82729de9e31}\label{class_field_data_a43df27dd87a19f495f7eb82729de9e31}} 
 \index{Field\+Data@{Field\+Data}!Field\+Data@{Field\+Data}}
 \index{Field\+Data@{Field\+Data}!Field\+Data@{Field\+Data}}
 \subsubsection{\texorpdfstring{Field\+Data()}{FieldData()}}
-{\footnotesize\ttfamily Field\+Data\+::\+Field\+Data (\begin{DoxyParamCaption}\item[{double}]{flow\+Rate,  }\item[{double}]{head,  }\item[{\hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method}}]{load\+Estimation\+Method,  }\item[{double}]{motor\+Power,  }\item[{double}]{motor\+Amps,  }\item[{double}]{voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Field\+Data\+::\+Field\+Data (\begin{DoxyParamCaption}\item[{const double}]{flow\+Rate,  }\item[{const double}]{head,  }\item[{const \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method}}]{load\+Estimation\+Method,  }\item[{const double}]{motor\+Power,  }\item[{const double}]{motor\+Amps,  }\item[{const double}]{voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor 
 \begin{DoxyParams}{Parameters}
@@ -85,14 +85,12 @@ Definition at line 40 of file Field\+Data.\+h.
 \subsubsection{\texorpdfstring{get\+Flow\+Rate()}{getFlowRate()}}
 {\footnotesize\ttfamily double Field\+Data\+::get\+Flow\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the rate of flow
-
-\begin{DoxyReturn}{Returns}
+Gets the rate of flow \begin{DoxyReturn}{Returns}
 double, rate of flow in gpm 
 \end{DoxyReturn}
 
 
-Definition at line 82 of file Field\+Data.\+h.
+Definition at line 78 of file Field\+Data.\+h.
 
 \mbox{\Hypertarget{class_field_data_ac3e8e0b2de226c858b6c92cdb454bd0d}\label{class_field_data_ac3e8e0b2de226c858b6c92cdb454bd0d}} 
 \index{Field\+Data@{Field\+Data}!get\+Head@{get\+Head}}
@@ -100,14 +98,12 @@ Definition at line 82 of file Field\+Data.\+h.
 \subsubsection{\texorpdfstring{get\+Head()}{getHead()}}
 {\footnotesize\ttfamily double Field\+Data\+::get\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the pump head
-
-\begin{DoxyReturn}{Returns}
+Gets the pump head \begin{DoxyReturn}{Returns}
 double, pump head in ft 
 \end{DoxyReturn}
 
 
-Definition at line 101 of file Field\+Data.\+h.
+Definition at line 94 of file Field\+Data.\+h.
 
 \mbox{\Hypertarget{class_field_data_ae213fa76dd005d7fd251ef26beecd311}\label{class_field_data_ae213fa76dd005d7fd251ef26beecd311}} 
 \index{Field\+Data@{Field\+Data}!get\+Load\+Estimation\+Method@{get\+Load\+Estimation\+Method}}
@@ -115,14 +111,12 @@ Definition at line 101 of file Field\+Data.\+h.
 \subsubsection{\texorpdfstring{get\+Load\+Estimation\+Method()}{getLoadEstimationMethod()}}
 {\footnotesize\ttfamily \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method} Field\+Data\+::get\+Load\+Estimation\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the classification of the load estimation method
-
-\begin{DoxyReturn}{Returns}
+Gets the classification of the load estimation method \begin{DoxyReturn}{Returns}
 Load\+Estimation\+Method, classification of the load estimation method 
 \end{DoxyReturn}
 
 
-Definition at line 63 of file Field\+Data.\+h.
+Definition at line 62 of file Field\+Data.\+h.
 
 \mbox{\Hypertarget{class_field_data_ad2b4fffb00fa7cfa6f69487e1034989a}\label{class_field_data_ad2b4fffb00fa7cfa6f69487e1034989a}} 
 \index{Field\+Data@{Field\+Data}!get\+Motor\+Amps@{get\+Motor\+Amps}}
@@ -130,14 +124,12 @@ Definition at line 63 of file Field\+Data.\+h.
 \subsubsection{\texorpdfstring{get\+Motor\+Amps()}{getMotorAmps()}}
 {\footnotesize\ttfamily double Field\+Data\+::get\+Motor\+Amps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the current measured from the pump\textquotesingle{}s motor
-
-\begin{DoxyReturn}{Returns}
+Gets the current measured from the pump\textquotesingle{}s motor \begin{DoxyReturn}{Returns}
 double, current measured from pump\textquotesingle{}s motor in amps 
 \end{DoxyReturn}
 
 
-Definition at line 139 of file Field\+Data.\+h.
+Definition at line 126 of file Field\+Data.\+h.
 
 \mbox{\Hypertarget{class_field_data_a3e8e1bf84bbd00b9b52b803147968c81}\label{class_field_data_a3e8e1bf84bbd00b9b52b803147968c81}} 
 \index{Field\+Data@{Field\+Data}!get\+Motor\+Power@{get\+Motor\+Power}}
@@ -145,14 +137,12 @@ Definition at line 139 of file Field\+Data.\+h.
 \subsubsection{\texorpdfstring{get\+Motor\+Power()}{getMotorPower()}}
 {\footnotesize\ttfamily double Field\+Data\+::get\+Motor\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the power output of the pump\textquotesingle{}s motor
-
-\begin{DoxyReturn}{Returns}
+Gets the power output of the pump\textquotesingle{}s motor \begin{DoxyReturn}{Returns}
 double, pump motor\textquotesingle{}s output power in hp 
 \end{DoxyReturn}
 
 
-Definition at line 120 of file Field\+Data.\+h.
+Definition at line 110 of file Field\+Data.\+h.
 
 \mbox{\Hypertarget{class_field_data_a1e8a55965e6cbd8c7b49c0dd5fbee002}\label{class_field_data_a1e8a55965e6cbd8c7b49c0dd5fbee002}} 
 \index{Field\+Data@{Field\+Data}!get\+Voltage@{get\+Voltage}}
@@ -160,116 +150,102 @@ Definition at line 120 of file Field\+Data.\+h.
 \subsubsection{\texorpdfstring{get\+Voltage()}{getVoltage()}}
 {\footnotesize\ttfamily double Field\+Data\+::get\+Voltage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the measured bus voltage
-
-\begin{DoxyReturn}{Returns}
+Gets the measured bus voltage \begin{DoxyReturn}{Returns}
 double, measured bus voltage in volts 
 \end{DoxyReturn}
 
 
-Definition at line 158 of file Field\+Data.\+h.
+Definition at line 142 of file Field\+Data.\+h.
 
-\mbox{\Hypertarget{class_field_data_ad25c3e5a76b4e493e82d3f70cc3c0ed9}\label{class_field_data_ad25c3e5a76b4e493e82d3f70cc3c0ed9}} 
+\mbox{\Hypertarget{class_field_data_a35231cce497c4b69b683d76dd2c78991}\label{class_field_data_a35231cce497c4b69b683d76dd2c78991}} 
 \index{Field\+Data@{Field\+Data}!set\+Flow\+Rate@{set\+Flow\+Rate}}
 \index{set\+Flow\+Rate@{set\+Flow\+Rate}!Field\+Data@{Field\+Data}}
 \subsubsection{\texorpdfstring{set\+Flow\+Rate()}{setFlowRate()}}
-{\footnotesize\ttfamily void Field\+Data\+::set\+Flow\+Rate (\begin{DoxyParamCaption}\item[{double}]{flow\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Field\+Data\+::set\+Flow\+Rate (\begin{DoxyParamCaption}\item[{const double}]{flow\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the rate of flow
-
-
+Sets the rate of flow 
 \begin{DoxyParams}{Parameters}
 {\em flow\+Rate} & double, rate of flow in gpm \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 92 of file Field\+Data.\+h.
+Definition at line 86 of file Field\+Data.\+h.
 
-\mbox{\Hypertarget{class_field_data_ac72a4f958930000bab0e2b772ee26711}\label{class_field_data_ac72a4f958930000bab0e2b772ee26711}} 
+\mbox{\Hypertarget{class_field_data_af36f740ce0eb703903a18b5e2d8e0571}\label{class_field_data_af36f740ce0eb703903a18b5e2d8e0571}} 
 \index{Field\+Data@{Field\+Data}!set\+Head@{set\+Head}}
 \index{set\+Head@{set\+Head}!Field\+Data@{Field\+Data}}
 \subsubsection{\texorpdfstring{set\+Head()}{setHead()}}
-{\footnotesize\ttfamily void Field\+Data\+::set\+Head (\begin{DoxyParamCaption}\item[{double}]{head }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Field\+Data\+::set\+Head (\begin{DoxyParamCaption}\item[{const double}]{head }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the pump head
-
-
+Sets the pump head 
 \begin{DoxyParams}{Parameters}
 {\em head} & double, pump head in ft \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 111 of file Field\+Data.\+h.
+Definition at line 102 of file Field\+Data.\+h.
 
-\mbox{\Hypertarget{class_field_data_a7d1103b1832956d96146cbe26fb34a6d}\label{class_field_data_a7d1103b1832956d96146cbe26fb34a6d}} 
+\mbox{\Hypertarget{class_field_data_a0c820da908989c650ebe5e9be640fd85}\label{class_field_data_a0c820da908989c650ebe5e9be640fd85}} 
 \index{Field\+Data@{Field\+Data}!set\+Load\+Estimation\+Method@{set\+Load\+Estimation\+Method}}
 \index{set\+Load\+Estimation\+Method@{set\+Load\+Estimation\+Method}!Field\+Data@{Field\+Data}}
 \subsubsection{\texorpdfstring{set\+Load\+Estimation\+Method()}{setLoadEstimationMethod()}}
-{\footnotesize\ttfamily void Field\+Data\+::set\+Load\+Estimation\+Method (\begin{DoxyParamCaption}\item[{\hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method}}]{load\+Estimation\+Method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Field\+Data\+::set\+Load\+Estimation\+Method (\begin{DoxyParamCaption}\item[{const \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Load\+Estimation\+Method}}]{load\+Estimation\+Method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the classification of the load estimation method
-
-
+Sets the classification of the load estimation method 
 \begin{DoxyParams}{Parameters}
 {\em load\+Estimation\+Method} & Load\+Estimation\+Method, classification of the load estimation method \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 73 of file Field\+Data.\+h.
+Definition at line 70 of file Field\+Data.\+h.
 
-\mbox{\Hypertarget{class_field_data_a4f9373e8a215853b08bbe6a1915fb1a9}\label{class_field_data_a4f9373e8a215853b08bbe6a1915fb1a9}} 
+\mbox{\Hypertarget{class_field_data_a9139b100e363d8a632669ac5d6ee7152}\label{class_field_data_a9139b100e363d8a632669ac5d6ee7152}} 
 \index{Field\+Data@{Field\+Data}!set\+Motor\+Amps@{set\+Motor\+Amps}}
 \index{set\+Motor\+Amps@{set\+Motor\+Amps}!Field\+Data@{Field\+Data}}
 \subsubsection{\texorpdfstring{set\+Motor\+Amps()}{setMotorAmps()}}
-{\footnotesize\ttfamily void Field\+Data\+::set\+Motor\+Amps (\begin{DoxyParamCaption}\item[{double}]{motor\+Amps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Field\+Data\+::set\+Motor\+Amps (\begin{DoxyParamCaption}\item[{const double}]{motor\+Amps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the current measured from the pump\textquotesingle{}s motor
-
-
+Sets the current measured from the pump\textquotesingle{}s motor 
 \begin{DoxyParams}{Parameters}
 {\em motor\+Amps} & double, current measured from pump\textquotesingle{}s motor in amps \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 149 of file Field\+Data.\+h.
+Definition at line 134 of file Field\+Data.\+h.
 
-\mbox{\Hypertarget{class_field_data_a078e6b4899e7046008ccc9de59bd0272}\label{class_field_data_a078e6b4899e7046008ccc9de59bd0272}} 
+\mbox{\Hypertarget{class_field_data_a0263d25bc216482b0663b02d0af680a8}\label{class_field_data_a0263d25bc216482b0663b02d0af680a8}} 
 \index{Field\+Data@{Field\+Data}!set\+Motor\+Power@{set\+Motor\+Power}}
 \index{set\+Motor\+Power@{set\+Motor\+Power}!Field\+Data@{Field\+Data}}
 \subsubsection{\texorpdfstring{set\+Motor\+Power()}{setMotorPower()}}
-{\footnotesize\ttfamily void Field\+Data\+::set\+Motor\+Power (\begin{DoxyParamCaption}\item[{double}]{motor\+Power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Field\+Data\+::set\+Motor\+Power (\begin{DoxyParamCaption}\item[{const double}]{motor\+Power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the power output of the pump\textquotesingle{}s motor
-
-
+Sets the power output of the pump\textquotesingle{}s motor 
 \begin{DoxyParams}{Parameters}
 {\em motor\+Power} & double, pump motor\textquotesingle{}s output power in hp \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 130 of file Field\+Data.\+h.
+Definition at line 118 of file Field\+Data.\+h.
 
-\mbox{\Hypertarget{class_field_data_a02735cc6956a3fce97bab645ef15dabc}\label{class_field_data_a02735cc6956a3fce97bab645ef15dabc}} 
+\mbox{\Hypertarget{class_field_data_a8e610f5861b66a36b1e4df2047d21245}\label{class_field_data_a8e610f5861b66a36b1e4df2047d21245}} 
 \index{Field\+Data@{Field\+Data}!set\+Voltage@{set\+Voltage}}
 \index{set\+Voltage@{set\+Voltage}!Field\+Data@{Field\+Data}}
 \subsubsection{\texorpdfstring{set\+Voltage()}{setVoltage()}}
-{\footnotesize\ttfamily void Field\+Data\+::set\+Voltage (\begin{DoxyParamCaption}\item[{double}]{voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Field\+Data\+::set\+Voltage (\begin{DoxyParamCaption}\item[{const double}]{voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the measured bus voltage
-
-
+Sets the measured bus voltage 
 \begin{DoxyParams}{Parameters}
 {\em voltage} & double, measured bus voltage in volts \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 168 of file Field\+Data.\+h.
+Definition at line 150 of file Field\+Data.\+h.
 
 
 

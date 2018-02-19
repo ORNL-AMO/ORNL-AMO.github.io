@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.11</span>
+   &#160;<span id="projectnumber">v.0.2.14</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -76,11 +76,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a099860ac4021ce07ec5b033b3bcf37e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d75/class_motor_current.html#a099860ac4021ce07ec5b033b3bcf37e4">MotorCurrent</a> (double motorRatedPower, double motorRPM, <a class="el" href="../../d1/d6b/class_motor.html#acee1bdf1b684ad36cb80dc2829d9fcee">Motor::LineFrequency</a> lineFrequency, <a class="el" href="../../d1/d6b/class_motor.html#afa022971ae062406a9f588c601673d4e">Motor::EfficiencyClass</a> efficiencyClass, double specifiedEfficiency, double loadFactor, double ratedVoltage, double fullLoadAmps)</td></tr>
-<tr class="separator:a099860ac4021ce07ec5b033b3bcf37e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e545d2c82f1fe247cc501eda2ce857"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d75/class_motor_current.html#a18e545d2c82f1fe247cc501eda2ce857">calculate</a> ()</td></tr>
-<tr class="memdesc:a18e545d2c82f1fe247cc501eda2ce857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the definition of functions of <a class="el" href="../../dc/d75/class_motor_current.html" title="Contains the declaration of MotorCurrent class including the getters and setters as well as the calcu...">MotorCurrent</a> class. <a class="el" href="../../dc/d75/class_motor_current.html#a18e545d2c82f1fe247cc501eda2ce857" title="Contains the definition of functions of MotorCurrent class. calculate(): Calculates the motor current...">calculate()</a>: Calculates the motor current for a given value of load factor.  <a href="#a18e545d2c82f1fe247cc501eda2ce857">More...</a><br /></td></tr>
-<tr class="separator:a18e545d2c82f1fe247cc501eda2ce857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6c25ee190196044e229b34a03d2af1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d75/class_motor_current.html#a9b6c25ee190196044e229b34a03d2af1">MotorCurrent</a> (double motorRatedPower, double motorRPM, Motor::LineFrequency lineFrequency, Motor::EfficiencyClass efficiencyClass, double specifiedEfficiency, double loadFactor, double ratedVoltage)</td></tr>
+<tr class="separator:a9b6c25ee190196044e229b34a03d2af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08b2f8ba065b24908c7e1b80cadb4f6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d75/class_motor_current.html#aa08b2f8ba065b24908c7e1b80cadb4f6">calculateCurrent</a> (double fullLoadAmps)</td></tr>
+<tr class="memdesc:aa08b2f8ba065b24908c7e1b80cadb4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the definition of functions of <a class="el" href="../../dc/d75/class_motor_current.html" title="Contains the declaration of MotorCurrent class including the getters and setters as well as the calcu...">MotorCurrent</a> class. calculate(): Calculates the motor current for a given value of load factor.  <a href="#aa08b2f8ba065b24908c7e1b80cadb4f6">More...</a><br /></td></tr>
+<tr class="separator:aa08b2f8ba065b24908c7e1b80cadb4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40638a00e4d21b34c74f8406f4e70046"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d75/class_motor_current.html#a40638a00e4d21b34c74f8406f4e70046">calculateOptimalCurrent</a> ()</td></tr>
+<tr class="separator:a40638a00e4d21b34c74f8406f4e70046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f845ec03585b21a8e476ed3e63f365f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d75/class_motor_current.html#a0f845ec03585b21a8e476ed3e63f365f">getEstimatedFLA</a> ()</td></tr>
 <tr class="separator:a0f845ec03585b21a8e476ed3e63f365f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -92,8 +94,8 @@ Gina Accawi (accawigk) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d9c/_motor_current_8h_source.html#l00015">15</a> of file <a class="el" href="../../d6/d9c/_motor_current_8h_source.html">MotorCurrent.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a099860ac4021ce07ec5b033b3bcf37e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a099860ac4021ce07ec5b033b3bcf37e4">&#9670;&nbsp;</a></span>MotorCurrent()</h2>
+<a id="a9b6c25ee190196044e229b34a03d2af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6c25ee190196044e229b34a03d2af1">&#9670;&nbsp;</a></span>MotorCurrent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,13 +118,13 @@ Gina Accawi (accawigk) </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d6b/class_motor.html#acee1bdf1b684ad36cb80dc2829d9fcee">Motor::LineFrequency</a>&#160;</td>
+          <td class="paramtype">Motor::LineFrequency&#160;</td>
           <td class="paramname"><em>lineFrequency</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d6b/class_motor.html#afa022971ae062406a9f588c601673d4e">Motor::EfficiencyClass</a>&#160;</td>
+          <td class="paramtype">Motor::EfficiencyClass&#160;</td>
           <td class="paramname"><em>efficiencyClass</em>, </td>
         </tr>
         <tr>
@@ -141,13 +143,7 @@ Gina Accawi (accawigk) </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ratedVoltage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>fullLoadAmps</em>&#160;</td>
+          <td class="paramname"><em>ratedVoltage</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -165,48 +161,72 @@ Gina Accawi (accawigk) </dd></dl>
   <table class="params">
     <tr><td class="paramname">motorRatedPower</td><td>double, Rated power of motor in hp </td></tr>
     <tr><td class="paramname">motorRPM</td><td>double, RPM of motor. </td></tr>
-    <tr><td class="paramname">lineFrequency</td><td><a class="el" href="../../d1/d6b/class_motor.html#acee1bdf1b684ad36cb80dc2829d9fcee" title="Classifications of line frequency. ">Motor::LineFrequency</a>, classification of line Frequency of motor in Hz </td></tr>
-    <tr><td class="paramname">efficiencyClass</td><td><a class="el" href="../../d1/d6b/class_motor.html#afa022971ae062406a9f588c601673d4e" title="Classifications of efficiency classes. ">Motor::EfficiencyClass</a>, Efficiency class of motor. </td></tr>
+    <tr><td class="paramname">lineFrequency</td><td>Motor::LineFrequency, classification of line Frequency of motor in Hz </td></tr>
+    <tr><td class="paramname">efficiencyClass</td><td>Motor::EfficiencyClass, Efficiency class of motor. </td></tr>
     <tr><td class="paramname">specifiedEfficiency</td><td>double, Specified efficiency of motor when the efficiency class = SPECIFIED as % </td></tr>
     <tr><td class="paramname">loadFactor</td><td>double, load factor - unitless </td></tr>
     <tr><td class="paramname">ratedVoltage</td><td>double, Rated voltage of the motor in Volts </td></tr>
-    <tr><td class="paramname">fullLoadAmps</td><td>double, Current at full load in Amps </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9c/_motor_current_8h_source.html#l00028">28</a> of file <a class="el" href="../../d6/d9c/_motor_current_8h_source.html">MotorCurrent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9c/_motor_current_8h_source.html#l00027">27</a> of file <a class="el" href="../../d6/d9c/_motor_current_8h_source.html">MotorCurrent.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a18e545d2c82f1fe247cc501eda2ce857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18e545d2c82f1fe247cc501eda2ce857">&#9670;&nbsp;</a></span>calculate()</h2>
+<a id="aa08b2f8ba065b24908c7e1b80cadb4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08b2f8ba065b24908c7e1b80cadb4f6">&#9670;&nbsp;</a></span>calculateCurrent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double MotorCurrent::calculate </td>
+          <td class="memname">double MotorCurrent::calculateCurrent </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fullLoadAmps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contains the definition of functions of <a class="el" href="../../dc/d75/class_motor_current.html" title="Contains the declaration of MotorCurrent class including the getters and setters as well as the calcu...">MotorCurrent</a> class. calculate(): Calculates the motor current for a given value of load factor. </p>
+<p>calculates the motor current at a given load factor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fullLoadAmps</td><td>double, Current at full load in Amps </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double, motor current in amps</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Subhankar Mishra (mishras) </dd>
+<dd>
+Gina Accawi (accawigk) </dd></dl>
+<p>Calculates the motor current for a given value of load factor. Given the load% calculate the Amps. Pick the 0,25,50% motor current values and do a 2nd order polynomial fit. Use the fit coefficients to populate, in 1% load intervals, the current range from 0 to 25% load</p>
+<p>Pick the 25,50,75,100,and 125% motor current values and do a 4th order polynomial fit. Use the fit coefficients to populate, in 1% load intervals, from 26 to 125% load</p>
+<p>Pick the 75, 100, and 125% motor current values and do a 2nd order polynomial fit. Use the fit coefficients to populate, in 1% load intervals, the current range from 126 to 150% load </p><dl class="section return"><dt>Returns</dt><dd>motor current </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/ded/_motor_current_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dd/ded/_motor_current_8cpp_source.html">MotorCurrent.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a40638a00e4d21b34c74f8406f4e70046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40638a00e4d21b34c74f8406f4e70046">&#9670;&nbsp;</a></span>calculateOptimalCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MotorCurrent::calculateOptimalCurrent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>calculates the optimal motor current </p><dl class="section return"><dt>Returns</dt><dd>double, optimal motor current in amps </dd></dl>
 
-<p>Contains the definition of functions of <a class="el" href="../../dc/d75/class_motor_current.html" title="Contains the declaration of MotorCurrent class including the getters and setters as well as the calcu...">MotorCurrent</a> class. <a class="el" href="../../dc/d75/class_motor_current.html#a18e545d2c82f1fe247cc501eda2ce857" title="Contains the definition of functions of MotorCurrent class. calculate(): Calculates the motor current...">calculate()</a>: Calculates the motor current for a given value of load factor. </p>
-<p>calculates the motor current at a given load factor. </p><dl class="section return"><dt>Returns</dt><dd>double, motor current in amps</dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Subhankar Mishra (mishras) </dd>
-<dd>
-Gina Accawi (accawigk) </dd></dl>
-<p>Calculates the motor current for a given value of load factor. Given the load% calculate the Amps. Pick the 0,25,50% motor current values and do a 2nd order polynomial fit. Use the fit coefficients to populate, in 1% load intervals, the current range from 0 to 25% load</p>
-<p>Pick the 25,50,75,100,and 125% motor current values and do a 4th order polynomial fit. Use the fit coefficients to popluate, in 1% load intervals, from 26 to 125% load</p>
-<p>Pick the 75, 100, and 125% motor current values and do a 2nd order polynomial fit. Use the fit coefficients to populate, in 1% load intervals, the current range from 126 to 150% load </p><dl class="section return"><dt>Returns</dt><dd>motor current </dd></dl>
-<p>Adjustment based on the rated voltage.</p>
-<p>Adjustment based on the specified FLA </p>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/ded/_motor_current_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../dd/ded/_motor_current_8cpp_source.html">MotorCurrent.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ded/_motor_current_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../dd/ded/_motor_current_8cpp_source.html">MotorCurrent.cpp</a>.</p>
 
 </div>
 </div>
@@ -232,10 +252,9 @@ Gina Accawi (accawigk) </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the estimated full load amp</p>
-<dl class="section return"><dt>Returns</dt><dd>double, estimated current at full load in Amps </dd></dl>
+<p>Gets the estimated full load amp </p><dl class="section return"><dt>Returns</dt><dd>double, estimated current at full load in Amps </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d9c/_motor_current_8h_source.html#l00049">49</a> of file <a class="el" href="../../d6/d9c/_motor_current_8h_source.html">MotorCurrent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d9c/_motor_current_8h_source.html#l00054">54</a> of file <a class="el" href="../../d6/d9c/_motor_current_8h_source.html">MotorCurrent.h</a>.</p>
 
 </div>
 </div>

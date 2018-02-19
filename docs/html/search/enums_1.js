@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['efficiencyclass',['EfficiencyClass',['../d1/d6b/class_motor.html#afa022971ae062406a9f588c601673d4e',1,'Motor']]]
+  ['gas',['Gas',['../d4/db7/class_flow_calculations_energy_use.html#a840d5a836e7b05d6791b79bace4440f2',1,'FlowCalculationsEnergyUse']]]
 ];

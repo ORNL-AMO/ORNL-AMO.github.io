@@ -13,7 +13,7 @@ Inheritance diagram for Head\+Tool\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_head_tool_a9934c87c8f8eb515ff32e46c74004c0e}{Head\+Tool} (const double specific\+Gravity, const double flow\+Rate, const double suction\+Pipe\+Diameter, const double suction\+Gauge\+Pressure, const double suction\+Gauge\+Elevation, const double suction\+Line\+Loss\+Coefficients, const double discharge\+Pipe\+Diameter, const double discharge\+Gauge\+Pressure, const double discharge\+Gauge\+Elevation, const double discharge\+Line\+Loss\+Coefficients)
+\hyperlink{class_head_tool_a9934c87c8f8eb515ff32e46c74004c0e}{Head\+Tool} (const double \hyperlink{class_head_tool_base_ae5af2380fb5db2c25281ef663a5fb65f}{specific\+Gravity}, const double \hyperlink{class_head_tool_base_acf4c03cb62cbf63aba017ce063989fbc}{flow\+Rate}, const double \hyperlink{class_head_tool_base_a357365fc5ef346ce7bcb089c9d1a95e1}{suction\+Pipe\+Diameter}, const double suction\+Gauge\+Pressure, const double suction\+Gauge\+Elevation, const double \hyperlink{class_head_tool_base_ac74c6f6f8ab387efe7b77e0ce6ecd84e}{suction\+Line\+Loss\+Coefficients}, const double \hyperlink{class_head_tool_base_a126a397bd3d87b68864e1962c70bb45e}{discharge\+Pipe\+Diameter}, const double \hyperlink{class_head_tool_base_a39c854f13b16967e02a67cd1aaee07c4}{discharge\+Gauge\+Pressure}, const double \hyperlink{class_head_tool_base_a9ed2160992f8da2e335d919cf9aedd08}{discharge\+Gauge\+Elevation}, const double \hyperlink{class_head_tool_base_a147c035c7422406c594c5fd42ab11eb0}{discharge\+Line\+Loss\+Coefficients})
 \item 
 std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \hyperlink{class_head_tool_ab107e7717df4ca95404ce1952c21a84e}{calculate} () override
 \end{DoxyCompactItemize}
@@ -22,7 +22,7 @@ std\+::unordered\+\_\+map$<$ std\+::string, double $>$ \hyperlink{class_head_too
 \subsection{Detailed Description}
 Head Tool class Contains all of the properties of a head tool. Used to calculate all of the values of the returned unordered map. 
 
-Definition at line 169 of file Head\+Tool.\+h.
+Definition at line 165 of file Head\+Tool.\+h.
 
 
 
@@ -60,7 +60,7 @@ Constructor for \hyperlink{class_head_tool}{Head\+Tool} with no Suction Tank, al
 \end{DoxyParams}
 
 
-Definition at line 188 of file Head\+Tool.\+h.
+Definition at line 184 of file Head\+Tool.\+h.
 
 
 
@@ -71,9 +71,7 @@ Definition at line 188 of file Head\+Tool.\+h.
 \subsubsection{\texorpdfstring{calculate()}{calculate()}}
 {\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, double $>$ Head\+Tool\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Calculates the operating pump head
-
-\begin{DoxyReturn}{Returns}
+Calculates the operating pump head \begin{DoxyReturn}{Returns}
 unordered\+\_\+map with internal values calculated 
 \end{DoxyReturn}
 

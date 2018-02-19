@@ -62,9 +62,9 @@ double \hyperlink{class_pump_a7b834ffb06cbfd643043e3a26ca1af6e}{get\+Kviscosity}
 \item 
 void \hyperlink{class_pump_a26d1d10908f91137f5148540ceb6520a}{set\+Kviscosity\+\_\+} (double kviscosity)
 \item 
-double \hyperlink{class_pump_ae30109b8533176cc1c7c80cf9df95631}{get\+Sg} ()
+double \hyperlink{class_pump_ad3526b01094bfdb382305ca5b6731d53}{get\+Specific\+Gravity} ()
 \item 
-void \hyperlink{class_pump_a9b9773b74e0e56acece38107ab547728}{set\+Sg} (double sg)
+void \hyperlink{class_pump_a1032a4ec4dd4002889f4b848af7c9e01}{set\+Specific\+Gravity} (double sg)
 \item 
 int \hyperlink{class_pump_a2a8754f53b289dc41f3220adc4eb56e1}{get\+Stage\+Count} ()
 \item 
@@ -79,7 +79,7 @@ void \hyperlink{class_pump_a9e74b484f468a14076fb12d8b991e24b}{set\+Fixed\+Speed\
 \subsection{Detailed Description}
 \hyperlink{class_pump}{Pump} class Contains all of the properties of a pump. 
 
-Definition at line 22 of file Pump.\+h.
+Definition at line 24 of file Pump.\+h.
 
 
 
@@ -111,7 +111,7 @@ Constructor
 \end{DoxyParams}
 
 
-Definition at line 66 of file Pump.\+h.
+Definition at line 68 of file Pump.\+h.
 
 
 
@@ -122,14 +122,12 @@ Definition at line 66 of file Pump.\+h.
 \subsubsection{\texorpdfstring{get\+Achievable\+Efficiency()}{getAchievableEfficiency()}}
 {\footnotesize\ttfamily double Pump\+::get\+Achievable\+Efficiency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get the achievable efficiency of the pump at specified operating conditions
-
-\begin{DoxyReturn}{Returns}
+Get the achievable efficiency of the pump at specified operating conditions \begin{DoxyReturn}{Returns}
 double, achievable efficiency as \% 
 \end{DoxyReturn}
 
 
-Definition at line 112 of file Pump.\+h.
+Definition at line 110 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a7eae412e42d0a3351408391cd5fbef4e}\label{class_pump_a7eae412e42d0a3351408391cd5fbef4e}} 
 \index{Pump@{Pump}!get\+Drive@{get\+Drive}}
@@ -137,14 +135,12 @@ Definition at line 112 of file Pump.\+h.
 \subsubsection{\texorpdfstring{get\+Drive()}{getDrive()}}
 {\footnotesize\ttfamily \hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Drive} Pump\+::get\+Drive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get the type of drive the pump uses from either direct or belt drive
-
-\begin{DoxyReturn}{Returns}
+Get the type of drive the pump uses from either direct or belt drive \begin{DoxyReturn}{Returns}
 Drive, classification of drive type 
 \end{DoxyReturn}
 
 
-Definition at line 148 of file Pump.\+h.
+Definition at line 142 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_ae9a63b7e616ba2ef7723d1040af241b4}\label{class_pump_ae9a63b7e616ba2ef7723d1040af241b4}} 
 \index{Pump@{Pump}!get\+Fixed\+Speed@{get\+Fixed\+Speed}}
@@ -152,14 +148,12 @@ Definition at line 148 of file Pump.\+h.
 \subsubsection{\texorpdfstring{get\+Fixed\+Speed()}{getFixedSpeed()}}
 {\footnotesize\ttfamily \hyperlink{class_pump_ae443603074ebca82f0b89209482d10b6}{Speed} Pump\+::get\+Fixed\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get the type of pump speed from either fixed or not fixed
-
-\begin{DoxyReturn}{Returns}
+Get the type of pump speed from either fixed or not fixed \begin{DoxyReturn}{Returns}
 Speed, classification of pump speed type 
 \end{DoxyReturn}
 
 
-Definition at line 224 of file Pump.\+h.
+Definition at line 206 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a7b834ffb06cbfd643043e3a26ca1af6e}\label{class_pump_a7b834ffb06cbfd643043e3a26ca1af6e}} 
 \index{Pump@{Pump}!get\+Kviscosity@{get\+Kviscosity}}
@@ -167,44 +161,38 @@ Definition at line 224 of file Pump.\+h.
 \subsubsection{\texorpdfstring{get\+Kviscosity()}{getKviscosity()}}
 {\footnotesize\ttfamily double Pump\+::get\+Kviscosity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get the kinematic viscosity of the fluid being pumped
-
-\begin{DoxyReturn}{Returns}
+Get the kinematic viscosity of the fluid being pumped \begin{DoxyReturn}{Returns}
 double, kinematic viscosity in centistokes 
 \end{DoxyReturn}
 
 
-Definition at line 167 of file Pump.\+h.
+Definition at line 158 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a66870deae37979d64a910b89c6977b26}\label{class_pump_a66870deae37979d64a910b89c6977b26}} 
 \index{Pump@{Pump}!get\+Rpm@{get\+Rpm}}
 \index{get\+Rpm@{get\+Rpm}!Pump@{Pump}}
 \subsubsection{\texorpdfstring{get\+Rpm()}{getRpm()}}
-{\footnotesize\ttfamily int Pump\+::get\+Rpm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Pump\+::get\+Rpm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get R\+PM of pump to define operation speed
-
-\begin{DoxyReturn}{Returns}
+Get R\+PM of pump to define operation speed \begin{DoxyReturn}{Returns}
 int, motor R\+PM 
 \end{DoxyReturn}
 
 
-Definition at line 8 of file Pump.\+cpp.
+Definition at line 126 of file Pump.\+h.
 
-\mbox{\Hypertarget{class_pump_ae30109b8533176cc1c7c80cf9df95631}\label{class_pump_ae30109b8533176cc1c7c80cf9df95631}} 
-\index{Pump@{Pump}!get\+Sg@{get\+Sg}}
-\index{get\+Sg@{get\+Sg}!Pump@{Pump}}
-\subsubsection{\texorpdfstring{get\+Sg()}{getSg()}}
-{\footnotesize\ttfamily double Pump\+::get\+Sg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_pump_ad3526b01094bfdb382305ca5b6731d53}\label{class_pump_ad3526b01094bfdb382305ca5b6731d53}} 
+\index{Pump@{Pump}!get\+Specific\+Gravity@{get\+Specific\+Gravity}}
+\index{get\+Specific\+Gravity@{get\+Specific\+Gravity}!Pump@{Pump}}
+\subsubsection{\texorpdfstring{get\+Specific\+Gravity()}{getSpecificGravity()}}
+{\footnotesize\ttfamily double Pump\+::get\+Specific\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get the specific gravity
-
-\begin{DoxyReturn}{Returns}
+Get the specific gravity \begin{DoxyReturn}{Returns}
 double, specific gravity -\/ unitless 
 \end{DoxyReturn}
 
 
-Definition at line 186 of file Pump.\+h.
+Definition at line 174 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a2a8754f53b289dc41f3220adc4eb56e1}\label{class_pump_a2a8754f53b289dc41f3220adc4eb56e1}} 
 \index{Pump@{Pump}!get\+Stage\+Count@{get\+Stage\+Count}}
@@ -212,14 +200,12 @@ Definition at line 186 of file Pump.\+h.
 \subsubsection{\texorpdfstring{get\+Stage\+Count()}{getStageCount()}}
 {\footnotesize\ttfamily int Pump\+::get\+Stage\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get number of pump stages
-
-\begin{DoxyReturn}{Returns}
+Get number of pump stages \begin{DoxyReturn}{Returns}
 int, number of pump stages 
 \end{DoxyReturn}
 
 
-Definition at line 205 of file Pump.\+h.
+Definition at line 190 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_ab75d877769b5232c5ab7b4d92940579a}\label{class_pump_ab75d877769b5232c5ab7b4d92940579a}} 
 \index{Pump@{Pump}!get\+Style@{get\+Style}}
@@ -227,14 +213,12 @@ Definition at line 205 of file Pump.\+h.
 \subsubsection{\texorpdfstring{get\+Style()}{getStyle()}}
 {\footnotesize\ttfamily \hyperlink{class_pump_aef354601ce4218258cc898b35a1e90ff}{Style} Pump\+::get\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Get the style of the pump being used
-
-\begin{DoxyReturn}{Returns}
+Get the style of the pump being used \begin{DoxyReturn}{Returns}
 Style, classification of style of pump 
 \end{DoxyReturn}
 
 
-Definition at line 93 of file Pump.\+h.
+Definition at line 94 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a183f83fcc4b77e330451000df4d91046}\label{class_pump_a183f83fcc4b77e330451000df4d91046}} 
 \index{Pump@{Pump}!set\+Achievable\+Efficiency@{set\+Achievable\+Efficiency}}
@@ -242,16 +226,14 @@ Definition at line 93 of file Pump.\+h.
 \subsubsection{\texorpdfstring{set\+Achievable\+Efficiency()}{setAchievableEfficiency()}}
 {\footnotesize\ttfamily void Pump\+::set\+Achievable\+Efficiency (\begin{DoxyParamCaption}\item[{double}]{achievable\+Efficiency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the achievable efficiency of the pump at specified operating conditions
-
-
+Set the achievable efficiency of the pump at specified operating conditions 
 \begin{DoxyParams}{Parameters}
 {\em achievable\+Efficiency} & double, achievable efficiency as \% \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 122 of file Pump.\+h.
+Definition at line 118 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a54b6fc1aa44cc8377914ccb94738723a}\label{class_pump_a54b6fc1aa44cc8377914ccb94738723a}} 
 \index{Pump@{Pump}!set\+Drive@{set\+Drive}}
@@ -259,16 +241,14 @@ Definition at line 122 of file Pump.\+h.
 \subsubsection{\texorpdfstring{set\+Drive()}{setDrive()}}
 {\footnotesize\ttfamily void Pump\+::set\+Drive (\begin{DoxyParamCaption}\item[{\hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Drive}}]{drive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the type of drive the pump uses from either direct or belt drive
-
-
+Set the type of drive the pump uses from either direct or belt drive 
 \begin{DoxyParams}{Parameters}
 {\em drive} & Drive, classification of drive type \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 158 of file Pump.\+h.
+Definition at line 150 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a9e74b484f468a14076fb12d8b991e24b}\label{class_pump_a9e74b484f468a14076fb12d8b991e24b}} 
 \index{Pump@{Pump}!set\+Fixed\+Speed\+\_\+@{set\+Fixed\+Speed\+\_\+}}
@@ -276,16 +256,14 @@ Definition at line 158 of file Pump.\+h.
 \subsubsection{\texorpdfstring{set\+Fixed\+Speed\+\_\+()}{setFixedSpeed\_()}}
 {\footnotesize\ttfamily void Pump\+::set\+Fixed\+Speed\+\_\+ (\begin{DoxyParamCaption}\item[{\hyperlink{class_pump_ae443603074ebca82f0b89209482d10b6}{Speed}}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the type of pump speed from either fixed or not fixed
-
-
+Set the type of pump speed from either fixed or not fixed 
 \begin{DoxyParams}{Parameters}
 {\em speed} & Speed, classification of pump speed type \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 234 of file Pump.\+h.
+Definition at line 214 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a26d1d10908f91137f5148540ceb6520a}\label{class_pump_a26d1d10908f91137f5148540ceb6520a}} 
 \index{Pump@{Pump}!set\+Kviscosity\+\_\+@{set\+Kviscosity\+\_\+}}
@@ -293,16 +271,14 @@ Definition at line 234 of file Pump.\+h.
 \subsubsection{\texorpdfstring{set\+Kviscosity\+\_\+()}{setKviscosity\_()}}
 {\footnotesize\ttfamily void Pump\+::set\+Kviscosity\+\_\+ (\begin{DoxyParamCaption}\item[{double}]{kviscosity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the kinematic viscosity of the fluid being pumped
-
-
+Set the kinematic viscosity of the fluid being pumped 
 \begin{DoxyParams}{Parameters}
 {\em kviscosity} & double, kinematic viscosity in centistokes \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 177 of file Pump.\+h.
+Definition at line 166 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a7478d85c3b89cda275b039673603a785}\label{class_pump_a7478d85c3b89cda275b039673603a785}} 
 \index{Pump@{Pump}!set\+Rpm@{set\+Rpm}}
@@ -310,33 +286,29 @@ Definition at line 177 of file Pump.\+h.
 \subsubsection{\texorpdfstring{set\+Rpm()}{setRpm()}}
 {\footnotesize\ttfamily void Pump\+::set\+Rpm (\begin{DoxyParamCaption}\item[{double}]{rpm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the R\+PM of pump to define operation speed
-
-
+Set the R\+PM of pump to define operation speed 
 \begin{DoxyParams}{Parameters}
 {\em rpm} & double, motor R\+PM \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 139 of file Pump.\+h.
+Definition at line 134 of file Pump.\+h.
 
-\mbox{\Hypertarget{class_pump_a9b9773b74e0e56acece38107ab547728}\label{class_pump_a9b9773b74e0e56acece38107ab547728}} 
-\index{Pump@{Pump}!set\+Sg@{set\+Sg}}
-\index{set\+Sg@{set\+Sg}!Pump@{Pump}}
-\subsubsection{\texorpdfstring{set\+Sg()}{setSg()}}
-{\footnotesize\ttfamily void Pump\+::set\+Sg (\begin{DoxyParamCaption}\item[{double}]{sg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_pump_a1032a4ec4dd4002889f4b848af7c9e01}\label{class_pump_a1032a4ec4dd4002889f4b848af7c9e01}} 
+\index{Pump@{Pump}!set\+Specific\+Gravity@{set\+Specific\+Gravity}}
+\index{set\+Specific\+Gravity@{set\+Specific\+Gravity}!Pump@{Pump}}
+\subsubsection{\texorpdfstring{set\+Specific\+Gravity()}{setSpecificGravity()}}
+{\footnotesize\ttfamily void Pump\+::set\+Specific\+Gravity (\begin{DoxyParamCaption}\item[{double}]{sg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the specific gravity
-
-
+Set the specific gravity 
 \begin{DoxyParams}{Parameters}
 {\em sg} & double, specific gravity -\/ unitless \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 196 of file Pump.\+h.
+Definition at line 182 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a28943405616a792c970b7e9bbf01c1b2}\label{class_pump_a28943405616a792c970b7e9bbf01c1b2}} 
 \index{Pump@{Pump}!set\+Stage\+Count@{set\+Stage\+Count}}
@@ -344,16 +316,14 @@ Definition at line 196 of file Pump.\+h.
 \subsubsection{\texorpdfstring{set\+Stage\+Count()}{setStageCount()}}
 {\footnotesize\ttfamily void Pump\+::set\+Stage\+Count (\begin{DoxyParamCaption}\item[{int}]{stage\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set number of pump stages
-
-
+Set number of pump stages 
 \begin{DoxyParams}{Parameters}
 {\em stage\+Count} & int, number of pump stages \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 215 of file Pump.\+h.
+Definition at line 198 of file Pump.\+h.
 
 \mbox{\Hypertarget{class_pump_a4852cb47f40a46ba84c7dff91d1abd53}\label{class_pump_a4852cb47f40a46ba84c7dff91d1abd53}} 
 \index{Pump@{Pump}!set\+Style@{set\+Style}}
@@ -361,20 +331,17 @@ Definition at line 215 of file Pump.\+h.
 \subsubsection{\texorpdfstring{set\+Style()}{setStyle()}}
 {\footnotesize\ttfamily void Pump\+::set\+Style (\begin{DoxyParamCaption}\item[{\hyperlink{class_pump_aef354601ce4218258cc898b35a1e90ff}{Style}}]{style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Set the style of pump being used
-
-
+Set the style of pump being used 
 \begin{DoxyParams}{Parameters}
 {\em style} & Style, classification of style of pump \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 103 of file Pump.\+h.
+Definition at line 102 of file Pump.\+h.
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/psat/\hyperlink{_pump_8h}{Pump.\+h}\item 
-src/psat/Pump.\+cpp\end{DoxyCompactItemize}
+include/psat/\hyperlink{_pump_8h}{Pump.\+h}\end{DoxyCompactItemize}

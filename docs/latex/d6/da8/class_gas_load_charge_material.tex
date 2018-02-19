@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_gas_load_charge_material_aec7d944af0d8b649d8f971240f52d995}{Gas\+Load\+Charge\+Material} (\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type, double specific\+Heat\+Gas, double feed\+Rate, double percent\+Vapor, double initial\+Temperature, double discharge\+Temperature, double specific\+Heat\+Vapor, double percent\+Reacted, double reaction\+Heat, double additional\+Heat)
+\hyperlink{class_gas_load_charge_material_a4ad94a94d25bad9eaeca4947d879f35f}{Gas\+Load\+Charge\+Material} (const \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type, const double specific\+Heat\+Gas, const double feed\+Rate, const double percent\+Vapor, const double initial\+Temperature, const double discharge\+Temperature, const double specific\+Heat\+Vapor, const double percent\+Reacted, const double reaction\+Heat, const double additional\+Heat)
 \item 
 \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} \hyperlink{class_gas_load_charge_material_ac801f30ccf58ce98fdb6b8cdb0a9767f}{get\+Thermic\+Reaction\+Type} () const
 \item 
@@ -83,15 +83,13 @@ Definition at line 24 of file Gas\+Load\+Charge\+Material.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_gas_load_charge_material_aec7d944af0d8b649d8f971240f52d995}\label{class_gas_load_charge_material_aec7d944af0d8b649d8f971240f52d995}} 
+\mbox{\Hypertarget{class_gas_load_charge_material_a4ad94a94d25bad9eaeca4947d879f35f}\label{class_gas_load_charge_material_a4ad94a94d25bad9eaeca4947d879f35f}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}}
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{Gas\+Load\+Charge\+Material()}{GasLoadChargeMaterial()}}
-{\footnotesize\ttfamily Gas\+Load\+Charge\+Material\+::\+Gas\+Load\+Charge\+Material (\begin{DoxyParamCaption}\item[{\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type,  }\item[{double}]{specific\+Heat\+Gas,  }\item[{double}]{feed\+Rate,  }\item[{double}]{percent\+Vapor,  }\item[{double}]{initial\+Temperature,  }\item[{double}]{discharge\+Temperature,  }\item[{double}]{specific\+Heat\+Vapor,  }\item[{double}]{percent\+Reacted,  }\item[{double}]{reaction\+Heat,  }\item[{double}]{additional\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Gas\+Load\+Charge\+Material\+::\+Gas\+Load\+Charge\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type,  }\item[{const double}]{specific\+Heat\+Gas,  }\item[{const double}]{feed\+Rate,  }\item[{const double}]{percent\+Vapor,  }\item[{const double}]{initial\+Temperature,  }\item[{const double}]{discharge\+Temperature,  }\item[{const double}]{specific\+Heat\+Vapor,  }\item[{const double}]{percent\+Reacted,  }\item[{const double}]{reaction\+Heat,  }\item[{const double}]{additional\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Constructor for the gas load/charge material with all inputs specified
-
-
+Constructor for the gas load/charge material with all inputs specified 
 \begin{DoxyParams}{Parameters}
 {\em thermic\+Reaction\+Type} & Enumerated value for either endothermic or exothermic reactions \\
 \hline
@@ -116,7 +114,7 @@ Constructor for the gas load/charge material with all inputs specified
 \end{DoxyParams}
 
 
-Definition at line 42 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 40 of file Gas\+Load\+Charge\+Material.\+h.
 
 
 
@@ -127,14 +125,12 @@ Definition at line 42 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Additional\+Heat()}{getAdditionalHeat()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Additional\+Heat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the additional heat required
-
-\begin{DoxyReturn}{Returns}
+Gets the additional heat required \begin{DoxyReturn}{Returns}
 double, additional heat required in btu/hr 
 \end{DoxyReturn}
 
 
-Definition at line 225 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 197 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a6baaf6ad65e2a3d1fa90b7c007bc3c53}\label{class_gas_load_charge_material_a6baaf6ad65e2a3d1fa90b7c007bc3c53}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Discharge\+Temperature@{get\+Discharge\+Temperature}}
@@ -142,14 +138,12 @@ Definition at line 225 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Discharge\+Temperature()}{getDischargeTemperature()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Discharge\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the discharge temperature
-
-\begin{DoxyReturn}{Returns}
+Gets the discharge temperature \begin{DoxyReturn}{Returns}
 double, discharge temperature in °F 
 \end{DoxyReturn}
 
 
-Definition at line 149 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 133 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_ae14ebe9b7091a491166174968505b6ee}\label{class_gas_load_charge_material_ae14ebe9b7091a491166174968505b6ee}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Feed\+Rate@{get\+Feed\+Rate}}
@@ -157,14 +151,12 @@ Definition at line 149 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Feed\+Rate()}{getFeedRate()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Feed\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the feed rate for gas mixture
-
-\begin{DoxyReturn}{Returns}
+Gets the feed rate for gas mixture \begin{DoxyReturn}{Returns}
 double, feed rate for gas mixture in lb/hr 
 \end{DoxyReturn}
 
 
-Definition at line 111 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 101 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a32dc0d73857ebe4322cf525064713cf6}\label{class_gas_load_charge_material_a32dc0d73857ebe4322cf525064713cf6}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+ID@{get\+ID}}
@@ -172,14 +164,12 @@ Definition at line 111 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
 {\footnotesize\ttfamily std\+::size\+\_\+t Gas\+Load\+Charge\+Material\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the ID of material
-
-\begin{DoxyReturn}{Returns}
+Gets the ID of material \begin{DoxyReturn}{Returns}
 std\+::size\+\_\+t, ID of material 
 \end{DoxyReturn}
 
 
-Definition at line 292 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 253 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_af8a83c3720d108baa196394105822db7}\label{class_gas_load_charge_material_af8a83c3720d108baa196394105822db7}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Initial\+Temperature@{get\+Initial\+Temperature}}
@@ -187,14 +177,12 @@ Definition at line 292 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Initial\+Temperature()}{getInitialTemperature()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Initial\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the initial temperature
-
-\begin{DoxyReturn}{Returns}
+Gets the initial temperature \begin{DoxyReturn}{Returns}
 double, initial temperature in °F 
 \end{DoxyReturn}
 
 
-Definition at line 130 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 117 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_af47b4c6c3e547325cadd81cbb09937ee}\label{class_gas_load_charge_material_af47b4c6c3e547325cadd81cbb09937ee}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Percent\+Reacted@{get\+Percent\+Reacted}}
@@ -202,14 +190,12 @@ Definition at line 130 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Percent\+Reacted()}{getPercentReacted()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Percent\+Reacted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the percentage of feed gas reacted
-
-\begin{DoxyReturn}{Returns}
+Gets the percentage of feed gas reacted \begin{DoxyReturn}{Returns}
 double, charge gas reacted as \% of D\+RY gas feed 
 \end{DoxyReturn}
 
 
-Definition at line 187 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 165 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a19b8ecfad235b5824b0a88903cff667a}\label{class_gas_load_charge_material_a19b8ecfad235b5824b0a88903cff667a}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Percent\+Vapor@{get\+Percent\+Vapor}}
@@ -217,14 +203,12 @@ Definition at line 187 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Percent\+Vapor()}{getPercentVapor()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Percent\+Vapor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the percentage of vapor in gas mixture
-
-\begin{DoxyReturn}{Returns}
+Gets the percentage of vapor in gas mixture \begin{DoxyReturn}{Returns}
 double, vapor in gas mixture as \% 
 \end{DoxyReturn}
 
 
-Definition at line 244 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 213 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a605eaf21d1f25f27b53627aeb903c93d}\label{class_gas_load_charge_material_a605eaf21d1f25f27b53627aeb903c93d}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Reaction\+Heat@{get\+Reaction\+Heat}}
@@ -232,14 +216,12 @@ Definition at line 244 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Reaction\+Heat()}{getReactionHeat()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Reaction\+Heat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the heat of reaction
-
-\begin{DoxyReturn}{Returns}
+Gets the heat of reaction \begin{DoxyReturn}{Returns}
 double, heat of reaction in btu/lb 
 \end{DoxyReturn}
 
 
-Definition at line 206 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 181 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a66e956e7a52b1032a3e8a725f26fa580}\label{class_gas_load_charge_material_a66e956e7a52b1032a3e8a725f26fa580}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Specific\+Heat\+Gas@{get\+Specific\+Heat\+Gas}}
@@ -247,14 +229,12 @@ Definition at line 206 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Specific\+Heat\+Gas()}{getSpecificHeatGas()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Specific\+Heat\+Gas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the specific heat of gas
-
-\begin{DoxyReturn}{Returns}
+Gets the specific heat of gas \begin{DoxyReturn}{Returns}
 double, specific heat of gas in btu/(lb$\ast$°F) 
 \end{DoxyReturn}
 
 
-Definition at line 92 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 85 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a9a07e86938bb831e51ac3f53f696a3c3}\label{class_gas_load_charge_material_a9a07e86938bb831e51ac3f53f696a3c3}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Specific\+Heat\+Vapor@{get\+Specific\+Heat\+Vapor}}
@@ -262,14 +242,12 @@ Definition at line 92 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Specific\+Heat\+Vapor()}{getSpecificHeatVapor()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Specific\+Heat\+Vapor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the specific heat of vapor
-
-\begin{DoxyReturn}{Returns}
+Gets the specific heat of vapor \begin{DoxyReturn}{Returns}
 double, specific heat of vapor in btu/(lb$\ast$°F) 
 \end{DoxyReturn}
 
 
-Definition at line 168 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 149 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a5f967841f196f6b0b35f32f9610092e3}\label{class_gas_load_charge_material_a5f967841f196f6b0b35f32f9610092e3}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Substance@{get\+Substance}}
@@ -277,14 +255,12 @@ Definition at line 168 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Substance()}{getSubstance()}}
 {\footnotesize\ttfamily std\+::string Gas\+Load\+Charge\+Material\+::get\+Substance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the name of substance
-
-\begin{DoxyReturn}{Returns}
+Gets the name of substance \begin{DoxyReturn}{Returns}
 string, name of substance 
 \end{DoxyReturn}
 
 
-Definition at line 263 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 229 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_ac801f30ccf58ce98fdb6b8cdb0a9767f}\label{class_gas_load_charge_material_ac801f30ccf58ce98fdb6b8cdb0a9767f}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Thermic\+Reaction\+Type@{get\+Thermic\+Reaction\+Type}}
@@ -292,14 +268,12 @@ Definition at line 263 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Thermic\+Reaction\+Type()}{getThermicReactionType()}}
 {\footnotesize\ttfamily \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} Gas\+Load\+Charge\+Material\+::get\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the classification of thermic reaction type
-
-\begin{DoxyReturn}{Returns}
+Gets the classification of thermic reaction type \begin{DoxyReturn}{Returns}
 \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}, type of thermic reaction 
 \end{DoxyReturn}
 
 
-Definition at line 72 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 69 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a4f831537652ca09c4539982c626cc164}\label{class_gas_load_charge_material_a4f831537652ca09c4539982c626cc164}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!get\+Total\+Heat@{get\+Total\+Heat}}
@@ -307,9 +281,7 @@ Definition at line 72 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{get\+Total\+Heat()}{getTotalHeat()}}
 {\footnotesize\ttfamily double Gas\+Load\+Charge\+Material\+::get\+Total\+Heat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Gets the total heat required
-
-\begin{DoxyReturn}{Returns}
+Gets the total heat required \begin{DoxyReturn}{Returns}
 double, total heat required in btu/hr 
 \end{DoxyReturn}
 
@@ -322,16 +294,14 @@ Definition at line 11 of file Gas\+Load\+Charge\+Material.\+cpp.
 \subsubsection{\texorpdfstring{set\+Additional\+Heat()}{setAdditionalHeat()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Additional\+Heat (\begin{DoxyParamCaption}\item[{double}]{additional\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the additional heat required
-
-
+Sets the additional heat required 
 \begin{DoxyParams}{Parameters}
 {\em additional\+Heat} & double, additional heat required in btu/hr \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 235 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 205 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a6c53344d5370a1e9b7321a530a6843c0}\label{class_gas_load_charge_material_a6c53344d5370a1e9b7321a530a6843c0}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Discharge\+Temperature@{set\+Discharge\+Temperature}}
@@ -339,16 +309,14 @@ Definition at line 235 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Discharge\+Temperature()}{setDischargeTemperature()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Discharge\+Temperature (\begin{DoxyParamCaption}\item[{double}]{discharge\+Temperature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the discharge temperature
-
-
+Sets the discharge temperature 
 \begin{DoxyParams}{Parameters}
 {\em discharge\+Temperature} & double, discharge temperature in °F \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 159 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 141 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a922b728dfd109d1c1684d7dfad82ec8e}\label{class_gas_load_charge_material_a922b728dfd109d1c1684d7dfad82ec8e}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Feed\+Rate@{set\+Feed\+Rate}}
@@ -356,16 +324,14 @@ Definition at line 159 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Feed\+Rate()}{setFeedRate()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Feed\+Rate (\begin{DoxyParamCaption}\item[{double}]{feed\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the feed rate for gas mixture
-
-
+Sets the feed rate for gas mixture 
 \begin{DoxyParams}{Parameters}
 {\em feed\+Rate} & double, feed rate for gas mixture in lb/hr \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 121 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 109 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a24b43ba7c871453258f458a8c1f15232}\label{class_gas_load_charge_material_a24b43ba7c871453258f458a8c1f15232}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+ID@{set\+ID}}
@@ -373,16 +339,14 @@ Definition at line 121 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+I\+D()}{setID()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+ID (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the ID of material
-
-
+Sets the ID of material 
 \begin{DoxyParams}{Parameters}
 {\em id} & const int, ID of material \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 302 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 261 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_aec9ddfce5e31099b6a047e3d98d80d47}\label{class_gas_load_charge_material_aec9ddfce5e31099b6a047e3d98d80d47}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Initial\+Temperature@{set\+Initial\+Temperature}}
@@ -390,16 +354,14 @@ Definition at line 302 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Initial\+Temperature()}{setInitialTemperature()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Initial\+Temperature (\begin{DoxyParamCaption}\item[{double}]{initial\+Temperature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the initial temperature
-
-
+Sets the initial temperature 
 \begin{DoxyParams}{Parameters}
 {\em initial\+Temperature} & double, initial temperature in °F \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 140 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 125 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a7142cb6bbfba53d640dd6f1590fe32f6}\label{class_gas_load_charge_material_a7142cb6bbfba53d640dd6f1590fe32f6}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Percent\+Reacted@{set\+Percent\+Reacted}}
@@ -407,16 +369,14 @@ Definition at line 140 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Percent\+Reacted()}{setPercentReacted()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Percent\+Reacted (\begin{DoxyParamCaption}\item[{double}]{percent\+Reacted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the percentage of feed gas reacted
-
-
+Sets the percentage of feed gas reacted 
 \begin{DoxyParams}{Parameters}
 {\em percent\+Reacted} & double, charge gas reacted as \% of D\+RY gas feed \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 197 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 173 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_acace81e16ef531acb0a68462ab0ed25d}\label{class_gas_load_charge_material_acace81e16ef531acb0a68462ab0ed25d}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Percent\+Vapor@{set\+Percent\+Vapor}}
@@ -424,16 +384,14 @@ Definition at line 197 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Percent\+Vapor()}{setPercentVapor()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Percent\+Vapor (\begin{DoxyParamCaption}\item[{double}]{percent\+Vapor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the percentage of vapor in gas mixture
-
-
+Sets the percentage of vapor in gas mixture 
 \begin{DoxyParams}{Parameters}
 {\em percent\+Vapor} & double, vapor in gas mixture as \% \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 254 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 221 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a721f02cbd0bfbb6ebe67c0da09f0b0f2}\label{class_gas_load_charge_material_a721f02cbd0bfbb6ebe67c0da09f0b0f2}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Reaction\+Heat@{set\+Reaction\+Heat}}
@@ -441,16 +399,14 @@ Definition at line 254 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Reaction\+Heat()}{setReactionHeat()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Reaction\+Heat (\begin{DoxyParamCaption}\item[{double}]{reaction\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the heat of reaction
-
-
+Sets the heat of reaction 
 \begin{DoxyParams}{Parameters}
 {\em reaction\+Heat} & double, heat of reaction in btu/lb \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 216 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 189 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a07bf6d4ee9161683fbeb3baad16ea7be}\label{class_gas_load_charge_material_a07bf6d4ee9161683fbeb3baad16ea7be}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Specific\+Heat\+Gas@{set\+Specific\+Heat\+Gas}}
@@ -458,16 +414,14 @@ Definition at line 216 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Specific\+Heat\+Gas()}{setSpecificHeatGas()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Specific\+Heat\+Gas (\begin{DoxyParamCaption}\item[{double}]{specific\+Heat\+Gas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the specific heat of gas
-
-
+Sets the specific heat of gas 
 \begin{DoxyParams}{Parameters}
 {\em specific\+Heat\+Gas} & double, specific heat of gas in btu/(lb$\ast$°F) \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 102 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 93 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a7498eba84bb8bdfc5344f0e44418260b}\label{class_gas_load_charge_material_a7498eba84bb8bdfc5344f0e44418260b}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Specific\+Heat\+Vapor@{set\+Specific\+Heat\+Vapor}}
@@ -475,16 +429,14 @@ Definition at line 102 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Specific\+Heat\+Vapor()}{setSpecificHeatVapor()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Specific\+Heat\+Vapor (\begin{DoxyParamCaption}\item[{double}]{specific\+Heat\+Vapor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the specific heat of vapor
-
-
+Sets the specific heat of vapor 
 \begin{DoxyParams}{Parameters}
 {\em specific\+Heat\+Vapor} & double, specific heat of vapor in btu/(lb$\ast$°F) \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 178 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 157 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_a20cc3df601d8daae9b8f8e7b0c53c2e3}\label{class_gas_load_charge_material_a20cc3df601d8daae9b8f8e7b0c53c2e3}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Substance@{set\+Substance}}
@@ -492,16 +444,14 @@ Definition at line 178 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Substance()}{setSubstance()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Substance (\begin{DoxyParamCaption}\item[{std\+::string}]{substance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the name of substance
-
-
+Sets the name of substance 
 \begin{DoxyParams}{Parameters}
-{\em substance} & string const\&, name of substance \\
+{\em substance} & string , name of substance \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 273 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 237 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_ac48eb07a3008f1dc0ff433353b59536d}\label{class_gas_load_charge_material_ac48eb07a3008f1dc0ff433353b59536d}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Thermic\+Reaction\+Type@{set\+Thermic\+Reaction\+Type}}
@@ -509,16 +459,14 @@ Definition at line 273 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Thermic\+Reaction\+Type()}{setThermicReactionType()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the classification of thermic reaction type
-
-
+Sets the classification of thermic reaction type 
 \begin{DoxyParams}{Parameters}
 {\em thermic\+Reaction\+Type} & \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}, type of thermic reaction \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 82 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 77 of file Gas\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_gas_load_charge_material_aae01f6f4f923965c111e1dac66eb8365}\label{class_gas_load_charge_material_aae01f6f4f923965c111e1dac66eb8365}} 
 \index{Gas\+Load\+Charge\+Material@{Gas\+Load\+Charge\+Material}!set\+Total\+Heat@{set\+Total\+Heat}}
@@ -526,16 +474,14 @@ Definition at line 82 of file Gas\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{set\+Total\+Heat()}{setTotalHeat()}}
 {\footnotesize\ttfamily void Gas\+Load\+Charge\+Material\+::set\+Total\+Heat (\begin{DoxyParamCaption}\item[{double}]{total\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the total heat required
-
-
+Sets the total heat required 
 \begin{DoxyParams}{Parameters}
 {\em total\+Heat} & double, total heat required in btu/hr \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 283 of file Gas\+Load\+Charge\+Material.\+h.
+Definition at line 245 of file Gas\+Load\+Charge\+Material.\+h.
 
 
 
