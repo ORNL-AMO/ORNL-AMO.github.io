@@ -3,9 +3,8 @@ var searchData=
   ['fan',['Fan',['../df/de0/class_fan.html',1,'']]],
   ['fancurve',['FanCurve',['../db/d87/class_fan_curve.html',1,'']]],
   ['fancurvedata',['FanCurveData',['../d2/d07/class_fan_curve_data.html',1,'']]],
-  ['faninletflange',['FanInletFlange',['../d3/dca/class_fan_inlet_flange.html',1,'']]],
-  ['fanorevaseoutletflange',['FanOrEvaseOutletFlange',['../d7/de3/class_fan_or_evase_outlet_flange.html',1,'']]],
   ['fanratedinfo',['FanRatedInfo',['../d4/d43/class_fan_rated_info.html',1,'']]],
+  ['fanresults',['FanResults',['../df/de8/struct_fan_1_1_fan_results.html',1,'Fan']]],
   ['fanshaftpower',['FanShaftPower',['../d7/d4a/class_fan_shaft_power.html',1,'']]],
   ['fielddata',['FieldData',['../dc/d7a/class_field_data.html',1,'FieldData'],['../dc/d7a/class_field_data.html#a43df27dd87a19f495f7eb82729de9e31',1,'FieldData::FieldData()']]],
   ['fielddata_2eh',['FieldData.h',['../dd/d59/_field_data_8h.html',1,'']]],
@@ -14,6 +13,7 @@ var searchData=
   ['fixturelosses',['FixtureLosses',['../d5/d80/class_fixture_losses.html',1,'FixtureLosses'],['../d5/d80/class_fixture_losses.html#a97002e16f3f1be19983151cacec02f36',1,'FixtureLosses::FixtureLosses()']]],
   ['fixturelosses_2ecpp',['FixtureLosses.cpp',['../d9/db5/_fixture_losses_8cpp.html',1,'']]],
   ['fixturelosses_2eh',['FixtureLosses.h',['../db/da5/_fixture_losses_8h.html',1,'']]],
+  ['flangeplane',['FlangePlane',['../d0/de9/class_flange_plane.html',1,'']]],
   ['flashtank',['FlashTank',['../d8/d41/class_flash_tank.html',1,'FlashTank'],['../d8/d41/class_flash_tank.html#ad576e26508da35738127a65fd6ddc35d',1,'FlashTank::FlashTank()']]],
   ['flashtank_2ecpp',['FlashTank.cpp',['../de/d0d/_flash_tank_8cpp.html',1,'']]],
   ['flashtank_2eh',['FlashTank.h',['../d6/d57/_flash_tank_8h.html',1,'']]],
@@ -21,7 +21,6 @@ var searchData=
   ['flowcalculationsenergyuse_2ecpp',['FlowCalculationsEnergyUse.cpp',['../d8/d95/_flow_calculations_energy_use_8cpp.html',1,'']]],
   ['flowcalculationsenergyuse_2eh',['FlowCalculationsEnergyUse.h',['../d1/d29/_flow_calculations_energy_use_8h.html',1,'']]],
   ['flowrate',['flowRate',['../d5/dc5/class_head_tool_base.html#acf4c03cb62cbf63aba017ce063989fbc',1,'HeadToolBase']]],
-  ['flowtraverse',['FlowTraverse',['../dc/dd3/class_flow_traverse.html',1,'']]],
   ['fluidpower',['FluidPower',['../d3/df4/class_fluid_power.html',1,'FluidPower'],['../d3/df4/class_fluid_power.html#a9bf61af202e27b9e41ed284b4b1643ee',1,'FluidPower::FluidPower()']]],
   ['fuelfiredenergyequivalency',['FuelFiredEnergyEquivalency',['../d7/d3c/class_fuel_fired_energy_equivalency.html',1,'FuelFiredEnergyEquivalency'],['../d7/d3c/class_fuel_fired_energy_equivalency.html#ac4ba992ccb3d4a19eb29f14898031690',1,'FuelFiredEnergyEquivalency::FuelFiredEnergyEquivalency()']]]
 ];

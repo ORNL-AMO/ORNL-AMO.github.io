@@ -9,7 +9,6 @@ var searchData=
   ['gasfluegasmaterial_2ecpp',['GasFlueGasMaterial.cpp',['../d7/d4c/_gas_flue_gas_material_8cpp.html',1,'']]],
   ['gasfluegasmaterial_2eh',['GasFlueGasMaterial.h',['../da/d8f/_gas_flue_gas_material_8h.html',1,'']]],
   ['gasloadchargematerial',['GasLoadChargeMaterial',['../d6/da8/class_gas_load_charge_material.html',1,'GasLoadChargeMaterial'],['../d6/da8/class_gas_load_charge_material.html#a4ad94a94d25bad9eaeca4947d879f35f',1,'GasLoadChargeMaterial::GasLoadChargeMaterial()']]],
-  ['gasloadchargematerial_2ecpp',['GasLoadChargeMaterial.cpp',['../d1/d06/_gas_load_charge_material_8cpp.html',1,'']]],
   ['gasloadchargematerial_2eh',['GasLoadChargeMaterial.h',['../d3/ddd/_gas_load_charge_material_8h.html',1,'']]],
   ['gasproperties',['GasProperties',['../d9/db0/class_gas_properties.html',1,'GasProperties'],['../d9/db0/class_gas_properties.html#a8959cd25ac00e9e0e75cd957eca74e5e',1,'GasProperties::GasProperties()']]],
   ['getachievableefficiency',['getAchievableEfficiency',['../d7/de1/class_pump.html#acf100af543142ab8404fc0ce2df1d157',1,'Pump']]],

@@ -24,7 +24,7 @@ double \hyperlink{class_receiver_tank_a5841344b63c444e4ceb9c3b7daeaf613}{calcula
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static double \hyperlink{class_receiver_tank_acf0ee7d8a77b01d8c39105c22fbba342}{calculate\+Usable\+Capacity} (double tank\+Size, double air\+Pressure\+In, double air\+Pressure\+Out)
+static double \hyperlink{class_receiver_tank_ad17f86b7de728d4796ee5b9663dcc577}{calculate\+Usable\+Capacity} (const double tank\+Size, const double air\+Pressure\+In, const double air\+Pressure\+Out)
 \end{DoxyCompactItemize}
 
 
@@ -55,7 +55,7 @@ Constructor for \hyperlink{class_receiver_tank}{Receiver\+Tank} -\/ This is requ
 \end{DoxyParams}
 
 
-Definition at line 43 of file Compressed\+Air.\+cpp.
+Definition at line 37 of file Compressed\+Air.\+cpp.
 
 \mbox{\Hypertarget{class_receiver_tank_a499e102ca118bfe3bdff3584310207c2}\label{class_receiver_tank_a499e102ca118bfe3bdff3584310207c2}} 
 \index{Receiver\+Tank@{Receiver\+Tank}!Receiver\+Tank@{Receiver\+Tank}}
@@ -80,7 +80,7 @@ Constructor for \hyperlink{class_receiver_tank}{Receiver\+Tank} -\/ This is requ
 \end{DoxyParams}
 
 
-Definition at line 53 of file Compressed\+Air.\+cpp.
+Definition at line 47 of file Compressed\+Air.\+cpp.
 
 \mbox{\Hypertarget{class_receiver_tank_aba0ca17714d1009c79d6dfcfaa3cea6a}\label{class_receiver_tank_aba0ca17714d1009c79d6dfcfaa3cea6a}} 
 \index{Receiver\+Tank@{Receiver\+Tank}!Receiver\+Tank@{Receiver\+Tank}}
@@ -107,7 +107,7 @@ Constructor for \hyperlink{class_receiver_tank}{Receiver\+Tank} -\/ This is requ
 \end{DoxyParams}
 
 
-Definition at line 66 of file Compressed\+Air.\+cpp.
+Definition at line 60 of file Compressed\+Air.\+cpp.
 
 
 
@@ -123,13 +123,13 @@ double, receiver size -\/ gallons
 \end{DoxyReturn}
 
 
-Definition at line 77 of file Compressed\+Air.\+cpp.
+Definition at line 71 of file Compressed\+Air.\+cpp.
 
-\mbox{\Hypertarget{class_receiver_tank_acf0ee7d8a77b01d8c39105c22fbba342}\label{class_receiver_tank_acf0ee7d8a77b01d8c39105c22fbba342}} 
+\mbox{\Hypertarget{class_receiver_tank_ad17f86b7de728d4796ee5b9663dcc577}\label{class_receiver_tank_ad17f86b7de728d4796ee5b9663dcc577}} 
 \index{Receiver\+Tank@{Receiver\+Tank}!calculate\+Usable\+Capacity@{calculate\+Usable\+Capacity}}
 \index{calculate\+Usable\+Capacity@{calculate\+Usable\+Capacity}!Receiver\+Tank@{Receiver\+Tank}}
 \subsubsection{\texorpdfstring{calculate\+Usable\+Capacity()}{calculateUsableCapacity()}}
-{\footnotesize\ttfamily double Receiver\+Tank\+::calculate\+Usable\+Capacity (\begin{DoxyParamCaption}\item[{double}]{tank\+Size,  }\item[{double}]{air\+Pressure\+In,  }\item[{double}]{air\+Pressure\+Out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static double Receiver\+Tank\+::calculate\+Usable\+Capacity (\begin{DoxyParamCaption}\item[{const double}]{tank\+Size,  }\item[{const double}]{air\+Pressure\+In,  }\item[{const double}]{air\+Pressure\+Out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 Calculates and returns receiver tank useable air capacity 
 \begin{DoxyParams}{Parameters}
@@ -145,7 +145,7 @@ double, Useable air storage capacity -\/ scf
 \end{DoxyReturn}
 
 
-Definition at line 37 of file Compressed\+Air.\+cpp.
+Definition at line 143 of file Compressed\+Air.\+h.
 
 
 

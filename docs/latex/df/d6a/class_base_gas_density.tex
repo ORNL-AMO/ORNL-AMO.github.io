@@ -10,9 +10,9 @@ enum {\bfseries Gas\+Type} \{ {\bfseries A\+IR},
  \}
 \item 
 \mbox{\Hypertarget{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}\label{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}} 
-enum {\bfseries Input\+Type} \{ {\bfseries D\+EW}, 
-{\bfseries RH}, 
-{\bfseries W\+ET}
+enum {\bfseries Input\+Type} \{ {\bfseries Dew\+Point}, 
+{\bfseries Relative\+Humidity}, 
+{\bfseries Wet\+Bulb\+Temp}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
@@ -20,6 +20,15 @@ enum {\bfseries Input\+Type} \{ {\bfseries D\+EW},
 \item 
 \mbox{\Hypertarget{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}\label{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}} 
 {\bfseries Base\+Gas\+Density} (const double dry\+Bulb\+Temp, const double static\+Pressure, const double barometric\+Pressure, const double gas\+Density, const Gas\+Type gas\+Type)
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}\label{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}} 
+{\bfseries Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const relative\+Humidity\+Or\+Dew\+Point, Gas\+Type const gas\+Type, Input\+Type const input\+Type, double const specific\+Gravity)
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}\label{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}} 
+{\bfseries Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const wet\+Bulb\+Temp, Gas\+Type const gas\+Type, Input\+Type const input\+Type, double const specific\+Gravity, const double cp\+Gas)
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}\label{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}} 
+double {\bfseries get\+Gas\+Density} () const
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -35,7 +44,7 @@ class {\bfseries Fan}
 \subsection{Detailed Description}
 
 
-Definition at line 22 of file Fan.\+h.
+Definition at line 19 of file Fan.\+h.
 
 
 

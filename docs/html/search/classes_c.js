@@ -1,17 +1,16 @@
 var searchData=
 [
-  ['pipedata',['PipeData',['../d5/de8/struct_compressor_1_1_pipe_data.html',1,'Compressor']]],
-  ['pipesizing',['PipeSizing',['../d7/dcf/class_compressor_1_1_pipe_sizing.html',1,'Compressor']]],
-  ['planar',['Planar',['../d2/ddc/class_planar.html',1,'']]],
-  ['planedata',['PlaneData',['../df/d02/class_plane_data.html',1,'']]],
-  ['pneumaticairrequirement',['PneumaticAirRequirement',['../d7/da1/class_pneumatic_air_requirement.html',1,'']]],
-  ['pneumaticvalve',['PneumaticValve',['../d3/d2e/class_compressor_1_1_pneumatic_valve.html',1,'Compressor']]],
-  ['point',['Point',['../d0/d69/class_point.html',1,'']]],
-  ['poles',['Poles',['../de/dd5/class_poles.html',1,'']]],
-  ['prvwithdesuperheating',['PrvWithDesuperheating',['../d6/d6a/class_prv_with_desuperheating.html',1,'']]],
-  ['prvwithoutdesuperheating',['PrvWithoutDesuperheating',['../db/db1/class_prv_without_desuperheating.html',1,'']]],
-  ['psatresult',['PSATResult',['../dd/de8/class_p_s_a_t_result.html',1,'']]],
-  ['pump',['Pump',['../d7/de1/class_pump.html',1,'']]],
-  ['pumpefficiency',['PumpEfficiency',['../db/da5/class_pump_efficiency.html',1,'']]],
-  ['pumpshaftpower',['PumpShaftPower',['../d2/d03/class_pump_shaft_power.html',1,'']]]
+  ['o2enrichment',['O2Enrichment',['../d5/dea/class_o2_enrichment.html',1,'']]],
+  ['openinglosses',['OpeningLosses',['../d7/dff/class_opening_losses.html',1,'']]],
+  ['operatingcost',['OperatingCost',['../d6/d9d/class_compressor_1_1_operating_cost.html',1,'Compressor']]],
+  ['optimaldeviationfactor',['OptimalDeviationFactor',['../db/d2b/class_optimal_deviation_factor.html',1,'']]],
+  ['optimalmotorpower',['OptimalMotorPower',['../de/df2/class_optimal_motor_power.html',1,'']]],
+  ['optimalmotorshaftpower',['OptimalMotorShaftPower',['../d5/d96/class_optimal_motor_shaft_power.html',1,'']]],
+  ['optimalmotorsize',['OptimalMotorSize',['../df/dc7/class_optimal_motor_size.html',1,'']]],
+  ['optimalprepumpeff',['OptimalPrePumpEff',['../d6/dcc/class_optimal_pre_pump_eff.html',1,'']]],
+  ['optimalpumpefficiency',['OptimalPumpEfficiency',['../da/d7a/class_optimal_pump_efficiency.html',1,'']]],
+  ['optimalpumpshaftpower',['OptimalPumpShaftPower',['../dd/d1e/class_optimal_pump_shaft_power.html',1,'']]],
+  ['optimalspecificspeed',['OptimalSpecificSpeed',['../d5/dab/class_optimal_specific_speed.html',1,'']]],
+  ['optimalspecificspeedcorrection',['OptimalSpecificSpeedCorrection',['../d8/d0f/class_optimal_specific_speed_correction.html',1,'']]],
+  ['output',['Output',['../d8/d7b/struct_bag_method_1_1_output.html',1,'BagMethod::Output'],['../d7/dfc/struct_plane_data_1_1_node_binding_1_1_output.html',1,'PlaneData::NodeBinding::Output'],['../d3/d86/struct_compressor_1_1_pipe_sizing_1_1_output.html',1,'Compressor::PipeSizing::Output'],['../d3/d9a/class_pneumatic_air_requirement_1_1_output.html',1,'PneumaticAirRequirement::Output'],['../d7/d46/struct_compressor_1_1_operating_cost_1_1_output.html',1,'Compressor::OperatingCost::Output'],['../d2/d9a/struct_compressor_1_1_air_system_capacity_1_1_output.html',1,'Compressor::AirSystemCapacity::Output']]]
 ];

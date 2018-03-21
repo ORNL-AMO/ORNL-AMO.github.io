@@ -7,11 +7,11 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_solid_load_charge_material_a9145db5518b94cfc1919b8d6ff809f5e}{Solid\+Load\+Charge\+Material} (const \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type, const double specific\+Heat\+Solid, const double latent\+Heat, const double specific\+Heat\+Liquid, const double melting\+Point, const double charge\+Feed\+Rate, const double water\+Content\+Charged, const double water\+Content\+Discharged, const double initial\+Temperature, const double discharge\+Temperature, const double water\+Vapor\+Discharge\+Temperature, const double charge\+Melted, const double charge\+Reacted, const double reaction\+Heat, const double additional\+Heat)
+\hyperlink{class_solid_load_charge_material_a9145db5518b94cfc1919b8d6ff809f5e}{Solid\+Load\+Charge\+Material} (const \hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type, const double specific\+Heat\+Solid, const double latent\+Heat, const double specific\+Heat\+Liquid, const double melting\+Point, const double charge\+Feed\+Rate, const double water\+Content\+Charged, const double water\+Content\+Discharged, const double initial\+Temperature, const double discharge\+Temperature, const double water\+Vapor\+Discharge\+Temperature, const double charge\+Melted, const double charge\+Reacted, const double reaction\+Heat, const double additional\+Heat)
 \item 
-\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} \hyperlink{class_solid_load_charge_material_a11708312a99ab985d980e1e521e0864c}{get\+Thermic\+Reaction\+Type} () const
+\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} \hyperlink{class_solid_load_charge_material_a11708312a99ab985d980e1e521e0864c}{get\+Thermic\+Reaction\+Type} () const
 \item 
-void \hyperlink{class_solid_load_charge_material_ae2f85e0fbeff9f72b808bf86e645797f}{set\+Thermic\+Reaction\+Type} (\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type)
+void \hyperlink{class_solid_load_charge_material_ae2f85e0fbeff9f72b808bf86e645797f}{set\+Thermic\+Reaction\+Type} (\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type)
 \item 
 double \hyperlink{class_solid_load_charge_material_af84f1f7dd167f67c0c02206339bbfe27}{get\+Specific\+Heat\+Solid} () const
 \item 
@@ -77,11 +77,7 @@ std\+::string \hyperlink{class_solid_load_charge_material_ade525be6bb8cb86405dae
 \item 
 void \hyperlink{class_solid_load_charge_material_aebe376ab016f48678c3a70390b4ea52a}{set\+Substance} (std\+::string const \&substance)
 \item 
-void \hyperlink{class_solid_load_charge_material_a624a92d35d338e4b5f130c782d48e4f7}{set\+Total\+Heat} (const double total\+Heat)
-\item 
 bool \hyperlink{class_solid_load_charge_material_aacf2f41ce38067a52fb7d8456a05a699}{operator==} (const \hyperlink{class_solid_load_charge_material}{Solid\+Load\+Charge\+Material} \&rhs) const
-\item 
-bool \hyperlink{class_solid_load_charge_material_abb07f23a4dc3bfacabd2080b14034248}{operator!=} (const \hyperlink{class_solid_load_charge_material}{Solid\+Load\+Charge\+Material} \&rhs) const
 \item 
 double \hyperlink{class_solid_load_charge_material_af8593eb758c64236a8a026d6145584f4}{get\+Total\+Heat} ()
 \end{DoxyCompactItemize}
@@ -96,7 +92,7 @@ class {\bfseries S\+Q\+Lite}
 \subsection{Detailed Description}
 Solid Load Charge Material class Contains all of the properties of a solid load charge material Used to calculate the heat required for a solid load charge material to tbe heated from the inlet temperature to the outlet temperature 
 
-Definition at line 32 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 26 of file Solid\+Load\+Charge\+Material.\+h.
 
 
 
@@ -105,11 +101,11 @@ Definition at line 32 of file Solid\+Load\+Charge\+Material.\+h.
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}}
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{Solid\+Load\+Charge\+Material()}{SolidLoadChargeMaterial()}}
-{\footnotesize\ttfamily Solid\+Load\+Charge\+Material\+::\+Solid\+Load\+Charge\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type,  }\item[{const double}]{specific\+Heat\+Solid,  }\item[{const double}]{latent\+Heat,  }\item[{const double}]{specific\+Heat\+Liquid,  }\item[{const double}]{melting\+Point,  }\item[{const double}]{charge\+Feed\+Rate,  }\item[{const double}]{water\+Content\+Charged,  }\item[{const double}]{water\+Content\+Discharged,  }\item[{const double}]{initial\+Temperature,  }\item[{const double}]{discharge\+Temperature,  }\item[{const double}]{water\+Vapor\+Discharge\+Temperature,  }\item[{const double}]{charge\+Melted,  }\item[{const double}]{charge\+Reacted,  }\item[{const double}]{reaction\+Heat,  }\item[{const double}]{additional\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Solid\+Load\+Charge\+Material\+::\+Solid\+Load\+Charge\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type,  }\item[{const double}]{specific\+Heat\+Solid,  }\item[{const double}]{latent\+Heat,  }\item[{const double}]{specific\+Heat\+Liquid,  }\item[{const double}]{melting\+Point,  }\item[{const double}]{charge\+Feed\+Rate,  }\item[{const double}]{water\+Content\+Charged,  }\item[{const double}]{water\+Content\+Discharged,  }\item[{const double}]{initial\+Temperature,  }\item[{const double}]{discharge\+Temperature,  }\item[{const double}]{water\+Vapor\+Discharge\+Temperature,  }\item[{const double}]{charge\+Melted,  }\item[{const double}]{charge\+Reacted,  }\item[{const double}]{reaction\+Heat,  }\item[{const double}]{additional\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor for the solid load/charge material with all inputs specified. 
 \begin{DoxyParams}{Parameters}
-{\em thermic\+Reaction\+Type} & \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}, Enumerated value for either endothermic or exothermic reactions \\
+{\em thermic\+Reaction\+Type} & \hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}, Enumerated value for either endothermic or exothermic reactions \\
 \hline
 {\em specific\+Heat\+Solid} & double, Average specific heat of the solid material (dry) in Btu/(lb$\ast$°F) \\
 \hline
@@ -142,7 +138,7 @@ Constructor for the solid load/charge material with all inputs specified.
 \end{DoxyParams}
 
 
-Definition at line 53 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 47 of file Solid\+Load\+Charge\+Material.\+h.
 
 
 
@@ -158,7 +154,7 @@ double, additional heat required in btu/hr
 \end{DoxyReturn}
 
 
-Definition at line 332 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 326 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a7c7f05b6ee14eb5f07e5c48c30e9c7a1}\label{class_solid_load_charge_material_a7c7f05b6ee14eb5f07e5c48c30e9c7a1}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Charged\+Reacted@{get\+Charged\+Reacted}}
@@ -171,7 +167,7 @@ double, charge reacted (\% of dry charge)
 \end{DoxyReturn}
 
 
-Definition at line 300 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 294 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_af6f018c5d67e94d86f2f57fecaa32b5c}\label{class_solid_load_charge_material_af6f018c5d67e94d86f2f57fecaa32b5c}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Charge\+Feed\+Rate@{get\+Charge\+Feed\+Rate}}
@@ -184,7 +180,7 @@ double, charge (wet)-\/feed rate in lb/hr
 \end{DoxyReturn}
 
 
-Definition at line 188 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 182 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ad9ab52fe5861f48b763fe300851df69a}\label{class_solid_load_charge_material_ad9ab52fe5861f48b763fe300851df69a}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Charge\+Melted@{get\+Charge\+Melted}}
@@ -197,7 +193,7 @@ double, charge melted (\% of dry charge)
 \end{DoxyReturn}
 
 
-Definition at line 284 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 278 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_afcb8c00c2e23ad1444f34960b19835a0}\label{class_solid_load_charge_material_afcb8c00c2e23ad1444f34960b19835a0}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Discharge\+Temperature@{get\+Discharge\+Temperature}}
@@ -210,7 +206,7 @@ double, charge material discharge temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 252 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 246 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ae34ce5c6f1f362340ead0748aaf885b8}\label{class_solid_load_charge_material_ae34ce5c6f1f362340ead0748aaf885b8}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+ID@{get\+ID}}
@@ -223,7 +219,7 @@ double, ID number of material
 \end{DoxyReturn}
 
 
-Definition at line 164 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 158 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ae5d7f198fb1d4a3adb0cfc911a13ea06}\label{class_solid_load_charge_material_ae5d7f198fb1d4a3adb0cfc911a13ea06}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Initial\+Temperature@{get\+Initial\+Temperature}}
@@ -236,7 +232,7 @@ double, initial temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 236 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 230 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_add60191bd282a9cefa4bf7a60301711b}\label{class_solid_load_charge_material_add60191bd282a9cefa4bf7a60301711b}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Latent\+Heat@{get\+Latent\+Heat}}
@@ -249,7 +245,7 @@ double, latent heat of fusion in btu/lb
 \end{DoxyReturn}
 
 
-Definition at line 124 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 118 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a4be001f6e6ecbd2ad0ae1d154559cdb0}\label{class_solid_load_charge_material_a4be001f6e6ecbd2ad0ae1d154559cdb0}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Melting\+Point@{get\+Melting\+Point}}
@@ -262,7 +258,7 @@ double, melting point of material in °F
 \end{DoxyReturn}
 
 
-Definition at line 156 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 150 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a3481dc84063babc3514a4173e6bd9341}\label{class_solid_load_charge_material_a3481dc84063babc3514a4173e6bd9341}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Reaction\+Heat@{get\+Reaction\+Heat}}
@@ -275,7 +271,7 @@ double, reaction heat in btu/lb
 \end{DoxyReturn}
 
 
-Definition at line 316 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 310 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a8b02308194b603276df3a894c401e923}\label{class_solid_load_charge_material_a8b02308194b603276df3a894c401e923}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Specific\+Heat\+Liquid@{get\+Specific\+Heat\+Liquid}}
@@ -288,7 +284,7 @@ double, specific heat of liquid from molten material in btu/(lb$\ast$°F)
 \end{DoxyReturn}
 
 
-Definition at line 140 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 134 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_af84f1f7dd167f67c0c02206339bbfe27}\label{class_solid_load_charge_material_af84f1f7dd167f67c0c02206339bbfe27}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Specific\+Heat\+Solid@{get\+Specific\+Heat\+Solid}}
@@ -301,7 +297,7 @@ double, average specific heat of solid material (dry) in btu/(lb$\ast$°F)
 \end{DoxyReturn}
 
 
-Definition at line 108 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 102 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ade525be6bb8cb86405daeb61d45311f9}\label{class_solid_load_charge_material_ade525be6bb8cb86405daeb61d45311f9}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Substance@{get\+Substance}}
@@ -314,30 +310,30 @@ string, name of substance
 \end{DoxyReturn}
 
 
-Definition at line 348 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 342 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a11708312a99ab985d980e1e521e0864c}\label{class_solid_load_charge_material_a11708312a99ab985d980e1e521e0864c}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Thermic\+Reaction\+Type@{get\+Thermic\+Reaction\+Type}}
 \index{get\+Thermic\+Reaction\+Type@{get\+Thermic\+Reaction\+Type}!Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{get\+Thermic\+Reaction\+Type()}{getThermicReactionType()}}
-{\footnotesize\ttfamily \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} Solid\+Load\+Charge\+Material\+::get\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} Solid\+Load\+Charge\+Material\+::get\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets the thermic reaction type \begin{DoxyReturn}{Returns}
-\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} classification of thermic reaction type 
+\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} classification of thermic reaction type 
 \end{DoxyReturn}
 
 
-Definition at line 92 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 86 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_af8593eb758c64236a8a026d6145584f4}\label{class_solid_load_charge_material_af8593eb758c64236a8a026d6145584f4}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Total\+Heat@{get\+Total\+Heat}}
 \index{get\+Total\+Heat@{get\+Total\+Heat}!Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{get\+Total\+Heat()}{getTotalHeat()}}
-{\footnotesize\ttfamily double Solid\+Load\+Charge\+Material\+::get\+Total\+Heat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily double Solid\+Load\+Charge\+Material\+::get\+Total\+Heat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Obtain the total heat for the solid charge material in Btu/hr 
 
-Definition at line 11 of file Solid\+Load\+Charge\+Material.\+cpp.
+Definition at line 369 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a2f99a8553d12b45bad53acc14338199a}\label{class_solid_load_charge_material_a2f99a8553d12b45bad53acc14338199a}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Water\+Content\+Charged@{get\+Water\+Content\+Charged}}
@@ -350,7 +346,7 @@ double, \% of water content charged
 \end{DoxyReturn}
 
 
-Definition at line 204 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 198 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_aeeb6b341a6b5770155b85264dabbd1a7}\label{class_solid_load_charge_material_aeeb6b341a6b5770155b85264dabbd1a7}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Water\+Content\+Discharged@{get\+Water\+Content\+Discharged}}
@@ -363,7 +359,7 @@ double, \% of water content discharged
 \end{DoxyReturn}
 
 
-Definition at line 220 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 214 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a267f26d42f8ba2655c09f561fc0f6cb1}\label{class_solid_load_charge_material_a267f26d42f8ba2655c09f561fc0f6cb1}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!get\+Water\+Vapor\+Discharge\+Temperature@{get\+Water\+Vapor\+Discharge\+Temperature}}
@@ -376,17 +372,7 @@ double, water vapor discharge temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 268 of file Solid\+Load\+Charge\+Material.\+h.
-
-\mbox{\Hypertarget{class_solid_load_charge_material_abb07f23a4dc3bfacabd2080b14034248}\label{class_solid_load_charge_material_abb07f23a4dc3bfacabd2080b14034248}} 
-\index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!operator"!=@{operator"!=}}
-\index{operator"!=@{operator"!=}!Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}}
-\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
-{\footnotesize\ttfamily bool Solid\+Load\+Charge\+Material\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_solid_load_charge_material}{Solid\+Load\+Charge\+Material} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-bool operature 
-
-Definition at line 384 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 262 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_aacf2f41ce38067a52fb7d8456a05a699}\label{class_solid_load_charge_material_aacf2f41ce38067a52fb7d8456a05a699}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!operator==@{operator==}}
@@ -394,9 +380,9 @@ Definition at line 384 of file Solid\+Load\+Charge\+Material.\+h.
 \subsubsection{\texorpdfstring{operator==()}{operator==()}}
 {\footnotesize\ttfamily bool Solid\+Load\+Charge\+Material\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_solid_load_charge_material}{Solid\+Load\+Charge\+Material} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-bool operator 
+bool == operator used to compare values in unit testing 
 
-Definition at line 372 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 357 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a849fd29a3ecb95be2e9d34f9280b1b94}\label{class_solid_load_charge_material_a849fd29a3ecb95be2e9d34f9280b1b94}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Additional\+Heat@{set\+Additional\+Heat}}
@@ -411,7 +397,7 @@ Sets the additional heat required
 \end{DoxyParams}
 
 
-Definition at line 340 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 334 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a38f3b832ff29f779a78a51fd7352fcd4}\label{class_solid_load_charge_material_a38f3b832ff29f779a78a51fd7352fcd4}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Charged\+Reacted@{set\+Charged\+Reacted}}
@@ -426,7 +412,7 @@ Sets the charged reacted
 \end{DoxyParams}
 
 
-Definition at line 308 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 302 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_adc50117256b714789f68097437ca658d}\label{class_solid_load_charge_material_adc50117256b714789f68097437ca658d}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Charge\+Feed\+Rate@{set\+Charge\+Feed\+Rate}}
@@ -441,7 +427,7 @@ Sets the charge (wet)-\/feed rate
 \end{DoxyParams}
 
 
-Definition at line 196 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 190 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a9999a2976e8a8662a86cc2a159df5202}\label{class_solid_load_charge_material_a9999a2976e8a8662a86cc2a159df5202}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Charge\+Melted@{set\+Charge\+Melted}}
@@ -456,7 +442,7 @@ Sets the charge melted (\% of dry charge)
 \end{DoxyParams}
 
 
-Definition at line 292 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 286 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_adf73bc8d656a501cae5ad68af7a7c4fb}\label{class_solid_load_charge_material_adf73bc8d656a501cae5ad68af7a7c4fb}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Discharge\+Temperature@{set\+Discharge\+Temperature}}
@@ -471,7 +457,7 @@ Sets the charge material discharge temperature
 \end{DoxyParams}
 
 
-Definition at line 260 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 254 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a4cc8e12ffb340c94106cecf576a85ae5}\label{class_solid_load_charge_material_a4cc8e12ffb340c94106cecf576a85ae5}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+ID@{set\+ID}}
@@ -486,7 +472,7 @@ Sets the ID of a material
 \end{DoxyParams}
 
 
-Definition at line 172 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 166 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ac80e565d26e68e542f4cb41f41b7d96c}\label{class_solid_load_charge_material_ac80e565d26e68e542f4cb41f41b7d96c}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Initial\+Temperature@{set\+Initial\+Temperature}}
@@ -501,7 +487,7 @@ Sets the initial temperature
 \end{DoxyParams}
 
 
-Definition at line 244 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 238 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ac7361119ab7cc352dfbdc6fcb9175981}\label{class_solid_load_charge_material_ac7361119ab7cc352dfbdc6fcb9175981}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Latent\+Heat@{set\+Latent\+Heat}}
@@ -516,7 +502,7 @@ Sets the latent heat of fusion
 \end{DoxyParams}
 
 
-Definition at line 132 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 126 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a6c235b1c49be98b02829d37af9c38cb2}\label{class_solid_load_charge_material_a6c235b1c49be98b02829d37af9c38cb2}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Melting\+Point@{set\+Melting\+Point}}
@@ -531,7 +517,7 @@ Sets the melting point of the material
 \end{DoxyParams}
 
 
-Definition at line 180 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 174 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a9c3cd28b2b31fb66eea984d9030cd247}\label{class_solid_load_charge_material_a9c3cd28b2b31fb66eea984d9030cd247}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Reaction\+Heat@{set\+Reaction\+Heat}}
@@ -546,7 +532,7 @@ Sets the reaction heat
 \end{DoxyParams}
 
 
-Definition at line 324 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 318 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a91fad347bf52a4f6695c304904091797}\label{class_solid_load_charge_material_a91fad347bf52a4f6695c304904091797}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Specific\+Heat\+Liquid@{set\+Specific\+Heat\+Liquid}}
@@ -561,7 +547,7 @@ Sets the specific heat of liquid from molten material
 \end{DoxyParams}
 
 
-Definition at line 148 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 142 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ad9d2e3668a6a14700f4dced4882f98c0}\label{class_solid_load_charge_material_ad9d2e3668a6a14700f4dced4882f98c0}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Specific\+Heat\+Solid@{set\+Specific\+Heat\+Solid}}
@@ -576,7 +562,7 @@ Sets the average specific heat of the solid material (dry)
 \end{DoxyParams}
 
 
-Definition at line 116 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 110 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_aebe376ab016f48678c3a70390b4ea52a}\label{class_solid_load_charge_material_aebe376ab016f48678c3a70390b4ea52a}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Substance@{set\+Substance}}
@@ -591,13 +577,13 @@ Sets the substance
 \end{DoxyParams}
 
 
-Definition at line 356 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 350 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_ae2f85e0fbeff9f72b808bf86e645797f}\label{class_solid_load_charge_material_ae2f85e0fbeff9f72b808bf86e645797f}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Thermic\+Reaction\+Type@{set\+Thermic\+Reaction\+Type}}
 \index{set\+Thermic\+Reaction\+Type@{set\+Thermic\+Reaction\+Type}!Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{set\+Thermic\+Reaction\+Type()}{setThermicReactionType()}}
-{\footnotesize\ttfamily void Solid\+Load\+Charge\+Material\+::set\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Solid\+Load\+Charge\+Material\+::set\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Sets the thermic reaction type 
 \begin{DoxyParams}{Parameters}
@@ -606,22 +592,7 @@ Sets the thermic reaction type
 \end{DoxyParams}
 
 
-Definition at line 100 of file Solid\+Load\+Charge\+Material.\+h.
-
-\mbox{\Hypertarget{class_solid_load_charge_material_a624a92d35d338e4b5f130c782d48e4f7}\label{class_solid_load_charge_material_a624a92d35d338e4b5f130c782d48e4f7}} 
-\index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Total\+Heat@{set\+Total\+Heat}}
-\index{set\+Total\+Heat@{set\+Total\+Heat}!Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}}
-\subsubsection{\texorpdfstring{set\+Total\+Heat()}{setTotalHeat()}}
-{\footnotesize\ttfamily void Solid\+Load\+Charge\+Material\+::set\+Total\+Heat (\begin{DoxyParamCaption}\item[{const double}]{total\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Sets the total heat required 
-\begin{DoxyParams}{Parameters}
-{\em total\+Heat} & double, total heat required in btu/hr \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 364 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 94 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_abf43422318a1b9120dff1dcfb15d5265}\label{class_solid_load_charge_material_abf43422318a1b9120dff1dcfb15d5265}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Water\+Content\+Charged@{set\+Water\+Content\+Charged}}
@@ -636,7 +607,7 @@ Sets the water content as charged (\%)
 \end{DoxyParams}
 
 
-Definition at line 212 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 206 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_a5104ddb43af977a751b90a0bc844d83d}\label{class_solid_load_charge_material_a5104ddb43af977a751b90a0bc844d83d}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Water\+Content\+Discharged@{set\+Water\+Content\+Discharged}}
@@ -651,7 +622,7 @@ Sets the water content as discharged (\%)
 \end{DoxyParams}
 
 
-Definition at line 228 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 222 of file Solid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_solid_load_charge_material_af7837868e494c16aba5a2c3e1220106d}\label{class_solid_load_charge_material_af7837868e494c16aba5a2c3e1220106d}} 
 \index{Solid\+Load\+Charge\+Material@{Solid\+Load\+Charge\+Material}!set\+Water\+Vapor\+Discharge\+Temperature@{set\+Water\+Vapor\+Discharge\+Temperature}}
@@ -666,11 +637,10 @@ Sets the water vapor discharge temperature
 \end{DoxyParams}
 
 
-Definition at line 276 of file Solid\+Load\+Charge\+Material.\+h.
+Definition at line 270 of file Solid\+Load\+Charge\+Material.\+h.
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/calculator/losses/\hyperlink{_solid_load_charge_material_8h}{Solid\+Load\+Charge\+Material.\+h}\item 
-src/calculator/losses/\hyperlink{_solid_load_charge_material_8cpp}{Solid\+Load\+Charge\+Material.\+cpp}\end{DoxyCompactItemize}
+include/calculator/losses/\hyperlink{_solid_load_charge_material_8h}{Solid\+Load\+Charge\+Material.\+h}\end{DoxyCompactItemize}

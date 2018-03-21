@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['addltravplane',['AddlTravPlane',['../d6/dc1/class_addl_trav_plane.html',1,'']]],
   ['airsystemcapacity',['AirSystemCapacity',['../d8/dd4/class_compressor_1_1_air_system_capacity.html',1,'Compressor::AirSystemCapacity'],['../d8/dd4/class_compressor_1_1_air_system_capacity.html#a270fa85146172b46703970a1bc8fe724',1,'Compressor::AirSystemCapacity::AirSystemCapacity()']]],
   ['airvelocity',['AirVelocity',['../d2/da9/class_compressor_1_1_air_velocity.html',1,'Compressor::AirVelocity'],['../d2/da9/class_compressor_1_1_air_velocity.html#a53449e5354b1e33db644078ce4d92e4b',1,'Compressor::AirVelocity::AirVelocity()']]],
   ['annualcost',['AnnualCost',['../d1/d73/class_annual_cost.html',1,'AnnualCost'],['../d1/d73/class_annual_cost.html#a723513a7074d1799e2bf410b60b3146f',1,'AnnualCost::AnnualCost()'],['../d9/d09/struct_p_s_a_t_result_1_1result.html#aedad1595120e8b1140020f895d8275fe',1,'PSATResult::result::annualCost()']]],
