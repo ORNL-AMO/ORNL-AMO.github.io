@@ -7,11 +7,11 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_liquid_load_charge_material_ab6b2ef342701227c60dc380f5a576085}{Liquid\+Load\+Charge\+Material} (const \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type, const double specific\+Heat\+Liquid, const double vaporizing\+Temperature, const double latent\+Heat, const double specific\+Heat\+Vapor, const double charge\+Feed\+Rate, const double initial\+Temperature, const double discharge\+Temperature, const double percent\+Vaporized, const double percent\+Reacted, const double reaction\+Heat, const double additional\+Heat)
+\hyperlink{class_liquid_load_charge_material_ab6b2ef342701227c60dc380f5a576085}{Liquid\+Load\+Charge\+Material} (const \hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type, const double specific\+Heat\+Liquid, const double vaporizing\+Temperature, const double latent\+Heat, const double specific\+Heat\+Vapor, const double charge\+Feed\+Rate, const double initial\+Temperature, const double discharge\+Temperature, const double percent\+Vaporized, const double percent\+Reacted, const double reaction\+Heat, const double additional\+Heat)
 \item 
-\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} \hyperlink{class_liquid_load_charge_material_a181337f5e5cf6a47b82dd56897b49c29}{get\+Thermic\+Reaction\+Type} () const
+\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} \hyperlink{class_liquid_load_charge_material_a181337f5e5cf6a47b82dd56897b49c29}{get\+Thermic\+Reaction\+Type} () const
 \item 
-void \hyperlink{class_liquid_load_charge_material_a39c258d0bfdcfa352590d411a8c4e882}{set\+Thermic\+Reaction\+Type} (\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type)
+void \hyperlink{class_liquid_load_charge_material_a39c258d0bfdcfa352590d411a8c4e882}{set\+Thermic\+Reaction\+Type} (\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} thermic\+Reaction\+Type)
 \item 
 double \hyperlink{class_liquid_load_charge_material_aa698f1f73dff91951139a4a50582963d}{get\+Specific\+Heat\+Liquid} () const
 \item 
@@ -61,8 +61,6 @@ std\+::string \hyperlink{class_liquid_load_charge_material_a8f925c04c15ed889ba3f
 \item 
 void \hyperlink{class_liquid_load_charge_material_a85bb43270c6a11a1eaf51f00da16746a}{set\+Substance} (std\+::string const \&substance)
 \item 
-void \hyperlink{class_liquid_load_charge_material_ad45afc317b72c89cc46016e0b05b50b3}{set\+Total\+Heat} (const double total\+Heat)
-\item 
 size\+\_\+t \hyperlink{class_liquid_load_charge_material_a07e869cabd98a5179536559a1c0f4b35}{get\+ID} () const
 \item 
 void \hyperlink{class_liquid_load_charge_material_a3f6654f1d9387366e0ca7620ecc41361}{set\+ID} (size\+\_\+t const id)
@@ -82,9 +80,9 @@ class {\bfseries S\+Q\+Lite}
 
 
 \subsection{Detailed Description}
-Moisture boiling point is 210°F Liquid Load Charge Material class Contains all properties of a liquid load charge material Used to find the heat required for a liquid load charge material to be heated from the inlet temperature to the outlet temperature 
+Liquid Load Charge Material class Contains all properties of a liquid load charge material Used to find the heat required for a liquid load charge material to be heated from the inlet temperature to the outlet temperature 
 
-Definition at line 27 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 24 of file Liquid\+Load\+Charge\+Material.\+h.
 
 
 
@@ -93,7 +91,7 @@ Definition at line 27 of file Liquid\+Load\+Charge\+Material.\+h.
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}}
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{Liquid\+Load\+Charge\+Material()}{LiquidLoadChargeMaterial()}}
-{\footnotesize\ttfamily Liquid\+Load\+Charge\+Material\+::\+Liquid\+Load\+Charge\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type,  }\item[{const double}]{specific\+Heat\+Liquid,  }\item[{const double}]{vaporizing\+Temperature,  }\item[{const double}]{latent\+Heat,  }\item[{const double}]{specific\+Heat\+Vapor,  }\item[{const double}]{charge\+Feed\+Rate,  }\item[{const double}]{initial\+Temperature,  }\item[{const double}]{discharge\+Temperature,  }\item[{const double}]{percent\+Vaporized,  }\item[{const double}]{percent\+Reacted,  }\item[{const double}]{reaction\+Heat,  }\item[{const double}]{additional\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Liquid\+Load\+Charge\+Material\+::\+Liquid\+Load\+Charge\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type,  }\item[{const double}]{specific\+Heat\+Liquid,  }\item[{const double}]{vaporizing\+Temperature,  }\item[{const double}]{latent\+Heat,  }\item[{const double}]{specific\+Heat\+Vapor,  }\item[{const double}]{charge\+Feed\+Rate,  }\item[{const double}]{initial\+Temperature,  }\item[{const double}]{discharge\+Temperature,  }\item[{const double}]{percent\+Vaporized,  }\item[{const double}]{percent\+Reacted,  }\item[{const double}]{reaction\+Heat,  }\item[{const double}]{additional\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor for liquid load/charge material with all inputs specified 
 \begin{DoxyParams}{Parameters}
@@ -124,7 +122,7 @@ Constructor for liquid load/charge material with all inputs specified
 \end{DoxyParams}
 
 
-Definition at line 47 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 44 of file Liquid\+Load\+Charge\+Material.\+h.
 
 
 
@@ -140,7 +138,7 @@ double, additional heat as btu/hr
 \end{DoxyReturn}
 
 
-Definition at line 256 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 253 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_af818c541527b3b28a8f84a08dc0c884e}\label{class_liquid_load_charge_material_af818c541527b3b28a8f84a08dc0c884e}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Charge\+Feed\+Rate@{get\+Charge\+Feed\+Rate}}
@@ -153,7 +151,7 @@ ndouble, charge (liquid)-\/feed rate in lb/hr
 \end{DoxyReturn}
 
 
-Definition at line 160 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 157 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_ad474f33059c99aa94e1d63738e11ff0e}\label{class_liquid_load_charge_material_ad474f33059c99aa94e1d63738e11ff0e}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Discharge\+Temperature@{get\+Discharge\+Temperature}}
@@ -166,7 +164,7 @@ double, discharge temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 192 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 189 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a07e869cabd98a5179536559a1c0f4b35}\label{class_liquid_load_charge_material_a07e869cabd98a5179536559a1c0f4b35}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+ID@{get\+ID}}
@@ -179,7 +177,7 @@ size\+\_\+t, ID of material
 \end{DoxyReturn}
 
 
-Definition at line 296 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 285 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_ab80229a78f884fb07e756665a616d401}\label{class_liquid_load_charge_material_ab80229a78f884fb07e756665a616d401}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Initial\+Temperature@{get\+Initial\+Temperature}}
@@ -192,7 +190,7 @@ double, initial temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 176 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 173 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_aca3a38eb3343144042e9349b053da1bc}\label{class_liquid_load_charge_material_aca3a38eb3343144042e9349b053da1bc}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Latent\+Heat@{get\+Latent\+Heat}}
@@ -205,7 +203,7 @@ double, latent heat in btu/lb
 \end{DoxyReturn}
 
 
-Definition at line 128 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 125 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_acfedb26800cbead9bf11c57e1356dd57}\label{class_liquid_load_charge_material_acfedb26800cbead9bf11c57e1356dd57}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Percent\+Reacted@{get\+Percent\+Reacted}}
@@ -218,7 +216,7 @@ double, \% of charge reacted
 \end{DoxyReturn}
 
 
-Definition at line 224 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 221 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a8e55b0df0a0551671636bcf169228dca}\label{class_liquid_load_charge_material_a8e55b0df0a0551671636bcf169228dca}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Percent\+Vaporized@{get\+Percent\+Vaporized}}
@@ -231,7 +229,7 @@ double, \% of charge vaporized
 \end{DoxyReturn}
 
 
-Definition at line 208 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 205 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a2f0c26e789e98efd1e8fd0c8741ddd92}\label{class_liquid_load_charge_material_a2f0c26e789e98efd1e8fd0c8741ddd92}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Reaction\+Heat@{get\+Reaction\+Heat}}
@@ -244,7 +242,7 @@ double, heat of reaction in btu/lb
 \end{DoxyReturn}
 
 
-Definition at line 240 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 237 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_aa698f1f73dff91951139a4a50582963d}\label{class_liquid_load_charge_material_aa698f1f73dff91951139a4a50582963d}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Specific\+Heat\+Liquid@{get\+Specific\+Heat\+Liquid}}
@@ -257,7 +255,7 @@ double, specific heat in btu/(lb$\ast$°F)
 \end{DoxyReturn}
 
 
-Definition at line 96 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 93 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_ac4538f9722bf25465ec86586469a7b1e}\label{class_liquid_load_charge_material_ac4538f9722bf25465ec86586469a7b1e}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Specific\+Heat\+Vapor@{get\+Specific\+Heat\+Vapor}}
@@ -270,7 +268,7 @@ double, specific heat of vapor in btu/(lb$\ast$°F)
 \end{DoxyReturn}
 
 
-Definition at line 144 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 141 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a8f925c04c15ed889ba3fd7c4b628dbff}\label{class_liquid_load_charge_material_a8f925c04c15ed889ba3fd7c4b628dbff}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Substance@{get\+Substance}}
@@ -283,26 +281,26 @@ string, name of substance
 \end{DoxyReturn}
 
 
-Definition at line 272 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 269 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a181337f5e5cf6a47b82dd56897b49c29}\label{class_liquid_load_charge_material_a181337f5e5cf6a47b82dd56897b49c29}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Thermic\+Reaction\+Type@{get\+Thermic\+Reaction\+Type}}
 \index{get\+Thermic\+Reaction\+Type@{get\+Thermic\+Reaction\+Type}!Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{get\+Thermic\+Reaction\+Type()}{getThermicReactionType()}}
-{\footnotesize\ttfamily \hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} Liquid\+Load\+Charge\+Material\+::get\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type} Liquid\+Load\+Charge\+Material\+::get\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets the classification of thermic reaction type \begin{DoxyReturn}{Returns}
-\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}, thermic reaction type 
+\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}, thermic reaction type 
 \end{DoxyReturn}
 
 
-Definition at line 80 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 77 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a51a9826325e2c34cd073b8766331d476}\label{class_liquid_load_charge_material_a51a9826325e2c34cd073b8766331d476}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Total\+Heat@{get\+Total\+Heat}}
 \index{get\+Total\+Heat@{get\+Total\+Heat}!Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{get\+Total\+Heat()}{getTotalHeat()}}
-{\footnotesize\ttfamily double Liquid\+Load\+Charge\+Material\+::get\+Total\+Heat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily double Liquid\+Load\+Charge\+Material\+::get\+Total\+Heat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets the total heat required
 
@@ -311,7 +309,7 @@ double, total heat required in btu/hr
 \end{DoxyReturn}
 
 
-Definition at line 11 of file Liquid\+Load\+Charge\+Material.\+cpp.
+Definition at line 303 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a07004e345fb4ff287d435d0c84027973}\label{class_liquid_load_charge_material_a07004e345fb4ff287d435d0c84027973}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!get\+Vaporizing\+Temperature@{get\+Vaporizing\+Temperature}}
@@ -324,7 +322,7 @@ double, vaporizing temperature in °F
 \end{DoxyReturn}
 
 
-Definition at line 112 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 109 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_aa6ad825ee8ab1c7816ce3bf10260c0bb}\label{class_liquid_load_charge_material_aa6ad825ee8ab1c7816ce3bf10260c0bb}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!operator"!=@{operator"!=}}
@@ -334,7 +332,7 @@ Definition at line 112 of file Liquid\+Load\+Charge\+Material.\+h.
 
 bool operator 
 
-Definition at line 332 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 340 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_ad2090d1628f26e46339e9e164b47d3a2}\label{class_liquid_load_charge_material_ad2090d1628f26e46339e9e164b47d3a2}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!operator==@{operator==}}
@@ -344,7 +342,7 @@ Definition at line 332 of file Liquid\+Load\+Charge\+Material.\+h.
 
 bool operator 
 
-Definition at line 319 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 327 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a557c1f588cfb972ff0c7f748d6c2bd8f}\label{class_liquid_load_charge_material_a557c1f588cfb972ff0c7f748d6c2bd8f}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Additional\+Heat@{set\+Additional\+Heat}}
@@ -359,7 +357,7 @@ Sets the additional heat
 \end{DoxyParams}
 
 
-Definition at line 264 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 261 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a23d6aa6f15a124ddb1504261347b0b82}\label{class_liquid_load_charge_material_a23d6aa6f15a124ddb1504261347b0b82}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Charge\+Feed\+Rate@{set\+Charge\+Feed\+Rate}}
@@ -374,7 +372,7 @@ Sets the charge (liquid)-\/feed rate
 \end{DoxyParams}
 
 
-Definition at line 168 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 165 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a04ef0778e524f531b6dd2dd6137c270d}\label{class_liquid_load_charge_material_a04ef0778e524f531b6dd2dd6137c270d}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Discharge\+Temperature@{set\+Discharge\+Temperature}}
@@ -389,7 +387,7 @@ Sets the discharge temperature
 \end{DoxyParams}
 
 
-Definition at line 200 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 197 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a3f6654f1d9387366e0ca7620ecc41361}\label{class_liquid_load_charge_material_a3f6654f1d9387366e0ca7620ecc41361}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+ID@{set\+ID}}
@@ -404,7 +402,7 @@ Sets the ID of material
 \end{DoxyParams}
 
 
-Definition at line 304 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 293 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_ac30600ef82db69934e8c08e4a774bb03}\label{class_liquid_load_charge_material_ac30600ef82db69934e8c08e4a774bb03}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Initial\+Temperature@{set\+Initial\+Temperature}}
@@ -419,7 +417,7 @@ Sets the initial temperature
 \end{DoxyParams}
 
 
-Definition at line 184 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 181 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a01d2d23580f27aa9e5cba1124635a677}\label{class_liquid_load_charge_material_a01d2d23580f27aa9e5cba1124635a677}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Latent\+Heat@{set\+Latent\+Heat}}
@@ -434,7 +432,7 @@ Sets the latent heat of vaporization
 \end{DoxyParams}
 
 
-Definition at line 136 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 133 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a9984b8c78a460ef3569fc3ef13eea604}\label{class_liquid_load_charge_material_a9984b8c78a460ef3569fc3ef13eea604}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Percent\+Reacted@{set\+Percent\+Reacted}}
@@ -449,7 +447,7 @@ Sets the percentage of charge reacted
 \end{DoxyParams}
 
 
-Definition at line 232 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 229 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_aaf2aa3303201370a7b79e5b3f54e135a}\label{class_liquid_load_charge_material_aaf2aa3303201370a7b79e5b3f54e135a}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Percent\+Vaporized@{set\+Percent\+Vaporized}}
@@ -464,7 +462,7 @@ Sets the percentage of charge vaporized
 \end{DoxyParams}
 
 
-Definition at line 216 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 213 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a793c7ebc2643b2af0eaf21b9cb788775}\label{class_liquid_load_charge_material_a793c7ebc2643b2af0eaf21b9cb788775}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Reaction\+Heat@{set\+Reaction\+Heat}}
@@ -479,7 +477,7 @@ Sets the heat of reaction
 \end{DoxyParams}
 
 
-Definition at line 248 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 245 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a2187c4c6ba394c05ab42e769bf175683}\label{class_liquid_load_charge_material_a2187c4c6ba394c05ab42e769bf175683}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Specific\+Heat\+Liquid@{set\+Specific\+Heat\+Liquid}}
@@ -494,7 +492,7 @@ Sets the specific heat of liquid
 \end{DoxyParams}
 
 
-Definition at line 104 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 101 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_ae95faf01cf6293ab282b1b7fe3b849e1}\label{class_liquid_load_charge_material_ae95faf01cf6293ab282b1b7fe3b849e1}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Specific\+Heat\+Vapor@{set\+Specific\+Heat\+Vapor}}
@@ -509,7 +507,7 @@ Sets the specific heat of vapor
 \end{DoxyParams}
 
 
-Definition at line 152 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 149 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a85bb43270c6a11a1eaf51f00da16746a}\label{class_liquid_load_charge_material_a85bb43270c6a11a1eaf51f00da16746a}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Substance@{set\+Substance}}
@@ -524,13 +522,13 @@ Sets the name of substance
 \end{DoxyParams}
 
 
-Definition at line 280 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 277 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a39c258d0bfdcfa352590d411a8c4e882}\label{class_liquid_load_charge_material_a39c258d0bfdcfa352590d411a8c4e882}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Thermic\+Reaction\+Type@{set\+Thermic\+Reaction\+Type}}
 \index{set\+Thermic\+Reaction\+Type@{set\+Thermic\+Reaction\+Type}!Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}}
 \subsubsection{\texorpdfstring{set\+Thermic\+Reaction\+Type()}{setThermicReactionType()}}
-{\footnotesize\ttfamily void Liquid\+Load\+Charge\+Material\+::set\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Liquid\+Load\+Charge\+Material\+::set\+Thermic\+Reaction\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_load_charge_material_a51d4263e865a5d86236622dd3fe23fd1}{Load\+Charge\+Material\+::\+Thermic\+Reaction\+Type}}]{thermic\+Reaction\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Sets the classification of thermic reaction type 
 \begin{DoxyParams}{Parameters}
@@ -539,22 +537,7 @@ Sets the classification of thermic reaction type
 \end{DoxyParams}
 
 
-Definition at line 88 of file Liquid\+Load\+Charge\+Material.\+h.
-
-\mbox{\Hypertarget{class_liquid_load_charge_material_ad45afc317b72c89cc46016e0b05b50b3}\label{class_liquid_load_charge_material_ad45afc317b72c89cc46016e0b05b50b3}} 
-\index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Total\+Heat@{set\+Total\+Heat}}
-\index{set\+Total\+Heat@{set\+Total\+Heat}!Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}}
-\subsubsection{\texorpdfstring{set\+Total\+Heat()}{setTotalHeat()}}
-{\footnotesize\ttfamily void Liquid\+Load\+Charge\+Material\+::set\+Total\+Heat (\begin{DoxyParamCaption}\item[{const double}]{total\+Heat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Sets the total heat required 
-\begin{DoxyParams}{Parameters}
-{\em total\+Heat} & double, total heat required in btu/hr \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 288 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 85 of file Liquid\+Load\+Charge\+Material.\+h.
 
 \mbox{\Hypertarget{class_liquid_load_charge_material_a50938e3270de5d3c59b872f290a761cc}\label{class_liquid_load_charge_material_a50938e3270de5d3c59b872f290a761cc}} 
 \index{Liquid\+Load\+Charge\+Material@{Liquid\+Load\+Charge\+Material}!set\+Vaporizing\+Temperature@{set\+Vaporizing\+Temperature}}
@@ -569,11 +552,10 @@ Sets the vaporizing temperature
 \end{DoxyParams}
 
 
-Definition at line 120 of file Liquid\+Load\+Charge\+Material.\+h.
+Definition at line 117 of file Liquid\+Load\+Charge\+Material.\+h.
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/calculator/losses/\hyperlink{_liquid_load_charge_material_8h}{Liquid\+Load\+Charge\+Material.\+h}\item 
-src/calculator/losses/\hyperlink{_liquid_load_charge_material_8cpp}{Liquid\+Load\+Charge\+Material.\+cpp}\end{DoxyCompactItemize}
+include/calculator/losses/\hyperlink{_liquid_load_charge_material_8h}{Liquid\+Load\+Charge\+Material.\+h}\end{DoxyCompactItemize}

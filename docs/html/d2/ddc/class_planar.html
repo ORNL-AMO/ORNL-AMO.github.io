@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.14</span>
+   &#160;<span id="projectnumber">v.0.2.24</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -76,32 +76,26 @@ Inheritance diagram for Planar:</div>
  <div class="center">
   <img src="../../d2/ddc/class_planar.png" usemap="#Planar_map" alt=""/>
   <map id="Planar_map" name="Planar_map">
-<area href="../../d6/dc1/class_addl_trav_plane.html" alt="AddlTravPlane" shape="rect" coords="0,56,156,80"/>
-<area href="../../d3/dca/class_fan_inlet_flange.html" alt="FanInletFlange" shape="rect" coords="166,56,322,80"/>
-<area href="../../d7/de3/class_fan_or_evase_outlet_flange.html" alt="FanOrEvaseOutletFlange" shape="rect" coords="332,56,488,80"/>
-<area href="../../dc/dd3/class_flow_traverse.html" alt="FlowTraverse" shape="rect" coords="498,56,654,80"/>
-<area href="../../d6/d96/class_inlet_mst_plane.html" alt="InletMstPlane" shape="rect" coords="664,56,820,80"/>
-<area href="../../d6/de6/class_outlet_mst_plane.html" alt="OutletMstPlane" shape="rect" coords="830,56,986,80"/>
+<area href="../../d0/de9/class_flange_plane.html" alt="FlangePlane" shape="rect" coords="0,56,95,80"/>
+<area href="../../d5/dd0/class_mst_plane.html" alt="MstPlane" shape="rect" coords="105,56,200,80"/>
+<area href="../../dc/d2a/class_traverse_plane.html" alt="TraversePlane" shape="rect" coords="210,56,305,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3b5c2c6a72561a29012c7793211ce7e0"><td class="memItemLeft" align="right" valign="top"><a id="a3b5c2c6a72561a29012c7793211ce7e0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Planar</b> (double circularDuctDiameter, double tdx, double pbx, double psx)</td></tr>
-<tr class="separator:a3b5c2c6a72561a29012c7793211ce7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f208c5a6c651921199c0a296a4e6a5"><td class="memItemLeft" align="right" valign="top"><a id="a69f208c5a6c651921199c0a296a4e6a5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Planar</b> (double length, double width, double tdx, double pbx, double psx, unsigned noInletBoxes=1)</td></tr>
-<tr class="separator:a69f208c5a6c651921199c0a296a4e6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15d774625cfccef75b1fa5742482f5a"><td class="memItemLeft" align="right" valign="top"><a id="ac15d774625cfccef75b1fa5742482f5a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Planar</b> (const double area, const double tdx, const double pbx, const double psx)</td></tr>
+<tr class="separator:ac15d774625cfccef75b1fa5742482f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a7e2b4d44fddc320e834163c16266c44e"><td class="memItemLeft" align="right" valign="top"><a id="a7e2b4d44fddc320e834163c16266c44e"></a>
-const double&#160;</td><td class="memItemRight" valign="bottom"><b>tdx</b></td></tr>
-<tr class="separator:a7e2b4d44fddc320e834163c16266c44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18ed8bdd4d3e0766c349cf3ed1482a40"><td class="memItemLeft" align="right" valign="top"><a id="a18ed8bdd4d3e0766c349cf3ed1482a40"></a>
-const double&#160;</td><td class="memItemRight" valign="bottom"><b>pbx</b></td></tr>
-<tr class="separator:a18ed8bdd4d3e0766c349cf3ed1482a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc9d4149cae09c9e49aa323a814616c"><td class="memItemLeft" align="right" valign="top"><a id="afdc9d4149cae09c9e49aa323a814616c"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>dryBulbTemperature</b></td></tr>
+<tr class="separator:afdc9d4149cae09c9e49aa323a814616c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2be6e6cadb8550921914ecdd43b80f"><td class="memItemLeft" align="right" valign="top"><a id="a0a2be6e6cadb8550921914ecdd43b80f"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>barometricPressure</b></td></tr>
+<tr class="separator:a0a2be6e6cadb8550921914ecdd43b80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561590931d1cb7b592eeba9f3685d3c3"><td class="memItemLeft" align="right" valign="top"><a id="a561590931d1cb7b592eeba9f3685d3c3"></a>
 const double&#160;</td><td class="memItemRight" valign="bottom"><b>area</b></td></tr>
 <tr class="separator:a561590931d1cb7b592eeba9f3685d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,9 +114,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>gasVelocityPressure
 <tr class="memitem:a67711087a384aa3165fb7990e72193c5"><td class="memItemLeft" align="right" valign="top"><a id="a67711087a384aa3165fb7990e72193c5"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>gasTotalPressure</b> = 0</td></tr>
 <tr class="separator:a67711087a384aa3165fb7990e72193c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae78fa44af29939b09ad5262788b981"><td class="memItemLeft" align="right" valign="top"><a id="a1ae78fa44af29939b09ad5262788b981"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>psx</b> = 0</td></tr>
-<tr class="separator:a1ae78fa44af29939b09ad5262788b981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee994f45b58125cbd81998a84f860a6"><td class="memItemLeft" align="right" valign="top"><a id="a4ee994f45b58125cbd81998a84f860a6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>staticPressure</b> = 0</td></tr>
+<tr class="separator:a4ee994f45b58125cbd81998a84f860a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -135,10 +129,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Fan</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d7/d39/_planar_8h_source.html#l00021">21</a> of file <a class="el" href="../../d7/d39/_planar_8h_source.html">Planar.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<p class="definition">Definition at line <a class="el" href="../../d7/d39/_planar_8h_source.html#l00058">58</a> of file <a class="el" href="../../d7/d39/_planar_8h_source.html">Planar.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/fans/<a class="el" href="../../d7/d39/_planar_8h_source.html">Planar.h</a></li>
-<li>src/fans/<a class="el" href="../../d2/d44/_planar_8cpp_source.html">Planar.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

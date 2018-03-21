@@ -6,5 +6,6 @@ var searchData=
   ['motorefficiency',['MotorEfficiency',['../d4/d08/class_motor_efficiency.html',1,'']]],
   ['motorpower',['MotorPower',['../d4/da0/class_motor_power.html',1,'']]],
   ['motorpowerfactor',['MotorPowerFactor',['../d3/d52/class_motor_power_factor.html',1,'']]],
-  ['motorshaftpower',['MotorShaftPower',['../db/d39/class_motor_shaft_power.html',1,'']]]
+  ['motorshaftpower',['MotorShaftPower',['../db/d39/class_motor_shaft_power.html',1,'']]],
+  ['mstplane',['MstPlane',['../d5/dd0/class_mst_plane.html',1,'']]]
 ];

@@ -7,8 +7,7 @@ var searchData=
   ['liquidcoolinglosses_2ecpp',['LiquidCoolingLosses.cpp',['../d7/d95/_liquid_cooling_losses_8cpp.html',1,'']]],
   ['liquidcoolinglosses_2eh',['LiquidCoolingLosses.h',['../d6/dc0/_liquid_cooling_losses_8h.html',1,'']]],
   ['liquidloadchargematerial',['LiquidLoadChargeMaterial',['../de/d8d/class_liquid_load_charge_material.html',1,'LiquidLoadChargeMaterial'],['../de/d8d/class_liquid_load_charge_material.html#ab6b2ef342701227c60dc380f5a576085',1,'LiquidLoadChargeMaterial::LiquidLoadChargeMaterial()']]],
-  ['liquidloadchargematerial_2ecpp',['LiquidLoadChargeMaterial.cpp',['../dc/d4d/_liquid_load_charge_material_8cpp.html',1,'']]],
   ['liquidloadchargematerial_2eh',['LiquidLoadChargeMaterial.h',['../d3/d33/_liquid_load_charge_material_8h.html',1,'']]],
-  ['loadchargematerial',['LoadChargeMaterial',['../d3/d2d/class_load_charge_material.html',1,'']]],
+  ['loadchargematerial',['LoadChargeMaterial',['../d1/d8a/namespace_load_charge_material.html',1,'']]],
   ['loadestimationmethod',['LoadEstimationMethod',['../dc/d7a/class_field_data.html#a424e89914ba5684c01bb269dbe3312fd',1,'FieldData']]]
 ];

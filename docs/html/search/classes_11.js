@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['walllosses',['WallLosses',['../d5/d17/class_wall_losses.html',1,'']]],
-  ['watercoolinglosses',['WaterCoolingLosses',['../d9/d96/class_water_cooling_losses.html',1,'']]]
+  ['velocitypressuretraversedata',['VelocityPressureTraverseData',['../d8/d09/class_velocity_pressure_traverse_data.html',1,'']]]
 ];
