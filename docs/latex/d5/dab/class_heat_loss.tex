@@ -9,9 +9,9 @@
 \item 
 \hyperlink{class_heat_loss_a1c1bba4ef783d97e2ed63f39f625e82f}{Heat\+Loss} (double inlet\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} quantity\+Type, double quantity\+Value, double inlet\+Mass\+Flow, double percent\+Heat\+Loss)
 \item 
-std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& \hyperlink{class_heat_loss_ac9fe13c199ec41ef6fafe85523a27040}{get\+Inlet\+Properties} () const
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& \hyperlink{class_heat_loss_a7bea461460dbacf1855d5375bbf6c097}{get\+Inlet\+Properties} () const
 \item 
-std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& \hyperlink{class_heat_loss_adddb2b3d6bff26a377219901381919f3}{get\+Outlet\+Properties} () const
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& \hyperlink{class_heat_loss_a3e483dda6f393d67d7a0f28bcd75e545}{get\+Outlet\+Properties} () const
 \item 
 double \hyperlink{class_heat_loss_acc39533782f4f5cbf902d36f7bfc53b0}{get\+Heat\+Loss} () const
 \item 
@@ -40,7 +40,7 @@ void \hyperlink{class_heat_loss_a7c125f1137f31eba8826a1aa3b905290}{set\+Quantity
 \subsection{Detailed Description}
 Heat Loss calculator class Used to calculate the heat energy loss and outlet steam properties 
 
-Definition at line 21 of file Heat\+Loss.\+h.
+Definition at line 22 of file Heat\+Loss.\+h.
 
 
 
@@ -84,7 +84,7 @@ double, heat loss in M\+J/hr
 \end{DoxyReturn}
 
 
-Definition at line 54 of file Heat\+Loss.\+h.
+Definition at line 53 of file Heat\+Loss.\+h.
 
 \mbox{\Hypertarget{class_heat_loss_ad11a428f99a4945628f66adecb88bf5a}\label{class_heat_loss_ad11a428f99a4945628f66adecb88bf5a}} 
 \index{Heat\+Loss@{Heat\+Loss}!get\+Inlet\+Mass\+Flow@{get\+Inlet\+Mass\+Flow}}
@@ -97,7 +97,7 @@ double, mass flow of the inlet steam in kg/hr
 \end{DoxyReturn}
 
 
-Definition at line 72 of file Heat\+Loss.\+h.
+Definition at line 71 of file Heat\+Loss.\+h.
 
 \mbox{\Hypertarget{class_heat_loss_a09e6e05477fd6794ea7f42bb43da2f50}\label{class_heat_loss_a09e6e05477fd6794ea7f42bb43da2f50}} 
 \index{Heat\+Loss@{Heat\+Loss}!get\+Inlet\+Pressure@{get\+Inlet\+Pressure}}
@@ -110,33 +110,33 @@ double, pressure of the inlet steam in M\+Pa
 \end{DoxyReturn}
 
 
-Definition at line 60 of file Heat\+Loss.\+h.
+Definition at line 59 of file Heat\+Loss.\+h.
 
-\mbox{\Hypertarget{class_heat_loss_ac9fe13c199ec41ef6fafe85523a27040}\label{class_heat_loss_ac9fe13c199ec41ef6fafe85523a27040}} 
+\mbox{\Hypertarget{class_heat_loss_a7bea461460dbacf1855d5375bbf6c097}\label{class_heat_loss_a7bea461460dbacf1855d5375bbf6c097}} 
 \index{Heat\+Loss@{Heat\+Loss}!get\+Inlet\+Properties@{get\+Inlet\+Properties}}
 \index{get\+Inlet\+Properties@{get\+Inlet\+Properties}!Heat\+Loss@{Heat\+Loss}}
 \subsubsection{\texorpdfstring{get\+Inlet\+Properties()}{getInletProperties()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, double$>$ const\& Heat\+Loss\+::get\+Inlet\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const\& Heat\+Loss\+::get\+Inlet\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets all of the inlet properties \begin{DoxyReturn}{Returns}
-std\+::unordered\+\_\+map $<$std\+::string, double$>$, inlet properties 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties}, inlet properties 
 \end{DoxyReturn}
 
 
-Definition at line 42 of file Heat\+Loss.\+h.
+Definition at line 41 of file Heat\+Loss.\+h.
 
-\mbox{\Hypertarget{class_heat_loss_adddb2b3d6bff26a377219901381919f3}\label{class_heat_loss_adddb2b3d6bff26a377219901381919f3}} 
+\mbox{\Hypertarget{class_heat_loss_a3e483dda6f393d67d7a0f28bcd75e545}\label{class_heat_loss_a3e483dda6f393d67d7a0f28bcd75e545}} 
 \index{Heat\+Loss@{Heat\+Loss}!get\+Outlet\+Properties@{get\+Outlet\+Properties}}
 \index{get\+Outlet\+Properties@{get\+Outlet\+Properties}!Heat\+Loss@{Heat\+Loss}}
 \subsubsection{\texorpdfstring{get\+Outlet\+Properties()}{getOutletProperties()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, double$>$ const\& Heat\+Loss\+::get\+Outlet\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const\& Heat\+Loss\+::get\+Outlet\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets all of the outlet steam properties \begin{DoxyReturn}{Returns}
-std\+::unordered\+\_\+map $<$std\+::string, double$>$, outlet steam properties 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties}, outlet steam properties 
 \end{DoxyReturn}
 
 
-Definition at line 48 of file Heat\+Loss.\+h.
+Definition at line 47 of file Heat\+Loss.\+h.
 
 \mbox{\Hypertarget{class_heat_loss_acbbf01db5cde157057e4d766cab22382}\label{class_heat_loss_acbbf01db5cde157057e4d766cab22382}} 
 \index{Heat\+Loss@{Heat\+Loss}!get\+Percent\+Heat\+Loss@{get\+Percent\+Heat\+Loss}}
@@ -149,7 +149,7 @@ double, heat loss as \%
 \end{DoxyReturn}
 
 
-Definition at line 78 of file Heat\+Loss.\+h.
+Definition at line 77 of file Heat\+Loss.\+h.
 
 \mbox{\Hypertarget{class_heat_loss_a92dc973c0fd81df192207b3df55d6c2b}\label{class_heat_loss_a92dc973c0fd81df192207b3df55d6c2b}} 
 \index{Heat\+Loss@{Heat\+Loss}!get\+Quantity\+Type@{get\+Quantity\+Type}}
@@ -162,7 +162,7 @@ Gets the quantity type \begin{DoxyReturn}{Returns}
 \end{DoxyReturn}
 
 
-Definition at line 84 of file Heat\+Loss.\+h.
+Definition at line 83 of file Heat\+Loss.\+h.
 
 \mbox{\Hypertarget{class_heat_loss_a7f7fd85e4fc8bf96dcc213f3dd44ecf7}\label{class_heat_loss_a7f7fd85e4fc8bf96dcc213f3dd44ecf7}} 
 \index{Heat\+Loss@{Heat\+Loss}!get\+Quantity\+Value@{get\+Quantity\+Value}}
@@ -175,7 +175,7 @@ double, value of quantity (either temperature in K, enthalpy in k\+J/kg, entropy
 \end{DoxyReturn}
 
 
-Definition at line 66 of file Heat\+Loss.\+h.
+Definition at line 65 of file Heat\+Loss.\+h.
 
 \mbox{\Hypertarget{class_heat_loss_ac4154dc9922b6ddf3f2e7a10cc64c61f}\label{class_heat_loss_ac4154dc9922b6ddf3f2e7a10cc64c61f}} 
 \index{Heat\+Loss@{Heat\+Loss}!set\+Inlet\+Mass\+Flow@{set\+Inlet\+Mass\+Flow}}
@@ -190,7 +190,7 @@ Sets the inlet mass flow
 \end{DoxyParams}
 
 
-Definition at line 43 of file Heat\+Loss.\+cpp.
+Definition at line 44 of file Heat\+Loss.\+cpp.
 
 \mbox{\Hypertarget{class_heat_loss_ab0a6b1f2a964d161d25758318f25f7e3}\label{class_heat_loss_ab0a6b1f2a964d161d25758318f25f7e3}} 
 \index{Heat\+Loss@{Heat\+Loss}!set\+Inlet\+Pressure@{set\+Inlet\+Pressure}}
@@ -205,7 +205,7 @@ Sets the inlet pressure
 \end{DoxyParams}
 
 
-Definition at line 33 of file Heat\+Loss.\+cpp.
+Definition at line 34 of file Heat\+Loss.\+cpp.
 
 \mbox{\Hypertarget{class_heat_loss_a2a4a80b16c1f975e194ae466b20d46bd}\label{class_heat_loss_a2a4a80b16c1f975e194ae466b20d46bd}} 
 \index{Heat\+Loss@{Heat\+Loss}!set\+Percent\+Heat\+Loss@{set\+Percent\+Heat\+Loss}}
@@ -220,7 +220,7 @@ Sets the percent heat loss
 \end{DoxyParams}
 
 
-Definition at line 48 of file Heat\+Loss.\+cpp.
+Definition at line 49 of file Heat\+Loss.\+cpp.
 
 \mbox{\Hypertarget{class_heat_loss_a7c125f1137f31eba8826a1aa3b905290}\label{class_heat_loss_a7c125f1137f31eba8826a1aa3b905290}} 
 \index{Heat\+Loss@{Heat\+Loss}!set\+Quantity\+Type@{set\+Quantity\+Type}}
@@ -235,7 +235,7 @@ Sets the quantity type
 \end{DoxyParams}
 
 
-Definition at line 53 of file Heat\+Loss.\+cpp.
+Definition at line 54 of file Heat\+Loss.\+cpp.
 
 \mbox{\Hypertarget{class_heat_loss_ae6b6c4ac28471d7bc94e3886c48a90bd}\label{class_heat_loss_ae6b6c4ac28471d7bc94e3886c48a90bd}} 
 \index{Heat\+Loss@{Heat\+Loss}!set\+Quantity\+Value@{set\+Quantity\+Value}}
@@ -250,7 +250,7 @@ Sets the quantity value
 \end{DoxyParams}
 
 
-Definition at line 38 of file Heat\+Loss.\+cpp.
+Definition at line 39 of file Heat\+Loss.\+cpp.
 
 
 
