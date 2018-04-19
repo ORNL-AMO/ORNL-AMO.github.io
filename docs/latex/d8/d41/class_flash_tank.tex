@@ -9,9 +9,12 @@
 \item 
 \hyperlink{class_flash_tank_ad576e26508da35738127a65fd6ddc35d}{Flash\+Tank} (double inlet\+Water\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} quantity\+Type, double quantity\+Value, double inlet\+Water\+Mass\+Flow, double tank\+Pressure)
 \item 
-std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& \hyperlink{class_flash_tank_a57a316e4ef448f4a9447b675ba6ac84b}{get\+Inlet\+Water\+Properties} () const
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& \hyperlink{class_flash_tank_a582b3e730f1619891533965940d692de}{get\+Inlet\+Water\+Properties} () const
 \item 
-std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& \hyperlink{class_flash_tank_aa22fdef56a1ad6d70beda66cc8a6940a}{get\+Outlet\+Saturated\+Properties} () const
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& \hyperlink{class_flash_tank_a9db00130ed4419e2e251c9e5ce936572}{get\+Outlet\+Gas\+Saturated\+Properties} () const
+\item 
+\mbox{\Hypertarget{class_flash_tank_af65a272b08ca55e4e97b3a00c952a6e7}\label{class_flash_tank_af65a272b08ca55e4e97b3a00c952a6e7}} 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& {\bfseries get\+Outlet\+Liquid\+Saturated\+Properties} () const
 \item 
 double \hyperlink{class_flash_tank_a62e8ff97d91da0845526c494022e41da}{get\+Inlet\+Water\+Pressure} () const
 \item 
@@ -38,7 +41,7 @@ void \hyperlink{class_flash_tank_a30aa7a42d1547f61b176da4a15e8e8ee}{set\+Quantit
 \subsection{Detailed Description}
 Heat Loss calculator class Used to calculate the heat energy loss and outlet steam properties 
 
-Definition at line 22 of file Flash\+Tank.\+h.
+Definition at line 23 of file Flash\+Tank.\+h.
 
 
 
@@ -82,7 +85,7 @@ double, mass flow of the inlet water in kg/hr
 \end{DoxyReturn}
 
 
-Definition at line 51 of file Flash\+Tank.\+cpp.
+Definition at line 52 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_a62e8ff97d91da0845526c494022e41da}\label{class_flash_tank_a62e8ff97d91da0845526c494022e41da}} 
 \index{Flash\+Tank@{Flash\+Tank}!get\+Inlet\+Water\+Pressure@{get\+Inlet\+Water\+Pressure}}
@@ -95,33 +98,33 @@ double, pressure of the inlet water in M\+Pa
 \end{DoxyReturn}
 
 
-Definition at line 47 of file Flash\+Tank.\+cpp.
+Definition at line 48 of file Flash\+Tank.\+cpp.
 
-\mbox{\Hypertarget{class_flash_tank_a57a316e4ef448f4a9447b675ba6ac84b}\label{class_flash_tank_a57a316e4ef448f4a9447b675ba6ac84b}} 
+\mbox{\Hypertarget{class_flash_tank_a582b3e730f1619891533965940d692de}\label{class_flash_tank_a582b3e730f1619891533965940d692de}} 
 \index{Flash\+Tank@{Flash\+Tank}!get\+Inlet\+Water\+Properties@{get\+Inlet\+Water\+Properties}}
 \index{get\+Inlet\+Water\+Properties@{get\+Inlet\+Water\+Properties}!Flash\+Tank@{Flash\+Tank}}
 \subsubsection{\texorpdfstring{get\+Inlet\+Water\+Properties()}{getInletWaterProperties()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, double$>$ const\& Flash\+Tank\+::get\+Inlet\+Water\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const\& Flash\+Tank\+::get\+Inlet\+Water\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets all of the properties of the inlet water \begin{DoxyReturn}{Returns}
-std\+::unordered\+\_\+map $<$std\+::string, double$>$, inlet water properties 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties}, inlet water properties 
 \end{DoxyReturn}
 
 
-Definition at line 44 of file Flash\+Tank.\+h.
+Definition at line 43 of file Flash\+Tank.\+h.
 
-\mbox{\Hypertarget{class_flash_tank_aa22fdef56a1ad6d70beda66cc8a6940a}\label{class_flash_tank_aa22fdef56a1ad6d70beda66cc8a6940a}} 
-\index{Flash\+Tank@{Flash\+Tank}!get\+Outlet\+Saturated\+Properties@{get\+Outlet\+Saturated\+Properties}}
-\index{get\+Outlet\+Saturated\+Properties@{get\+Outlet\+Saturated\+Properties}!Flash\+Tank@{Flash\+Tank}}
-\subsubsection{\texorpdfstring{get\+Outlet\+Saturated\+Properties()}{getOutletSaturatedProperties()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, double$>$ const\& Flash\+Tank\+::get\+Outlet\+Saturated\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_flash_tank_a9db00130ed4419e2e251c9e5ce936572}\label{class_flash_tank_a9db00130ed4419e2e251c9e5ce936572}} 
+\index{Flash\+Tank@{Flash\+Tank}!get\+Outlet\+Gas\+Saturated\+Properties@{get\+Outlet\+Gas\+Saturated\+Properties}}
+\index{get\+Outlet\+Gas\+Saturated\+Properties@{get\+Outlet\+Gas\+Saturated\+Properties}!Flash\+Tank@{Flash\+Tank}}
+\subsubsection{\texorpdfstring{get\+Outlet\+Gas\+Saturated\+Properties()}{getOutletGasSaturatedProperties()}}
+{\footnotesize\ttfamily \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const\& Flash\+Tank\+::get\+Outlet\+Gas\+Saturated\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets all of the saturated properties of the outlet gas and liquid \begin{DoxyReturn}{Returns}
-std\+::unordered\+\_\+map $<$std\+::string, double$>$, outlet gas and liquid saturated properties 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties}, outlet gas and liquid saturated properties 
 \end{DoxyReturn}
 
 
-Definition at line 50 of file Flash\+Tank.\+h.
+Definition at line 49 of file Flash\+Tank.\+h.
 
 \mbox{\Hypertarget{class_flash_tank_a1800317a9b9dd8ff8fb18c693e846a45}\label{class_flash_tank_a1800317a9b9dd8ff8fb18c693e846a45}} 
 \index{Flash\+Tank@{Flash\+Tank}!get\+Quantity\+Type@{get\+Quantity\+Type}}
@@ -134,7 +137,7 @@ Gets the quantity type \begin{DoxyReturn}{Returns}
 \end{DoxyReturn}
 
 
-Definition at line 55 of file Flash\+Tank.\+cpp.
+Definition at line 56 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_ab2145598969881df58736a1b65326d17}\label{class_flash_tank_ab2145598969881df58736a1b65326d17}} 
 \index{Flash\+Tank@{Flash\+Tank}!get\+Quantity\+Value@{get\+Quantity\+Value}}
@@ -147,7 +150,7 @@ double, value of quantity (either temperature in K, enthalpy in k\+J/kg, entropy
 \end{DoxyReturn}
 
 
-Definition at line 49 of file Flash\+Tank.\+cpp.
+Definition at line 50 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_af5d4f0bf7babe61120e1e4452594e1af}\label{class_flash_tank_af5d4f0bf7babe61120e1e4452594e1af}} 
 \index{Flash\+Tank@{Flash\+Tank}!get\+Tank\+Pressure@{get\+Tank\+Pressure}}
@@ -160,7 +163,7 @@ double, tank pressure in M\+Pa
 \end{DoxyReturn}
 
 
-Definition at line 53 of file Flash\+Tank.\+cpp.
+Definition at line 54 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_a2bcbd92d39ef3c760bdd65066ba3d34a}\label{class_flash_tank_a2bcbd92d39ef3c760bdd65066ba3d34a}} 
 \index{Flash\+Tank@{Flash\+Tank}!set\+Inlet\+Water\+Mass\+Flow@{set\+Inlet\+Water\+Mass\+Flow}}
@@ -175,7 +178,7 @@ Sets the inlet water mass flow
 \end{DoxyParams}
 
 
-Definition at line 67 of file Flash\+Tank.\+cpp.
+Definition at line 68 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_aed0991a7902401d110fb2f4b472326f5}\label{class_flash_tank_aed0991a7902401d110fb2f4b472326f5}} 
 \index{Flash\+Tank@{Flash\+Tank}!set\+Inlet\+Water\+Pressure@{set\+Inlet\+Water\+Pressure}}
@@ -190,7 +193,7 @@ Sets the inlet water pressure
 \end{DoxyParams}
 
 
-Definition at line 57 of file Flash\+Tank.\+cpp.
+Definition at line 58 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_a30aa7a42d1547f61b176da4a15e8e8ee}\label{class_flash_tank_a30aa7a42d1547f61b176da4a15e8e8ee}} 
 \index{Flash\+Tank@{Flash\+Tank}!set\+Quantity\+Type@{set\+Quantity\+Type}}
@@ -205,7 +208,7 @@ Sets the quantity type
 \end{DoxyParams}
 
 
-Definition at line 77 of file Flash\+Tank.\+cpp.
+Definition at line 78 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_ac7392743aeaf8de6ce368814ea42e236}\label{class_flash_tank_ac7392743aeaf8de6ce368814ea42e236}} 
 \index{Flash\+Tank@{Flash\+Tank}!set\+Quantity\+Value@{set\+Quantity\+Value}}
@@ -220,7 +223,7 @@ Sets the quantity value
 \end{DoxyParams}
 
 
-Definition at line 62 of file Flash\+Tank.\+cpp.
+Definition at line 63 of file Flash\+Tank.\+cpp.
 
 \mbox{\Hypertarget{class_flash_tank_a8b3bb51a62dac4f76284dfdc114d83fe}\label{class_flash_tank_a8b3bb51a62dac4f76284dfdc114d83fe}} 
 \index{Flash\+Tank@{Flash\+Tank}!set\+Tank\+Pressure@{set\+Tank\+Pressure}}
@@ -235,7 +238,7 @@ Sets the pressure of the tank
 \end{DoxyParams}
 
 
-Definition at line 72 of file Flash\+Tank.\+cpp.
+Definition at line 73 of file Flash\+Tank.\+cpp.
 
 
 

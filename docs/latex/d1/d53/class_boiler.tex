@@ -9,14 +9,14 @@
 \item 
 \hyperlink{class_boiler_adebe1dca06edc8dbca462e226b4dd9d5}{Boiler} (double deaerator\+Pressure, double combustion\+Efficiency, double blowdown\+Rate, double steam\+Pressure, \hyperlink{class_steam_properties_ae0294bedf7d178c2d8fb6aed0f62fbff}{Steam\+Properties\+::\+Thermodynamic\+Quantity} quantity\+Type, double quantity\+Value, double steam\+Mass\+Flow)
 \item 
-\mbox{\Hypertarget{class_boiler_a432ff9b941a9fd3a36dc2c58bbb1fc60}\label{class_boiler_a432ff9b941a9fd3a36dc2c58bbb1fc60}} 
-std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Steam\+Properties} () const
+\mbox{\Hypertarget{class_boiler_a47e660b470ef7c2749102ae6873922e1}\label{class_boiler_a47e660b470ef7c2749102ae6873922e1}} 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& {\bfseries get\+Steam\+Properties} () const
 \item 
-\mbox{\Hypertarget{class_boiler_ac561af37c8c6d2f93cd4e38e8de9b8eb}\label{class_boiler_ac561af37c8c6d2f93cd4e38e8de9b8eb}} 
-std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Blowdown\+Properties} () const
+\mbox{\Hypertarget{class_boiler_ac48aa3ee13845cdf388085e73531cb66}\label{class_boiler_ac48aa3ee13845cdf388085e73531cb66}} 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& {\bfseries get\+Blowdown\+Properties} () const
 \item 
-\mbox{\Hypertarget{class_boiler_a7cf302e46f9128f7042928d51d094e50}\label{class_boiler_a7cf302e46f9128f7042928d51d094e50}} 
-std\+::unordered\+\_\+map$<$ std\+::string, double $>$ const  \& {\bfseries get\+Feedwater\+Properties} () const
+\mbox{\Hypertarget{class_boiler_a03e09f9469c746789f302c42c8dfe959}\label{class_boiler_a03e09f9469c746789f302c42c8dfe959}} 
+\hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} const  \& {\bfseries get\+Feedwater\+Properties} () const
 \item 
 double \hyperlink{class_boiler_aad4786e7b68084e65a35dd6235517b8c}{get\+Deaerator\+Pressure} () const
 \item 
@@ -55,7 +55,7 @@ double \hyperlink{class_boiler_a55542a761669c842163b20932f9747d3}{get\+Fuel\+Ene
 \subsection{Detailed Description}
 \hyperlink{class_boiler}{Boiler} calculator class Used to determines the amount of fuel energy required to produce steam with specified properties at a given flow rate using general boiler operational characteristics 
 
-Definition at line 22 of file Boiler.\+h.
+Definition at line 23 of file Boiler.\+h.
 
 
 
@@ -103,7 +103,7 @@ double, blowdown rate as a \% of inlet mass flow
 \end{DoxyReturn}
 
 
-Definition at line 45 of file Boiler.\+cpp.
+Definition at line 41 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a8cc9ad5f1b36f5dcbcb225e9e3d13a39}\label{class_boiler_a8cc9ad5f1b36f5dcbcb225e9e3d13a39}} 
 \index{Boiler@{Boiler}!get\+Boiler\+Energy@{get\+Boiler\+Energy}}
@@ -129,7 +129,7 @@ double, combustion efficiency as \%
 \end{DoxyReturn}
 
 
-Definition at line 44 of file Boiler.\+cpp.
+Definition at line 40 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_aad4786e7b68084e65a35dd6235517b8c}\label{class_boiler_aad4786e7b68084e65a35dd6235517b8c}} 
 \index{Boiler@{Boiler}!get\+Deaerator\+Pressure@{get\+Deaerator\+Pressure}}
@@ -142,7 +142,7 @@ double, pressure of the deaerator in M\+Pa
 \end{DoxyReturn}
 
 
-Definition at line 43 of file Boiler.\+cpp.
+Definition at line 39 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a55542a761669c842163b20932f9747d3}\label{class_boiler_a55542a761669c842163b20932f9747d3}} 
 \index{Boiler@{Boiler}!get\+Fuel\+Energy@{get\+Fuel\+Energy}}
@@ -168,7 +168,7 @@ Gets the quantity type \begin{DoxyReturn}{Returns}
 \end{DoxyReturn}
 
 
-Definition at line 49 of file Boiler.\+cpp.
+Definition at line 45 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a78370a174135e6cc95abcd3b7ac2f947}\label{class_boiler_a78370a174135e6cc95abcd3b7ac2f947}} 
 \index{Boiler@{Boiler}!get\+Quantity\+Value@{get\+Quantity\+Value}}
@@ -181,7 +181,7 @@ double, value of quantity (either temperature in K, enthalpy in k\+J/kg, entropy
 \end{DoxyReturn}
 
 
-Definition at line 47 of file Boiler.\+cpp.
+Definition at line 43 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a4101e71234995558a451dcab145b5fc9}\label{class_boiler_a4101e71234995558a451dcab145b5fc9}} 
 \index{Boiler@{Boiler}!get\+Steam\+Mass\+Flow@{get\+Steam\+Mass\+Flow}}
@@ -194,7 +194,7 @@ double, mass flow of steam in kg/hr
 \end{DoxyReturn}
 
 
-Definition at line 48 of file Boiler.\+cpp.
+Definition at line 44 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a99d4bbace6ef20bcbdc4b0cfcdc43213}\label{class_boiler_a99d4bbace6ef20bcbdc4b0cfcdc43213}} 
 \index{Boiler@{Boiler}!get\+Steam\+Pressure@{get\+Steam\+Pressure}}
@@ -207,7 +207,7 @@ double, pressure of steam in M\+Pa
 \end{DoxyReturn}
 
 
-Definition at line 46 of file Boiler.\+cpp.
+Definition at line 42 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a66c0e4c577dbd3f52dcf202e69a08371}\label{class_boiler_a66c0e4c577dbd3f52dcf202e69a08371}} 
 \index{Boiler@{Boiler}!set\+Blowdown\+Rate@{set\+Blowdown\+Rate}}
@@ -222,7 +222,7 @@ Sets the blowdown rate
 \end{DoxyParams}
 
 
-Definition at line 61 of file Boiler.\+cpp.
+Definition at line 57 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_abef6bc48101f98f0650cb07fb1d51f74}\label{class_boiler_abef6bc48101f98f0650cb07fb1d51f74}} 
 \index{Boiler@{Boiler}!set\+Combustion\+Efficiency@{set\+Combustion\+Efficiency}}
@@ -237,7 +237,7 @@ Sets the combustion efficiency of the boiler
 \end{DoxyParams}
 
 
-Definition at line 56 of file Boiler.\+cpp.
+Definition at line 52 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a56f422254606ebba1248ae0b4f8f0215}\label{class_boiler_a56f422254606ebba1248ae0b4f8f0215}} 
 \index{Boiler@{Boiler}!set\+Deaerator\+Pressure@{set\+Deaerator\+Pressure}}
@@ -252,7 +252,7 @@ Sets the deaerator pressure
 \end{DoxyParams}
 
 
-Definition at line 51 of file Boiler.\+cpp.
+Definition at line 47 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a9c5b20cae6133c9174b12760f36d52c2}\label{class_boiler_a9c5b20cae6133c9174b12760f36d52c2}} 
 \index{Boiler@{Boiler}!set\+Quantity\+Type@{set\+Quantity\+Type}}
@@ -267,7 +267,7 @@ Sets the quantity type
 \end{DoxyParams}
 
 
-Definition at line 71 of file Boiler.\+cpp.
+Definition at line 67 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_ac3450d88dba124529d59baf62c39e14a}\label{class_boiler_ac3450d88dba124529d59baf62c39e14a}} 
 \index{Boiler@{Boiler}!set\+Quantity\+Value@{set\+Quantity\+Value}}
@@ -282,7 +282,7 @@ Sets the quantity value
 \end{DoxyParams}
 
 
-Definition at line 76 of file Boiler.\+cpp.
+Definition at line 72 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_ada7af5896a2a4701d78a532dc9bc9892}\label{class_boiler_ada7af5896a2a4701d78a532dc9bc9892}} 
 \index{Boiler@{Boiler}!set\+Steam\+Mass\+Flow@{set\+Steam\+Mass\+Flow}}
@@ -297,7 +297,7 @@ Sets the steam mass flow
 \end{DoxyParams}
 
 
-Definition at line 81 of file Boiler.\+cpp.
+Definition at line 77 of file Boiler.\+cpp.
 
 \mbox{\Hypertarget{class_boiler_a0a4619ff73c9969daebe3aa66ddad6be}\label{class_boiler_a0a4619ff73c9969daebe3aa66ddad6be}} 
 \index{Boiler@{Boiler}!set\+Steam\+Pressure@{set\+Steam\+Pressure}}
@@ -312,7 +312,7 @@ Sets the steam pressure
 \end{DoxyParams}
 
 
-Definition at line 66 of file Boiler.\+cpp.
+Definition at line 62 of file Boiler.\+cpp.
 
 
 
