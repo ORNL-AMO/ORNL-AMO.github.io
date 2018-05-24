@@ -9,24 +9,21 @@
 
 {\ttfamily \#include $<$Optimal\+Motor\+Power.\+h$>$}
 
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_optimal_motor_power_1_1_output}{Output}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_optimal_motor_power_a36017bbd359437ce77c1e18dc2377961}{Optimal\+Motor\+Power} (double motor\+Rated\+Power, double motor\+R\+PM, Motor\+::\+Line\+Frequency line\+Frequency, Motor\+::\+Efficiency\+Class efficiency\+Class, double specified\+Efficiency, double rated\+Voltage, double field\+Voltage, double optimal\+Motor\+Shaft\+Power)
 \item 
-void \hyperlink{class_optimal_motor_power_ad4c02e2828d497a0b7f1c9198707f770}{calculate} ()
-\begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_optimal_motor_power}{Optimal\+Motor\+Power} class. \hyperlink{class_optimal_motor_power_ad4c02e2828d497a0b7f1c9198707f770}{calculate()}\+: Calculates the Optimal \hyperlink{class_motor}{Motor} Power. \end{DoxyCompactList}\item 
+\hyperlink{struct_optimal_motor_power_1_1_output}{Output} \hyperlink{class_optimal_motor_power_accca3d8da33259697ceeb48f9c2a4547}{calculate} (bool is\+Optimal=true)
+\begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_optimal_motor_power}{Optimal\+Motor\+Power} class. \hyperlink{class_optimal_motor_power_accca3d8da33259697ceeb48f9c2a4547}{calculate()}\+: Calculates the Optimal \hyperlink{struct_motor}{Motor} Power. \end{DoxyCompactList}\item 
 double \hyperlink{class_optimal_motor_power_a7d6e976abf406c54637d3b51e098d7c8}{get\+Optimal\+Motor\+Shaft\+Power} () const
 \item 
 void \hyperlink{class_optimal_motor_power_ada8a9e3caac34c54470ad13ffe7edf53}{set\+Motor\+Shaft\+Power} (double optimal\+Motor\+Shaft\+Power)
-\item 
-double \hyperlink{class_optimal_motor_power_a2c058c4320a840018a420e10272cc4dd}{get\+Motor\+Current} ()
-\item 
-double \hyperlink{class_optimal_motor_power_a94d4c8a84c1bd19b799e35b966368f5a}{get\+Motor\+Pf} ()
-\item 
-double \hyperlink{class_optimal_motor_power_a341fe7520227f27f9cce23f3dc4cb0cb}{get\+Motor\+Eff} ()
-\item 
-double \hyperlink{class_optimal_motor_power_af35a32c24df9198bcf0df5b8f6ea03a9}{get\+Motor\+Power} ()
 \end{DoxyCompactItemize}
 
 
@@ -42,7 +39,7 @@ Gina Accawi (accawigk)
 \end{DoxyAuthor}
 
 
-Definition at line 19 of file Optimal\+Motor\+Power.\+h.
+Definition at line 18 of file Optimal\+Motor\+Power.\+h.
 
 
 
@@ -76,23 +73,26 @@ Constructor
 \end{DoxyParams}
 
 
-Definition at line 34 of file Optimal\+Motor\+Power.\+h.
+Definition at line 47 of file Optimal\+Motor\+Power.\+h.
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_optimal_motor_power_ad4c02e2828d497a0b7f1c9198707f770}\label{class_optimal_motor_power_ad4c02e2828d497a0b7f1c9198707f770}} 
+\mbox{\Hypertarget{class_optimal_motor_power_accca3d8da33259697ceeb48f9c2a4547}\label{class_optimal_motor_power_accca3d8da33259697ceeb48f9c2a4547}} 
 \index{Optimal\+Motor\+Power@{Optimal\+Motor\+Power}!calculate@{calculate}}
 \index{calculate@{calculate}!Optimal\+Motor\+Power@{Optimal\+Motor\+Power}}
 \subsubsection{\texorpdfstring{calculate()}{calculate()}}
-{\footnotesize\ttfamily void Optimal\+Motor\+Power\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{struct_optimal_motor_power_1_1_output}{Optimal\+Motor\+Power\+::\+Output} Optimal\+Motor\+Power\+::calculate (\begin{DoxyParamCaption}\item[{bool}]{is\+Optimal = {\ttfamily true} }\end{DoxyParamCaption})}
 
 
 
-Contains the definition of functions of \hyperlink{class_optimal_motor_power}{Optimal\+Motor\+Power} class. \hyperlink{class_optimal_motor_power_ad4c02e2828d497a0b7f1c9198707f770}{calculate()}\+: Calculates the Optimal \hyperlink{class_motor}{Motor} Power. 
+Contains the definition of functions of \hyperlink{class_optimal_motor_power}{Optimal\+Motor\+Power} class. \hyperlink{class_optimal_motor_power_accca3d8da33259697ceeb48f9c2a4547}{calculate()}\+: Calculates the Optimal \hyperlink{struct_motor}{Motor} Power. 
 
-Calculates the optimal motor power
-
+Calculates the optimal motor power 
+\begin{DoxyParams}{Parameters}
+{\em is\+Optimal} & bool, defaults to true so that calculate will use energy efficient or premium depending on motor pole number\\
+\hline
+\end{DoxyParams}
 \begin{DoxyAuthor}{Author}
 Subhankar Mishra (mishras) 
 
@@ -101,58 +101,6 @@ Gina Accawi (accawigk)
 
 
 Definition at line 18 of file Optimal\+Motor\+Power.\+cpp.
-
-\mbox{\Hypertarget{class_optimal_motor_power_a2c058c4320a840018a420e10272cc4dd}\label{class_optimal_motor_power_a2c058c4320a840018a420e10272cc4dd}} 
-\index{Optimal\+Motor\+Power@{Optimal\+Motor\+Power}!get\+Motor\+Current@{get\+Motor\+Current}}
-\index{get\+Motor\+Current@{get\+Motor\+Current}!Optimal\+Motor\+Power@{Optimal\+Motor\+Power}}
-\subsubsection{\texorpdfstring{get\+Motor\+Current()}{getMotorCurrent()}}
-{\footnotesize\ttfamily double Optimal\+Motor\+Power\+::get\+Motor\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Gets the motor current \begin{DoxyReturn}{Returns}
-double, motor current in A 
-\end{DoxyReturn}
-
-
-Definition at line 79 of file Optimal\+Motor\+Power.\+h.
-
-\mbox{\Hypertarget{class_optimal_motor_power_a341fe7520227f27f9cce23f3dc4cb0cb}\label{class_optimal_motor_power_a341fe7520227f27f9cce23f3dc4cb0cb}} 
-\index{Optimal\+Motor\+Power@{Optimal\+Motor\+Power}!get\+Motor\+Eff@{get\+Motor\+Eff}}
-\index{get\+Motor\+Eff@{get\+Motor\+Eff}!Optimal\+Motor\+Power@{Optimal\+Motor\+Power}}
-\subsubsection{\texorpdfstring{get\+Motor\+Eff()}{getMotorEff()}}
-{\footnotesize\ttfamily double Optimal\+Motor\+Power\+::get\+Motor\+Eff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get motor efficiency if efficiency class is not S\+P\+E\+C\+I\+F\+I\+ED \begin{DoxyReturn}{Returns}
-double, motor efficiency as \% 
-\end{DoxyReturn}
-
-
-Definition at line 95 of file Optimal\+Motor\+Power.\+h.
-
-\mbox{\Hypertarget{class_optimal_motor_power_a94d4c8a84c1bd19b799e35b966368f5a}\label{class_optimal_motor_power_a94d4c8a84c1bd19b799e35b966368f5a}} 
-\index{Optimal\+Motor\+Power@{Optimal\+Motor\+Power}!get\+Motor\+Pf@{get\+Motor\+Pf}}
-\index{get\+Motor\+Pf@{get\+Motor\+Pf}!Optimal\+Motor\+Power@{Optimal\+Motor\+Power}}
-\subsubsection{\texorpdfstring{get\+Motor\+Pf()}{getMotorPf()}}
-{\footnotesize\ttfamily double Optimal\+Motor\+Power\+::get\+Motor\+Pf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Gets motor power factor \begin{DoxyReturn}{Returns}
-double, power factor of motor -\/ unitless 
-\end{DoxyReturn}
-
-
-Definition at line 87 of file Optimal\+Motor\+Power.\+h.
-
-\mbox{\Hypertarget{class_optimal_motor_power_af35a32c24df9198bcf0df5b8f6ea03a9}\label{class_optimal_motor_power_af35a32c24df9198bcf0df5b8f6ea03a9}} 
-\index{Optimal\+Motor\+Power@{Optimal\+Motor\+Power}!get\+Motor\+Power@{get\+Motor\+Power}}
-\index{get\+Motor\+Power@{get\+Motor\+Power}!Optimal\+Motor\+Power@{Optimal\+Motor\+Power}}
-\subsubsection{\texorpdfstring{get\+Motor\+Power()}{getMotorPower()}}
-{\footnotesize\ttfamily double Optimal\+Motor\+Power\+::get\+Motor\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Gets motor power \begin{DoxyReturn}{Returns}
-double, motor power in hp 
-\end{DoxyReturn}
-
-
-Definition at line 103 of file Optimal\+Motor\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_motor_power_a7d6e976abf406c54637d3b51e098d7c8}\label{class_optimal_motor_power_a7d6e976abf406c54637d3b51e098d7c8}} 
 \index{Optimal\+Motor\+Power@{Optimal\+Motor\+Power}!get\+Optimal\+Motor\+Shaft\+Power@{get\+Optimal\+Motor\+Shaft\+Power}}
@@ -165,7 +113,7 @@ double, optimal motor shaft power in hp
 \end{DoxyReturn}
 
 
-Definition at line 63 of file Optimal\+Motor\+Power.\+h.
+Definition at line 77 of file Optimal\+Motor\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_motor_power_ada8a9e3caac34c54470ad13ffe7edf53}\label{class_optimal_motor_power_ada8a9e3caac34c54470ad13ffe7edf53}} 
 \index{Optimal\+Motor\+Power@{Optimal\+Motor\+Power}!set\+Motor\+Shaft\+Power@{set\+Motor\+Shaft\+Power}}
@@ -180,7 +128,7 @@ Sets the optimal motor shaft power
 \end{DoxyParams}
 
 
-Definition at line 71 of file Optimal\+Motor\+Power.\+h.
+Definition at line 85 of file Optimal\+Motor\+Power.\+h.
 
 
 

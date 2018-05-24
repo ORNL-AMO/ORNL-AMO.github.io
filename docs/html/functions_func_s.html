@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.25</span>
+   &#160;<span id="projectnumber">v.0.2.29</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -72,9 +72,6 @@ $(function() {
 </li>
 <li>SaturatedTemperature()
 : <a class="el" href="db/d40/class_saturated_temperature.html#ae0a4b1684a756ac8f91d3ebb646d6865">SaturatedTemperature</a>
-</li>
-<li>setAchievableEfficiency()
-: <a class="el" href="d7/de1/class_pump.html#a183f83fcc4b77e330451000df4d91046">Pump</a>
 </li>
 <li>setActualEfficiency()
 : <a class="el" href="d4/d08/class_motor_efficiency.html#a7a5ad8d01fdc0a3bf93d952752487496">MotorEfficiency</a>
@@ -174,16 +171,14 @@ $(function() {
 : <a class="el" href="d5/dab/class_leakage_losses.html#a33f31dc336fc6af0fd1e8c8739f37b1a">LeakageLosses</a>
 </li>
 <li>setDrive()
-: <a class="el" href="d5/d96/class_optimal_motor_shaft_power.html#abd88cbdcba70dbb194a8f957b4467fc7">OptimalMotorShaftPower</a>
-, <a class="el" href="d7/de1/class_pump.html#a54b6fc1aa44cc8377914ccb94738723a">Pump</a>
-, <a class="el" href="d2/d03/class_pump_shaft_power.html#a2c35a110c65c582a6f7d1d4c714f8187">PumpShaftPower</a>
+: <a class="el" href="d5/d96/class_optimal_motor_shaft_power.html#a8f3288a69848c61f4e8e2b14da549d16">OptimalMotorShaftPower</a>
+, <a class="el" href="d2/d03/class_pump_shaft_power.html#a5cbcf0acd63ae4a2ffe9a5c13ba73a3a">PumpShaftPower</a>
 </li>
 <li>setDryBulbTemp()
 : <a class="el" href="d0/d34/class_humidity_ratio.html#a291bccce6b8665412987a31bd2633d9a">HumidityRatio</a>
 </li>
 <li>setEfficiencyClass()
-: <a class="el" href="d1/d6b/class_motor.html#afa82df266d74ccfed49bf592b5b6526f">Motor</a>
-, <a class="el" href="d4/d08/class_motor_efficiency.html#a1ff4790d01bf2e65bd7bce2edc98d0c5">MotorEfficiency</a>
+: <a class="el" href="d4/d08/class_motor_efficiency.html#a1ff4790d01bf2e65bd7bce2edc98d0c5">MotorEfficiency</a>
 , <a class="el" href="d3/d52/class_motor_power_factor.html#add3125243d7f11131abc4e1d172ffdfc">MotorPowerFactor</a>
 </li>
 <li>setElectricalHeatInput()
@@ -221,16 +216,12 @@ $(function() {
 <li>setFinalTemperature()
 : <a class="el" href="d5/d80/class_fixture_losses.html#a5b65e7118cb96c4f4c88c0d6d1a4f6d3">FixtureLosses</a>
 </li>
-<li>setFixedSpeed_()
-: <a class="el" href="d7/de1/class_pump.html#a9e74b484f468a14076fb12d8b991e24b">Pump</a>
-</li>
 <li>setFlowRate()
 : <a class="el" href="d1/d12/class_atmosphere.html#a9ff0b718c810aec0bb101336db69fd22">Atmosphere</a>
-, <a class="el" href="dc/d7a/class_field_data.html#a35231cce497c4b69b683d76dd2c78991">FieldData</a>
 , <a class="el" href="da/d7a/class_liquid_cooling_losses.html#a7739742c5f21919a62c304b7c525b1b6">LiquidCoolingLosses</a>
+, <a class="el" href="d0/d26/class_mover_efficiency.html#a35bf328fcd7e8334d552bce8b8704379">MoverEfficiency</a>
 , <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#a90067b57c559fd3274fb8d6e00f6221d">OptimalPumpEfficiency</a>
 , <a class="el" href="dd/d1e/class_optimal_pump_shaft_power.html#a38efdee39db4c3856915f1ab26d44ed2">OptimalPumpShaftPower</a>
-, <a class="el" href="db/da5/class_pump_efficiency.html#aad051c44f6bdbc6108f2c40450c9d510">PumpEfficiency</a>
 , <a class="el" href="d9/d96/class_water_cooling_losses.html#abf4d64d9261818af331613791374d42f">WaterCoolingLosses</a>
 </li>
 <li>setFlueGasTemp()
@@ -255,9 +246,6 @@ $(function() {
 <li>setFuelTemperature()
 : <a class="el" href="d1/dfb/class_solid_liquid_flue_gas_material.html#a420ba1234c5f8c4b93f190b61046a589">SolidLiquidFlueGasMaterial</a>
 </li>
-<li>setFullLoadAmps()
-: <a class="el" href="d1/d6b/class_motor.html#a4bc8bf85c7749a0b7ff279d7eef20a2e">Motor</a>
-</li>
 <li>setGasHeatingValue()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#ae51a954fb1f44d6b114f66e69bdf754e">FlowCalculationsEnergyUse</a>
 </li>
@@ -271,10 +259,9 @@ $(function() {
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#a01b38762426c50e6ab22aefd674f30df">FlowCalculationsEnergyUse</a>
 </li>
 <li>setHead()
-: <a class="el" href="dc/d7a/class_field_data.html#af36f740ce0eb703903a18b5e2d8e0571">FieldData</a>
+: <a class="el" href="d0/d26/class_mover_efficiency.html#a1dce269494ecdfc348c8d0a3f9d33df6">MoverEfficiency</a>
 , <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#ac317c900ec68797cf051977147ea33da">OptimalPumpEfficiency</a>
 , <a class="el" href="dd/d1e/class_optimal_pump_shaft_power.html#aa080c62ff92fc70a4e27e7710e490b62">OptimalPumpShaftPower</a>
-, <a class="el" href="db/da5/class_pump_efficiency.html#addfa92d7c30598ecedcee8f7c47eed29">PumpEfficiency</a>
 </li>
 <li>setHeaderPressure()
 : <a class="el" href="d8/dc9/class_header.html#a3af0b7964b74287ce0c662b9a88556ed">Header</a>
@@ -286,13 +273,13 @@ $(function() {
 : <a class="el" href="d4/d08/class_motor_efficiency.html#a4b86113447665413ddbae115199d9b3f">MotorEfficiency</a>
 </li>
 <li>setID()
-: <a class="el" href="d1/d12/class_atmosphere.html#a156e09f05336057be5591146948f6046">Atmosphere</a>
+: <a class="el" href="d1/d12/class_atmosphere.html#a4698bf2580f7c24c8e0617d6455bfcac">Atmosphere</a>
 , <a class="el" href="d9/df5/class_gas_compositions.html#a9fc3ebfcbda7134b67ed76a39b4c94cc">GasCompositions</a>
-, <a class="el" href="d6/da8/class_gas_load_charge_material.html#a24b43ba7c871453258f458a8c1f15232">GasLoadChargeMaterial</a>
-, <a class="el" href="de/d8d/class_liquid_load_charge_material.html#a3f6654f1d9387366e0ca7620ecc41361">LiquidLoadChargeMaterial</a>
+, <a class="el" href="d6/da8/class_gas_load_charge_material.html#a12d67d6f764318ab09ca340884e717f9">GasLoadChargeMaterial</a>
+, <a class="el" href="de/d8d/class_liquid_load_charge_material.html#a192946f14996795396354f3e15b9e30b">LiquidLoadChargeMaterial</a>
 , <a class="el" href="d1/dfb/class_solid_liquid_flue_gas_material.html#a6046d06703bd496745121b62eab4f40f">SolidLiquidFlueGasMaterial</a>
 , <a class="el" href="d5/d58/class_solid_load_charge_material.html#a4cc8e12ffb340c94106cecf576a85ae5">SolidLoadChargeMaterial</a>
-, <a class="el" href="d5/d17/class_wall_losses.html#a91526efc0eb1bf030ebc1d864a21acdd">WallLosses</a>
+, <a class="el" href="d5/d17/class_wall_losses.html#a3a135d9bfd6c6f1c4742031ab568b26d">WallLosses</a>
 </li>
 <li>setInitialTemperature()
 : <a class="el" href="d5/d80/class_fixture_losses.html#ad3f2a1013dc5da103f2bcfc1357a449b">FixtureLosses</a>
@@ -334,9 +321,6 @@ $(function() {
 <li>setKinematicViscosity()
 : <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#a00017e0bd100beb2f4b0bf2db5e3687f">OptimalPumpEfficiency</a>
 </li>
-<li>setKviscosity_()
-: <a class="el" href="d7/de1/class_pump.html#a26d1d10908f91137f5148540ceb6520a">Pump</a>
-</li>
 <li>setKwhRate()
 : <a class="el" href="d1/d73/class_annual_cost.html#a45a1259c9912c7202dff446c290210e9">AnnualCost</a>
 </li>
@@ -348,12 +332,8 @@ $(function() {
 : <a class="el" href="d5/dab/class_leakage_losses.html#a379c88c8dea822636a1b9966e2408daa">LeakageLosses</a>
 </li>
 <li>setLineFrequency()
-: <a class="el" href="d1/d6b/class_motor.html#a450e5ecea25b05413b731379f153c3f1">Motor</a>
-, <a class="el" href="d4/d08/class_motor_efficiency.html#a993b09941d330d3a46e0d72bd6dc65bb">MotorEfficiency</a>
+: <a class="el" href="d4/d08/class_motor_efficiency.html#a993b09941d330d3a46e0d72bd6dc65bb">MotorEfficiency</a>
 , <a class="el" href="d3/d52/class_motor_power_factor.html#a5186ccae4191cfc5b2b7c3bdbd166563">MotorPowerFactor</a>
-</li>
-<li>setLoadEstimationMethod()
-: <a class="el" href="dc/d7a/class_field_data.html#a0c820da908989c650ebe5e9be640fd85">FieldData</a>
 </li>
 <li>setMeltingPoint()
 : <a class="el" href="d5/d58/class_solid_load_charge_material.html#a6c235b1c49be98b02829d37af9c38cb2">SolidLoadChargeMaterial</a>
@@ -362,24 +342,13 @@ $(function() {
 : <a class="el" href="d1/dfb/class_solid_liquid_flue_gas_material.html#a1a5f1bd3008e78cce62edb8aca642284">SolidLiquidFlueGasMaterial</a>
 </li>
 <li>setMotorAmps()
-: <a class="el" href="dc/d7a/class_field_data.html#a9139b100e363d8a632669ac5d6ee7152">FieldData</a>
-, <a class="el" href="d4/d08/class_motor_efficiency.html#ac86aa8d6162e63eb440e07e557534c74">MotorEfficiency</a>
+: <a class="el" href="d4/d08/class_motor_efficiency.html#ac86aa8d6162e63eb440e07e557534c74">MotorEfficiency</a>
 </li>
 <li>setMotorKwh()
 : <a class="el" href="d4/d08/class_motor_efficiency.html#ab1c7507bac259565e43a6777d079148b">MotorEfficiency</a>
 </li>
-<li>setMotorPower()
-: <a class="el" href="dc/d7a/class_field_data.html#a0263d25bc216482b0663b02d0af680a8">FieldData</a>
-</li>
-<li>setMotorRatedPower()
-: <a class="el" href="d1/d6b/class_motor.html#aa01f82db13c71b045b05e49f42ba46e9">Motor</a>
-</li>
-<li>setMotorRatedVoltage()
-: <a class="el" href="d1/d6b/class_motor.html#aab754019236e34cba0acd3632567515e">Motor</a>
-</li>
 <li>setMotorRpm()
-: <a class="el" href="d1/d6b/class_motor.html#ac0fda674bd40e24bb864e8256fb5ba32">Motor</a>
-, <a class="el" href="d4/d08/class_motor_efficiency.html#a2c4ddf9f2f3e44c098dad91a0ddbaf21">MotorEfficiency</a>
+: <a class="el" href="d4/d08/class_motor_efficiency.html#a2c4ddf9f2f3e44c098dad91a0ddbaf21">MotorEfficiency</a>
 , <a class="el" href="d3/d52/class_motor_power_factor.html#a4154bf52c6c9c9e5fb2f0985d7ae3531">MotorPowerFactor</a>
 </li>
 <li>setMotorShaftPower()
@@ -411,11 +380,10 @@ $(function() {
 : <a class="el" href="d5/dab/class_leakage_losses.html#a417c9914af6b283695bdbd5e92451f9e">LeakageLosses</a>
 </li>
 <li>setOpeningShape()
-: <a class="el" href="d7/dff/class_opening_losses.html#afb0e0884b0e60db8cb6674228cf3aafe">OpeningLosses</a>
+: <a class="el" href="d7/dff/class_opening_losses.html#a19c28e02d1e736d74b3c82047d4d23b2">OpeningLosses</a>
 </li>
 <li>setOperatingFraction()
 : <a class="el" href="d9/d4e/class_annual_energy.html#a5c127c7d5e2a5e4f50559f8b546e8998">AnnualEnergy</a>
-, <a class="el" href="d7/dd7/class_financial.html#a966250111b2f7a00d797a9d153ee8a83">Financial</a>
 </li>
 <li>setOperatingTime()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#ac82800d533502c7836238dcab1f39fac">FlowCalculationsEnergyUse</a>
@@ -456,8 +424,8 @@ $(function() {
 : <a class="el" href="dd/d1e/class_optimal_pump_shaft_power.html#a2cb2c6b537c7db0bc5071f09c66308d0">OptimalPumpShaftPower</a>
 </li>
 <li>setPumpShaftPower()
-: <a class="el" href="d5/d96/class_optimal_motor_shaft_power.html#ab2d80927fbaa62705359700b2a8f2f26">OptimalMotorShaftPower</a>
-, <a class="el" href="db/da5/class_pump_efficiency.html#ad3c2e64a590528b54e3878f9d1f3223a">PumpEfficiency</a>
+: <a class="el" href="d0/d26/class_mover_efficiency.html#afc2fea6487106318d441a0130ed2934d">MoverEfficiency</a>
+, <a class="el" href="d5/d96/class_optimal_motor_shaft_power.html#ab2d80927fbaa62705359700b2a8f2f26">OptimalMotorShaftPower</a>
 </li>
 <li>setQuantityType()
 : <a class="el" href="d1/d53/class_boiler.html#a9c5b20cae6133c9174b12760f36d52c2">Boiler</a>
@@ -486,20 +454,15 @@ $(function() {
 </li>
 <li>setRpm()
 : <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#afc6b6f46b4e289efc8819249ad1c9fb5">OptimalPumpEfficiency</a>
-, <a class="el" href="d7/de1/class_pump.html#a7478d85c3b89cda275b039673603a785">Pump</a>
 </li>
 <li>setSectionType()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#add93257048914dbd920b6dc2be431b69">FlowCalculationsEnergyUse</a>
 </li>
-<li>setSizeMargin()
-: <a class="el" href="d1/d6b/class_motor.html#ab39a9375d17af151b6f9516674f37928">Motor</a>
-</li>
 <li>setSpecificGravity()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#abafa34d337124a1487fb0c871ea8a24a">FlowCalculationsEnergyUse</a>
 , <a class="el" href="d5/dab/class_leakage_losses.html#ab017828413655c5903374564e8718fac">LeakageLosses</a>
+, <a class="el" href="d0/d26/class_mover_efficiency.html#aed095f525636345bdfebe76774afa2d4">MoverEfficiency</a>
 , <a class="el" href="dd/d1e/class_optimal_pump_shaft_power.html#aa565a332e4b144c8eb85fd06c541199e">OptimalPumpShaftPower</a>
-, <a class="el" href="d7/de1/class_pump.html#a1032a4ec4dd4002889f4b848af7c9e01">Pump</a>
-, <a class="el" href="db/da5/class_pump_efficiency.html#afc8b3ecd0fe1a356c82042aa0fc84024">PumpEfficiency</a>
 </li>
 <li>setSpecificHeat()
 : <a class="el" href="d1/d12/class_atmosphere.html#a17450de3bc7a64b2736b1fe8785410cd">Atmosphere</a>
@@ -521,12 +484,8 @@ $(function() {
 : <a class="el" href="d6/da8/class_gas_load_charge_material.html#a7498eba84bb8bdfc5344f0e44418260b">GasLoadChargeMaterial</a>
 , <a class="el" href="de/d8d/class_liquid_load_charge_material.html#ae95faf01cf6293ab282b1b7fe3b849e1">LiquidLoadChargeMaterial</a>
 </li>
-<li>setSpecifiedEfficiency()
-: <a class="el" href="d1/d6b/class_motor.html#a0a096ec5fc2b7e8ee40b4e7b30e5f337">Motor</a>
-</li>
 <li>setStageCount()
 : <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#a5b0b2a24a87c1c8fc92aa96c6ba4b727">OptimalPumpEfficiency</a>
-, <a class="el" href="d7/de1/class_pump.html#a28943405616a792c970b7e9bbf01c1b2">Pump</a>
 </li>
 <li>setSteamMassFlow()
 : <a class="el" href="d1/d53/class_boiler.html#ada7af5896a2a4701d78a532dc9bc9892">Boiler</a>
@@ -543,7 +502,6 @@ $(function() {
 </li>
 <li>setStyle()
 : <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#ab6b85c8c08d6641c5375c65436f16a2f">OptimalPumpEfficiency</a>
-, <a class="el" href="d7/de1/class_pump.html#a4852cb47f40a46ba84c7dff91d1abd53">Pump</a>
 </li>
 <li>setSubstance()
 : <a class="el" href="d1/d12/class_atmosphere.html#aa92f55a1f07304f3e57fdfb8ece65d82">Atmosphere</a>
@@ -578,9 +536,6 @@ $(function() {
 <li>setUnburnedCarbonInAsh()
 : <a class="el" href="d1/dfb/class_solid_liquid_flue_gas_material.html#adf052dd1bdceeab710a4986b1fd874b9">SolidLiquidFlueGasMaterial</a>
 </li>
-<li>setUnitCost()
-: <a class="el" href="d7/dd7/class_financial.html#a84ead2ef72b2d348e05eb308d01e9265">Financial</a>
-</li>
 <li>setVaporizingTemperature()
 : <a class="el" href="de/d8d/class_liquid_load_charge_material.html#a50938e3270de5d3c59b872f290a761cc">LiquidLoadChargeMaterial</a>
 </li>
@@ -589,9 +544,6 @@ $(function() {
 </li>
 <li>setViewFactor()
 : <a class="el" href="d7/dff/class_opening_losses.html#a4e6c6f1549e01cd4b82b7505e403d643">OpeningLosses</a>
-</li>
-<li>setVoltage()
-: <a class="el" href="dc/d7a/class_field_data.html#a8e610f5861b66a36b1e4df2047d21245">FieldData</a>
 </li>
 <li>setWaterContentCharged()
 : <a class="el" href="d5/d58/class_solid_load_charge_material.html#abf43422318a1b9120dff1dcfb15d5265">SolidLoadChargeMaterial</a>

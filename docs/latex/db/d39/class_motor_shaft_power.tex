@@ -4,61 +4,35 @@
 
 {\ttfamily \#include $<$Motor\+Shaft\+Power.\+h$>$}
 
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_motor_shaft_power_1_1_output}{Output}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_motor_shaft_power_ac60f8ec772a98056e99c82447a009ae3}{Motor\+Shaft\+Power} (const double motor\+Rated\+Power, const double motor\+Measured\+Power, const double motor\+R\+PM, const Motor\+::\+Line\+Frequency line\+Frequency, const Motor\+::\+Efficiency\+Class efficiency\+Class, const double specified\+Efficiency, const double rated\+Voltage, const double full\+Load\+Amps, const double field\+Voltage, const \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Field\+Data\+::\+Load\+Estimation\+Method} load\+Estimation\+Method, const double field\+Current)
+\hyperlink{class_motor_shaft_power_acf65f63b1c78946df0987dd1a9a98c77}{Motor\+Shaft\+Power} (const double motor\+Rated\+Power, const double motor\+Measured\+Power, const double motor\+R\+PM, const Motor\+::\+Line\+Frequency line\+Frequency, const Motor\+::\+Efficiency\+Class efficiency\+Class, const double specified\+Efficiency, const double rated\+Voltage, const double full\+Load\+Amps, const double field\+Voltage, const Motor\+::\+Load\+Estimation\+Method load\+Estimation\+Method, const double field\+Current)
 \item 
-double \hyperlink{class_motor_shaft_power_a65fc4f52753011c5a49376bc79bf81bc}{calculate} ()
-\item 
-double \hyperlink{class_motor_shaft_power_a433c78f782a5c621cc529906a0b10545}{get\+Current} ()
-\item 
-double \hyperlink{class_motor_shaft_power_acc28811af383f9baabb3972a9a214ac9}{get\+Efficiency} ()
-\item 
-double \hyperlink{class_motor_shaft_power_a4f06363ffa5a4749785b0c00ab159ea2}{get\+Power} ()
-\item 
-double \hyperlink{class_motor_shaft_power_aeb4d4a4a4f1317955908e214d61dbea7}{get\+Power\+Factor} ()
-\item 
-double \hyperlink{class_motor_shaft_power_afa22f8c81b13bc847cf78eee5734b4ef}{get\+Estimated\+F\+LA} ()
+\hyperlink{struct_motor_shaft_power_1_1_output}{Output} \hyperlink{class_motor_shaft_power_a6823c05e9c0aaac25f3ef7b26ba613d2}{calculate} ()
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{class_motor_shaft_power_ae507fdb9ee1332f1058710168bc9a90c}\label{class_motor_shaft_power_ae507fdb9ee1332f1058710168bc9a90c}} 
-double \hyperlink{class_motor_shaft_power_ae507fdb9ee1332f1058710168bc9a90c}{temp\+Load\+Fraction} = 0.\+01
-\begin{DoxyCompactList}\small\item\em double, temp load fraction \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_motor_shaft_power_ad2d47aeac567a2049fa51d2bd653a122}\label{class_motor_shaft_power_ad2d47aeac567a2049fa51d2bd653a122}} 
-double \hyperlink{class_motor_shaft_power_ad2d47aeac567a2049fa51d2bd653a122}{power} = 0.\+0
-\begin{DoxyCompactList}\small\item\em double, power in hp \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_motor_shaft_power_a3dcd3d5c1dc3e3712fa4d16431ed270b}\label{class_motor_shaft_power_a3dcd3d5c1dc3e3712fa4d16431ed270b}} 
-double \hyperlink{class_motor_shaft_power_a3dcd3d5c1dc3e3712fa4d16431ed270b}{eff} = 0.\+0
-\begin{DoxyCompactList}\small\item\em double efficiency in \% \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_motor_shaft_power_a675d8994d4a90951f313ca18b1c63cae}\label{class_motor_shaft_power_a675d8994d4a90951f313ca18b1c63cae}} 
-double \hyperlink{class_motor_shaft_power_a675d8994d4a90951f313ca18b1c63cae}{current} = 0.\+0
-\begin{DoxyCompactList}\small\item\em double, current in A \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_motor_shaft_power_a53bc7d404b5db7a5a5fe343e200948c6}\label{class_motor_shaft_power_a53bc7d404b5db7a5a5fe343e200948c6}} 
-double \hyperlink{class_motor_shaft_power_a53bc7d404b5db7a5a5fe343e200948c6}{pf} = 0.\+0
-\begin{DoxyCompactList}\small\item\em double, power factor -\/ unitless \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_motor_shaft_power_a56bbded3394ee729ac3480c0f773cbb9}\label{class_motor_shaft_power_a56bbded3394ee729ac3480c0f773cbb9}} 
-double \hyperlink{class_motor_shaft_power_a56bbded3394ee729ac3480c0f773cbb9}{estimated\+F\+LA} = 0
-\begin{DoxyCompactList}\small\item\em double, estimated full load amps in A \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{class_motor}{Motor} Shaft Power class Contains all of the properties of a motor shaft. Used to calculate the power supplied by the motor to the pump shaft. 
+\hyperlink{struct_motor}{Motor} Shaft Power class Contains all of the properties of a motor shaft. Used to calculate the power supplied by the motor to the pump shaft. 
 
-Definition at line 29 of file Motor\+Shaft\+Power.\+h.
+Definition at line 28 of file Motor\+Shaft\+Power.\+h.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_motor_shaft_power_ac60f8ec772a98056e99c82447a009ae3}\label{class_motor_shaft_power_ac60f8ec772a98056e99c82447a009ae3}} 
+\mbox{\Hypertarget{class_motor_shaft_power_acf65f63b1c78946df0987dd1a9a98c77}\label{class_motor_shaft_power_acf65f63b1c78946df0987dd1a9a98c77}} 
 \index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
 \index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
 \subsubsection{\texorpdfstring{Motor\+Shaft\+Power()}{MotorShaftPower()}}
-{\footnotesize\ttfamily Motor\+Shaft\+Power\+::\+Motor\+Shaft\+Power (\begin{DoxyParamCaption}\item[{const double}]{motor\+Rated\+Power,  }\item[{const double}]{motor\+Measured\+Power,  }\item[{const double}]{motor\+R\+PM,  }\item[{const Motor\+::\+Line\+Frequency}]{line\+Frequency,  }\item[{const Motor\+::\+Efficiency\+Class}]{efficiency\+Class,  }\item[{const double}]{specified\+Efficiency,  }\item[{const double}]{rated\+Voltage,  }\item[{const double}]{full\+Load\+Amps,  }\item[{const double}]{field\+Voltage,  }\item[{const \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Field\+Data\+::\+Load\+Estimation\+Method}}]{load\+Estimation\+Method,  }\item[{const double}]{field\+Current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Motor\+Shaft\+Power\+::\+Motor\+Shaft\+Power (\begin{DoxyParamCaption}\item[{const double}]{motor\+Rated\+Power,  }\item[{const double}]{motor\+Measured\+Power,  }\item[{const double}]{motor\+R\+PM,  }\item[{const Motor\+::\+Line\+Frequency}]{line\+Frequency,  }\item[{const Motor\+::\+Efficiency\+Class}]{efficiency\+Class,  }\item[{const double}]{specified\+Efficiency,  }\item[{const double}]{rated\+Voltage,  }\item[{const double}]{full\+Load\+Amps,  }\item[{const double}]{field\+Voltage,  }\item[{const Motor\+::\+Load\+Estimation\+Method}]{load\+Estimation\+Method,  }\item[{const double}]{field\+Current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Constructor for \hyperlink{class_motor}{Motor} Shaft Power class
+Constructor for \hyperlink{struct_motor}{Motor} Shaft Power class
 
 
 \begin{DoxyParams}{Parameters}
@@ -80,36 +54,30 @@ Constructor for \hyperlink{class_motor}{Motor} Shaft Power class
 \hline
 {\em field\+Voltage} & double, Field voltage in volts \\
 \hline
-{\em load\+Estimation\+Method} & \hyperlink{class_field_data_a424e89914ba5684c01bb269dbe3312fd}{Field\+Data\+::\+Load\+Estimation\+Method}, estimated power or current on motor input in hp \\
+{\em load\+Estimation\+Method} & Field\+Data\+::\+Load\+Estimation\+Method, estimated power or current on motor input in hp \\
 \hline
 {\em field\+Current} & double, field current as defined in amps. \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 48 of file Motor\+Shaft\+Power.\+h.
+Definition at line 67 of file Motor\+Shaft\+Power.\+h.
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_motor_shaft_power_a65fc4f52753011c5a49376bc79bf81bc}\label{class_motor_shaft_power_a65fc4f52753011c5a49376bc79bf81bc}} 
+\mbox{\Hypertarget{class_motor_shaft_power_a6823c05e9c0aaac25f3ef7b26ba613d2}\label{class_motor_shaft_power_a6823c05e9c0aaac25f3ef7b26ba613d2}} 
 \index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!calculate@{calculate}}
 \index{calculate@{calculate}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
 \subsubsection{\texorpdfstring{calculate()}{calculate()}}
-{\footnotesize\ttfamily double Motor\+Shaft\+Power\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{struct_motor_shaft_power_1_1_output}{Motor\+Shaft\+Power\+::\+Output} Motor\+Shaft\+Power\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Calculate motor shaft power \begin{DoxyReturn}{Returns}
-double, motor shaft power in hp 
+\hyperlink{struct_motor_shaft_power_1_1_output}{Motor\+Shaft\+Power\+::\+Output}, class containing all the results of the \hyperlink{class_motor_shaft_power}{Motor\+Shaft\+Power} calculations, see \hyperlink{struct_motor_shaft_power_1_1_output}{Output} class for more details 
 \end{DoxyReturn}
-When the load estimation is power
+Adjust power\+Factor based on specified F\+LA This does not happen in the Excel sheet during the final calculations. power\+Factor = power\+Factor / (full\+Load\+Amps\+\_\+/estimated\+F\+LA);
 
-Adjust pf based on specified F\+LA This does not happen in the Excel sheet during the final calculations. pf = pf / (full\+Load\+Amps\+\_\+/estimated\+F\+LA);
-
-Output current
-
-Output in kW
-
-Output in hP
+\hyperlink{struct_motor_shaft_power_1_1_output}{Output} in hp
 
 Electric power is same as Field value when load estimation method is P\+O\+W\+ER
 
@@ -117,82 +85,13 @@ When the load estimation method is Current.
 
 Dropping load fraction by 0.\+01
 
-Adjust pf based on specified F\+LA
+Adjust power\+Factor based on specified F\+LA
 
 Adjust current
 
-Power Factor
-
-Output in kW
-
-Output in hP 
+\hyperlink{struct_motor_shaft_power_1_1_output}{Output} in hp 
 
 Definition at line 8 of file Motor\+Shaft\+Power.\+cpp.
-
-\mbox{\Hypertarget{class_motor_shaft_power_a433c78f782a5c621cc529906a0b10545}\label{class_motor_shaft_power_a433c78f782a5c621cc529906a0b10545}} 
-\index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!get\+Current@{get\+Current}}
-\index{get\+Current@{get\+Current}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
-\subsubsection{\texorpdfstring{get\+Current()}{getCurrent()}}
-{\footnotesize\ttfamily double Motor\+Shaft\+Power\+::get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Calculates the motor shaft current \begin{DoxyReturn}{Returns}
-double, motor shaft current in A 
-\end{DoxyReturn}
-
-
-Definition at line 84 of file Motor\+Shaft\+Power.\+h.
-
-\mbox{\Hypertarget{class_motor_shaft_power_acc28811af383f9baabb3972a9a214ac9}\label{class_motor_shaft_power_acc28811af383f9baabb3972a9a214ac9}} 
-\index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!get\+Efficiency@{get\+Efficiency}}
-\index{get\+Efficiency@{get\+Efficiency}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
-\subsubsection{\texorpdfstring{get\+Efficiency()}{getEfficiency()}}
-{\footnotesize\ttfamily double Motor\+Shaft\+Power\+::get\+Efficiency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Calculates the motor shaft efficiency \begin{DoxyReturn}{Returns}
-double, motor shaft efficiency as \% 
-\end{DoxyReturn}
-
-
-Definition at line 92 of file Motor\+Shaft\+Power.\+h.
-
-\mbox{\Hypertarget{class_motor_shaft_power_afa22f8c81b13bc847cf78eee5734b4ef}\label{class_motor_shaft_power_afa22f8c81b13bc847cf78eee5734b4ef}} 
-\index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}}
-\index{get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
-\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}}
-{\footnotesize\ttfamily double Motor\+Shaft\+Power\+::get\+Estimated\+F\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Calculates estimated full load amps \begin{DoxyReturn}{Returns}
-double, estimated full load amps in A 
-\end{DoxyReturn}
-
-
-Definition at line 116 of file Motor\+Shaft\+Power.\+h.
-
-\mbox{\Hypertarget{class_motor_shaft_power_a4f06363ffa5a4749785b0c00ab159ea2}\label{class_motor_shaft_power_a4f06363ffa5a4749785b0c00ab159ea2}} 
-\index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!get\+Power@{get\+Power}}
-\index{get\+Power@{get\+Power}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
-\subsubsection{\texorpdfstring{get\+Power()}{getPower()}}
-{\footnotesize\ttfamily double Motor\+Shaft\+Power\+::get\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Calculate the power \begin{DoxyReturn}{Returns}
-double, power in hp 
-\end{DoxyReturn}
-
-
-Definition at line 100 of file Motor\+Shaft\+Power.\+h.
-
-\mbox{\Hypertarget{class_motor_shaft_power_aeb4d4a4a4f1317955908e214d61dbea7}\label{class_motor_shaft_power_aeb4d4a4a4f1317955908e214d61dbea7}} 
-\index{Motor\+Shaft\+Power@{Motor\+Shaft\+Power}!get\+Power\+Factor@{get\+Power\+Factor}}
-\index{get\+Power\+Factor@{get\+Power\+Factor}!Motor\+Shaft\+Power@{Motor\+Shaft\+Power}}
-\subsubsection{\texorpdfstring{get\+Power\+Factor()}{getPowerFactor()}}
-{\footnotesize\ttfamily double Motor\+Shaft\+Power\+::get\+Power\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Calculates the power factor \begin{DoxyReturn}{Returns}
-double, power factor -\/ unitless 
-\end{DoxyReturn}
-
-
-Definition at line 108 of file Motor\+Shaft\+Power.\+h.
 
 
 

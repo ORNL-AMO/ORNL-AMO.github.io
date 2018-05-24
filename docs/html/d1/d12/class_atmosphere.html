@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.25</span>
+   &#160;<span id="projectnumber">v.0.2.29</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -102,10 +102,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3ac0fb0d4fc92edc690e44b40b7018c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92f55a1f07304f3e57fdfb8ece65d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d12/class_atmosphere.html#aa92f55a1f07304f3e57fdfb8ece65d82">setSubstance</a> (std::string substance)</td></tr>
 <tr class="separator:aa92f55a1f07304f3e57fdfb8ece65d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dfda799563c28438db1b23cbee6e099"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d12/class_atmosphere.html#a4dfda799563c28438db1b23cbee6e099">getID</a> () const</td></tr>
-<tr class="separator:a4dfda799563c28438db1b23cbee6e099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a156e09f05336057be5591146948f6046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d12/class_atmosphere.html#a156e09f05336057be5591146948f6046">setID</a> (const size_t id)</td></tr>
-<tr class="separator:a156e09f05336057be5591146948f6046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b921f4d29a4a409488cbdb56c53ff7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d12/class_atmosphere.html#a73b921f4d29a4a409488cbdb56c53ff7">getID</a> () const</td></tr>
+<tr class="separator:a73b921f4d29a4a409488cbdb56c53ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4698bf2580f7c24c8e0617d6455bfcac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d12/class_atmosphere.html#a4698bf2580f7c24c8e0617d6455bfcac">setID</a> (const int id)</td></tr>
+<tr class="separator:a4698bf2580f7c24c8e0617d6455bfcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bddf411a91af4808f52cd69033a5c54"><td class="memItemLeft" align="right" valign="top"><a id="a6bddf411a91af4808f52cd69033a5c54"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d12/class_atmosphere.html#a6bddf411a91af4808f52cd69033a5c54">operator==</a> (const <a class="el" href="../../d1/d12/class_atmosphere.html">Atmosphere</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:a6bddf411a91af4808f52cd69033a5c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">bool operator <br /></td></tr>
@@ -250,8 +250,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 
 </div>
 </div>
-<a id="a4dfda799563c28438db1b23cbee6e099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dfda799563c28438db1b23cbee6e099">&#9670;&nbsp;</a></span>getID()</h2>
+<a id="a73b921f4d29a4a409488cbdb56c53ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b921f4d29a4a409488cbdb56c53ff7">&#9670;&nbsp;</a></span>getID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +260,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Atmosphere::getID </td>
+          <td class="memname">int Atmosphere::getID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -272,7 +272,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the ID of material </p><dl class="section return"><dt>Returns</dt><dd>double, ID of material </dd></dl>
+<p>Gets the ID of material </p><dl class="section return"><dt>Returns</dt><dd>int, ID of material </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d88/_atmosphere_8h_source.html#l00164">164</a> of file <a class="el" href="../../d2/d88/_atmosphere_8h_source.html">Atmosphere.h</a>.</p>
 
@@ -478,8 +478,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 
 </div>
 </div>
-<a id="a156e09f05336057be5591146948f6046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a156e09f05336057be5591146948f6046">&#9670;&nbsp;</a></span>setID()</h2>
+<a id="a4698bf2580f7c24c8e0617d6455bfcac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4698bf2580f7c24c8e0617d6455bfcac">&#9670;&nbsp;</a></span>setID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,7 +490,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
         <tr>
           <td class="memname">void Atmosphere::setID </td>
           <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -639,7 +639,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Sets the name of substance </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">substance</td><td>string const&amp;, name of substance </td></tr>
+    <tr><td class="paramname">substance</td><td>string, name of substance </td></tr>
   </table>
   </dd>
 </dl>
