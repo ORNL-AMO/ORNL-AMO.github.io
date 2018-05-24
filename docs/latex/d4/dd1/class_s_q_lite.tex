@@ -24,8 +24,11 @@ std\+::vector$<$ \hyperlink{class_solid_load_charge_material}{Solid\+Load\+Charg
 \mbox{\Hypertarget{class_s_q_lite_a5c40ac3b9a6abb85c9cfbe50802672c5}\label{class_s_q_lite_a5c40ac3b9a6abb85c9cfbe50802672c5}} 
 bool {\bfseries insert\+Solid\+Load\+Charge\+Materials} (\hyperlink{class_solid_load_charge_material}{Solid\+Load\+Charge\+Material} const \&material)
 \item 
-\mbox{\Hypertarget{class_s_q_lite_a87415ea66b330bc919acaaf042c8ff02}\label{class_s_q_lite_a87415ea66b330bc919acaaf042c8ff02}} 
-bool {\bfseries delete\+Solid\+Load\+Charge\+Material} (std\+::string const \&substance) const
+\mbox{\Hypertarget{class_s_q_lite_a0a240c89a1e0c96ef61c3beae68b1467}\label{class_s_q_lite_a0a240c89a1e0c96ef61c3beae68b1467}} 
+bool {\bfseries delete\+Solid\+Load\+Charge\+Material} (int id)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_ac2c7142caa0154783f7ed73afa4bd6db}\label{class_s_q_lite_ac2c7142caa0154783f7ed73afa4bd6db}} 
+bool {\bfseries update\+Solid\+Load\+Charge\+Material} (\hyperlink{class_solid_load_charge_material}{Solid\+Load\+Charge\+Material} const \&material)
 \item 
 \mbox{\Hypertarget{class_s_q_lite_a173cb741ec36f8b15e3650f6e1736b12}\label{class_s_q_lite_a173cb741ec36f8b15e3650f6e1736b12}} 
 std\+::vector$<$ \hyperlink{class_gas_load_charge_material}{Gas\+Load\+Charge\+Material} $>$ {\bfseries get\+Gas\+Load\+Charge\+Materials} () const
@@ -39,8 +42,11 @@ std\+::vector$<$ \hyperlink{class_gas_load_charge_material}{Gas\+Load\+Charge\+M
 \mbox{\Hypertarget{class_s_q_lite_af482f51c0d3de08fbfa3e537382a567f}\label{class_s_q_lite_af482f51c0d3de08fbfa3e537382a567f}} 
 bool {\bfseries insert\+Gas\+Load\+Charge\+Materials} (\hyperlink{class_gas_load_charge_material}{Gas\+Load\+Charge\+Material} const \&material)
 \item 
-\mbox{\Hypertarget{class_s_q_lite_ac354a72accd5a0d8901da9df19c045d3}\label{class_s_q_lite_ac354a72accd5a0d8901da9df19c045d3}} 
-bool {\bfseries delete\+Gas\+Load\+Charge\+Material} (std\+::string const \&substance)
+\mbox{\Hypertarget{class_s_q_lite_a3717a443c1151d717168d323ec6576c1}\label{class_s_q_lite_a3717a443c1151d717168d323ec6576c1}} 
+bool {\bfseries delete\+Gas\+Load\+Charge\+Material} (int id)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_a21b8fbcd52ac37fe9e78df164ee8de25}\label{class_s_q_lite_a21b8fbcd52ac37fe9e78df164ee8de25}} 
+bool {\bfseries update\+Gas\+Load\+Charge\+Material} (const \hyperlink{class_gas_load_charge_material}{Gas\+Load\+Charge\+Material} \&material)
 \item 
 \mbox{\Hypertarget{class_s_q_lite_a375614ae9d9748646cba88c834796272}\label{class_s_q_lite_a375614ae9d9748646cba88c834796272}} 
 std\+::vector$<$ \hyperlink{class_liquid_load_charge_material}{Liquid\+Load\+Charge\+Material} $>$ {\bfseries get\+Liquid\+Load\+Charge\+Materials} () const
@@ -54,8 +60,11 @@ std\+::vector$<$ \hyperlink{class_liquid_load_charge_material}{Liquid\+Load\+Cha
 \mbox{\Hypertarget{class_s_q_lite_aff9ccdb8af003d3a0a3fdc9a85af77d8}\label{class_s_q_lite_aff9ccdb8af003d3a0a3fdc9a85af77d8}} 
 bool {\bfseries insert\+Liquid\+Load\+Charge\+Materials} (\hyperlink{class_liquid_load_charge_material}{Liquid\+Load\+Charge\+Material} const \&material)
 \item 
-\mbox{\Hypertarget{class_s_q_lite_a4dbd677be8b79a0f85018fa1bed3c1db}\label{class_s_q_lite_a4dbd677be8b79a0f85018fa1bed3c1db}} 
-bool {\bfseries delete\+Liquid\+Load\+Charge\+Material} (std\+::string const \&substance)
+\mbox{\Hypertarget{class_s_q_lite_a2a3451cb60446d9a90da4cb08920dcfe}\label{class_s_q_lite_a2a3451cb60446d9a90da4cb08920dcfe}} 
+bool {\bfseries delete\+Liquid\+Load\+Charge\+Material} (int id)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_a89805e7aeb9d72f5dfa6928aac681eab}\label{class_s_q_lite_a89805e7aeb9d72f5dfa6928aac681eab}} 
+bool {\bfseries update\+Liquid\+Load\+Charge\+Material} (const \hyperlink{class_liquid_load_charge_material}{Liquid\+Load\+Charge\+Material} \&material)
 \item 
 \mbox{\Hypertarget{class_s_q_lite_aeee9b2bce2f489464d7284224a7422c2}\label{class_s_q_lite_aeee9b2bce2f489464d7284224a7422c2}} 
 std\+::vector$<$ \hyperlink{class_solid_liquid_flue_gas_material}{Solid\+Liquid\+Flue\+Gas\+Material} $>$ {\bfseries get\+Solid\+Liquid\+Flue\+Gas\+Materials} () const
@@ -69,8 +78,11 @@ std\+::vector$<$ \hyperlink{class_solid_liquid_flue_gas_material}{Solid\+Liquid\
 \mbox{\Hypertarget{class_s_q_lite_aa1de7450c37a07dfd0541fdf0dc164ef}\label{class_s_q_lite_aa1de7450c37a07dfd0541fdf0dc164ef}} 
 bool {\bfseries insert\+Solid\+Liquid\+Flue\+Gas\+Material} (\hyperlink{class_solid_liquid_flue_gas_material}{Solid\+Liquid\+Flue\+Gas\+Material} const \&material) const
 \item 
-\mbox{\Hypertarget{class_s_q_lite_a56fb2567626738b5d702a73617bb28d0}\label{class_s_q_lite_a56fb2567626738b5d702a73617bb28d0}} 
-bool {\bfseries delete\+Solid\+Liquid\+Flue\+Gas\+Material} (std\+::string const \&substance)
+\mbox{\Hypertarget{class_s_q_lite_ac83353062d75af65c5b01d55570d0ead}\label{class_s_q_lite_ac83353062d75af65c5b01d55570d0ead}} 
+bool {\bfseries delete\+Solid\+Liquid\+Flue\+Gas\+Material} (int id)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_aed13c3aeeef3fdf7f3b2d72b61dd93e8}\label{class_s_q_lite_aed13c3aeeef3fdf7f3b2d72b61dd93e8}} 
+bool {\bfseries update\+Solid\+Liquid\+Flue\+Gas\+Material} (\hyperlink{class_solid_liquid_flue_gas_material}{Solid\+Liquid\+Flue\+Gas\+Material} const \&material)
 \item 
 \mbox{\Hypertarget{class_s_q_lite_af29fd9f5c71efd6fb1d12a9403e1f433}\label{class_s_q_lite_af29fd9f5c71efd6fb1d12a9403e1f433}} 
 std\+::vector$<$ \hyperlink{class_gas_compositions}{Gas\+Compositions} $>$ {\bfseries get\+Gas\+Flue\+Gas\+Materials} () const
@@ -84,8 +96,11 @@ std\+::vector$<$ \hyperlink{class_gas_compositions}{Gas\+Compositions} $>$ {\bfs
 \mbox{\Hypertarget{class_s_q_lite_a95d5521ed0de19c979ac9627ae21fbcd}\label{class_s_q_lite_a95d5521ed0de19c979ac9627ae21fbcd}} 
 bool {\bfseries insert\+Gas\+Flue\+Gas\+Material} (\hyperlink{class_gas_compositions}{Gas\+Compositions} const \&material) const
 \item 
-\mbox{\Hypertarget{class_s_q_lite_a474f1d74a2d0b9f38d474398907fea8d}\label{class_s_q_lite_a474f1d74a2d0b9f38d474398907fea8d}} 
-bool {\bfseries delete\+Gas\+Flue\+Gas\+Material} (std\+::string const \&substance)
+\mbox{\Hypertarget{class_s_q_lite_a12b38db00e6d8bcff8345e7300a67b26}\label{class_s_q_lite_a12b38db00e6d8bcff8345e7300a67b26}} 
+bool {\bfseries delete\+Gas\+Flue\+Gas\+Material} (int id)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_a71c1973e285ccae25b7bb8dbc101770e}\label{class_s_q_lite_a71c1973e285ccae25b7bb8dbc101770e}} 
+bool {\bfseries update\+Gas\+Flue\+Gas\+Material} (\hyperlink{class_gas_compositions}{Gas\+Compositions} const \&material)
 \item 
 \mbox{\Hypertarget{class_s_q_lite_ab3519768b6490be3ea5c57df3a4ad3a4}\label{class_s_q_lite_ab3519768b6490be3ea5c57df3a4ad3a4}} 
 std\+::vector$<$ \hyperlink{class_atmosphere}{Atmosphere} $>$ {\bfseries get\+Atmosphere\+Specific\+Heat} () const
@@ -99,8 +114,11 @@ std\+::vector$<$ \hyperlink{class_atmosphere}{Atmosphere} $>$ {\bfseries get\+Cu
 \mbox{\Hypertarget{class_s_q_lite_a5be90371486d63abd80668c19682051b}\label{class_s_q_lite_a5be90371486d63abd80668c19682051b}} 
 bool {\bfseries insert\+Atmosphere\+Specific\+Heat} (\hyperlink{class_atmosphere}{Atmosphere} const \&material)
 \item 
-\mbox{\Hypertarget{class_s_q_lite_a5ad78a89bad17d0e23b59a9c018590f9}\label{class_s_q_lite_a5ad78a89bad17d0e23b59a9c018590f9}} 
-bool {\bfseries delete\+Atmosphere\+Specific\+Heat} (std\+::string const \&substance)
+\mbox{\Hypertarget{class_s_q_lite_a0980ef2dfdaadb27f86342f983019bb7}\label{class_s_q_lite_a0980ef2dfdaadb27f86342f983019bb7}} 
+bool {\bfseries update\+Atmosphere\+Specific\+Heat} (\hyperlink{class_atmosphere}{Atmosphere} const \&material)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_a32f61e2c425864cf222ee427abd33448}\label{class_s_q_lite_a32f61e2c425864cf222ee427abd33448}} 
+bool {\bfseries delete\+Atmosphere\+Specific\+Heat} (int id)
 \item 
 \mbox{\Hypertarget{class_s_q_lite_a612950dca9d08332a31a020783ba832d}\label{class_s_q_lite_a612950dca9d08332a31a020783ba832d}} 
 std\+::vector$<$ \hyperlink{class_wall_losses}{Wall\+Losses} $>$ {\bfseries get\+Wall\+Losses\+Surface} () const
@@ -114,8 +132,11 @@ std\+::vector$<$ \hyperlink{class_wall_losses}{Wall\+Losses} $>$ {\bfseries get\
 \mbox{\Hypertarget{class_s_q_lite_a97d510f6f16aa70c61a9dc6a629ad786}\label{class_s_q_lite_a97d510f6f16aa70c61a9dc6a629ad786}} 
 bool {\bfseries insert\+Wall\+Losses\+Surface} (\hyperlink{class_wall_losses}{Wall\+Losses} const \&material)
 \item 
-\mbox{\Hypertarget{class_s_q_lite_aa43f3d56f7caddaef26ad1eccef04118}\label{class_s_q_lite_aa43f3d56f7caddaef26ad1eccef04118}} 
-bool {\bfseries delete\+Wall\+Losses\+Surface} (std\+::string const \&substance)
+\mbox{\Hypertarget{class_s_q_lite_ab9492a672cb89dfeae330b99ea03ceeb}\label{class_s_q_lite_ab9492a672cb89dfeae330b99ea03ceeb}} 
+bool {\bfseries delete\+Wall\+Losses\+Surface} (int id)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_ac4b7397ef51a0544d38f670ef995f26e}\label{class_s_q_lite_ac4b7397ef51a0544d38f670ef995f26e}} 
+bool {\bfseries update\+Wall\+Losses\+Surface} (\hyperlink{class_wall_losses}{Wall\+Losses} const \&material)
 \item 
 \mbox{\Hypertarget{class_s_q_lite_a5fabd8387b0009f7641bce38ee8e41c5}\label{class_s_q_lite_a5fabd8387b0009f7641bce38ee8e41c5}} 
 std\+::vector$<$ \hyperlink{class_motor_data}{Motor\+Data} $>$ {\bfseries get\+Motor\+Data} () const
@@ -131,6 +152,9 @@ bool {\bfseries insert\+Motor\+Data} (\hyperlink{class_motor_data}{Motor\+Data} 
 \item 
 \mbox{\Hypertarget{class_s_q_lite_ab1f59cd24e3931970bc39079b0a5e612}\label{class_s_q_lite_ab1f59cd24e3931970bc39079b0a5e612}} 
 bool {\bfseries delete\+Motor\+Data} (int id)
+\item 
+\mbox{\Hypertarget{class_s_q_lite_a7909128eed1b0612ecdf7c50edf1426a}\label{class_s_q_lite_a7909128eed1b0612ecdf7c50edf1426a}} 
+bool {\bfseries update\+Motor\+Data} (\hyperlink{class_motor_data}{Motor\+Data} const \&motor)
 \end{DoxyCompactItemize}
 
 

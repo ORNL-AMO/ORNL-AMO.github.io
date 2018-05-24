@@ -12,10 +12,12 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_optimal_pump_shaft_power_a6970e2672e4ef7c124a876eda96ee3cc}{Optimal\+Pump\+Shaft\+Power} (double flow\+Rate, double head, double specific\+Gravity, double pump\+Efficiency)
+\hyperlink{class_optimal_pump_shaft_power_a40e47716e0c8ecab5deb9eae4c8f9bd0}{Optimal\+Pump\+Shaft\+Power} (const double flow\+Rate, const double head, const double specific\+Gravity, const double pump\+Efficiency)
+\item 
+\hyperlink{class_optimal_pump_shaft_power_a322ac55881a0170cd4042fcf8a6a9eab}{Optimal\+Pump\+Shaft\+Power} (const double flow\+Rate, const double inlet\+Pressure, const double outlet\+Pressure, const double compressibility\+Factor, const double fan\+Efficiency)
 \item 
 double \hyperlink{class_optimal_pump_shaft_power_a23ab040eea0a9e0431988bd353076237}{calculate} ()
-\begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_optimal_pump_shaft_power}{Optimal\+Pump\+Shaft\+Power} class. \hyperlink{class_optimal_pump_shaft_power_a23ab040eea0a9e0431988bd353076237}{calculate()}\+: Calculates the Optimal \hyperlink{class_pump}{Pump} Shaft\+Power. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_optimal_pump_shaft_power}{Optimal\+Pump\+Shaft\+Power} class. \hyperlink{class_optimal_pump_shaft_power_a23ab040eea0a9e0431988bd353076237}{calculate()}\+: Calculates the Optimal Pump Shaft\+Power. \end{DoxyCompactList}\item 
 double \hyperlink{class_optimal_pump_shaft_power_a8c1532459a196347f7d5219d4690a490}{get\+Flow\+Rate} () const
 \item 
 void \hyperlink{class_optimal_pump_shaft_power_a38efdee39db4c3856915f1ab26d44ed2}{set\+Flow\+Rate} (double flow\+Rate)
@@ -51,13 +53,13 @@ Definition at line 16 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_optimal_pump_shaft_power_a6970e2672e4ef7c124a876eda96ee3cc}\label{class_optimal_pump_shaft_power_a6970e2672e4ef7c124a876eda96ee3cc}} 
+\mbox{\Hypertarget{class_optimal_pump_shaft_power_a40e47716e0c8ecab5deb9eae4c8f9bd0}\label{class_optimal_pump_shaft_power_a40e47716e0c8ecab5deb9eae4c8f9bd0}} 
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}}
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}}
-\subsubsection{\texorpdfstring{Optimal\+Pump\+Shaft\+Power()}{OptimalPumpShaftPower()}}
-{\footnotesize\ttfamily Optimal\+Pump\+Shaft\+Power\+::\+Optimal\+Pump\+Shaft\+Power (\begin{DoxyParamCaption}\item[{double}]{flow\+Rate,  }\item[{double}]{head,  }\item[{double}]{specific\+Gravity,  }\item[{double}]{pump\+Efficiency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Optimal\+Pump\+Shaft\+Power()}{OptimalPumpShaftPower()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Optimal\+Pump\+Shaft\+Power\+::\+Optimal\+Pump\+Shaft\+Power (\begin{DoxyParamCaption}\item[{const double}]{flow\+Rate,  }\item[{const double}]{head,  }\item[{const double}]{specific\+Gravity,  }\item[{const double}]{pump\+Efficiency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Constructor 
+Constructor used for pumps 
 \begin{DoxyParams}{Parameters}
 {\em flow\+Rate} & double, measured or required flow rate in gpm \\
 \hline
@@ -72,6 +74,29 @@ Constructor
 
 Definition at line 25 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
+\mbox{\Hypertarget{class_optimal_pump_shaft_power_a322ac55881a0170cd4042fcf8a6a9eab}\label{class_optimal_pump_shaft_power_a322ac55881a0170cd4042fcf8a6a9eab}} 
+\index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}}
+\index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}}
+\subsubsection{\texorpdfstring{Optimal\+Pump\+Shaft\+Power()}{OptimalPumpShaftPower()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Optimal\+Pump\+Shaft\+Power\+::\+Optimal\+Pump\+Shaft\+Power (\begin{DoxyParamCaption}\item[{const double}]{flow\+Rate,  }\item[{const double}]{inlet\+Pressure,  }\item[{const double}]{outlet\+Pressure,  }\item[{const double}]{compressibility\+Factor,  }\item[{const double}]{fan\+Efficiency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct used for fans 
+\begin{DoxyParams}{Parameters}
+{\em flow\+Rate,double} & in cfm \\
+\hline
+{\em inlet\+Pressure,double} & in \\
+\hline
+{\em outlet\+Pressure} & \\
+\hline
+{\em compressibility\+Factor} & \\
+\hline
+{\em fan\+Efficiency} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Optimal\+Pump\+Shaft\+Power.\+h.
+
 
 
 \subsection{Member Function Documentation}
@@ -83,7 +108,7 @@ Definition at line 25 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 
 
-Contains the definition of functions of \hyperlink{class_optimal_pump_shaft_power}{Optimal\+Pump\+Shaft\+Power} class. \hyperlink{class_optimal_pump_shaft_power_a23ab040eea0a9e0431988bd353076237}{calculate()}\+: Calculates the Optimal \hyperlink{class_pump}{Pump} Shaft\+Power. 
+Contains the definition of functions of \hyperlink{class_optimal_pump_shaft_power}{Optimal\+Pump\+Shaft\+Power} class. \hyperlink{class_optimal_pump_shaft_power_a23ab040eea0a9e0431988bd353076237}{calculate()}\+: Calculates the Optimal Pump Shaft\+Power. 
 
 Calculates the optimal pump shaft power
 
@@ -105,14 +130,12 @@ Definition at line 13 of file Optimal\+Pump\+Shaft\+Power.\+cpp.
 \subsubsection{\texorpdfstring{get\+Flow\+Rate()}{getFlowRate()}}
 {\footnotesize\ttfamily double Optimal\+Pump\+Shaft\+Power\+::get\+Flow\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the measured or required flow rate
-
-\begin{DoxyReturn}{Returns}
+Gets the measured or required flow rate \begin{DoxyReturn}{Returns}
 double, measured or required flow rate in gpm 
 \end{DoxyReturn}
 
 
-Definition at line 49 of file Optimal\+Pump\+Shaft\+Power.\+h.
+Definition at line 54 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_pump_shaft_power_abb285a8a256c10187113c34db1a4462b}\label{class_optimal_pump_shaft_power_abb285a8a256c10187113c34db1a4462b}} 
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!get\+Head@{get\+Head}}
@@ -120,14 +143,12 @@ Definition at line 49 of file Optimal\+Pump\+Shaft\+Power.\+h.
 \subsubsection{\texorpdfstring{get\+Head()}{getHead()}}
 {\footnotesize\ttfamily double Optimal\+Pump\+Shaft\+Power\+::get\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the measured or required pump head
-
-\begin{DoxyReturn}{Returns}
+Gets the measured or required pump head \begin{DoxyReturn}{Returns}
 double, mesured or required pump head in ft 
 \end{DoxyReturn}
 
 
-Definition at line 68 of file Optimal\+Pump\+Shaft\+Power.\+h.
+Definition at line 70 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_pump_shaft_power_a77b9c639438f9d6008c20948f173a2c4}\label{class_optimal_pump_shaft_power_a77b9c639438f9d6008c20948f173a2c4}} 
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!get\+Pump\+Efficiency@{get\+Pump\+Efficiency}}
@@ -135,14 +156,12 @@ Definition at line 68 of file Optimal\+Pump\+Shaft\+Power.\+h.
 \subsubsection{\texorpdfstring{get\+Pump\+Efficiency()}{getPumpEfficiency()}}
 {\footnotesize\ttfamily double Optimal\+Pump\+Shaft\+Power\+::get\+Pump\+Efficiency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the pump efficiency
-
-\begin{DoxyReturn}{Returns}
+Gets the pump efficiency \begin{DoxyReturn}{Returns}
 double, pump efficiency as \% 
 \end{DoxyReturn}
 
 
-Definition at line 106 of file Optimal\+Pump\+Shaft\+Power.\+h.
+Definition at line 102 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_pump_shaft_power_a607d32c56edece639e03007adc1bf325}\label{class_optimal_pump_shaft_power_a607d32c56edece639e03007adc1bf325}} 
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!get\+Specific\+Gravity@{get\+Specific\+Gravity}}
@@ -150,14 +169,12 @@ Definition at line 106 of file Optimal\+Pump\+Shaft\+Power.\+h.
 \subsubsection{\texorpdfstring{get\+Specific\+Gravity()}{getSpecificGravity()}}
 {\footnotesize\ttfamily double Optimal\+Pump\+Shaft\+Power\+::get\+Specific\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the specific gravity
-
-\begin{DoxyReturn}{Returns}
+Gets the specific gravity \begin{DoxyReturn}{Returns}
 double, specific gravity -\/ unitless 
 \end{DoxyReturn}
 
 
-Definition at line 87 of file Optimal\+Pump\+Shaft\+Power.\+h.
+Definition at line 86 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_pump_shaft_power_a38efdee39db4c3856915f1ab26d44ed2}\label{class_optimal_pump_shaft_power_a38efdee39db4c3856915f1ab26d44ed2}} 
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!set\+Flow\+Rate@{set\+Flow\+Rate}}
@@ -165,16 +182,14 @@ Definition at line 87 of file Optimal\+Pump\+Shaft\+Power.\+h.
 \subsubsection{\texorpdfstring{set\+Flow\+Rate()}{setFlowRate()}}
 {\footnotesize\ttfamily void Optimal\+Pump\+Shaft\+Power\+::set\+Flow\+Rate (\begin{DoxyParamCaption}\item[{double}]{flow\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the measured or required flow rate
-
-
+Sets the measured or required flow rate 
 \begin{DoxyParams}{Parameters}
 {\em flow\+Rate} & double, measured or required flow rate in gpm \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 59 of file Optimal\+Pump\+Shaft\+Power.\+h.
+Definition at line 62 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_pump_shaft_power_aa080c62ff92fc70a4e27e7710e490b62}\label{class_optimal_pump_shaft_power_aa080c62ff92fc70a4e27e7710e490b62}} 
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!set\+Head@{set\+Head}}
@@ -182,9 +197,7 @@ Definition at line 59 of file Optimal\+Pump\+Shaft\+Power.\+h.
 \subsubsection{\texorpdfstring{set\+Head()}{setHead()}}
 {\footnotesize\ttfamily void Optimal\+Pump\+Shaft\+Power\+::set\+Head (\begin{DoxyParamCaption}\item[{double}]{head }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the measured or required pump head
-
-
+Sets the measured or required pump head 
 \begin{DoxyParams}{Parameters}
 {\em head} & double, measured or required pump head in ft \\
 \hline
@@ -199,16 +212,14 @@ Definition at line 78 of file Optimal\+Pump\+Shaft\+Power.\+h.
 \subsubsection{\texorpdfstring{set\+Pump\+Efficiency()}{setPumpEfficiency()}}
 {\footnotesize\ttfamily void Optimal\+Pump\+Shaft\+Power\+::set\+Pump\+Efficiency (\begin{DoxyParamCaption}\item[{double}]{pump\+Efficiency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the pump efficiency
-
-
+Sets the pump efficiency 
 \begin{DoxyParams}{Parameters}
 {\em pump\+Efficiency} & double, pump efficiency as \% \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 116 of file Optimal\+Pump\+Shaft\+Power.\+h.
+Definition at line 110 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 \mbox{\Hypertarget{class_optimal_pump_shaft_power_aa565a332e4b144c8eb85fd06c541199e}\label{class_optimal_pump_shaft_power_aa565a332e4b144c8eb85fd06c541199e}} 
 \index{Optimal\+Pump\+Shaft\+Power@{Optimal\+Pump\+Shaft\+Power}!set\+Specific\+Gravity@{set\+Specific\+Gravity}}
@@ -216,16 +227,14 @@ Definition at line 116 of file Optimal\+Pump\+Shaft\+Power.\+h.
 \subsubsection{\texorpdfstring{set\+Specific\+Gravity()}{setSpecificGravity()}}
 {\footnotesize\ttfamily void Optimal\+Pump\+Shaft\+Power\+::set\+Specific\+Gravity (\begin{DoxyParamCaption}\item[{double}]{specific\+Gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Sets the specific gravity
-
-
+Sets the specific gravity 
 \begin{DoxyParams}{Parameters}
 {\em specific\+Gravity} & double, specific gravity -\/ unitless \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 97 of file Optimal\+Pump\+Shaft\+Power.\+h.
+Definition at line 94 of file Optimal\+Pump\+Shaft\+Power.\+h.
 
 
 

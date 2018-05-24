@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['fan',['Fan',['../df/de0/class_fan.html',1,'']]],
+  ['fan203',['Fan203',['../da/ddb/class_fan203.html',1,'']]],
   ['fancurve',['FanCurve',['../db/d87/class_fan_curve.html',1,'']]],
   ['fancurvedata',['FanCurveData',['../d2/d07/class_fan_curve_data.html',1,'']]],
+  ['fanenergyindex',['FanEnergyIndex',['../df/d29/class_fan_energy_index.html',1,'FanEnergyIndex'],['../df/d29/class_fan_energy_index.html#aea662b131f62c3b78196aabb0046c9a9',1,'FanEnergyIndex::FanEnergyIndex()']]],
   ['fanratedinfo',['FanRatedInfo',['../d4/d43/class_fan_rated_info.html',1,'']]],
-  ['fanresults',['FanResults',['../df/de8/struct_fan_1_1_fan_results.html',1,'Fan']]],
+  ['fanresult',['FanResult',['../d8/dff/class_fan_result.html',1,'']]],
   ['fanshaftpower',['FanShaftPower',['../d7/d4a/class_fan_shaft_power.html',1,'']]],
-  ['fielddata',['FieldData',['../dc/d7a/class_field_data.html',1,'FieldData'],['../dc/d7a/class_field_data.html#a43df27dd87a19f495f7eb82729de9e31',1,'FieldData::FieldData()']]],
-  ['fielddata_2eh',['FieldData.h',['../dd/d59/_field_data_8h.html',1,'']]],
-  ['financial',['Financial',['../d7/dd7/class_financial.html',1,'Financial'],['../d7/dd7/class_financial.html#abe8c4d82e9aede125e7e42ad3d53f90a',1,'Financial::Financial()']]],
-  ['financial_2eh',['Financial.h',['../d8/d95/_financial_8h.html',1,'']]],
+  ['fielddata',['FieldData',['../d0/da8/struct_pump_1_1_field_data.html',1,'Pump::FieldData'],['../d0/da8/struct_pump_1_1_field_data.html#ad35a6b6b9a02174c0e32ed6adebb8b75',1,'Pump::FieldData::FieldData()']]],
+  ['fielddatabaseline',['FieldDataBaseline',['../d1/d33/struct_fan_1_1_field_data_baseline.html',1,'Fan::FieldDataBaseline'],['../d1/d33/struct_fan_1_1_field_data_baseline.html#a99f4a04d6960b3fe664b991581da87d3',1,'Fan::FieldDataBaseline::FieldDataBaseline()']]],
+  ['fielddatamodifiedandoptimal',['FieldDataModifiedAndOptimal',['../d3/dba/struct_fan_1_1_field_data_modified_and_optimal.html',1,'Fan::FieldDataModifiedAndOptimal'],['../d3/dba/struct_fan_1_1_field_data_modified_and_optimal.html#a36b1ce30716ee49fab15b711225f1794',1,'Fan::FieldDataModifiedAndOptimal::FieldDataModifiedAndOptimal()']]],
   ['fixturelosses',['FixtureLosses',['../d5/d80/class_fixture_losses.html',1,'FixtureLosses'],['../d5/d80/class_fixture_losses.html#a97002e16f3f1be19983151cacec02f36',1,'FixtureLosses::FixtureLosses()']]],
   ['fixturelosses_2ecpp',['FixtureLosses.cpp',['../d9/db5/_fixture_losses_8cpp.html',1,'']]],
   ['fixturelosses_2eh',['FixtureLosses.h',['../db/da5/_fixture_losses_8h.html',1,'']]],
@@ -21,7 +21,7 @@ var searchData=
   ['flowcalculationsenergyuse_2ecpp',['FlowCalculationsEnergyUse.cpp',['../d8/d95/_flow_calculations_energy_use_8cpp.html',1,'']]],
   ['flowcalculationsenergyuse_2eh',['FlowCalculationsEnergyUse.h',['../d1/d29/_flow_calculations_energy_use_8h.html',1,'']]],
   ['flowrate',['flowRate',['../d5/dc5/class_head_tool_base.html#acf4c03cb62cbf63aba017ce063989fbc',1,'HeadToolBase']]],
-  ['fluidpower',['FluidPower',['../d3/df4/class_fluid_power.html',1,'FluidPower'],['../d3/df4/class_fluid_power.html#a9bf61af202e27b9e41ed284b4b1643ee',1,'FluidPower::FluidPower()']]],
+  ['fluidpower',['FluidPower',['../d3/df4/class_fluid_power.html',1,'FluidPower'],['../d3/df4/class_fluid_power.html#a9bf61af202e27b9e41ed284b4b1643ee',1,'FluidPower::FluidPower(double specificGravity, double flowRate, double head)'],['../d3/df4/class_fluid_power.html#a4c0369fcf0c85d28fa9afbdd56358fd4',1,'FluidPower::FluidPower(double flowRate, const double inletPressure, const double outletPressure, const double compressibilityFactor)']]],
   ['fluidproperties',['FluidProperties',['../d9/dd3/struct_steam_system_modeler_tool_1_1_fluid_properties.html',1,'SteamSystemModelerTool']]],
   ['fuelfiredenergyequivalency',['FuelFiredEnergyEquivalency',['../d7/d3c/class_fuel_fired_energy_equivalency.html',1,'FuelFiredEnergyEquivalency'],['../d7/d3c/class_fuel_fired_energy_equivalency.html#ac4ba992ccb3d4a19eb29f14898031690',1,'FuelFiredEnergyEquivalency::FuelFiredEnergyEquivalency()']]]
 ];

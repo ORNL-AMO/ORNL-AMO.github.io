@@ -1,15 +1,44 @@
-A\+MO Tools Suite is a cross-\/platform collection of calculations and tools to support industrial equipment modeling.
+A\+MO Tools Suite is a cross-\/platform collection of calculations and tools to support industrial equipment modeling. See our hosted documentation for the latest release at \href{https://ornl-amo.github.io/}{\tt ornl-\/amo.\+github.\+io}
 
-See our hosted documentation for the latest release at \href{https://ornl-amo.github.io/}{\tt ornl-\/amo.\+github.\+io}
+\subsubsection*{Dependencies}
 
-To generate documentation\+: {\ttfamily doxygen Doxygen.\+in}
 
-To build node modules\+: {\ttfamily npm install} or if already installed, {\ttfamily node-\/gyp rebuild} to update modules.
+\begin{DoxyItemize}
+\item C\+Make
+\item G\+CC 4.\+8.\+5 or later
+\item Node \href{https://nodejs.org/en/}{\tt https\+://nodejs.\+org/en/}
+\item Doxygen (only for building documentation)
+\end{DoxyItemize}
 
-To run tests for the node addon\+: {\ttfamily npm run test}
+\subsubsection*{Building}
 
-To edit the C\+Make\+Cache\+: {\ttfamily ccmake .} from project root directory, enable desired build options, then {\ttfamily make} to build.
 
-To build C++ unit tests directly\+: {\ttfamily cmake -\/-\/build . -\/-\/target amo\+\_\+tools\+\_\+suite\+\_\+tests} from project root directory.
+\begin{DoxyItemize}
+\item Edit the C\+Make\+Cache and enable desired build options via the ccmake tool\+: {\ttfamily ccmake .} and {\ttfamily make} to build
+\item If ccmake isn\textquotesingle{}t available, use {\ttfamily cmake -\/D B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG\+:B\+O\+OL=ON -\/D B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE\+:B\+O\+OL=O\+FF -\/-\/config Debug ./} and {\ttfamily cmake -\/-\/build .} where config can be {\ttfamily Release}, {\ttfamily Debug}, {\ttfamily Min\+Size\+Rel} or {\ttfamily Rel\+With\+Deb\+Info}
+\item To build node modules\+: {\ttfamily npm install} or if already installed, {\ttfamily node-\/gyp rebuild} to rebuild the modules
+\end{DoxyItemize}
 
-To create an installer package\+: {\ttfamily ccmake .} from project root directory, then enable the {\ttfamily B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE} flag, then {\ttfamily cmake ./} then {\ttfamily make package} 
+\subsubsection*{Unit Tests}
+
+
+\begin{DoxyItemize}
+\item To run the javascript tests for the node addons\+: {\ttfamily npm run test}
+\item To build C++ unit tests directly, ensure the {\ttfamily B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG} flag is set then\+: {\ttfamily cmake -\/-\/build . -\/-\/target amo\+\_\+tools\+\_\+suite\+\_\+tests}
+\item On Mac\+OS or Linux, the test executable can be found under the {\ttfamily bin} directory. On Windows, the executable can be found under either the {\ttfamily Debug} or {\ttfamily Release} directories, depending on C\+Make configuration
+\end{DoxyItemize}
+
+\subsubsection*{Packaging}
+
+
+\begin{DoxyItemize}
+\item Enable the {\ttfamily B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE} flag in the C\+Make\+Cache, then {\ttfamily cmake ./} then {\ttfamily make package}
+\item Or use this directly\+: {\ttfamily cmake -\/D B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG\+:B\+O\+OL=O\+FF ./} and {\ttfamily cmake -\/-\/build . -\/-\/config Release -\/-\/target P\+A\+C\+K\+A\+GE}
+\end{DoxyItemize}
+
+\subsubsection*{Documentation}
+
+
+\begin{DoxyItemize}
+\item To generate documentation\+: {\ttfamily doxygen Doxyfile.\+in} 
+\end{DoxyItemize}

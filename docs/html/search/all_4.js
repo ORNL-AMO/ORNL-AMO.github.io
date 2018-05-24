@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['eff',['eff',['../db/d39/class_motor_shaft_power.html#a3dcd3d5c1dc3e3712fa4d16431ed270b',1,'MotorShaftPower']]],
   ['efficiencyimprovement',['EfficiencyImprovement',['../de/d15/class_efficiency_improvement.html',1,'EfficiencyImprovement'],['../de/d15/class_efficiency_improvement.html#a84e4463e307cd280360a4dfbbb369c55',1,'EfficiencyImprovement::EfficiencyImprovement()']]],
   ['efficiencyimprovement_2ecpp',['EfficiencyImprovement.cpp',['../d8/d62/_efficiency_improvement_8cpp.html',1,'']]],
   ['efficiencyimprovement_2eh',['EfficiencyImprovement.h',['../d1/db0/_efficiency_improvement_8h.html',1,'']]],
@@ -12,7 +11,7 @@ var searchData=
   ['energyinputeaf_2eh',['EnergyInputEAF.h',['../d6/d6d/_energy_input_e_a_f_8h.html',1,'']]],
   ['energyinputexhaustgaslosses',['EnergyInputExhaustGasLosses',['../d7/d71/class_energy_input_exhaust_gas_losses.html',1,'EnergyInputExhaustGasLosses'],['../d7/d71/class_energy_input_exhaust_gas_losses.html#ab61da88b40504e71d2907ed8d997df85',1,'EnergyInputExhaustGasLosses::EnergyInputExhaustGasLosses()']]],
   ['energyinputexhaustgaslosses_2eh',['EnergyInputExhaustGasLosses.h',['../de/df3/_energy_input_exhaust_gas_losses_8h.html',1,'']]],
-  ['estimatedfla',['estimatedFLA',['../db/d39/class_motor_shaft_power.html#a56bbded3394ee729ac3480c0f773cbb9',1,'MotorShaftPower::estimatedFLA()'],['../d9/d09/struct_p_s_a_t_result_1_1result.html#a95949480ff2b7e6d103a955e3b96968c',1,'PSATResult::result::estimatedFLA()']]],
+  ['estimatedfla',['estimatedFLA',['../dc/d77/struct_p_s_a_t_result_1_1_result.html#ac606acff40adbc7e4b456e37fc0cc2a1',1,'PSATResult::Result']]],
   ['estimatefla',['EstimateFLA',['../d0/d8c/class_estimate_f_l_a.html',1,'EstimateFLA'],['../d0/d8c/class_estimate_f_l_a.html#ace098c4a684eb4926b20322cf65da32d',1,'EstimateFLA::EstimateFLA()']]],
   ['exhaustgaseaf',['ExhaustGasEAF',['../df/d6a/class_exhaust_gas_e_a_f.html',1,'ExhaustGasEAF'],['../df/d6a/class_exhaust_gas_e_a_f.html#a500eba1e0016803cb94485594354f36a',1,'ExhaustGasEAF::ExhaustGasEAF()']]],
   ['exhaustgaseaf_2ecpp',['ExhaustGasEAF.cpp',['../d1/d1b/_exhaust_gas_e_a_f_8cpp.html',1,'']]],

@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.25</span>
+   &#160;<span id="projectnumber">v.0.2.29</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -95,9 +95,12 @@ std::vector&lt; <a class="el" href="../../d5/d58/class_solid_load_charge_materia
 <tr class="memitem:a5c40ac3b9a6abb85c9cfbe50802672c5"><td class="memItemLeft" align="right" valign="top"><a id="a5c40ac3b9a6abb85c9cfbe50802672c5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertSolidLoadChargeMaterials</b> (<a class="el" href="../../d5/d58/class_solid_load_charge_material.html">SolidLoadChargeMaterial</a> const &amp;material)</td></tr>
 <tr class="separator:a5c40ac3b9a6abb85c9cfbe50802672c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87415ea66b330bc919acaaf042c8ff02"><td class="memItemLeft" align="right" valign="top"><a id="a87415ea66b330bc919acaaf042c8ff02"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteSolidLoadChargeMaterial</b> (std::string const &amp;substance) const</td></tr>
-<tr class="separator:a87415ea66b330bc919acaaf042c8ff02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a240c89a1e0c96ef61c3beae68b1467"><td class="memItemLeft" align="right" valign="top"><a id="a0a240c89a1e0c96ef61c3beae68b1467"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteSolidLoadChargeMaterial</b> (int id)</td></tr>
+<tr class="separator:a0a240c89a1e0c96ef61c3beae68b1467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c7142caa0154783f7ed73afa4bd6db"><td class="memItemLeft" align="right" valign="top"><a id="ac2c7142caa0154783f7ed73afa4bd6db"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateSolidLoadChargeMaterial</b> (<a class="el" href="../../d5/d58/class_solid_load_charge_material.html">SolidLoadChargeMaterial</a> const &amp;material)</td></tr>
+<tr class="separator:ac2c7142caa0154783f7ed73afa4bd6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a173cb741ec36f8b15e3650f6e1736b12"><td class="memItemLeft" align="right" valign="top"><a id="a173cb741ec36f8b15e3650f6e1736b12"></a>
 std::vector&lt; <a class="el" href="../../d6/da8/class_gas_load_charge_material.html">GasLoadChargeMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getGasLoadChargeMaterials</b> () const</td></tr>
 <tr class="separator:a173cb741ec36f8b15e3650f6e1736b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,9 +113,12 @@ std::vector&lt; <a class="el" href="../../d6/da8/class_gas_load_charge_material.
 <tr class="memitem:af482f51c0d3de08fbfa3e537382a567f"><td class="memItemLeft" align="right" valign="top"><a id="af482f51c0d3de08fbfa3e537382a567f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertGasLoadChargeMaterials</b> (<a class="el" href="../../d6/da8/class_gas_load_charge_material.html">GasLoadChargeMaterial</a> const &amp;material)</td></tr>
 <tr class="separator:af482f51c0d3de08fbfa3e537382a567f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac354a72accd5a0d8901da9df19c045d3"><td class="memItemLeft" align="right" valign="top"><a id="ac354a72accd5a0d8901da9df19c045d3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteGasLoadChargeMaterial</b> (std::string const &amp;substance)</td></tr>
-<tr class="separator:ac354a72accd5a0d8901da9df19c045d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3717a443c1151d717168d323ec6576c1"><td class="memItemLeft" align="right" valign="top"><a id="a3717a443c1151d717168d323ec6576c1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteGasLoadChargeMaterial</b> (int id)</td></tr>
+<tr class="separator:a3717a443c1151d717168d323ec6576c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b8fbcd52ac37fe9e78df164ee8de25"><td class="memItemLeft" align="right" valign="top"><a id="a21b8fbcd52ac37fe9e78df164ee8de25"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateGasLoadChargeMaterial</b> (const <a class="el" href="../../d6/da8/class_gas_load_charge_material.html">GasLoadChargeMaterial</a> &amp;material)</td></tr>
+<tr class="separator:a21b8fbcd52ac37fe9e78df164ee8de25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a375614ae9d9748646cba88c834796272"><td class="memItemLeft" align="right" valign="top"><a id="a375614ae9d9748646cba88c834796272"></a>
 std::vector&lt; <a class="el" href="../../de/d8d/class_liquid_load_charge_material.html">LiquidLoadChargeMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getLiquidLoadChargeMaterials</b> () const</td></tr>
 <tr class="separator:a375614ae9d9748646cba88c834796272"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,9 +131,12 @@ std::vector&lt; <a class="el" href="../../de/d8d/class_liquid_load_charge_materi
 <tr class="memitem:aff9ccdb8af003d3a0a3fdc9a85af77d8"><td class="memItemLeft" align="right" valign="top"><a id="aff9ccdb8af003d3a0a3fdc9a85af77d8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertLiquidLoadChargeMaterials</b> (<a class="el" href="../../de/d8d/class_liquid_load_charge_material.html">LiquidLoadChargeMaterial</a> const &amp;material)</td></tr>
 <tr class="separator:aff9ccdb8af003d3a0a3fdc9a85af77d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dbd677be8b79a0f85018fa1bed3c1db"><td class="memItemLeft" align="right" valign="top"><a id="a4dbd677be8b79a0f85018fa1bed3c1db"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteLiquidLoadChargeMaterial</b> (std::string const &amp;substance)</td></tr>
-<tr class="separator:a4dbd677be8b79a0f85018fa1bed3c1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3451cb60446d9a90da4cb08920dcfe"><td class="memItemLeft" align="right" valign="top"><a id="a2a3451cb60446d9a90da4cb08920dcfe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteLiquidLoadChargeMaterial</b> (int id)</td></tr>
+<tr class="separator:a2a3451cb60446d9a90da4cb08920dcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89805e7aeb9d72f5dfa6928aac681eab"><td class="memItemLeft" align="right" valign="top"><a id="a89805e7aeb9d72f5dfa6928aac681eab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateLiquidLoadChargeMaterial</b> (const <a class="el" href="../../de/d8d/class_liquid_load_charge_material.html">LiquidLoadChargeMaterial</a> &amp;material)</td></tr>
+<tr class="separator:a89805e7aeb9d72f5dfa6928aac681eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeee9b2bce2f489464d7284224a7422c2"><td class="memItemLeft" align="right" valign="top"><a id="aeee9b2bce2f489464d7284224a7422c2"></a>
 std::vector&lt; <a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html">SolidLiquidFlueGasMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSolidLiquidFlueGasMaterials</b> () const</td></tr>
 <tr class="separator:aeee9b2bce2f489464d7284224a7422c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +149,12 @@ std::vector&lt; <a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_mat
 <tr class="memitem:aa1de7450c37a07dfd0541fdf0dc164ef"><td class="memItemLeft" align="right" valign="top"><a id="aa1de7450c37a07dfd0541fdf0dc164ef"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertSolidLiquidFlueGasMaterial</b> (<a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html">SolidLiquidFlueGasMaterial</a> const &amp;material) const</td></tr>
 <tr class="separator:aa1de7450c37a07dfd0541fdf0dc164ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56fb2567626738b5d702a73617bb28d0"><td class="memItemLeft" align="right" valign="top"><a id="a56fb2567626738b5d702a73617bb28d0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteSolidLiquidFlueGasMaterial</b> (std::string const &amp;substance)</td></tr>
-<tr class="separator:a56fb2567626738b5d702a73617bb28d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83353062d75af65c5b01d55570d0ead"><td class="memItemLeft" align="right" valign="top"><a id="ac83353062d75af65c5b01d55570d0ead"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteSolidLiquidFlueGasMaterial</b> (int id)</td></tr>
+<tr class="separator:ac83353062d75af65c5b01d55570d0ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed13c3aeeef3fdf7f3b2d72b61dd93e8"><td class="memItemLeft" align="right" valign="top"><a id="aed13c3aeeef3fdf7f3b2d72b61dd93e8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateSolidLiquidFlueGasMaterial</b> (<a class="el" href="../../d1/dfb/class_solid_liquid_flue_gas_material.html">SolidLiquidFlueGasMaterial</a> const &amp;material)</td></tr>
+<tr class="separator:aed13c3aeeef3fdf7f3b2d72b61dd93e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af29fd9f5c71efd6fb1d12a9403e1f433"><td class="memItemLeft" align="right" valign="top"><a id="af29fd9f5c71efd6fb1d12a9403e1f433"></a>
 std::vector&lt; <a class="el" href="../../d9/df5/class_gas_compositions.html">GasCompositions</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getGasFlueGasMaterials</b> () const</td></tr>
 <tr class="separator:af29fd9f5c71efd6fb1d12a9403e1f433"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,9 +167,12 @@ std::vector&lt; <a class="el" href="../../d9/df5/class_gas_compositions.html">Ga
 <tr class="memitem:a95d5521ed0de19c979ac9627ae21fbcd"><td class="memItemLeft" align="right" valign="top"><a id="a95d5521ed0de19c979ac9627ae21fbcd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertGasFlueGasMaterial</b> (<a class="el" href="../../d9/df5/class_gas_compositions.html">GasCompositions</a> const &amp;material) const</td></tr>
 <tr class="separator:a95d5521ed0de19c979ac9627ae21fbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474f1d74a2d0b9f38d474398907fea8d"><td class="memItemLeft" align="right" valign="top"><a id="a474f1d74a2d0b9f38d474398907fea8d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteGasFlueGasMaterial</b> (std::string const &amp;substance)</td></tr>
-<tr class="separator:a474f1d74a2d0b9f38d474398907fea8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b38db00e6d8bcff8345e7300a67b26"><td class="memItemLeft" align="right" valign="top"><a id="a12b38db00e6d8bcff8345e7300a67b26"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteGasFlueGasMaterial</b> (int id)</td></tr>
+<tr class="separator:a12b38db00e6d8bcff8345e7300a67b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c1973e285ccae25b7bb8dbc101770e"><td class="memItemLeft" align="right" valign="top"><a id="a71c1973e285ccae25b7bb8dbc101770e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateGasFlueGasMaterial</b> (<a class="el" href="../../d9/df5/class_gas_compositions.html">GasCompositions</a> const &amp;material)</td></tr>
+<tr class="separator:a71c1973e285ccae25b7bb8dbc101770e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3519768b6490be3ea5c57df3a4ad3a4"><td class="memItemLeft" align="right" valign="top"><a id="ab3519768b6490be3ea5c57df3a4ad3a4"></a>
 std::vector&lt; <a class="el" href="../../d1/d12/class_atmosphere.html">Atmosphere</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAtmosphereSpecificHeat</b> () const</td></tr>
 <tr class="separator:ab3519768b6490be3ea5c57df3a4ad3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +185,12 @@ std::vector&lt; <a class="el" href="../../d1/d12/class_atmosphere.html">Atmosphe
 <tr class="memitem:a5be90371486d63abd80668c19682051b"><td class="memItemLeft" align="right" valign="top"><a id="a5be90371486d63abd80668c19682051b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertAtmosphereSpecificHeat</b> (<a class="el" href="../../d1/d12/class_atmosphere.html">Atmosphere</a> const &amp;material)</td></tr>
 <tr class="separator:a5be90371486d63abd80668c19682051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ad78a89bad17d0e23b59a9c018590f9"><td class="memItemLeft" align="right" valign="top"><a id="a5ad78a89bad17d0e23b59a9c018590f9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteAtmosphereSpecificHeat</b> (std::string const &amp;substance)</td></tr>
-<tr class="separator:a5ad78a89bad17d0e23b59a9c018590f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0980ef2dfdaadb27f86342f983019bb7"><td class="memItemLeft" align="right" valign="top"><a id="a0980ef2dfdaadb27f86342f983019bb7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateAtmosphereSpecificHeat</b> (<a class="el" href="../../d1/d12/class_atmosphere.html">Atmosphere</a> const &amp;material)</td></tr>
+<tr class="separator:a0980ef2dfdaadb27f86342f983019bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f61e2c425864cf222ee427abd33448"><td class="memItemLeft" align="right" valign="top"><a id="a32f61e2c425864cf222ee427abd33448"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteAtmosphereSpecificHeat</b> (int id)</td></tr>
+<tr class="separator:a32f61e2c425864cf222ee427abd33448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612950dca9d08332a31a020783ba832d"><td class="memItemLeft" align="right" valign="top"><a id="a612950dca9d08332a31a020783ba832d"></a>
 std::vector&lt; <a class="el" href="../../d5/d17/class_wall_losses.html">WallLosses</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getWallLossesSurface</b> () const</td></tr>
 <tr class="separator:a612950dca9d08332a31a020783ba832d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +203,12 @@ std::vector&lt; <a class="el" href="../../d5/d17/class_wall_losses.html">WallLos
 <tr class="memitem:a97d510f6f16aa70c61a9dc6a629ad786"><td class="memItemLeft" align="right" valign="top"><a id="a97d510f6f16aa70c61a9dc6a629ad786"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertWallLossesSurface</b> (<a class="el" href="../../d5/d17/class_wall_losses.html">WallLosses</a> const &amp;material)</td></tr>
 <tr class="separator:a97d510f6f16aa70c61a9dc6a629ad786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa43f3d56f7caddaef26ad1eccef04118"><td class="memItemLeft" align="right" valign="top"><a id="aa43f3d56f7caddaef26ad1eccef04118"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteWallLossesSurface</b> (std::string const &amp;substance)</td></tr>
-<tr class="separator:aa43f3d56f7caddaef26ad1eccef04118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9492a672cb89dfeae330b99ea03ceeb"><td class="memItemLeft" align="right" valign="top"><a id="ab9492a672cb89dfeae330b99ea03ceeb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteWallLossesSurface</b> (int id)</td></tr>
+<tr class="separator:ab9492a672cb89dfeae330b99ea03ceeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b7397ef51a0544d38f670ef995f26e"><td class="memItemLeft" align="right" valign="top"><a id="ac4b7397ef51a0544d38f670ef995f26e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateWallLossesSurface</b> (<a class="el" href="../../d5/d17/class_wall_losses.html">WallLosses</a> const &amp;material)</td></tr>
+<tr class="separator:ac4b7397ef51a0544d38f670ef995f26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fabd8387b0009f7641bce38ee8e41c5"><td class="memItemLeft" align="right" valign="top"><a id="a5fabd8387b0009f7641bce38ee8e41c5"></a>
 std::vector&lt; <a class="el" href="../../d7/d5c/class_motor_data.html">MotorData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMotorData</b> () const</td></tr>
 <tr class="separator:a5fabd8387b0009f7641bce38ee8e41c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,6 +224,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>insertMotorData</b> (
 <tr class="memitem:ab1f59cd24e3931970bc39079b0a5e612"><td class="memItemLeft" align="right" valign="top"><a id="ab1f59cd24e3931970bc39079b0a5e612"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>deleteMotorData</b> (int id)</td></tr>
 <tr class="separator:ab1f59cd24e3931970bc39079b0a5e612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7909128eed1b0612ecdf7c50edf1426a"><td class="memItemLeft" align="right" valign="top"><a id="a7909128eed1b0612ecdf7c50edf1426a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateMotorData</b> (<a class="el" href="../../d7/d5c/class_motor_data.html">MotorData</a> const &amp;motor)</td></tr>
+<tr class="separator:a7909128eed1b0612ecdf7c50edf1426a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">

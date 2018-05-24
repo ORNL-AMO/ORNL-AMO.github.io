@@ -12,17 +12,17 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_optimal_motor_shaft_power_a5b793114a451ef9fe7a29f9db9f44bb6}{Optimal\+Motor\+Shaft\+Power} (double pump\+Shaft\+Power, \hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive} drive)
+\hyperlink{class_optimal_motor_shaft_power_af0981673204c5f8a8cae26a8be8a8a5c}{Optimal\+Motor\+Shaft\+Power} (double pump\+Shaft\+Power, Motor\+::\+Drive drive)
 \item 
 double \hyperlink{class_optimal_motor_shaft_power_a34d47733928ae518fa6f3d08b7d8a12e}{calculate} ()
-\begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_optimal_motor_shaft_power}{Optimal\+Motor\+Shaft\+Power} class. \hyperlink{class_optimal_motor_shaft_power_a34d47733928ae518fa6f3d08b7d8a12e}{calculate()}\+: Calculates the Optimal \hyperlink{class_motor}{Motor} Shaft\+Power. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Contains the definition of functions of \hyperlink{class_optimal_motor_shaft_power}{Optimal\+Motor\+Shaft\+Power} class. \hyperlink{class_optimal_motor_shaft_power_a34d47733928ae518fa6f3d08b7d8a12e}{calculate()}\+: Calculates the Optimal \hyperlink{struct_motor}{Motor} Shaft\+Power. \end{DoxyCompactList}\item 
 double \hyperlink{class_optimal_motor_shaft_power_aca7bb632c659ecf2ebf3cb9fdb23626f}{get\+Pump\+Shaft\+Power} () const
 \item 
 void \hyperlink{class_optimal_motor_shaft_power_ab2d80927fbaa62705359700b2a8f2f26}{set\+Pump\+Shaft\+Power} (double pump\+Shaft\+Power)
 \item 
-\hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive} \hyperlink{class_optimal_motor_shaft_power_a23e1045bb2e3ee62205276cbbebbc3ad}{get\+Drive} () const
+Motor\+::\+Drive \hyperlink{class_optimal_motor_shaft_power_a3cc369285d8b3582fcd8c44e5a1c37c8}{get\+Drive} () const
 \item 
-void \hyperlink{class_optimal_motor_shaft_power_abd88cbdcba70dbb194a8f957b4467fc7}{set\+Drive} (\hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive} drive)
+void \hyperlink{class_optimal_motor_shaft_power_a8f3288a69848c61f4e8e2b14da549d16}{set\+Drive} (Motor\+::\+Drive drive)
 \end{DoxyCompactItemize}
 
 
@@ -43,17 +43,17 @@ Definition at line 17 of file Optimal\+Motor\+Shaft\+Power.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_optimal_motor_shaft_power_a5b793114a451ef9fe7a29f9db9f44bb6}\label{class_optimal_motor_shaft_power_a5b793114a451ef9fe7a29f9db9f44bb6}} 
+\mbox{\Hypertarget{class_optimal_motor_shaft_power_af0981673204c5f8a8cae26a8be8a8a5c}\label{class_optimal_motor_shaft_power_af0981673204c5f8a8cae26a8be8a8a5c}} 
 \index{Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}!Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}}
 \index{Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}!Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}}
 \subsubsection{\texorpdfstring{Optimal\+Motor\+Shaft\+Power()}{OptimalMotorShaftPower()}}
-{\footnotesize\ttfamily Optimal\+Motor\+Shaft\+Power\+::\+Optimal\+Motor\+Shaft\+Power (\begin{DoxyParamCaption}\item[{double}]{pump\+Shaft\+Power,  }\item[{\hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive}}]{drive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Optimal\+Motor\+Shaft\+Power\+::\+Optimal\+Motor\+Shaft\+Power (\begin{DoxyParamCaption}\item[{double}]{pump\+Shaft\+Power,  }\item[{Motor\+::\+Drive}]{drive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor 
 \begin{DoxyParams}{Parameters}
-{\em pump\+Shaft\+Power} & double, \hyperlink{class_pump}{Pump} shaft power as defined in hp \\
+{\em pump\+Shaft\+Power} & double, Pump shaft power as defined in hp \\
 \hline
-{\em drive} & \hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive}, Type of drive the pump uses from either direct or belt drive. \\
+{\em drive} & Pump\+::\+Drive, Type of drive the pump uses from either direct or belt drive. \\
 \hline
 \end{DoxyParams}
 
@@ -71,7 +71,7 @@ Definition at line 25 of file Optimal\+Motor\+Shaft\+Power.\+h.
 
 
 
-Contains the definition of functions of \hyperlink{class_optimal_motor_shaft_power}{Optimal\+Motor\+Shaft\+Power} class. \hyperlink{class_optimal_motor_shaft_power_a34d47733928ae518fa6f3d08b7d8a12e}{calculate()}\+: Calculates the Optimal \hyperlink{class_motor}{Motor} Shaft\+Power. 
+Contains the definition of functions of \hyperlink{class_optimal_motor_shaft_power}{Optimal\+Motor\+Shaft\+Power} class. \hyperlink{class_optimal_motor_shaft_power_a34d47733928ae518fa6f3d08b7d8a12e}{calculate()}\+: Calculates the Optimal \hyperlink{struct_motor}{Motor} Shaft\+Power. 
 
 Calculates the optimal motor shaft power \begin{DoxyReturn}{Returns}
 double, optimal motor shaft power in hp
@@ -85,14 +85,14 @@ Gina Accawi (accawigk)
 
 Definition at line 14 of file Optimal\+Motor\+Shaft\+Power.\+cpp.
 
-\mbox{\Hypertarget{class_optimal_motor_shaft_power_a23e1045bb2e3ee62205276cbbebbc3ad}\label{class_optimal_motor_shaft_power_a23e1045bb2e3ee62205276cbbebbc3ad}} 
+\mbox{\Hypertarget{class_optimal_motor_shaft_power_a3cc369285d8b3582fcd8c44e5a1c37c8}\label{class_optimal_motor_shaft_power_a3cc369285d8b3582fcd8c44e5a1c37c8}} 
 \index{Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}!get\+Drive@{get\+Drive}}
 \index{get\+Drive@{get\+Drive}!Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}}
 \subsubsection{\texorpdfstring{get\+Drive()}{getDrive()}}
-{\footnotesize\ttfamily \hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive} Optimal\+Motor\+Shaft\+Power\+::get\+Drive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Motor\+::\+Drive Optimal\+Motor\+Shaft\+Power\+::get\+Drive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Gets the type of drive the pump uses from either direct or belt drive \begin{DoxyReturn}{Returns}
-\hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive}, type of drive 
+Motor\+::\+Drive, type of drive 
 \end{DoxyReturn}
 
 
@@ -111,15 +111,15 @@ double, pump shaft power in hp
 
 Definition at line 43 of file Optimal\+Motor\+Shaft\+Power.\+h.
 
-\mbox{\Hypertarget{class_optimal_motor_shaft_power_abd88cbdcba70dbb194a8f957b4467fc7}\label{class_optimal_motor_shaft_power_abd88cbdcba70dbb194a8f957b4467fc7}} 
+\mbox{\Hypertarget{class_optimal_motor_shaft_power_a8f3288a69848c61f4e8e2b14da549d16}\label{class_optimal_motor_shaft_power_a8f3288a69848c61f4e8e2b14da549d16}} 
 \index{Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}!set\+Drive@{set\+Drive}}
 \index{set\+Drive@{set\+Drive}!Optimal\+Motor\+Shaft\+Power@{Optimal\+Motor\+Shaft\+Power}}
 \subsubsection{\texorpdfstring{set\+Drive()}{setDrive()}}
-{\footnotesize\ttfamily void Optimal\+Motor\+Shaft\+Power\+::set\+Drive (\begin{DoxyParamCaption}\item[{\hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive}}]{drive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Optimal\+Motor\+Shaft\+Power\+::set\+Drive (\begin{DoxyParamCaption}\item[{Motor\+::\+Drive}]{drive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Sets the type of drive the pump uses from either direct or belt drive 
 \begin{DoxyParams}{Parameters}
-{\em drive} & \hyperlink{class_pump_a32bf0ade131a11bb3b3fb374f638e983}{Pump\+::\+Drive}, type of drive \\
+{\em drive} & Motor\+::\+Drive, type of drive \\
 \hline
 \end{DoxyParams}
 

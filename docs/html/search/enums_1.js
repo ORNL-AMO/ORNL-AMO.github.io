@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gas',['Gas',['../d4/db7/class_flow_calculations_energy_use.html#a840d5a836e7b05d6791b79bace4440f2',1,'FlowCalculationsEnergyUse']]]
+  ['openingshape',['OpeningShape',['../d7/dff/class_opening_losses.html#a57f9759b6fd72a1b75aa885800e26157',1,'OpeningLosses']]]
 ];

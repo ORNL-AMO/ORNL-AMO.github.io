@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['current',['current',['../db/d39/class_motor_shaft_power.html#a675d8994d4a90951f313ca18b1c63cae',1,'MotorShaftPower']]]
+  ['dischargegaugeelevation',['dischargeGaugeElevation',['../d5/dc5/class_head_tool_base.html#a9ed2160992f8da2e335d919cf9aedd08',1,'HeadToolBase']]],
+  ['dischargegaugepressure',['dischargeGaugePressure',['../d5/dc5/class_head_tool_base.html#a39c854f13b16967e02a67cd1aaee07c4',1,'HeadToolBase']]],
+  ['dischargelinelosscoefficients',['dischargeLineLossCoefficients',['../d5/dc5/class_head_tool_base.html#a147c035c7422406c594c5fd42ab11eb0',1,'HeadToolBase']]],
+  ['dischargepipediameter',['dischargePipeDiameter',['../d5/dc5/class_head_tool_base.html#a126a397bd3d87b68864e1962c70bb45e',1,'HeadToolBase']]]
 ];

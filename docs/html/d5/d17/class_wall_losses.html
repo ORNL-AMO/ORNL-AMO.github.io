@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.25</span>
+   &#160;<span id="projectnumber">v.0.2.29</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -110,10 +110,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a10f5de20dc6fead726adbf62a9c49b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af329a27b78e1f2d84af6a48ffc59bfad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/class_wall_losses.html#af329a27b78e1f2d84af6a48ffc59bfad">setSurface</a> (std::string surface)</td></tr>
 <tr class="separator:af329a27b78e1f2d84af6a48ffc59bfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad67b46094ba89cb759ec124c63c137de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/class_wall_losses.html#ad67b46094ba89cb759ec124c63c137de">getID</a> () const</td></tr>
-<tr class="separator:ad67b46094ba89cb759ec124c63c137de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91526efc0eb1bf030ebc1d864a21acdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/class_wall_losses.html#a91526efc0eb1bf030ebc1d864a21acdd">setID</a> (const size_t id)</td></tr>
-<tr class="separator:a91526efc0eb1bf030ebc1d864a21acdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae764fa8917879d8c24df7582c159fec6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/class_wall_losses.html#ae764fa8917879d8c24df7582c159fec6">getID</a> () const</td></tr>
+<tr class="separator:ae764fa8917879d8c24df7582c159fec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a135d9bfd6c6f1c4742031ab568b26d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/class_wall_losses.html#a3a135d9bfd6c6f1c4742031ab568b26d">setID</a> (const int id)</td></tr>
+<tr class="separator:a3a135d9bfd6c6f1c4742031ab568b26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9eebb34927690332c00df51507878e9"><td class="memItemLeft" align="right" valign="top"><a id="ad9eebb34927690332c00df51507878e9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/class_wall_losses.html#ad9eebb34927690332c00df51507878e9">operator==</a> (const <a class="el" href="../../d5/d17/class_wall_losses.html">WallLosses</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:ad9eebb34927690332c00df51507878e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">bool operator <br /></td></tr>
@@ -319,8 +319,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 
 </div>
 </div>
-<a id="ad67b46094ba89cb759ec124c63c137de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad67b46094ba89cb759ec124c63c137de">&#9670;&nbsp;</a></span>getID()</h2>
+<a id="ae764fa8917879d8c24df7582c159fec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae764fa8917879d8c24df7582c159fec6">&#9670;&nbsp;</a></span>getID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +329,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double WallLosses::getID </td>
+          <td class="memname">int WallLosses::getID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -341,7 +341,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the ID of surface description </p><dl class="section return"><dt>Returns</dt><dd>double, ID of surface description </dd></dl>
+<p>Gets the ID of surface description </p><dl class="section return"><dt>Returns</dt><dd>int, ID of surface description </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d01/_wall_losses_8h_source.html#l00195">195</a> of file <a class="el" href="../../d0/d01/_wall_losses_8h_source.html">WallLosses.h</a>.</p>
 
@@ -589,8 +589,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 
 </div>
 </div>
-<a id="a91526efc0eb1bf030ebc1d864a21acdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91526efc0eb1bf030ebc1d864a21acdd">&#9670;&nbsp;</a></span>setID()</h2>
+<a id="a3a135d9bfd6c6f1c4742031ab568b26d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a135d9bfd6c6f1c4742031ab568b26d">&#9670;&nbsp;</a></span>setID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +601,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
         <tr>
           <td class="memname">void WallLosses::setID </td>
           <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -614,7 +614,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SQLite</b></td></tr>
 </div><div class="memdoc">
 <p>Sets the ID of surface description </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>const size_t, ID of surface description </td></tr>
+    <tr><td class="paramname">id</td><td>const int, ID of surface description </td></tr>
   </table>
   </dd>
 </dl>
