@@ -139,7 +139,7 @@
     <script type="text/javascript" language="javascript">
         function GetDesktop() {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/v0.2.7-beta", false);
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/latest", false);
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
@@ -178,7 +178,7 @@
                 }, this);
                 var div = document.createElement('div');
                 var list = document.getElementById('desktop-list-group');
-                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.textContent = 'Total Downloads ' + version.wholeText + ': ' + totalDownloads;
                 div.className = "list-group-item total-downloads";
                 list.appendChild(div);
             }
@@ -301,7 +301,7 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-            console.log(response);
+//            console.log(response);
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('pepex-title').appendChild(version);
             if (response.assets) {
@@ -373,7 +373,7 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-            console.log(response);
+//            console.log(response);
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('desktop-digitizer-title').appendChild(version);
             if (response.assets) {
