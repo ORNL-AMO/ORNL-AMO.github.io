@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AMO-Tools-Suite: AMO Tools Suite  &lt;img src=&quot;https://img.shields.io/badge/license-MIT-blue.svg&quot;&gt;</title>
+<title>AMO-Tools-Suite: AMO Tools Suite</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,16 +62,13 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">AMO Tools Suite </p><div class="image">
-<object type="image/svg+xml" data="https://img.shields.io/badge/license-MIT-blue.svg"></object>
-</div>
- </div>  </div>
+<div class="title">AMO Tools Suite </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>AMO Tools Suite is a cross-platform collection of calculations and tools to support industrial equipment modeling. See our hosted documentation for the latest release at <a href="https://ornl-amo.github.io/">ornl-amo.github.io</a></p>
 <h3>Dependencies</h3>
 <ul>
-<li>CMake</li>
+<li>CMake (cmake-curses to use the ccmake gui)</li>
 <li>GCC 4.8.5 or later</li>
 <li>Node <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
 <li>Doxygen (only for building documentation)</li>
@@ -91,7 +88,8 @@ $(function() {
 <h3>Packaging</h3>
 <ul>
 <li>Enable the <code>BUILD_PACKAGE</code> flag in the CMakeCache, then <code>cmake ./</code> then <code>make package</code></li>
-<li>Or use this directly: <code>cmake -D BUILD_TESTING:BOOL=OFF ./</code> and <code>cmake --build . --config Release --target PACKAGE</code></li>
+<li>Or use this directly for Windows: <code>cmake -D BUILD_TESTING:BOOL=OFF ./</code> and <code>cmake --build . --config Release --target PACKAGE</code></li>
+<li>To make package on Linux or Mac, run <code>ccmake.</code> and set BUILD_TESTING OFF, BUILD_PACKAGE ON, then configure and generate. Then <code>make package</code>.</li>
 </ul>
 <h3>Documentation</h3>
 <ul>

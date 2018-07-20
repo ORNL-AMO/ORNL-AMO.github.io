@@ -4,7 +4,7 @@ A\+MO Tools Suite is a cross-\/platform collection of calculations and tools to 
 
 
 \begin{DoxyItemize}
-\item C\+Make
+\item C\+Make (cmake-\/curses to use the ccmake gui)
 \item G\+CC 4.\+8.\+5 or later
 \item Node \href{https://nodejs.org/en/}{\tt https\+://nodejs.\+org/en/}
 \item Doxygen (only for building documentation)
@@ -33,7 +33,8 @@ A\+MO Tools Suite is a cross-\/platform collection of calculations and tools to 
 
 \begin{DoxyItemize}
 \item Enable the {\ttfamily B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE} flag in the C\+Make\+Cache, then {\ttfamily cmake ./} then {\ttfamily make package}
-\item Or use this directly\+: {\ttfamily cmake -\/D B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG\+:B\+O\+OL=O\+FF ./} and {\ttfamily cmake -\/-\/build . -\/-\/config Release -\/-\/target P\+A\+C\+K\+A\+GE}
+\item Or use this directly for Windows\+: {\ttfamily cmake -\/D B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG\+:B\+O\+OL=O\+FF ./} and {\ttfamily cmake -\/-\/build . -\/-\/config Release -\/-\/target P\+A\+C\+K\+A\+GE}
+\item To make package on Linux or Mac, run {\ttfamily ccmake.} and set B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG O\+FF, B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE ON, then configure and generate. Then {\ttfamily make package}.
 \end{DoxyItemize}
 
 \subsubsection*{Documentation}
