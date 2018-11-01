@@ -1,0 +1,117 @@
+\hypertarget{class_fan_result}{}\section{Fan\+Result Class Reference}
+\label{class_fan_result}\index{Fan\+Result@{Fan\+Result}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_fan_result_1_1_output}{Output}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fan_result_a1ed5feb84f778969a28673c8e267e8c9}\label{class_fan_result_a1ed5feb84f778969a28673c8e267e8c9}} 
+{\bfseries Fan\+Result} (\hyperlink{struct_fan_1_1_input}{Fan\+::\+Input} \&fan\+Input, \hyperlink{struct_motor}{Motor} \&motor, double operating\+Fraction, double unit\+Cost)
+\item 
+\hyperlink{struct_fan_result_1_1_output}{Output} \hyperlink{class_fan_result_ad9bd0cc8f62fcb7bb7aca7eea511a2f3}{calculate\+Existing} (\hyperlink{struct_fan_1_1_field_data_baseline}{Fan\+::\+Field\+Data\+Baseline} const \&fan\+Field\+Data)
+\item 
+\hyperlink{struct_fan_result_1_1_output}{Output} \hyperlink{class_fan_result_a0c0a90d06749d599b48cf17aa06f0c67}{calculate\+Modified} (\hyperlink{struct_fan_1_1_field_data_modified_and_optimal}{Fan\+::\+Field\+Data\+Modified\+And\+Optimal} const \&fan\+Field\+Data, double fan\+Efficiency, bool is\+Optimal)
+\item 
+\hyperlink{struct_fan_result_1_1_output}{Output} \hyperlink{class_fan_result_af7b7c9891b6975f8ab78caf3441f60c0}{calculate\+Optimal} (\hyperlink{struct_fan_1_1_field_data_modified_and_optimal}{Fan\+::\+Field\+Data\+Modified\+And\+Optimal} const \&fan\+Field\+Data, Optimal\+Fan\+Efficiency\+::\+Fan\+Type fan\+Type)
+\item 
+\hyperlink{struct_fan_result_1_1_output}{Output} \hyperlink{class_fan_result_a477db4149cd45079cf03ef903ce7e2b8}{calculate\+Optimal} (\hyperlink{struct_fan_1_1_field_data_modified_and_optimal}{Fan\+::\+Field\+Data\+Modified\+And\+Optimal} const \&fan\+Field\+Data, double user\+Input\+Fan\+Efficiency)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Results.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fan_result_ad9bd0cc8f62fcb7bb7aca7eea511a2f3}\label{class_fan_result_ad9bd0cc8f62fcb7bb7aca7eea511a2f3}} 
+\index{Fan\+Result@{Fan\+Result}!calculate\+Existing@{calculate\+Existing}}
+\index{calculate\+Existing@{calculate\+Existing}!Fan\+Result@{Fan\+Result}}
+\subsubsection{\texorpdfstring{calculate\+Existing()}{calculateExisting()}}
+{\footnotesize\ttfamily \hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output} Fan\+Result\+::calculate\+Existing (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fan_1_1_field_data_baseline}{Fan\+::\+Field\+Data\+Baseline} const \&}]{fan\+Field\+Data }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fan\+Field\+Data,\hyperlink{struct_fan_1_1_field_data_baseline}{Fan\+::\+Field\+Data\+Baseline}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output}, the results of an existing fan system assessment 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file Results.\+cpp.
+
+\mbox{\Hypertarget{class_fan_result_a0c0a90d06749d599b48cf17aa06f0c67}\label{class_fan_result_a0c0a90d06749d599b48cf17aa06f0c67}} 
+\index{Fan\+Result@{Fan\+Result}!calculate\+Modified@{calculate\+Modified}}
+\index{calculate\+Modified@{calculate\+Modified}!Fan\+Result@{Fan\+Result}}
+\subsubsection{\texorpdfstring{calculate\+Modified()}{calculateModified()}}
+{\footnotesize\ttfamily \hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output} Fan\+Result\+::calculate\+Modified (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fan_1_1_field_data_modified_and_optimal}{Fan\+::\+Field\+Data\+Modified\+And\+Optimal} const \&}]{fan\+Field\+Data,  }\item[{double}]{fan\+Efficiency,  }\item[{bool}]{is\+Optimal }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fan\+Field\+Data,\hyperlink{struct_fan_1_1_field_data_modified_and_optimal}{Fan\+::\+Field\+Data\+Modified\+And\+Optimal}} & \\
+\hline
+{\em fan\+Efficiency,double} & \\
+\hline
+{\em is\+Optimal,bool} & determines whether or not to optimize motor (use EE or PE) or use existing efficiency class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output}, the results of a fan system assessment 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Results.\+cpp.
+
+\mbox{\Hypertarget{class_fan_result_af7b7c9891b6975f8ab78caf3441f60c0}\label{class_fan_result_af7b7c9891b6975f8ab78caf3441f60c0}} 
+\index{Fan\+Result@{Fan\+Result}!calculate\+Optimal@{calculate\+Optimal}}
+\index{calculate\+Optimal@{calculate\+Optimal}!Fan\+Result@{Fan\+Result}}
+\subsubsection{\texorpdfstring{calculate\+Optimal()}{calculateOptimal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output} Fan\+Result\+::calculate\+Optimal (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fan_1_1_field_data_modified_and_optimal}{Fan\+::\+Field\+Data\+Modified\+And\+Optimal} const \&}]{fan\+Field\+Data,  }\item[{Optimal\+Fan\+Efficiency\+::\+Fan\+Type}]{fan\+Type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fan\+Field\+Data} & \\
+\hline
+{\em fan\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output}, the results of a fan system assessment 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Results.\+cpp.
+
+\mbox{\Hypertarget{class_fan_result_a477db4149cd45079cf03ef903ce7e2b8}\label{class_fan_result_a477db4149cd45079cf03ef903ce7e2b8}} 
+\index{Fan\+Result@{Fan\+Result}!calculate\+Optimal@{calculate\+Optimal}}
+\index{calculate\+Optimal@{calculate\+Optimal}!Fan\+Result@{Fan\+Result}}
+\subsubsection{\texorpdfstring{calculate\+Optimal()}{calculateOptimal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output} Fan\+Result\+::calculate\+Optimal (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fan_1_1_field_data_modified_and_optimal}{Fan\+::\+Field\+Data\+Modified\+And\+Optimal} const \&}]{fan\+Field\+Data,  }\item[{double}]{user\+Input\+Fan\+Efficiency }\end{DoxyParamCaption})}
+
+For when the user defines their fan efficiency, which will skip over the \hyperlink{class_optimal_fan_efficiency_ac35291d1095c74373393ac510e45ae02}{Optimal\+Fan\+Efficiency\+::calculate()} function 
+\begin{DoxyParams}{Parameters}
+{\em fan\+Field\+Data} & \\
+\hline
+{\em user\+Input\+Fan\+Efficiency} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_fan_result_1_1_output}{Fan\+Result\+::\+Output} 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file Results.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/results/\hyperlink{_results_8h}{Results.\+h}\item 
+src/results/\hyperlink{_results_8cpp}{Results.\+cpp}\end{DoxyCompactItemize}

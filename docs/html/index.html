@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.33</span>
+   &#160;<span id="projectnumber">v.0.3.1</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -67,11 +67,20 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>AMO Tools Suite is a cross-platform collection of calculations and tools to support industrial equipment modeling. See our hosted documentation for the latest release at <a href="https://ornl-amo.github.io/">ornl-amo.github.io</a></p>
 <h3>Dependencies</h3>
+<h4>C++</h4>
 <ul>
+<li>make</li>
 <li>CMake (cmake-curses to use the ccmake gui)</li>
 <li>GCC 4.8.5 or later</li>
-<li>Node <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
 <li>Doxygen (only for building documentation)</li>
+</ul>
+<h4>Node</h4>
+<ul>
+<li>Node <a href="https://nodejs.org/en/">https://nodejs.org/en/</a> v8 or v9</li>
+<li>gyp: follow instructions for the OS at [<a href="https://github.com/nodejs/node-gyp">https://github.com/nodejs/node-gyp</a>](node-gyp)<ul>
+<li>it also installs the correct python version</li>
+</ul>
+</li>
 </ul>
 <h3>Building</h3>
 <ul>

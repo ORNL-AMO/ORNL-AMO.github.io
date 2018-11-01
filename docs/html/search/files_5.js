@@ -1,8 +1,8 @@
 var searchData=
 [
   ['gascoolinglosses_2ecpp',['GasCoolingLosses.cpp',['../db/dd6/_gas_cooling_losses_8cpp.html',1,'']]],
-  ['gascoolinglosses_2eh',['GasCoolingLosses.h',['../dc/d38/___c_pack___packages_2_darwin_2_s_t_g_z_2amo__tools__suite--_darwin-x86__64-_debug_2amo__tools__5932f41982c582eb9a7216534ce16f51.html',1,'(Global Namespace)'],['../dd/df7/___c_pack___packages_2_darwin_2_t_g_z_2amo__tools__suite--_darwin-x86__64-_debug_2amo__tools__su8eec75628bb46b93c37230876b9156a0.html',1,'(Global Namespace)'],['../d7/d67/include_2calculator_2losses_2_gas_cooling_losses_8h.html',1,'(Global Namespace)']]],
+  ['gascoolinglosses_2eh',['GasCoolingLosses.h',['../d3/daf/_gas_cooling_losses_8h.html',1,'']]],
   ['gasfluegasmaterial_2ecpp',['GasFlueGasMaterial.cpp',['../d7/d4c/_gas_flue_gas_material_8cpp.html',1,'']]],
-  ['gasfluegasmaterial_2eh',['GasFlueGasMaterial.h',['../d8/d01/___c_pack___packages_2_darwin_2_s_t_g_z_2amo__tools__suite--_darwin-x86__64-_debug_2amo__tools__4660f703408c33ec3ee2abb47d5010e4.html',1,'(Global Namespace)'],['../de/dc4/___c_pack___packages_2_darwin_2_t_g_z_2amo__tools__suite--_darwin-x86__64-_debug_2amo__tools__su9ff5b2af4c6b947df7e8e526d52d5430.html',1,'(Global Namespace)'],['../d7/db7/include_2calculator_2losses_2_gas_flue_gas_material_8h.html',1,'(Global Namespace)']]],
-  ['gasloadchargematerial_2eh',['GasLoadChargeMaterial.h',['../d1/d9e/___c_pack___packages_2_darwin_2_s_t_g_z_2amo__tools__suite--_darwin-x86__64-_debug_2amo__tools__7b3e8803f2c44210b504e0a3079e71d1.html',1,'(Global Namespace)'],['../d1/df7/___c_pack___packages_2_darwin_2_t_g_z_2amo__tools__suite--_darwin-x86__64-_debug_2amo__tools__su157dbf5ea34e89c33058a8ab90acfdb1.html',1,'(Global Namespace)'],['../d3/d14/include_2calculator_2losses_2_gas_load_charge_material_8h.html',1,'(Global Namespace)']]]
+  ['gasfluegasmaterial_2eh',['GasFlueGasMaterial.h',['../da/d8f/_gas_flue_gas_material_8h.html',1,'']]],
+  ['gasloadchargematerial_2eh',['GasLoadChargeMaterial.h',['../d3/ddd/_gas_load_charge_material_8h.html',1,'']]]
 ];
