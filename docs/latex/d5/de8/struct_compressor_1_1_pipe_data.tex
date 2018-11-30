@@ -6,6 +6,14 @@
 \hyperlink{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}{Pipe\+Data} (const double one\+Half, const double three\+Fourths, const double one, const double one\+And\+One\+Fourth, const double one\+And\+One\+Half, const double two, const double two\+And\+One\+Half, const double three, const double three\+And\+One\+Half, const double four, const double five, const double six)
 \item 
 \hyperlink{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}{Pipe\+Data} (std\+::function$<$ double(const double)$>$ const \&comp\+Vel)
+\item 
+\hyperlink{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}{Pipe\+Data} (const double one\+Half, const double three\+Fourths, const double one, const double one\+And\+One\+Fourth, const double one\+And\+One\+Half, const double two, const double two\+And\+One\+Half, const double three, const double three\+And\+One\+Half, const double four, const double five, const double six)
+\item 
+\hyperlink{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}{Pipe\+Data} (std\+::function$<$ double(const double)$>$ const \&comp\+Vel)
+\item 
+\hyperlink{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}{Pipe\+Data} (const double one\+Half, const double three\+Fourths, const double one, const double one\+And\+One\+Fourth, const double one\+And\+One\+Half, const double two, const double two\+And\+One\+Half, const double three, const double three\+And\+One\+Half, const double four, const double five, const double six)
+\item 
+\hyperlink{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}{Pipe\+Data} (std\+::function$<$ double(const double)$>$ const \&comp\+Vel)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -62,7 +70,7 @@ Definition at line 164 of file Compressed\+Air.\+h.
 \mbox{\Hypertarget{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}\label{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}} 
 \index{Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}!Pipe\+Data@{Pipe\+Data}}
 \index{Pipe\+Data@{Pipe\+Data}!Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}}
-\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
 {\footnotesize\ttfamily Compressor\+::\+Pipe\+Data\+::\+Pipe\+Data (\begin{DoxyParamCaption}\item[{const double}]{one\+Half,  }\item[{const double}]{three\+Fourths,  }\item[{const double}]{one,  }\item[{const double}]{one\+And\+One\+Fourth,  }\item[{const double}]{one\+And\+One\+Half,  }\item[{const double}]{two,  }\item[{const double}]{two\+And\+One\+Half,  }\item[{const double}]{three,  }\item[{const double}]{three\+And\+One\+Half,  }\item[{const double}]{four,  }\item[{const double}]{five,  }\item[{const double}]{six }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor for \hyperlink{struct_compressor_1_1_pipe_data}{Compressor\+::\+Pipe\+Data} -\/ This is used to hold all the pipe lengths in the system All params are the english spelling of their numeric equivalents, i.\+e. one half == 0.\+5, two\+And\+One\+Half == 2.\+5, etc. Used in \hyperlink{class_compressor_1_1_air_system_capacity}{Air\+System\+Capacity} input and output. 
@@ -72,7 +80,57 @@ Definition at line 170 of file Compressed\+Air.\+h.
 \mbox{\Hypertarget{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}\label{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}} 
 \index{Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}!Pipe\+Data@{Pipe\+Data}}
 \index{Pipe\+Data@{Pipe\+Data}!Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}}
-\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Compressor\+::\+Pipe\+Data\+::\+Pipe\+Data (\begin{DoxyParamCaption}\item[{std\+::function$<$ double(const double)$>$ const \&}]{comp\+Vel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor for \hyperlink{struct_compressor_1_1_pipe_data}{Compressor\+::\+Pipe\+Data} -\/ This is used to hold return values for air velocity estimations 
+\begin{DoxyParams}{Parameters}
+{\em comp\+Vel} & std\+::function$<$double (const double)$>$, comp\+Vel is the compressed air velocity function, it calculates pipeline velocity given internal area of the pipe in square feet. An example of usage can be found in Air\+Velocity\+::calculate() \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 189 of file Compressed\+Air.\+h.
+
+\mbox{\Hypertarget{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}\label{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}} 
+\index{Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}!Pipe\+Data@{Pipe\+Data}}
+\index{Pipe\+Data@{Pipe\+Data}!Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}}
+\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Compressor\+::\+Pipe\+Data\+::\+Pipe\+Data (\begin{DoxyParamCaption}\item[{const double}]{one\+Half,  }\item[{const double}]{three\+Fourths,  }\item[{const double}]{one,  }\item[{const double}]{one\+And\+One\+Fourth,  }\item[{const double}]{one\+And\+One\+Half,  }\item[{const double}]{two,  }\item[{const double}]{two\+And\+One\+Half,  }\item[{const double}]{three,  }\item[{const double}]{three\+And\+One\+Half,  }\item[{const double}]{four,  }\item[{const double}]{five,  }\item[{const double}]{six }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \hyperlink{struct_compressor_1_1_pipe_data}{Compressor\+::\+Pipe\+Data} -\/ This is used to hold all the pipe lengths in the system All params are the english spelling of their numeric equivalents, i.\+e. one half == 0.\+5, two\+And\+One\+Half == 2.\+5, etc. Used in \hyperlink{class_compressor_1_1_air_system_capacity}{Air\+System\+Capacity} input and output. 
+
+Definition at line 170 of file Compressed\+Air.\+h.
+
+\mbox{\Hypertarget{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}\label{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}} 
+\index{Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}!Pipe\+Data@{Pipe\+Data}}
+\index{Pipe\+Data@{Pipe\+Data}!Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}}
+\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Compressor\+::\+Pipe\+Data\+::\+Pipe\+Data (\begin{DoxyParamCaption}\item[{std\+::function$<$ double(const double)$>$ const \&}]{comp\+Vel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor for \hyperlink{struct_compressor_1_1_pipe_data}{Compressor\+::\+Pipe\+Data} -\/ This is used to hold return values for air velocity estimations 
+\begin{DoxyParams}{Parameters}
+{\em comp\+Vel} & std\+::function$<$double (const double)$>$, comp\+Vel is the compressed air velocity function, it calculates pipeline velocity given internal area of the pipe in square feet. An example of usage can be found in Air\+Velocity\+::calculate() \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 189 of file Compressed\+Air.\+h.
+
+\mbox{\Hypertarget{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}\label{struct_compressor_1_1_pipe_data_a71acdc81e25bd90b51361bf8d4f0ed38}} 
+\index{Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}!Pipe\+Data@{Pipe\+Data}}
+\index{Pipe\+Data@{Pipe\+Data}!Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}}
+\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Compressor\+::\+Pipe\+Data\+::\+Pipe\+Data (\begin{DoxyParamCaption}\item[{const double}]{one\+Half,  }\item[{const double}]{three\+Fourths,  }\item[{const double}]{one,  }\item[{const double}]{one\+And\+One\+Fourth,  }\item[{const double}]{one\+And\+One\+Half,  }\item[{const double}]{two,  }\item[{const double}]{two\+And\+One\+Half,  }\item[{const double}]{three,  }\item[{const double}]{three\+And\+One\+Half,  }\item[{const double}]{four,  }\item[{const double}]{five,  }\item[{const double}]{six }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \hyperlink{struct_compressor_1_1_pipe_data}{Compressor\+::\+Pipe\+Data} -\/ This is used to hold all the pipe lengths in the system All params are the english spelling of their numeric equivalents, i.\+e. one half == 0.\+5, two\+And\+One\+Half == 2.\+5, etc. Used in \hyperlink{class_compressor_1_1_air_system_capacity}{Air\+System\+Capacity} input and output. 
+
+Definition at line 170 of file Compressed\+Air.\+h.
+
+\mbox{\Hypertarget{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}\label{struct_compressor_1_1_pipe_data_af7998fd533340b0a84e78fcda91b4806}} 
+\index{Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}!Pipe\+Data@{Pipe\+Data}}
+\index{Pipe\+Data@{Pipe\+Data}!Compressor\+::\+Pipe\+Data@{Compressor\+::\+Pipe\+Data}}
+\subsubsection{\texorpdfstring{Pipe\+Data()}{PipeData()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
 {\footnotesize\ttfamily Compressor\+::\+Pipe\+Data\+::\+Pipe\+Data (\begin{DoxyParamCaption}\item[{std\+::function$<$ double(const double)$>$ const \&}]{comp\+Vel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
 Constructor for \hyperlink{struct_compressor_1_1_pipe_data}{Compressor\+::\+Pipe\+Data} -\/ This is used to hold return values for air velocity estimations 
@@ -88,4 +146,4 @@ Definition at line 189 of file Compressed\+Air.\+h.
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/calculator/util/Compressed\+Air.\+h\end{DoxyCompactItemize}
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/calculator/util/Compressed\+Air.\+h\end{DoxyCompactItemize}

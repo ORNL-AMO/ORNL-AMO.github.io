@@ -3,7 +3,11 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{struct_motor_shaft_power_1_1_output_aaae77bc7a98e39eaca9f6ad4da9cc1d7}{Output} (const double shaft\+Power, const double current, const double power\+Factor, const double efficiency, const double power, const double estimated\+F\+LA)
+\hyperlink{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}{Output} (const double shaft\+Power, const double current, const double power\+Factor, const double efficiency, const double power, const double estimated\+F\+LA, const double load\+Factor)
+\item 
+\hyperlink{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}{Output} (const double shaft\+Power, const double current, const double power\+Factor, const double efficiency, const double power, const double estimated\+F\+LA, const double load\+Factor)
+\item 
+\hyperlink{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}{Output} (const double shaft\+Power, const double current, const double power\+Factor, const double efficiency, const double power, const double estimated\+F\+LA, const double load\+Factor)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -25,6 +29,9 @@ const double {\bfseries power}
 \item 
 \mbox{\Hypertarget{struct_motor_shaft_power_1_1_output_a9fc50f9df95d6507017c5a3c306bbc7f}\label{struct_motor_shaft_power_1_1_output_a9fc50f9df95d6507017c5a3c306bbc7f}} 
 const double {\bfseries estimated\+F\+LA}
+\item 
+\mbox{\Hypertarget{struct_motor_shaft_power_1_1_output_a35fe60244887331ad2ae8ede8c5ab995}\label{struct_motor_shaft_power_1_1_output_a35fe60244887331ad2ae8ede8c5ab995}} 
+const double {\bfseries load\+Factor}
 \end{DoxyCompactItemize}
 
 
@@ -36,11 +43,61 @@ Definition at line 31 of file Motor\+Shaft\+Power.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{struct_motor_shaft_power_1_1_output_aaae77bc7a98e39eaca9f6ad4da9cc1d7}\label{struct_motor_shaft_power_1_1_output_aaae77bc7a98e39eaca9f6ad4da9cc1d7}} 
+\mbox{\Hypertarget{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}\label{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}} 
 \index{Motor\+Shaft\+Power\+::\+Output@{Motor\+Shaft\+Power\+::\+Output}!Output@{Output}}
 \index{Output@{Output}!Motor\+Shaft\+Power\+::\+Output@{Motor\+Shaft\+Power\+::\+Output}}
-\subsubsection{\texorpdfstring{Output()}{Output()}}
-{\footnotesize\ttfamily Motor\+Shaft\+Power\+::\+Output\+::\+Output (\begin{DoxyParamCaption}\item[{const double}]{shaft\+Power,  }\item[{const double}]{current,  }\item[{const double}]{power\+Factor,  }\item[{const double}]{efficiency,  }\item[{const double}]{power,  }\item[{const double}]{estimated\+F\+LA }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Output()}{Output()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Motor\+Shaft\+Power\+::\+Output\+::\+Output (\begin{DoxyParamCaption}\item[{const double}]{shaft\+Power,  }\item[{const double}]{current,  }\item[{const double}]{power\+Factor,  }\item[{const double}]{efficiency,  }\item[{const double}]{power,  }\item[{const double}]{estimated\+F\+LA,  }\item[{const double}]{load\+Factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \hyperlink{struct_motor_shaft_power_1_1_output}{Motor\+Shaft\+Power\+::\+Output} 
+\begin{DoxyParams}{Parameters}
+{\em shaft\+Power} & double, hp \\
+\hline
+{\em current} & double, amps \\
+\hline
+{\em power\+Factor} & double, unitless \\
+\hline
+{\em efficiency} & double, \% motor shaft efficiency \\
+\hline
+{\em power} & double \\
+\hline
+{\em estimated\+F\+LA} & double \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Motor\+Shaft\+Power.\+h.
+
+\mbox{\Hypertarget{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}\label{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}} 
+\index{Motor\+Shaft\+Power\+::\+Output@{Motor\+Shaft\+Power\+::\+Output}!Output@{Output}}
+\index{Output@{Output}!Motor\+Shaft\+Power\+::\+Output@{Motor\+Shaft\+Power\+::\+Output}}
+\subsubsection{\texorpdfstring{Output()}{Output()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Motor\+Shaft\+Power\+::\+Output\+::\+Output (\begin{DoxyParamCaption}\item[{const double}]{shaft\+Power,  }\item[{const double}]{current,  }\item[{const double}]{power\+Factor,  }\item[{const double}]{efficiency,  }\item[{const double}]{power,  }\item[{const double}]{estimated\+F\+LA,  }\item[{const double}]{load\+Factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \hyperlink{struct_motor_shaft_power_1_1_output}{Motor\+Shaft\+Power\+::\+Output} 
+\begin{DoxyParams}{Parameters}
+{\em shaft\+Power} & double, hp \\
+\hline
+{\em current} & double, amps \\
+\hline
+{\em power\+Factor} & double, unitless \\
+\hline
+{\em efficiency} & double, \% motor shaft efficiency \\
+\hline
+{\em power} & double \\
+\hline
+{\em estimated\+F\+LA} & double \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Motor\+Shaft\+Power.\+h.
+
+\mbox{\Hypertarget{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}\label{struct_motor_shaft_power_1_1_output_a64e2082ec024a9a20038dd306533bfa7}} 
+\index{Motor\+Shaft\+Power\+::\+Output@{Motor\+Shaft\+Power\+::\+Output}!Output@{Output}}
+\index{Output@{Output}!Motor\+Shaft\+Power\+::\+Output@{Motor\+Shaft\+Power\+::\+Output}}
+\subsubsection{\texorpdfstring{Output()}{Output()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Motor\+Shaft\+Power\+::\+Output\+::\+Output (\begin{DoxyParamCaption}\item[{const double}]{shaft\+Power,  }\item[{const double}]{current,  }\item[{const double}]{power\+Factor,  }\item[{const double}]{efficiency,  }\item[{const double}]{power,  }\item[{const double}]{estimated\+F\+LA,  }\item[{const double}]{load\+Factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor for \hyperlink{struct_motor_shaft_power_1_1_output}{Motor\+Shaft\+Power\+::\+Output} 
 \begin{DoxyParams}{Parameters}
@@ -65,4 +122,4 @@ Definition at line 42 of file Motor\+Shaft\+Power.\+h.
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/calculator/motor/\hyperlink{_motor_shaft_power_8h}{Motor\+Shaft\+Power.\+h}\end{DoxyCompactItemize}
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/calculator/motor/\hyperlink{___c_pack___packages_2_darwin_2_s_t_g_z_2amo__tools__suite--_darwin-x86__64_2amo__tools__suite_25a2bab1d3b39e40805901bac3991bdf5}{Motor\+Shaft\+Power.\+h}\end{DoxyCompactItemize}

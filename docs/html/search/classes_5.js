@@ -9,12 +9,16 @@ var searchData=
   ['fanshaftpower',['FanShaftPower',['../d7/d4a/class_fan_shaft_power.html',1,'']]],
   ['fielddata',['FieldData',['../d0/da8/struct_pump_1_1_field_data.html',1,'Pump']]],
   ['fielddatabaseline',['FieldDataBaseline',['../d1/d33/struct_fan_1_1_field_data_baseline.html',1,'Fan']]],
-  ['fielddatamodifiedandoptimal',['FieldDataModifiedAndOptimal',['../d3/dba/struct_fan_1_1_field_data_modified_and_optimal.html',1,'Fan']]],
+  ['fielddatamodified',['FieldDataModified',['../d0/db0/struct_fan_1_1_field_data_modified.html',1,'Fan']]],
   ['fixturelosses',['FixtureLosses',['../d5/d80/class_fixture_losses.html',1,'']]],
   ['flangeplane',['FlangePlane',['../d0/de9/class_flange_plane.html',1,'']]],
   ['flashtank',['FlashTank',['../d8/d41/class_flash_tank.html',1,'']]],
   ['flowcalculationsenergyuse',['FlowCalculationsEnergyUse',['../d4/db7/class_flow_calculations_energy_use.html',1,'']]],
   ['fluidpower',['FluidPower',['../d3/df4/class_fluid_power.html',1,'']]],
   ['fluidproperties',['FluidProperties',['../d9/dd3/struct_steam_system_modeler_tool_1_1_fluid_properties.html',1,'SteamSystemModelerTool']]],
+  ['fts5_5fapi',['fts5_api',['../da/d3a/structfts5__api.html',1,'']]],
+  ['fts5_5ftokenizer',['fts5_tokenizer',['../d7/d6f/structfts5__tokenizer.html',1,'']]],
+  ['fts5extensionapi',['Fts5ExtensionApi',['../d8/d3b/struct_fts5_extension_api.html',1,'']]],
+  ['fts5phraseiter',['Fts5PhraseIter',['../da/d31/struct_fts5_phrase_iter.html',1,'']]],
   ['fuelfiredenergyequivalency',['FuelFiredEnergyEquivalency',['../d7/d3c/class_fuel_fired_energy_equivalency.html',1,'']]]
 ];
