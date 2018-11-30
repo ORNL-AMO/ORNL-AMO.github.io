@@ -17,11 +17,37 @@
 std\+::array$<$ double, 6 $>$ \hyperlink{class_estimate_f_l_a_a89b9f73ef39f297c0358440523d14fca}{calculate} ()
 \item 
 double \hyperlink{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}{get\+Estimated\+F\+LA} () const
+\item 
+\hyperlink{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}{Estimate\+F\+LA} (double motor\+Rated\+Power, double motor\+R\+PM, Motor\+::\+Line\+Frequency line\+Frequency, Motor\+::\+Efficiency\+Class efficiency\+Class, double specified\+Efficiency, double rated\+Voltage)
+\item 
+std\+::array$<$ double, 6 $>$ \hyperlink{class_estimate_f_l_a_abb1ddcf8de5772322e2e75c8d041f740}{calculate} ()
+\item 
+double \hyperlink{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}{get\+Estimated\+F\+LA} () const
+\item 
+\hyperlink{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}{Estimate\+F\+LA} (double motor\+Rated\+Power, double motor\+R\+PM, Motor\+::\+Line\+Frequency line\+Frequency, Motor\+::\+Efficiency\+Class efficiency\+Class, double specified\+Efficiency, double rated\+Voltage)
+\item 
+std\+::array$<$ double, 6 $>$ \hyperlink{class_estimate_f_l_a_abb1ddcf8de5772322e2e75c8d041f740}{calculate} ()
+\item 
+double \hyperlink{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}{get\+Estimated\+F\+LA} () const
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{class_estimate_f_l_a}{Estimate\+F\+LA} class. This contains the prototypes for the Estimate F\+LA calculator and 25\% interval value calculator. 
+
+\begin{DoxyAuthor}{Author}
+Subhankar Mishra (mishras) 
+
+Gina Accawi (accawigk) 
+\end{DoxyAuthor}
+
+
+\begin{DoxyAuthor}{Author}
+Subhankar Mishra (mishras) 
+
+Gina Accawi (accawigk) 
+\end{DoxyAuthor}
+
 
 \begin{DoxyAuthor}{Author}
 Subhankar Mishra (mishras) 
@@ -38,7 +64,57 @@ Definition at line 16 of file Estimate\+F\+L\+A.\+h.
 \mbox{\Hypertarget{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}\label{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}} 
 \index{Estimate\+F\+LA@{Estimate\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
 \index{Estimate\+F\+LA@{Estimate\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
-\subsubsection{\texorpdfstring{Estimate\+F\+L\+A()}{EstimateFLA()}}
+\subsubsection{\texorpdfstring{Estimate\+F\+L\+A()}{EstimateFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Estimate\+F\+L\+A\+::\+Estimate\+F\+LA (\begin{DoxyParamCaption}\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{motor\+R\+PM,  }\item[{Motor\+::\+Line\+Frequency}]{line\+Frequency,  }\item[{Motor\+::\+Efficiency\+Class}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{rated\+Voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em motor\+Rated\+Power} & double, rated power of motor in hp \\
+\hline
+{\em motor\+R\+PM} & double, R\+PM of motor \\
+\hline
+{\em line\+Frequency} & Motor\+::\+Line\+Frequency, line frequency of motor in 50\+Hz or 60\+Hz \\
+\hline
+{\em efficiency\+Class} & Motor\+::\+Efficiency\+Class, Efficiency class of motor \\
+\hline
+{\em specified\+Efficiency} & double, specified efficiency of motor as defined by \% \\
+\hline
+{\em rated\+Voltage} & double, rated voltage of motor in volts \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Estimate\+F\+L\+A.\+h.
+
+\mbox{\Hypertarget{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}\label{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}} 
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\subsubsection{\texorpdfstring{Estimate\+F\+L\+A()}{EstimateFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Estimate\+F\+L\+A\+::\+Estimate\+F\+LA (\begin{DoxyParamCaption}\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{motor\+R\+PM,  }\item[{Motor\+::\+Line\+Frequency}]{line\+Frequency,  }\item[{Motor\+::\+Efficiency\+Class}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{rated\+Voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em motor\+Rated\+Power} & double, rated power of motor in hp \\
+\hline
+{\em motor\+R\+PM} & double, R\+PM of motor \\
+\hline
+{\em line\+Frequency} & Motor\+::\+Line\+Frequency, line frequency of motor in 50\+Hz or 60\+Hz \\
+\hline
+{\em efficiency\+Class} & Motor\+::\+Efficiency\+Class, Efficiency class of motor \\
+\hline
+{\em specified\+Efficiency} & double, specified efficiency of motor as defined by \% \\
+\hline
+{\em rated\+Voltage} & double, rated voltage of motor in volts \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Estimate\+F\+L\+A.\+h.
+
+\mbox{\Hypertarget{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}\label{class_estimate_f_l_a_ace098c4a684eb4926b20322cf65da32d}} 
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\subsubsection{\texorpdfstring{Estimate\+F\+L\+A()}{EstimateFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily Estimate\+F\+L\+A\+::\+Estimate\+F\+LA (\begin{DoxyParamCaption}\item[{double}]{motor\+Rated\+Power,  }\item[{double}]{motor\+R\+PM,  }\item[{Motor\+::\+Line\+Frequency}]{line\+Frequency,  }\item[{Motor\+::\+Efficiency\+Class}]{efficiency\+Class,  }\item[{double}]{specified\+Efficiency,  }\item[{double}]{rated\+Voltage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructor 
@@ -66,7 +142,7 @@ Definition at line 27 of file Estimate\+F\+L\+A.\+h.
 \mbox{\Hypertarget{class_estimate_f_l_a_a89b9f73ef39f297c0358440523d14fca}\label{class_estimate_f_l_a_a89b9f73ef39f297c0358440523d14fca}} 
 \index{Estimate\+F\+LA@{Estimate\+F\+LA}!calculate@{calculate}}
 \index{calculate@{calculate}!Estimate\+F\+LA@{Estimate\+F\+LA}}
-\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily std\+::array$<$ double, 6 $>$ Estimate\+F\+L\+A\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Calculates the 25\% interval \begin{DoxyReturn}{Returns}
@@ -95,10 +171,54 @@ EE is the nominal efficiency
 
 Definition at line 115 of file Estimate\+F\+L\+A.\+cpp.
 
+\mbox{\Hypertarget{class_estimate_f_l_a_abb1ddcf8de5772322e2e75c8d041f740}\label{class_estimate_f_l_a_abb1ddcf8de5772322e2e75c8d041f740}} 
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!calculate@{calculate}}
+\index{calculate@{calculate}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::array$<$double, 6$>$ Estimate\+F\+L\+A\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates the 25\% interval \begin{DoxyReturn}{Returns}
+std\+::array$<$double, 6$>$, 25\% interval values of current. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_estimate_f_l_a_abb1ddcf8de5772322e2e75c8d041f740}\label{class_estimate_f_l_a_abb1ddcf8de5772322e2e75c8d041f740}} 
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!calculate@{calculate}}
+\index{calculate@{calculate}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::array$<$double, 6$>$ Estimate\+F\+L\+A\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates the 25\% interval \begin{DoxyReturn}{Returns}
+std\+::array$<$double, 6$>$, 25\% interval values of current. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}\label{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}} 
 \index{Estimate\+F\+LA@{Estimate\+F\+LA}!get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}}
 \index{get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
-\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}}
+\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double Estimate\+F\+L\+A\+::get\+Estimated\+F\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for estimated Full load amps \begin{DoxyReturn}{Returns}
+double, Estimated full load amp 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Estimate\+F\+L\+A.\+h.
+
+\mbox{\Hypertarget{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}\label{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}} 
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}}
+\index{get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double Estimate\+F\+L\+A\+::get\+Estimated\+F\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for estimated Full load amps \begin{DoxyReturn}{Returns}
+double, Estimated full load amp 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Estimate\+F\+L\+A.\+h.
+
+\mbox{\Hypertarget{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}\label{class_estimate_f_l_a_adcb6eef313c8184f52b9ca038fbeddaa}} 
+\index{Estimate\+F\+LA@{Estimate\+F\+LA}!get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}}
+\index{get\+Estimated\+F\+LA@{get\+Estimated\+F\+LA}!Estimate\+F\+LA@{Estimate\+F\+LA}}
+\subsubsection{\texorpdfstring{get\+Estimated\+F\+L\+A()}{getEstimatedFLA()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily double Estimate\+F\+L\+A\+::get\+Estimated\+F\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Getter for estimated Full load amps \begin{DoxyReturn}{Returns}
@@ -112,5 +232,5 @@ Definition at line 53 of file Estimate\+F\+L\+A.\+h.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/calculator/motor/Estimate\+F\+L\+A.\+h\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/calculator/motor/Estimate\+F\+L\+A.\+h\item 
 src/calculator/motor/Estimate\+F\+L\+A.\+cpp\end{DoxyCompactItemize}
