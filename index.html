@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AMO Tools</title>
+    <title>AMO Tools Download Center</title>
+    <link rel="icon" href="./favicon.png">
 </head>
 
 <body id="body" onload="GetDesktop()">
@@ -38,12 +39,12 @@
                                 <h5><b>Desktop Application Downloads</b><span class="badge badge-success float-right" id="desktop-title"></span></h5>
                             </div>
                         </div>
-                        <p class="details">AMO-Tools-Desktop is an energy efficiency calculation application for use with industrial equipment
+                        <p class="details">MEASUR, <i>formally known as AMO-Tools-Desktop</i>, is an energy efficiency calculation application for use with industrial equipment
                             such as pumps, furnaces, fans, and motors, as well as for industrial systems such as steam.
                         </p>
                         <p class="details">The application is based on AMO legacy tools, such as PSAT, PHAST, FSAT and the SSMT.</p>
                         <p class="details">Choose the proper installer to download for your operating system, and then run the installer after
-                            the download is finished to begin optimizing your facility</p>
+                            the download is finished to begin optimizing your facility.</p>
                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Desktop">https://github.com/ORNL-AMO/AMO-Tools-Desktop</a></p>
                     </div>
 
@@ -92,7 +93,7 @@
                         <h5><b>PHASTEx Downloads</b><span class="badge badge-success float-right" id="phastex-title"></span></h5>
                         <p class="details">PHASTex (Process Heating Assessment and Survey Tool - Excel Version) is an Excel workbook for calculating
                             energy efficiency in industrial fuel-fired furnaces.</p>
-                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel</p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.</p>
                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PHASTEx">https://github.com/ORNL-AMO/PHASTEx</a></p>
                     </div>
 
@@ -106,7 +107,7 @@
                     <div class="list-group-item download-title">
                         <h5><b>PEPEx Downloads</b><span class="badge badge-success float-right" id="pepex-title"></span></h5>
                         <p class="details">Plant Energy Profiler - Excel Version Tool</p>
-                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel</p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.</p>
                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PEPEx">https://github.com/ORNL-AMO/PEPEx</a></p>
                     </div>
 
@@ -152,27 +153,27 @@
                     
                     let debTest = isExt(element.name, '.deb');
                     if (debTest) {
-                        addDesktopListItem(element, 'AMO Desktop Linux (.deb)');
+                        addDesktopListItem(element, 'MEASUR Linux (.deb)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let tarTest = isExt(element.name, '.tar.gz');
                     if (tarTest) {
-                        addDesktopListItem(element, 'AMO Desktop Linux (.tar.gz)');
+                        addDesktopListItem(element, 'MEASUR Linux (.tar.gz)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let dmgTest = isExt(element.name, '.dmg');
                     if (dmgTest) {
-                        addDesktopListItem(element, 'AMO Desktop Mac (.dmg)');
+                        addDesktopListItem(element, 'MEASUR Mac (.dmg)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let zipTest = isExt(element.name, '.zip');
                     if (zipTest) {
-                        addDesktopListItem(element, 'AMO Desktop Mac (.zip)');
+                        addDesktopListItem(element, 'MEASUR Mac (.zip)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let exeTest = isExt(element.name, '.exe');
                     if (exeTest) {
-                        addDesktopListItem(element, 'AMO Desktop Windows (.exe)');
+                        addDesktopListItem(element, 'MEASUR Windows (.exe)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                 }, this);
@@ -343,7 +344,7 @@
                     if (zTest) {
                         var a = document.createElement('a');
                         var list = document.getElementById('sankey-diagram-list-group');
-                        a.textContent = 'Dynamic Sankey Source(.zip)';
+                        a.textContent = 'Dynamic Sankey Source (.zip)';
                         a.className = "list-group-item list-group-item-action";
                         a.setAttribute("href", element.browser_download_url);
                         list.appendChild(a);
@@ -352,7 +353,7 @@
                     if (tarTest) {
                         var a = document.createElement('a');
                         var list = document.getElementById('sankey-diagram-list-group');
-                        a.textContent = 'Dynamic Sankey Source(.tar.gz)';
+                        a.textContent = 'Dynamic Sankey Source (.tar.gz)';
                         a.className = "list-group-item list-group-item-action";
                         a.setAttribute("href", element.browser_download_url);
                         list.appendChild(a);
