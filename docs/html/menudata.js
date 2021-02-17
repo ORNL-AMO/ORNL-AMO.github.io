@@ -49,9 +49,11 @@ var menudata={children:[
 {text:"v",url:"functions_func_v.html#index_v"},
 {text:"w",url:"functions_func_w.html#index_w"}]},
 {text:"Variables",url:"functions_vars.html"},
-{text:"Enumerations",url:"functions_enum.html"}]}]},
+{text:"Enumerations",url:"functions_enum.html"},
+{text:"Related Functions",url:"functions_rela.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html"},
+{text:"Enumerations",url:"globals_enum.html"},
 {text:"Macros",url:"globals_defs.html"}]}]}]}

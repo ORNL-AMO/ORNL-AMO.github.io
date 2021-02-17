@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gas',['Gas',['../d4/db7/class_flow_calculations_energy_use.html#a840d5a836e7b05d6791b79bace4440f2',1,'FlowCalculationsEnergyUse']]]
+  ['calculationtype',['CalculationType',['../d2/d07/class_fan_curve_data.html#af87fafad0a2a00e26ba82fb33b1a7282',1,'FanCurveData::CalculationType()'],['../d2/d07/class_fan_curve_data.html#af87fafad0a2a00e26ba82fb33b1a7282',1,'FanCurveData::CalculationType()'],['../d2/d07/class_fan_curve_data.html#af87fafad0a2a00e26ba82fb33b1a7282',1,'FanCurveData::CalculationType()']]]
 ];

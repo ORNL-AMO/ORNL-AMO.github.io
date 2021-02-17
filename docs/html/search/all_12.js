@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['walllosses',['WallLosses',['../d5/d17/class_wall_losses.html',1,'WallLosses'],['../d5/d17/class_wall_losses.html#a7d46f259c632ecdcde5ae31468c03e2e',1,'WallLosses::WallLosses()']]],
-  ['walllosses_2ecpp',['WallLosses.cpp',['../da/d52/_wall_losses_8cpp.html',1,'']]],
-  ['walllosses_2eh',['WallLosses.h',['../d0/d01/_wall_losses_8h.html',1,'']]],
-  ['watercoolinglosses',['WaterCoolingLosses',['../d9/d96/class_water_cooling_losses.html',1,'WaterCoolingLosses'],['../d9/d96/class_water_cooling_losses.html#ac95601d8c56e7243ffa3e022819a112f',1,'WaterCoolingLosses::WaterCoolingLosses()']]],
-  ['watercoolinglosses_2eh',['WaterCoolingLosses.h',['../d9/d6a/_water_cooling_losses_8h.html',1,'']]]
+  ['velocity',['velocity',['../d5/dc5/class_head_tool_base.html#a0412306c4adda62e5840342b0d26ac06',1,'HeadToolBase::velocity(double diameter, double flow)'],['../d5/dc5/class_head_tool_base.html#a0412306c4adda62e5840342b0d26ac06',1,'HeadToolBase::velocity(double diameter, double flow)'],['../d5/dc5/class_head_tool_base.html#a0412306c4adda62e5840342b0d26ac06',1,'HeadToolBase::velocity(double diameter, double flow)']]],
+  ['velocityhead',['velocityHead',['../d5/dc5/class_head_tool_base.html#a461c3d53a92763ca08c9a5bbcbef83c3',1,'HeadToolBase::velocityHead(double velocity, double gravity)'],['../d5/dc5/class_head_tool_base.html#a461c3d53a92763ca08c9a5bbcbef83c3',1,'HeadToolBase::velocityHead(double velocity, double gravity)'],['../d5/dc5/class_head_tool_base.html#a461c3d53a92763ca08c9a5bbcbef83c3',1,'HeadToolBase::velocityHead(double velocity, double gravity)']]],
+  ['velocitypressuretraversedata',['VelocityPressureTraverseData',['../d8/d09/class_velocity_pressure_traverse_data.html',1,'']]],
+  ['volumemetermethoddata',['VolumeMeterMethodData',['../d8/de5/class_volume_meter_method_data.html',1,'']]]
 ];

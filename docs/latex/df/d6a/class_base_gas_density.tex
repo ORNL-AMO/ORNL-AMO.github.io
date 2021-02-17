@@ -1,53 +1,516 @@
 \hypertarget{class_base_gas_density}{}\section{Base\+Gas\+Density Class Reference}
 \label{class_base_gas_density}\index{Base\+Gas\+Density@{Base\+Gas\+Density}}
+
+
+{\ttfamily \#include $<$Fan203.\+h$>$}
+
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}\label{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}} 
-enum {\bfseries Gas\+Type} \{ {\bfseries A\+IR}, 
+enum \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} \{ \newline
+{\bfseries A\+IR}, 
 {\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+{\bfseries O\+T\+H\+E\+R\+G\+AS}, 
+{\bfseries A\+IR}, 
+\newline
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+{\bfseries O\+T\+H\+E\+R\+G\+AS}, 
+{\bfseries A\+IR}, 
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+\newline
 {\bfseries O\+T\+H\+E\+R\+G\+AS}
  \}
 \item 
-\mbox{\Hypertarget{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}\label{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}} 
-enum {\bfseries Input\+Type} \{ {\bfseries Dew\+Point}, 
+enum \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} \{ \newline
+{\bfseries Dew\+Point}, 
 {\bfseries Relative\+Humidity}, 
+{\bfseries Wet\+Bulb\+Temp}, 
+{\bfseries Dew\+Point}, 
+\newline
+{\bfseries Relative\+Humidity}, 
+{\bfseries Wet\+Bulb\+Temp}, 
+{\bfseries Dew\+Point}, 
+{\bfseries Relative\+Humidity}, 
+\newline
+{\bfseries Wet\+Bulb\+Temp}
+ \}
+\item 
+enum \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} \{ \newline
+{\bfseries A\+IR}, 
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+{\bfseries O\+T\+H\+E\+R\+G\+AS}, 
+{\bfseries A\+IR}, 
+\newline
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+{\bfseries O\+T\+H\+E\+R\+G\+AS}, 
+{\bfseries A\+IR}, 
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+\newline
+{\bfseries O\+T\+H\+E\+R\+G\+AS}
+ \}
+\item 
+enum \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} \{ \newline
+{\bfseries Dew\+Point}, 
+{\bfseries Relative\+Humidity}, 
+{\bfseries Wet\+Bulb\+Temp}, 
+{\bfseries Dew\+Point}, 
+\newline
+{\bfseries Relative\+Humidity}, 
+{\bfseries Wet\+Bulb\+Temp}, 
+{\bfseries Dew\+Point}, 
+{\bfseries Relative\+Humidity}, 
+\newline
+{\bfseries Wet\+Bulb\+Temp}
+ \}
+\item 
+enum \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} \{ \newline
+{\bfseries A\+IR}, 
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+{\bfseries O\+T\+H\+E\+R\+G\+AS}, 
+{\bfseries A\+IR}, 
+\newline
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+{\bfseries O\+T\+H\+E\+R\+G\+AS}, 
+{\bfseries A\+IR}, 
+{\bfseries S\+T\+A\+N\+D\+A\+R\+D\+A\+IR}, 
+\newline
+{\bfseries O\+T\+H\+E\+R\+G\+AS}
+ \}
+\item 
+enum \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} \{ \newline
+{\bfseries Dew\+Point}, 
+{\bfseries Relative\+Humidity}, 
+{\bfseries Wet\+Bulb\+Temp}, 
+{\bfseries Dew\+Point}, 
+\newline
+{\bfseries Relative\+Humidity}, 
+{\bfseries Wet\+Bulb\+Temp}, 
+{\bfseries Dew\+Point}, 
+{\bfseries Relative\+Humidity}, 
+\newline
 {\bfseries Wet\+Bulb\+Temp}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}\label{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}} 
-{\bfseries Base\+Gas\+Density} (const double dry\+Bulb\+Temp, const double static\+Pressure, const double barometric\+Pressure, const double gas\+Density, const Gas\+Type gas\+Type)
+\hyperlink{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}{Base\+Gas\+Density} (const double dry\+Bulb\+Temp, const double static\+Pressure, const double barometric\+Pressure, const double gas\+Density, const \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} gas\+Type)
 \item 
-\mbox{\Hypertarget{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}\label{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}} 
-{\bfseries Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const relative\+Humidity\+Or\+Dew\+Point, Gas\+Type const gas\+Type, Input\+Type const input\+Type, double const specific\+Gravity)
+\hyperlink{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}{Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const relative\+Humidity\+Or\+Dew\+Point, \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const gas\+Type, \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const input\+Type, double const specific\+Gravity)
 \item 
 \mbox{\Hypertarget{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}\label{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}} 
-{\bfseries Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const wet\+Bulb\+Temp, Gas\+Type const gas\+Type, Input\+Type const input\+Type, double const specific\+Gravity, const double cp\+Gas)
+{\bfseries Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const wet\+Bulb\+Temp, \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const gas\+Type, \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const input\+Type, double const specific\+Gravity, const double cp\+Gas)
 \item 
 \mbox{\Hypertarget{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}\label{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}} 
 double {\bfseries get\+Gas\+Density} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a7e99fc6b2f9ecf0399f05fb758499f88}\label{class_base_gas_density_a7e99fc6b2f9ecf0399f05fb758499f88}} 
+double {\bfseries get\+Absolute\+Pressure\+In} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a11a91417432593ac1020265dc4836ee3}\label{class_base_gas_density_a11a91417432593ac1020265dc4836ee3}} 
+double {\bfseries get\+Saturated\+Humidity\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_aa6ea4360eda19076a8d074a4ab798278}\label{class_base_gas_density_aa6ea4360eda19076a8d074a4ab798278}} 
+double {\bfseries get\+Degree\+Of\+Saturation} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a5b7afba9ca1aaf9ef5df56fea9f901bd}\label{class_base_gas_density_a5b7afba9ca1aaf9ef5df56fea9f901bd}} 
+double {\bfseries get\+Humidity\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_af641ae2a0142ac83a21224108a087c50}\label{class_base_gas_density_af641ae2a0142ac83a21224108a087c50}} 
+double {\bfseries get\+Specific\+Volume} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a0180adfa955225f6044cb4c7145b9919}\label{class_base_gas_density_a0180adfa955225f6044cb4c7145b9919}} 
+double {\bfseries get\+Enthalpy} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_afd2e1ee6bd8d830be9fc0342709d7a37}\label{class_base_gas_density_afd2e1ee6bd8d830be9fc0342709d7a37}} 
+double {\bfseries get\+Dew\+Point} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a2975d7c69747df8fde8a84fca540a435}\label{class_base_gas_density_a2975d7c69747df8fde8a84fca540a435}} 
+double {\bfseries get\+Relative\+Humidity} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a2c85831959bdb0b5e6eab370e9408678}\label{class_base_gas_density_a2c85831959bdb0b5e6eab370e9408678}} 
+double {\bfseries get\+Saturation\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a1089d2316a305d825309ed39f3af7454}\label{class_base_gas_density_a1089d2316a305d825309ed39f3af7454}} 
+double {\bfseries get\+Wet\+Bulb\+Temp} () const
+\item 
+\hyperlink{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}{Base\+Gas\+Density} (const double dry\+Bulb\+Temp, const double static\+Pressure, const double barometric\+Pressure, const double gas\+Density, const \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} gas\+Type)
+\item 
+\hyperlink{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}{Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const relative\+Humidity\+Or\+Dew\+Point, \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const gas\+Type, \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const input\+Type, double const specific\+Gravity)
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}\label{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}} 
+{\bfseries Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const wet\+Bulb\+Temp, \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const gas\+Type, \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const input\+Type, double const specific\+Gravity, const double cp\+Gas)
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}\label{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}} 
+double {\bfseries get\+Gas\+Density} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a7e99fc6b2f9ecf0399f05fb758499f88}\label{class_base_gas_density_a7e99fc6b2f9ecf0399f05fb758499f88}} 
+double {\bfseries get\+Absolute\+Pressure\+In} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a11a91417432593ac1020265dc4836ee3}\label{class_base_gas_density_a11a91417432593ac1020265dc4836ee3}} 
+double {\bfseries get\+Saturated\+Humidity\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_aa6ea4360eda19076a8d074a4ab798278}\label{class_base_gas_density_aa6ea4360eda19076a8d074a4ab798278}} 
+double {\bfseries get\+Degree\+Of\+Saturation} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a5b7afba9ca1aaf9ef5df56fea9f901bd}\label{class_base_gas_density_a5b7afba9ca1aaf9ef5df56fea9f901bd}} 
+double {\bfseries get\+Humidity\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_af641ae2a0142ac83a21224108a087c50}\label{class_base_gas_density_af641ae2a0142ac83a21224108a087c50}} 
+double {\bfseries get\+Specific\+Volume} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a0180adfa955225f6044cb4c7145b9919}\label{class_base_gas_density_a0180adfa955225f6044cb4c7145b9919}} 
+double {\bfseries get\+Enthalpy} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_afd2e1ee6bd8d830be9fc0342709d7a37}\label{class_base_gas_density_afd2e1ee6bd8d830be9fc0342709d7a37}} 
+double {\bfseries get\+Dew\+Point} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a2975d7c69747df8fde8a84fca540a435}\label{class_base_gas_density_a2975d7c69747df8fde8a84fca540a435}} 
+double {\bfseries get\+Relative\+Humidity} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a2c85831959bdb0b5e6eab370e9408678}\label{class_base_gas_density_a2c85831959bdb0b5e6eab370e9408678}} 
+double {\bfseries get\+Saturation\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a1089d2316a305d825309ed39f3af7454}\label{class_base_gas_density_a1089d2316a305d825309ed39f3af7454}} 
+double {\bfseries get\+Wet\+Bulb\+Temp} () const
+\item 
+\hyperlink{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}{Base\+Gas\+Density} (const double dry\+Bulb\+Temp, const double static\+Pressure, const double barometric\+Pressure, const double gas\+Density, const \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} gas\+Type)
+\item 
+\hyperlink{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}{Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const relative\+Humidity\+Or\+Dew\+Point, \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const gas\+Type, \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const input\+Type, double const specific\+Gravity)
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}\label{class_base_gas_density_a08fc6e441bfec806ea73a9e37be60d92}} 
+{\bfseries Base\+Gas\+Density} (double const dry\+Bulb\+Temp, double const static\+Pressure, double const barometric\+Pressure, double const wet\+Bulb\+Temp, \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const gas\+Type, \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const input\+Type, double const specific\+Gravity, const double cp\+Gas)
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}\label{class_base_gas_density_a1cbf2591aecb384afd5843f0e4a62a4e}} 
+double {\bfseries get\+Gas\+Density} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a7e99fc6b2f9ecf0399f05fb758499f88}\label{class_base_gas_density_a7e99fc6b2f9ecf0399f05fb758499f88}} 
+double {\bfseries get\+Absolute\+Pressure\+In} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a11a91417432593ac1020265dc4836ee3}\label{class_base_gas_density_a11a91417432593ac1020265dc4836ee3}} 
+double {\bfseries get\+Saturated\+Humidity\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_aa6ea4360eda19076a8d074a4ab798278}\label{class_base_gas_density_aa6ea4360eda19076a8d074a4ab798278}} 
+double {\bfseries get\+Degree\+Of\+Saturation} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a5b7afba9ca1aaf9ef5df56fea9f901bd}\label{class_base_gas_density_a5b7afba9ca1aaf9ef5df56fea9f901bd}} 
+double {\bfseries get\+Humidity\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_af641ae2a0142ac83a21224108a087c50}\label{class_base_gas_density_af641ae2a0142ac83a21224108a087c50}} 
+double {\bfseries get\+Specific\+Volume} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a0180adfa955225f6044cb4c7145b9919}\label{class_base_gas_density_a0180adfa955225f6044cb4c7145b9919}} 
+double {\bfseries get\+Enthalpy} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_afd2e1ee6bd8d830be9fc0342709d7a37}\label{class_base_gas_density_afd2e1ee6bd8d830be9fc0342709d7a37}} 
+double {\bfseries get\+Dew\+Point} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a2975d7c69747df8fde8a84fca540a435}\label{class_base_gas_density_a2975d7c69747df8fde8a84fca540a435}} 
+double {\bfseries get\+Relative\+Humidity} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a2c85831959bdb0b5e6eab370e9408678}\label{class_base_gas_density_a2c85831959bdb0b5e6eab370e9408678}} 
+double {\bfseries get\+Saturation\+Pressure} () const
+\item 
+\mbox{\Hypertarget{class_base_gas_density_a1089d2316a305d825309ed39f3af7454}\label{class_base_gas_density_a1089d2316a305d825309ed39f3af7454}} 
+double {\bfseries get\+Wet\+Bulb\+Temp} () const
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_base_gas_density_a28ff438eefb65e97bddb4051dd0a0112}\label{class_base_gas_density_a28ff438eefb65e97bddb4051dd0a0112}} 
+\mbox{\Hypertarget{class_base_gas_density_a31f6bbdce0894df6a817f493afffda84}\label{class_base_gas_density_a31f6bbdce0894df6a817f493afffda84}} 
 class {\bfseries Plane\+Data}
 \item 
-\mbox{\Hypertarget{class_base_gas_density_ace899f7afbdc2350f3651b93b809f2fd}\label{class_base_gas_density_ace899f7afbdc2350f3651b93b809f2fd}} 
+\mbox{\Hypertarget{class_base_gas_density_ad537df0087a4a6f474dc9d50579cc33d}\label{class_base_gas_density_ad537df0087a4a6f474dc9d50579cc33d}} 
 class {\bfseries Fan203}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Base Gas Density Class Calculates base gas density 
+
+Definition at line 36 of file Fan203.\+h.
 
 
-Definition at line 27 of file Fan203.\+h.
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}\label{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Gas\+Type@{Gas\+Type}}
+\index{Gas\+Type@{Gas\+Type}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Gas\+Type}{GasType}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily enum \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Base\+Gas\+Density\+::\+Gas\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+enum class for Gas Type 
+
+Definition at line 43 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}\label{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Gas\+Type@{Gas\+Type}}
+\index{Gas\+Type@{Gas\+Type}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Gas\+Type}{GasType}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily enum \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Base\+Gas\+Density\+::\+Gas\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+enum class for Gas Type 
+
+Definition at line 43 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}\label{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Gas\+Type@{Gas\+Type}}
+\index{Gas\+Type@{Gas\+Type}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Gas\+Type}{GasType}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily enum \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Base\+Gas\+Density\+::\+Gas\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+enum class for Gas Type 
+
+Definition at line 43 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}\label{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Input\+Type@{Input\+Type}}
+\index{Input\+Type@{Input\+Type}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Input\+Type}{InputType}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily enum \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Base\+Gas\+Density\+::\+Input\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+enum class for Input Type 
+
+Definition at line 53 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}\label{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Input\+Type@{Input\+Type}}
+\index{Input\+Type@{Input\+Type}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Input\+Type}{InputType}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily enum \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Base\+Gas\+Density\+::\+Input\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+enum class for Input Type 
+
+Definition at line 53 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}\label{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Input\+Type@{Input\+Type}}
+\index{Input\+Type@{Input\+Type}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Input\+Type}{InputType}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily enum \hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Base\+Gas\+Density\+::\+Input\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+enum class for Input Type 
+
+Definition at line 53 of file Fan203.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}\label{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Base\+Gas\+Density()}{BaseGasDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Base\+Gas\+Density\+::\+Base\+Gas\+Density (\begin{DoxyParamCaption}\item[{const double}]{dry\+Bulb\+Temp,  }\item[{const double}]{static\+Pressure,  }\item[{const double}]{barometric\+Pressure,  }\item[{const double}]{gas\+Density,  }\item[{const \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type}}]{gas\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Bulb\+Temp} & double, temperature of inputted air in °F \\
+\hline
+{\em static\+Pressure} & const, double, pressure in Hg \\
+\hline
+{\em barometric\+Pressure,const,double} & in Hg \\
+\hline
+{\em gas\+Density} & const, double, density of a gas in pounds per sqft,lb/scf \\
+\hline
+{\em gas\+Type,double,gas,type} & of gas \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}\label{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Base\+Gas\+Density()}{BaseGasDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Base\+Gas\+Density\+::\+Base\+Gas\+Density (\begin{DoxyParamCaption}\item[{double const}]{dry\+Bulb\+Temp,  }\item[{double const}]{static\+Pressure,  }\item[{double const}]{barometric\+Pressure,  }\item[{double const}]{relative\+Humidity\+Or\+Dew\+Point,  }\item[{\hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const}]{gas\+Type,  }\item[{\hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const}]{input\+Type,  }\item[{double const}]{specific\+Gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Bulb\+Temp} & double, const, temperature of inputted air in °F \\
+\hline
+{\em static\+Pressure} & double, const, pressure in inches of water (in WC) \\
+\hline
+{\em barometric\+Pressure,double,const,pressure} & in Hg \\
+\hline
+{\em relative\+Humidity\+Or\+Dew\+Point} & double, const, relative humidity in \% or Dewpoint in °F \\
+\hline
+{\em gas\+Type,double,gas,type} & of gas, unitless \\
+\hline
+{\em input\+Type} & const, type of input, unitless \\
+\hline
+{\em specific\+Gravity,double,const,specific} & gravity, unitless \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gas\+Density double, density of the gas in pounds per sqft, lb/scf 
+
+absolute\+Pressure double, Absolute Pressure In in in Hg 
+
+saturated\+Humidity double, Saturated Humidity Ratio, unitless 
+
+saturation\+Degree double, Degree of Saturation, unitless 
+
+humidity\+Ratio double, Humidity Ratio, unitless 
+
+specific\+Volume double, Specific Volume, ft$^\wedge$3/lb 
+
+entropy double, Entropy, B/lb 
+
+dew\+Point double, Dewpoint, deg F 
+
+relative\+Humidity double, Relative Humidity, \% 
+
+saturation\+Pressure double, Saturation Pressure, in Hg 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}\label{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Base\+Gas\+Density()}{BaseGasDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Base\+Gas\+Density\+::\+Base\+Gas\+Density (\begin{DoxyParamCaption}\item[{const double}]{dry\+Bulb\+Temp,  }\item[{const double}]{static\+Pressure,  }\item[{const double}]{barometric\+Pressure,  }\item[{const double}]{gas\+Density,  }\item[{const \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type}}]{gas\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Bulb\+Temp} & double, temperature of inputted air in °F \\
+\hline
+{\em static\+Pressure} & const, double, pressure in Hg \\
+\hline
+{\em barometric\+Pressure,const,double} & in Hg \\
+\hline
+{\em gas\+Density} & const, double, density of a gas in pounds per sqft,lb/scf \\
+\hline
+{\em gas\+Type,double,gas,type} & of gas \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}\label{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Base\+Gas\+Density()}{BaseGasDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Base\+Gas\+Density\+::\+Base\+Gas\+Density (\begin{DoxyParamCaption}\item[{double const}]{dry\+Bulb\+Temp,  }\item[{double const}]{static\+Pressure,  }\item[{double const}]{barometric\+Pressure,  }\item[{double const}]{relative\+Humidity\+Or\+Dew\+Point,  }\item[{\hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const}]{gas\+Type,  }\item[{\hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const}]{input\+Type,  }\item[{double const}]{specific\+Gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Bulb\+Temp} & double, const, temperature of inputted air in °F \\
+\hline
+{\em static\+Pressure} & double, const, pressure in inches of water (in WC) \\
+\hline
+{\em barometric\+Pressure,double,const,pressure} & in Hg \\
+\hline
+{\em relative\+Humidity\+Or\+Dew\+Point} & double, const, relative humidity in \% or Dewpoint in °F \\
+\hline
+{\em gas\+Type,double,gas,type} & of gas, unitless \\
+\hline
+{\em input\+Type} & const, type of input, unitless \\
+\hline
+{\em specific\+Gravity,double,const,specific} & gravity, unitless \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gas\+Density double, density of the gas in pounds per sqft, lb/scf 
+
+absolute\+Pressure double, Absolute Pressure In in in Hg 
+
+saturated\+Humidity double, Saturated Humidity Ratio, unitless 
+
+saturation\+Degree double, Degree of Saturation, unitless 
+
+humidity\+Ratio double, Humidity Ratio, unitless 
+
+specific\+Volume double, Specific Volume, ft$^\wedge$3/lb 
+
+entropy double, Entropy, B/lb 
+
+dew\+Point double, Dewpoint, deg F 
+
+relative\+Humidity double, Relative Humidity, \% 
+
+saturation\+Pressure double, Saturation Pressure, in Hg 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}\label{class_base_gas_density_a84089ddd9d29649d83a7b150b711b989}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Base\+Gas\+Density()}{BaseGasDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Base\+Gas\+Density\+::\+Base\+Gas\+Density (\begin{DoxyParamCaption}\item[{const double}]{dry\+Bulb\+Temp,  }\item[{const double}]{static\+Pressure,  }\item[{const double}]{barometric\+Pressure,  }\item[{const double}]{gas\+Density,  }\item[{const \hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type}}]{gas\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Bulb\+Temp} & double, temperature of inputted air in °F \\
+\hline
+{\em static\+Pressure} & const, double, pressure in Hg \\
+\hline
+{\em barometric\+Pressure,const,double} & in Hg \\
+\hline
+{\em gas\+Density} & const, double, density of a gas in pounds per sqft,lb/scf \\
+\hline
+{\em gas\+Type,double,gas,type} & of gas \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Fan203.\+h.
+
+\mbox{\Hypertarget{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}\label{class_base_gas_density_a0d53c40eecc4aad87c8fef1cfed1b614}} 
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\index{Base\+Gas\+Density@{Base\+Gas\+Density}!Base\+Gas\+Density@{Base\+Gas\+Density}}
+\subsubsection{\texorpdfstring{Base\+Gas\+Density()}{BaseGasDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Base\+Gas\+Density\+::\+Base\+Gas\+Density (\begin{DoxyParamCaption}\item[{double const}]{dry\+Bulb\+Temp,  }\item[{double const}]{static\+Pressure,  }\item[{double const}]{barometric\+Pressure,  }\item[{double const}]{relative\+Humidity\+Or\+Dew\+Point,  }\item[{\hyperlink{class_base_gas_density_afb215e48f6193462521b7e8d47306ed3}{Gas\+Type} const}]{gas\+Type,  }\item[{\hyperlink{class_base_gas_density_a54f846cc4683a49d3904a40fe2986772}{Input\+Type} const}]{input\+Type,  }\item[{double const}]{specific\+Gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Bulb\+Temp} & double, const, temperature of inputted air in °F \\
+\hline
+{\em static\+Pressure} & double, const, pressure in inches of water (in WC) \\
+\hline
+{\em barometric\+Pressure,double,const,pressure} & in Hg \\
+\hline
+{\em relative\+Humidity\+Or\+Dew\+Point} & double, const, relative humidity in \% or Dewpoint in °F \\
+\hline
+{\em gas\+Type,double,gas,type} & of gas, unitless \\
+\hline
+{\em input\+Type} & const, type of input, unitless \\
+\hline
+{\em specific\+Gravity,double,const,specific} & gravity, unitless \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gas\+Density double, density of the gas in pounds per sqft, lb/scf 
+
+absolute\+Pressure double, Absolute Pressure In in in Hg 
+
+saturated\+Humidity double, Saturated Humidity Ratio, unitless 
+
+saturation\+Degree double, Degree of Saturation, unitless 
+
+humidity\+Ratio double, Humidity Ratio, unitless 
+
+specific\+Volume double, Specific Volume, ft$^\wedge$3/lb 
+
+entropy double, Entropy, B/lb 
+
+dew\+Point double, Dewpoint, deg F 
+
+relative\+Humidity double, Relative Humidity, \% 
+
+saturation\+Pressure double, Saturation Pressure, in Hg 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Fan203.\+h.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/fans/Fan203.\+h\end{DoxyCompactItemize}
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/fans/Fan203.\+h\end{DoxyCompactItemize}

@@ -1,58 +1,305 @@
-A\+MO Tools Suite is a cross-\/platform collection of calculations and tools to support industrial equipment modeling. See our hosted documentation for the latest release at \href{https://ornl-amo.github.io/}{\tt ornl-\/amo.\+github.\+io}
+This is a small, easy-\/to-\/use and fast header-\/only library for reading comma separated value (C\+SV) files.
 
-\subsubsection*{Dependencies}
-
-\paragraph*{C++}
+\subsection*{Features}
 
 
 \begin{DoxyItemize}
-\item make
-\item C\+Make (cmake-\/curses to use the ccmake gui)
-\item G\+CC 4.\+8.\+5 or later
-\item Doxygen (only for building documentation)
+\item Automatically rearranges columns by parsing the header line.
+\item Disk I/O and C\+S\+V-\/parsing are overlapped using threads for efficiency.
+\item Parsing features such as escaped strings can be enabled and disabled at compile time using templates. You only pay in speed for the features you actually use.
+\item Can read multiple GB files in reasonable time.
+\item Support for custom columns separators (i.\+e. Tab separated value files are supported), quote escaped strings, automatic space trimming.
+\item Works with {\ttfamily $\ast$}nix and Windows newlines and automatically ignores U\+T\+F-\/8 B\+O\+Ms.
+\item Exception classes with enough context to format useful error messages. what() returns error messages ready to be shown to a user.
 \end{DoxyItemize}
 
-\paragraph*{Node}
+\subsection*{Getting Started}
+
+The following small example should contain most of the syntax you need to use the library.
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{# include "csv.h"}
+
+\textcolor{keywordtype}{int} main()\{
+  \hyperlink{classio_1_1_c_s_v_reader}{io::CSVReader<3>} in(\textcolor{stringliteral}{"ram.csv"});
+  in.read\_header(io::ignore\_extra\_column, \textcolor{stringliteral}{"vendor"}, \textcolor{stringliteral}{"size"}, \textcolor{stringliteral}{"speed"});
+  std::string vendor; \textcolor{keywordtype}{int} size; \textcolor{keywordtype}{double} speed;
+  \textcolor{keywordflow}{while}(in.read\_row(vendor, size, speed))\{
+    \textcolor{comment}{// do stuff with the data}
+  \}
+\}
+\end{DoxyCode}
+
+
+\subsection*{Installation}
+
+The library only needs a standard conformant C++11 compiler. It has no further dependencies. The library is completely contained inside a single header file and therefore it is sufficient to copy this file to some place on your include path. The library does not have to be explicitly build.
+
+Note however, that threads are used and some compiler (for example G\+CC) require you to link against additional librarie to make it work. With G\+CC it is important to add -\/lpthread as the last item when linking, i.\+e. the order in
+
+
+\begin{DoxyCode}
+g++ -std=c++0x a.o b.o -o prog -lpthread
+\end{DoxyCode}
+
+
+is important. If you for some reason do not want to use threads you can define C\+S\+V\+\_\+\+I\+O\+\_\+\+N\+O\+\_\+\+T\+H\+R\+E\+AD before including the header.
+
+Remember that the library makes use of C++11 features and therefore you have to enable support for it (f.\+e. add -\/std=c++0x or -\/std=gnu++0x).
+
+The library was developed and tested with G\+CC 4.\+6.\+1
+
+Note that V\+S2013 is not C++11 compilant and will therefore not work out of the box. See \href{https://code.google.com/p/fast-cpp-csv-parser/issues/detail?id=6}{\tt here} for what needs to be adjusted to make the code work.
+
+\subsection*{Documentation}
+
+The libary provides two classes\+:
 
 
 \begin{DoxyItemize}
-\item Node \href{https://nodejs.org/en/}{\tt https\+://nodejs.\+org/en/} v8 or v9
-\item gyp\+: follow instructions for the OS at \mbox{[}\href{https://github.com/nodejs/node-gyp}{\tt https\+://github.\+com/nodejs/node-\/gyp}\mbox{]}(node-\/gyp)
+\item {\ttfamily Line\+Reader}\+: A class to efficiently read large files line by line.
+\item {\ttfamily C\+S\+V\+Reader}\+: A class that efficiently reads large C\+SV files.
+\end{DoxyItemize}
+
+Note that everything is contained in the {\ttfamily io} namespace.
+
+\subsubsection*{{\ttfamily Line\+Reader}}
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{class }LineReader\{
+\textcolor{keyword}{public}:
+  \textcolor{comment}{// Constructors}
+  LineReader(some\_string\_type file\_name);
+  LineReader(some\_string\_type file\_name, std::FILE*source);
+  LineReader(some\_string\_type file\_name, std::istream&source);
+  LineReader(some\_string\_type file\_name, std::unique\_ptr<ByteSourceBase>source);
+
+  \textcolor{comment}{// Reading}
+  \textcolor{keywordtype}{char}*next\_line();
+
+  \textcolor{comment}{// File Location}
+  \textcolor{keywordtype}{void} set\_file\_line(\textcolor{keywordtype}{unsigned});
+  \textcolor{keywordtype}{unsigned} get\_file\_line()\textcolor{keyword}{const};
+  \textcolor{keywordtype}{void} set\_file\_name(some\_string\_type file\_name);
+  \textcolor{keyword}{const} \textcolor{keywordtype}{char}*get\_truncated\_file\_name()\textcolor{keyword}{const};
+\};
+\end{DoxyCode}
+
+
+The constructor takes a file name and optionally a data source. If no data source is provided the function tries to open the file with the given name and throws an {\ttfamily error\+::can\+\_\+not\+\_\+open\+\_\+file exception} on failure. If a data source is provided then the file name is only used to format error messages. In that case you can essentially put any string there. Using a string that describes the data source results in more informative error messages.
+
+{\ttfamily some\+\_\+string\+\_\+type} can be a {\ttfamily std\+::string} or a {\ttfamily char$\ast$}. If the data source is a {\ttfamily std\+::\+F\+I\+LE$\ast$} then the library will take care of calling {\ttfamily std\+::fclose}. If it is a {\ttfamily std\+::istream} then the stream is not closed by the library. For best performance open the streams in binary mode. However using text mode also works. {\ttfamily Byte\+Source\+Base} provides an interface that you can use to implement further data sources.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{class }ByteSourceBase\{
+\textcolor{keyword}{public}:
+  \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} read(\textcolor{keywordtype}{char}*buffer, \textcolor{keywordtype}{int} size)=0;
+  \textcolor{keyword}{virtual} ~ByteSourceBase()\{\}
+\};
+\end{DoxyCode}
+
+
+The read function should fill the provided buffer with at most {\ttfamily size} bytes from the data source. It should return the number of bytes actually written to the buffer. If data source has run out of bytes (because for example an end of file was reached) then the function should return 0. If a fatal error occures then you can throw an exception. Note that the function can be called both from the main and the worker thread. However, it is guarenteed that they do not call the function at the same time.
+
+Lines are read by calling the {\ttfamily next\+\_\+line} function. It returns a pointer to a null terminated C-\/string that contains the line. If the end of file is reached a null pointer is returned. The newline character is not included in the string. You may modify the string as long as you do not write past the null terminator. The string stays valid until the destructor is called or until next\+\_\+line is called again. Windows and {\ttfamily $\ast$}nix newlines are handled transparently. U\+T\+F-\/8 B\+O\+Ms are automatically ignored and missing newlines at the end of the file are no problem.
+
+{\bfseries Important\+:} There is a limit of 2$^\wedge$24-\/1 characters per line. If this limit is exceeded a {\ttfamily error\+::line\+\_\+length\+\_\+limit\+\_\+exceeded} exception is thrown.
+
+Looping over all the lines in a file can be done in the following way. 
+\begin{DoxyCode}
+LineReader in(...);
+\textcolor{keywordflow}{while}(\textcolor{keywordtype}{char}*line = in.next\_line())\{
+  ...
+\}
+\end{DoxyCode}
+
+
+The remaining functions are mainly used used to format error messages. The file line indicates the current position in the file, i.\+e., after the first {\ttfamily next\+\_\+line} call it is 1 and after the second 2. Before the first call it is 0. The file name is truncated as internally C-\/strings are used to avoid {\ttfamily std\+::bad\+\_\+alloc} exceptions during error reporting.
+
+{\bfseries Note\+:} It is not possible to exchange the line termination character.
+
+\subsubsection*{{\ttfamily C\+S\+V\+Reader}}
+
+{\ttfamily C\+S\+V\+Reader} uses policies. These are classes with only static members to allow core functionality to be exchanged in an efficient way.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{template}<
+  \textcolor{keywordtype}{unsigned} column\_count,
+  \textcolor{keyword}{class }trim\_policy = trim\_chars<' ', '\(\backslash\)t'>, 
+  \textcolor{keyword}{class }quote\_policy = no\_quote\_escape<','>,
+  \textcolor{keyword}{class }overflow\_policy = throw\_on\_overflow,
+  \textcolor{keyword}{class }comment\_policy = no\_comment
+>
+\textcolor{keyword}{class }CSVReader\{
+\textcolor{keyword}{public}:
+  \textcolor{comment}{// Constructors}
+  \textcolor{comment}{// same as for LineReader}
+
+  \textcolor{comment}{// Parsing Header}
+  \textcolor{keywordtype}{void} read\_header(ignore\_column ignore\_policy, some\_string\_type col\_name1, some\_string\_type col\_name2, ...
+      );
+  \textcolor{keywordtype}{void} set\_header(some\_string\_type col\_name1, some\_string\_type col\_name2, ...);
+  \textcolor{keywordtype}{bool} has\_column(some\_string\_type col\_name)\textcolor{keyword}{const};
+
+  \textcolor{comment}{// Read}
+  \textcolor{keywordtype}{char}*next\_line();
+  \textcolor{keywordtype}{bool} read\_row(ColType1&col1, ColType2&col2, ...);
+
+  \textcolor{comment}{// File Location }
+  \textcolor{keywordtype}{void} set\_file\_line(\textcolor{keywordtype}{unsigned});
+  \textcolor{keywordtype}{unsigned} get\_file\_line()\textcolor{keyword}{const};
+  \textcolor{keywordtype}{void} set\_file\_name(some\_string\_type file\_name);
+  \textcolor{keyword}{const} \textcolor{keywordtype}{char}*get\_truncated\_file\_name()\textcolor{keyword}{const};
+\};
+\end{DoxyCode}
+
+
+The {\ttfamily column\+\_\+count} template parameter indicates how many columns you want to read from the C\+SV file. This must not necessarily coincide with the actual number of columns in the file. The three policies govern various aspects of the parsing.
+
+The trim policy indicates what characters should be ignored at the begin and the end of every column. The default ignores spaces and tabs. This makes sure that
+
+
+\begin{DoxyCode}
+a,b,c
+1,2,3
+\end{DoxyCode}
+
+
+is interpreted in the same way as
+
+
+\begin{DoxyCode}
+  a, b,   c
+1  , 2,   3
+\end{DoxyCode}
+
+
+The trim\+\_\+chars can take any number of template parameters. For example `trim\+\_\+chars$<$\textquotesingle{} \textquotesingle{}, \textquotesingle{}\textquotesingle{}, \textquotesingle{}\+\_\+\textquotesingle{}$>$ {\ttfamily is also valid. If no character should be trimmed use}trim\+\_\+chars$<$$>$`.
+
+The quote policy indicates how string should be escaped. It also specifies the column separator. The predefined policies are\+:
+
+
 \begin{DoxyItemize}
-\item it also installs the correct python version
-\end{DoxyItemize}
+\item {\ttfamily no\+\_\+quote\+\_\+escape$<$sep$>$} \+: Strings are not escaped. \char`\"{}`sep`\char`\"{} is used as column separator.
+\item {\ttfamily double\+\_\+quote\+\_\+escape$<$sep, quote$>$} \+: Strings are escaped using quotes. Quotes are escaped using two consecutive quotes. \char`\"{}`sep`\char`\"{} is used as column separator and \char`\"{}`quote`\char`\"{} as quoting character.
 \end{DoxyItemize}
 
-\subsubsection*{Building}
+{\bfseries Important}\+: When combining trimming and quoting the rows are first trimmed and then unquoted. A consequence is that spaces inside the quotes will be conserved. If you want to get rid of spaces inside the quotes, you need to remove them yourself.
+
+{\bfseries Important}\+: Quoting can be quite expensive. Disable it if you do not need it.
+
+The overflow policy indicates what should be done if the integers in the input are too large to fit into the variables. There following policies are predefined\+:
 
 
 \begin{DoxyItemize}
-\item Edit the C\+Make\+Cache and enable desired build options via the ccmake tool\+: {\ttfamily ccmake .} and {\ttfamily make} to build
-\item If ccmake isn\textquotesingle{}t available, use {\ttfamily cmake -\/D B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG\+:B\+O\+OL=ON -\/D B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE\+:B\+O\+OL=O\+FF -\/-\/config Debug ./} and {\ttfamily cmake -\/-\/build .} where config can be {\ttfamily Release}, {\ttfamily Debug}, {\ttfamily Min\+Size\+Rel} or {\ttfamily Rel\+With\+Deb\+Info}
-\item To build node modules\+: {\ttfamily npm install} or if already installed, {\ttfamily node-\/gyp rebuild} to rebuild the modules
+\item {\ttfamily throw\+\_\+on\+\_\+overflow} \+: Throw an {\ttfamily error\+::integer\+\_\+overflow} or {\ttfamily error\+::integer\+\_\+underflow} exception.
+\item {\ttfamily ignore\+\_\+overflow} \+: Do nothing and let the overflow happen.
+\item {\ttfamily set\+\_\+to\+\_\+max\+\_\+on\+\_\+overflow} \+: Set the value to {\ttfamily numeric\+\_\+limits$<$...$>$\+::max()} (or to the min-\/pendant).
 \end{DoxyItemize}
 
-\subsubsection*{Unit Tests}
+The comment policy allows to skip lines based on some criteria. Valid predefined policies are\+:
 
 
 \begin{DoxyItemize}
-\item To run the javascript tests for the node addons\+: {\ttfamily npm run test}
-\item To build C++ unit tests directly, ensure the {\ttfamily B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG} flag is set then\+: {\ttfamily cmake -\/-\/build . -\/-\/target amo\+\_\+tools\+\_\+suite\+\_\+tests}
-\item On Mac\+OS or Linux, the test executable can be found under the {\ttfamily bin} directory. On Windows, the executable can be found under either the {\ttfamily Debug} or {\ttfamily Release} directories, depending on C\+Make configuration
+\item {\ttfamily no\+\_\+comment} \+: Do not ignore any line.
+\item {\ttfamily empty\+\_\+line\+\_\+comment} \+: Ignore all lines that are empty or only contains spaces and tabs.
+\item {\ttfamily single\+\_\+line\+\_\+comment$<$com1, com2, ...$>$} \+: Ignore all lines that start with com1 or com2 or ... as the first character. There may not be any space between the beginning of the line and the comment character.
+\item {\ttfamily single\+\_\+and\+\_\+empty\+\_\+line\+\_\+comment$<$com1, com2, ...$>$} \+: Ignore all empty lines and single line comments.
 \end{DoxyItemize}
 
-\subsubsection*{Packaging}
+Examples\+:
 
 
 \begin{DoxyItemize}
-\item Enable the {\ttfamily B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE} flag in the C\+Make\+Cache, then {\ttfamily cmake ./} then {\ttfamily make package}
-\item Or use this directly for Windows\+: {\ttfamily cmake -\/D B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG\+:B\+O\+OL=O\+FF ./} and {\ttfamily cmake -\/-\/build . -\/-\/config Release -\/-\/target P\+A\+C\+K\+A\+GE}
-\item To make package on Linux or Mac, run {\ttfamily ccmake.} and set B\+U\+I\+L\+D\+\_\+\+T\+E\+S\+T\+I\+NG O\+FF, B\+U\+I\+L\+D\+\_\+\+P\+A\+C\+K\+A\+GE ON, then configure and generate. Then {\ttfamily make package}.
+\item `\+C\+S\+V\+Reader$<$4, trim\+\_\+chars$<$\textquotesingle{} \textquotesingle{}$>$, double\+\_\+quote\+\_\+escape$<$\textquotesingle{},\textquotesingle{},\textquotesingle{}"\textquotesingle{}$>$ $>${\ttfamily reads 4 columns from a normal C\+SV file with string escaping enabled. $\ast$}C\+S\+V\+Reader$<$3, trim\+\_\+chars$<$\textquotesingle{} \textquotesingle{}$>$, no\+\_\+quote\+\_\+escape$<$\textquotesingle{}\textquotesingle{}$>$, single\+\_\+line\+\_\+comment$<$\textquotesingle{}\#\textquotesingle{}$>$ $>$` reads 3 columns from a tab separated file with string escaping disabled. Lines starting with a \# are ignored.
 \end{DoxyItemize}
 
-\subsubsection*{Documentation}
+The constructors and the file location functions are exactly the same as for {\ttfamily Line\+Reader}. See its documentation for details.
+
+There are three methods that deal with headers. The {\ttfamily read\+\_\+header} methods reads a line from the file and rearranges the columns to match that order. It also checks whether all necessary columns are present. The {\ttfamily set\+\_\+header} method does {\itshape not} read any input. Use it if the file does not have any header. Obviously it is impossible to rearrange columns or check for their availability when using it. The order in the file and in the program must match when using {\ttfamily set\+\_\+header}. The {\ttfamily has\+\_\+column} method checks whether a column is present in the file. The first argument of {\ttfamily read\+\_\+header} is a bitfield that determines how the function should react to column mismatches. The default behavior is to throw an {\ttfamily error\+::extra\+\_\+column\+\_\+in\+\_\+header} exception if the file contains more columns than expected and an {\ttfamily error\+::missing\+\_\+column\+\_\+in\+\_\+header} when there are not enough. This behavior can be altered using the following flags.
 
 
 \begin{DoxyItemize}
-\item To generate documentation\+: {\ttfamily doxygen Doxyfile.\+in} 
+\item {\ttfamily ignore\+\_\+no\+\_\+column}\+: The default behavior, no flags are set
+\item {\ttfamily ignore\+\_\+extra\+\_\+column}\+: If a column with a name is in the file but not in the argument list, then it is silently ignored.
+\item {\ttfamily ignore\+\_\+missing\+\_\+column}\+: If a column with a name is not in the file but is in the argument list, then {\ttfamily read\+\_\+row} will not modify the corresponding variable.
 \end{DoxyItemize}
+
+When using {\ttfamily ignore\+\_\+column\+\_\+missing} it is a good idea to initialize the variables passed to {\ttfamily read\+\_\+row} with a default value, for example\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// The file only contains column "a"}
+CSVReader<2>in(...);
+in.read\_header(ignore\_missing\_column, \textcolor{stringliteral}{"a"}, \textcolor{stringliteral}{"b"});
+\textcolor{keywordtype}{int} a,b = 42;
+\textcolor{keywordflow}{while}(in.read\_row(a,b))\{
+  \textcolor{comment}{// a contains the value from the file}
+  \textcolor{comment}{// b is left unchanged by read\_row, i.e., it is 42}
+\}
+\end{DoxyCode}
+
+
+If only some columns are optional or their default value depends on other columns you have to use {\ttfamily has\+\_\+column}, for example\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// The file only contains the columns "a" and "b"}
+CSVReader<2>in(...);
+in.read\_header(ignore\_missing\_column, \textcolor{stringliteral}{"a"}, \textcolor{stringliteral}{"b"}, \textcolor{stringliteral}{"sum"});
+\textcolor{keywordflow}{if}(!in.has\_column(\textcolor{stringliteral}{"a"}) || !in.has\_column(\textcolor{stringliteral}{"b"}))
+  \textcolor{keywordflow}{throw} my\_neat\_error\_class();
+\textcolor{keywordtype}{bool} has\_sum = in.has\_column(\textcolor{stringliteral}{"sum"});
+\textcolor{keywordtype}{int} a,b,sum;
+\textcolor{keywordflow}{while}(in.read\_row(a,b,sum))\{
+  \textcolor{keywordflow}{if}(!has\_sum)
+    sum = a+b;
+\}
+\end{DoxyCode}
+
+
+{\bfseries Important}\+: Do not call {\ttfamily has\+\_\+column} from within the read-\/loop. It would work correctly but significantly slowdown processing.
+
+If two columns have the same name an error\+::duplicated\+\_\+column\+\_\+in\+\_\+header exception is thrown. If {\ttfamily read\+\_\+header} is called but the file is empty a {\ttfamily error\+::header\+\_\+missing} exception is thrown.
+
+The {\ttfamily next\+\_\+line} functions reads a line without parsing it. It works analogous to {\ttfamily Line\+Reader\+::next\+\_\+line}. This can be used to skip broken lines in a C\+SV file. However, in nearly all applications you will want to use the {\ttfamily read\+\_\+row} function.
+
+The {\ttfamily read\+\_\+row} function reads a line, splits it into the columns and arranges them correctly. It trims the entries and unescapes them. If requested the content is interpreted as integer or as floating point. The variables passed to read\+\_\+row may be of the following types.
+
+
+\begin{DoxyItemize}
+\item builtin signed integer\+: These are {\ttfamily signed char}, {\ttfamily short}, {\ttfamily int}, {\ttfamily long} and {\ttfamily long long}. The input must be encoded as a base 10 A\+S\+C\+II number optionally preceded by a + or -\/. The function detects whether the integer is too large would overflow (or underflow) and behaves as indicated by overflow\+\_\+policy.
+\item builtin unsigned integer\+: Just as the signed counterparts except that a leading + or -\/ is not allowed.
+\item builtin floating point\+: These are {\ttfamily float}, {\ttfamily double} and {\ttfamily long double}. The input may have a leading + or -\/. The number must be base 10 encoded. The decimal point may either be a dot or a comma. (Note that a comma will only work if it is not also used as column separator or the number is escaped.) A base 10 exponent may be specified using the \char`\"{}1e10\char`\"{} syntax. The \char`\"{}e\char`\"{} may be lower-\/ or uppercase. Examples for valid floating points are \char`\"{}1\char`\"{}, \char`\"{}-\/42.\+42\char`\"{} and \char`\"{}+123.\+456\+E789\char`\"{}. The input is rounded to the next floating point or infinity if it is too large or small.
+\item {\ttfamily char}\+: The column content must be a single character.
+\item {\ttfamily std\+::string}\+: The column content is assigned to the string. The std\+::string is filled with the trimmed and unescaped version.
+\item {\ttfamily char$\ast$}\+: A pointer directly into the buffer. The string is trimmed and unescaped and null terminated. This pointer stays valid until read\+\_\+row is called again or the C\+S\+V\+Reader is destroyed. Use this for user defined types.
+\end{DoxyItemize}
+
+Note that there is no inherent overhead to using {\ttfamily char$\ast$} and then interpreting it compared to using one of the parsers directly build into {\ttfamily C\+S\+V\+Reader}. The builtin number parsers are pure convenience. If you need a slightly different syntax then use {\ttfamily char$\ast$} and do the parsing yourself.
+
+\subsection*{F\+AQ}
+
+Q\+: The library is throwing a std\+::system\+\_\+error with code -\/1. How to get it to work?
+
+A\+: Your compiler\textquotesingle{}s std\+::thread implementation is broken. Define C\+S\+V\+\_\+\+I\+O\+\_\+\+N\+O\+\_\+\+T\+H\+R\+E\+AD to disable threading support.
+
+Q\+: My values are not just ints or strings. I want to parse my customized type. Is this possible?
+
+A\+: Read a {\ttfamily char$\ast$} and parse the string. At first this seems expensive but it is not as the pointer you get points directly into the memory buffer. In fact there is no inherent reason why a custom int-\/parser realized this way must be any slower than the int-\/parser build into the library. By reading a {\ttfamily char$\ast$} the library takes care of column reordering and quote escaping and leaves the actual parsing to you. Note that using a std\+::string is slower as it involves a memory copy.
+
+Q\+: I get lots of compiler errors when compiling the header! Please fix it. \+:(
+
+A\+: Have you enabled the C++11 mode of your compiler? If you use G\+CC you have to add -\/std=c++0x to the commandline. If this does not resolve the problem, then please open a ticket.
+
+Q\+: The library crashes when parsing large files! Please fix it. \+:(
+
+A\+: When using G\+CC have you linked against -\/lpthread? Read the installation section for details on how to do this. If this does not resolve the issue then please open a ticket. (The reason why it only crashes only on large files is that the first chuck is read synchronous and if the whole file fits into this chuck then no asynchronous call is performed.) Alternatively you can define C\+S\+V\+\_\+\+I\+O\+\_\+\+N\+O\+\_\+\+T\+H\+R\+E\+AD.
+
+Q\+: Does the library support U\+TF?
+
+A\+: The library has basic U\+T\+F-\/8 support, or to be more precise it does not break when passing U\+T\+F-\/8 strings through it. If you read a {\ttfamily char$\ast$} then you get a pointer to the U\+T\+F-\/8 string. You will have to decode the string on your own. The separator, quoting, and commenting characters used by the library can only be A\+S\+C\+II characters. 

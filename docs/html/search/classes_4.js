@@ -2,8 +2,18 @@ var searchData=
 [
   ['efficiencyimprovement',['EfficiencyImprovement',['../de/d15/class_efficiency_improvement.html',1,'']]],
   ['electricalenergyequivalency',['ElectricalEnergyEquivalency',['../d9/d0b/class_electrical_energy_equivalency.html',1,'']]],
+  ['electricityreduction',['ElectricityReduction',['../d1/dea/class_electricity_reduction.html',1,'']]],
+  ['electricityreductioninput',['ElectricityReductionInput',['../dd/dc0/class_electricity_reduction_input.html',1,'']]],
+  ['empty_5fline_5fcomment',['empty_line_comment',['../dd/dd3/structio_1_1empty__line__comment.html',1,'io']]],
+  ['energyandcostcalculationsdomain',['EnergyAndCostCalculationsDomain',['../d7/d65/class_energy_and_cost_calculations_domain.html',1,'']]],
+  ['energyandcostcalculator',['EnergyAndCostCalculator',['../d8/d65/class_energy_and_cost_calculator.html',1,'']]],
+  ['energyflowcalculator',['EnergyFlowCalculator',['../d5/d70/class_energy_flow_calculator.html',1,'']]],
   ['energyinputeaf',['EnergyInputEAF',['../d0/de2/class_energy_input_e_a_f.html',1,'']]],
   ['energyinputexhaustgaslosses',['EnergyInputExhaustGasLosses',['../d7/d71/class_energy_input_exhaust_gas_losses.html',1,'']]],
+  ['escaped_5fstring_5fnot_5fclosed',['escaped_string_not_closed',['../d1/de8/structio_1_1error_1_1escaped__string__not__closed.html',1,'io::error']]],
   ['estimatefla',['EstimateFLA',['../d0/d8c/class_estimate_f_l_a.html',1,'']]],
-  ['exhaustgaseaf',['ExhaustGasEAF',['../df/d6a/class_exhaust_gas_e_a_f.html',1,'']]]
+  ['estimatemethod',['EstimateMethod',['../d9/d80/class_estimate_method.html',1,'']]],
+  ['estimatemethoddata',['EstimateMethodData',['../df/dbe/class_estimate_method_data.html',1,'']]],
+  ['exhaustgaseaf',['ExhaustGasEAF',['../df/d6a/class_exhaust_gas_e_a_f.html',1,'']]],
+  ['extra_5fcolumn_5fin_5fheader',['extra_column_in_header',['../d6/dc8/structio_1_1error_1_1extra__column__in__header.html',1,'io::error']]]
 ];

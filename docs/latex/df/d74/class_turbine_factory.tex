@@ -1,0 +1,99 @@
+\hypertarget{class_turbine_factory}{}\section{Turbine\+Factory Class Reference}
+\label{class_turbine_factory}\index{Turbine\+Factory@{Turbine\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_turbine_factory_acf5435509834ef1d0694b1323ad7f8df}\label{class_turbine_factory_acf5435509834ef1d0694b1323ad7f8df}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a4b5e84997feaeccd74b4a1a52842a874}\label{class_turbine_factory_a4b5e84997feaeccd74b4a1a52842a874}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+Ideal} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_ab14f6bfd1b6202e9cf45d9d023f78f77}\label{class_turbine_factory_ab14f6bfd1b6202e9cf45d9d023f78f77}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const double isentropic\+Efficiency) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a7a7ed3809be731fa9768fbed3f03f869}\label{class_turbine_factory_a7a7ed3809be731fa9768fbed3f03f869}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_abfdd2414b20185135168f89ec0bccc9f}\label{class_turbine_factory_abfdd2414b20185135168f89ec0bccc9f}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine, const double isentropic\+Efficiency) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_ab589b4af489fc3baa773d76d83f7417f}\label{class_turbine_factory_ab589b4af489fc3baa773d76d83f7417f}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+With\+Mass\+Flow} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a095c98e5b3fad3dedce6afad6a0760b9}\label{class_turbine_factory_a095c98e5b3fad3dedce6afad6a0760b9}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ {\bfseries make\+Ptr\+With\+Mass\+Flow} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_af298ec9ac7d96e670c28f7552dc238bc}\label{class_turbine_factory_af298ec9ac7d96e670c28f7552dc238bc}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+With\+Power\+Out} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_aaf6c698883d9ecef84d5ea16ba65e589}\label{class_turbine_factory_aaf6c698883d9ecef84d5ea16ba65e589}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ {\bfseries make\+Ptr\+With\+Power\+Out} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_acf5435509834ef1d0694b1323ad7f8df}\label{class_turbine_factory_acf5435509834ef1d0694b1323ad7f8df}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a4b5e84997feaeccd74b4a1a52842a874}\label{class_turbine_factory_a4b5e84997feaeccd74b4a1a52842a874}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+Ideal} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_ab14f6bfd1b6202e9cf45d9d023f78f77}\label{class_turbine_factory_ab14f6bfd1b6202e9cf45d9d023f78f77}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const double isentropic\+Efficiency) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a7a7ed3809be731fa9768fbed3f03f869}\label{class_turbine_factory_a7a7ed3809be731fa9768fbed3f03f869}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_abfdd2414b20185135168f89ec0bccc9f}\label{class_turbine_factory_abfdd2414b20185135168f89ec0bccc9f}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine, const double isentropic\+Efficiency) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_ab589b4af489fc3baa773d76d83f7417f}\label{class_turbine_factory_ab589b4af489fc3baa773d76d83f7417f}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+With\+Mass\+Flow} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_af766c15c9b773bba15d516c4492cd804}\label{class_turbine_factory_af766c15c9b773bba15d516c4492cd804}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ {\bfseries make\+Ptr\+With\+Mass\+Flow} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_af298ec9ac7d96e670c28f7552dc238bc}\label{class_turbine_factory_af298ec9ac7d96e670c28f7552dc238bc}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+With\+Power\+Out} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a5e7dfafcb9dcf319b1fd58cfd4f82970}\label{class_turbine_factory_a5e7dfafcb9dcf319b1fd58cfd4f82970}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ {\bfseries make\+Ptr\+With\+Power\+Out} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_acf5435509834ef1d0694b1323ad7f8df}\label{class_turbine_factory_acf5435509834ef1d0694b1323ad7f8df}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a4b5e84997feaeccd74b4a1a52842a874}\label{class_turbine_factory_a4b5e84997feaeccd74b4a1a52842a874}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+Ideal} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_ab14f6bfd1b6202e9cf45d9d023f78f77}\label{class_turbine_factory_ab14f6bfd1b6202e9cf45d9d023f78f77}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_turbine_a5db4f65cf2539e3837684d53221ade12}{Turbine\+::\+Turbine\+Property} \&turbine\+Property, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine, const double mass\+Flow\+Or\+Power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const double isentropic\+Efficiency) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a7a7ed3809be731fa9768fbed3f03f869}\label{class_turbine_factory_a7a7ed3809be731fa9768fbed3f03f869}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_abfdd2414b20185135168f89ec0bccc9f}\label{class_turbine_factory_abfdd2414b20185135168f89ec0bccc9f}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine, const double isentropic\+Efficiency) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_ab589b4af489fc3baa773d76d83f7417f}\label{class_turbine_factory_ab589b4af489fc3baa773d76d83f7417f}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+With\+Mass\+Flow} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_af766c15c9b773bba15d516c4492cd804}\label{class_turbine_factory_af766c15c9b773bba15d516c4492cd804}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ {\bfseries make\+Ptr\+With\+Mass\+Flow} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_af298ec9ac7d96e670c28f7552dc238bc}\label{class_turbine_factory_af298ec9ac7d96e670c28f7552dc238bc}} 
+\hyperlink{class_turbine}{Turbine} {\bfseries make\+With\+Power\+Out} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double power\+Out, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\item 
+\mbox{\Hypertarget{class_turbine_factory_a5e7dfafcb9dcf319b1fd58cfd4f82970}\label{class_turbine_factory_a5e7dfafcb9dcf319b1fd58cfd4f82970}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ {\bfseries make\+Ptr\+With\+Power\+Out} (const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&header\+Properties, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&pressure\+Turbine, const double mass\+Flow, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&header\+With\+Low\+Pressure, const bool is\+Calc\+Ideal) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file Turbine\+Factory.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/ssmt/domain/Turbine\+Factory.\+h\item 
+src/ssmt/domain/Turbine\+Factory.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,132 @@
+\hypertarget{class_header_factory}{}\section{Header\+Factory Class Reference}
+\label{class_header_factory}\index{Header\+Factory@{Header\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_header_factory_ab7968fee2aa5304d4b0d1a606c951671}\label{class_header_factory_ab7968fee2aa5304d4b0d1a606c951671}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double \&header\+Pressure, const \hyperlink{class_boiler}{Boiler} \&boiler) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a0a96f7d058915a2fa5da60d1d692e9c9}\label{class_header_factory_a0a96f7d058915a2fa5da60d1d692e9c9}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&medium\+Pressure\+Header\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_prv_without_desuperheating}{Prv\+Without\+Desuperheating} $>$ \&prv\+Without\+Desuperheating, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Medium\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Medium\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a7c1816cf897aed67139457dccd6b25d9}\label{class_header_factory_a7c1816cf897aed67139457dccd6b25d9}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&medium\+Pressure\+Condensate) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a4de4da6bbf02a25cc1ff78a9f1c7fbe0}\label{class_header_factory_a4de4da6bbf02a25cc1ff78a9f1c7fbe0}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&high\+Pressure\+Condensate, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&medium\+Pressure\+Condensate) const
+\item 
+\mbox{\Hypertarget{class_header_factory_ad931f2f01ecb84905f083bbbab8324f2}\label{class_header_factory_ad931f2f01ecb84905f083bbbab8324f2}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double header\+Count\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine\+Input, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&medium\+To\+Low\+Turbine\+Input, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_prv_without_desuperheating}{Prv\+Without\+Desuperheating} $>$ \&low\+Pressure\+Prv\+Without\+Desuperheating, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&blowdown\+Flash\+Tank, const \hyperlink{class_low_pressure_flashed_steam_into_header_calculator_domain}{Low\+Pressure\+Flashed\+Steam\+Into\+Header\+Calculator\+Domain} \&low\+Pressure\+Flashed\+Steam\+Into\+Header\+Calculator\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_acd1afb01f528d0113f3885ddb6097aa7}\label{class_header_factory_acd1afb01f528d0113f3885ddb6097aa7}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const int header\+Count\+Input, const double header\+Pressure, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_afe118d8149774dbd570bee38352b43b2}\label{class_header_factory_afe118d8149774dbd570bee38352b43b2}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double header\+Pressure, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&return\+Condensate, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{struct_heat_exchanger_1_1_output}{Heat\+Exchanger\+::\+Output} $>$ \&heat\+Exchanger\+Output, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&makeup\+Water, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&condensing\+Turbine) const
+\item 
+\mbox{\Hypertarget{class_header_factory_affb7bdf26093f8f662366a312b997d09}\label{class_header_factory_affb7bdf26093f8f662366a312b997d09}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const int header\+Count\+Input, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+double \hyperlink{class_header_factory_af015658ac803d2fb4248f59847c40338}{determine\+Low\+Header\+Pressure} (const int header\+Count\+Input, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \hyperlink{class_header_factory_a8e220fb9ed937623e9ca21e27672ec61}{select\+High\+Pressure\+Condensate\+Flash\+Tank} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_ab7968fee2aa5304d4b0d1a606c951671}\label{class_header_factory_ab7968fee2aa5304d4b0d1a606c951671}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double \&header\+Pressure, const \hyperlink{class_boiler}{Boiler} \&boiler) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a0a96f7d058915a2fa5da60d1d692e9c9}\label{class_header_factory_a0a96f7d058915a2fa5da60d1d692e9c9}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&medium\+Pressure\+Header\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_prv_without_desuperheating}{Prv\+Without\+Desuperheating} $>$ \&prv\+Without\+Desuperheating, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Medium\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Medium\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a7c1816cf897aed67139457dccd6b25d9}\label{class_header_factory_a7c1816cf897aed67139457dccd6b25d9}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&medium\+Pressure\+Condensate) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a4de4da6bbf02a25cc1ff78a9f1c7fbe0}\label{class_header_factory_a4de4da6bbf02a25cc1ff78a9f1c7fbe0}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&high\+Pressure\+Condensate, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&medium\+Pressure\+Condensate) const
+\item 
+\mbox{\Hypertarget{class_header_factory_ad931f2f01ecb84905f083bbbab8324f2}\label{class_header_factory_ad931f2f01ecb84905f083bbbab8324f2}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double header\+Count\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine\+Input, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&medium\+To\+Low\+Turbine\+Input, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_prv_without_desuperheating}{Prv\+Without\+Desuperheating} $>$ \&low\+Pressure\+Prv\+Without\+Desuperheating, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&blowdown\+Flash\+Tank, const \hyperlink{class_low_pressure_flashed_steam_into_header_calculator_domain}{Low\+Pressure\+Flashed\+Steam\+Into\+Header\+Calculator\+Domain} \&low\+Pressure\+Flashed\+Steam\+Into\+Header\+Calculator\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_acd1afb01f528d0113f3885ddb6097aa7}\label{class_header_factory_acd1afb01f528d0113f3885ddb6097aa7}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const int header\+Count\+Input, const double header\+Pressure, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_afe118d8149774dbd570bee38352b43b2}\label{class_header_factory_afe118d8149774dbd570bee38352b43b2}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double header\+Pressure, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&return\+Condensate, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{struct_heat_exchanger_1_1_output}{Heat\+Exchanger\+::\+Output} $>$ \&heat\+Exchanger\+Output, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&makeup\+Water, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&condensing\+Turbine) const
+\item 
+\mbox{\Hypertarget{class_header_factory_affb7bdf26093f8f662366a312b997d09}\label{class_header_factory_affb7bdf26093f8f662366a312b997d09}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const int header\+Count\+Input, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_af015658ac803d2fb4248f59847c40338}\label{class_header_factory_af015658ac803d2fb4248f59847c40338}} 
+double {\bfseries determine\+Low\+Header\+Pressure} (const int header\+Count\+Input, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a292dfee908d96fa136ae530667bd661d}\label{class_header_factory_a292dfee908d96fa136ae530667bd661d}} 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ {\bfseries select\+High\+Pressure\+Condensate\+Flash\+Tank} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_ab7968fee2aa5304d4b0d1a606c951671}\label{class_header_factory_ab7968fee2aa5304d4b0d1a606c951671}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double \&header\+Pressure, const \hyperlink{class_boiler}{Boiler} \&boiler) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a0a96f7d058915a2fa5da60d1d692e9c9}\label{class_header_factory_a0a96f7d058915a2fa5da60d1d692e9c9}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&medium\+Pressure\+Header\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_prv_without_desuperheating}{Prv\+Without\+Desuperheating} $>$ \&prv\+Without\+Desuperheating, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Medium\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Medium\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a7c1816cf897aed67139457dccd6b25d9}\label{class_header_factory_a7c1816cf897aed67139457dccd6b25d9}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&medium\+Pressure\+Condensate) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a4de4da6bbf02a25cc1ff78a9f1c7fbe0}\label{class_header_factory_a4de4da6bbf02a25cc1ff78a9f1c7fbe0}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&high\+Pressure\+Condensate, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&medium\+Pressure\+Condensate) const
+\item 
+\mbox{\Hypertarget{class_header_factory_ad931f2f01ecb84905f083bbbab8324f2}\label{class_header_factory_ad931f2f01ecb84905f083bbbab8324f2}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double header\+Count\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine\+Input, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&medium\+To\+Low\+Turbine\+Input, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_prv_without_desuperheating}{Prv\+Without\+Desuperheating} $>$ \&low\+Pressure\+Prv\+Without\+Desuperheating, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&blowdown\+Flash\+Tank, const \hyperlink{class_low_pressure_flashed_steam_into_header_calculator_domain}{Low\+Pressure\+Flashed\+Steam\+Into\+Header\+Calculator\+Domain} \&low\+Pressure\+Flashed\+Steam\+Into\+Header\+Calculator\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_acd1afb01f528d0113f3885ddb6097aa7}\label{class_header_factory_acd1afb01f528d0113f3885ddb6097aa7}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const int header\+Count\+Input, const double header\+Pressure, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ \&high\+Pressure\+Condensate\+Flash\+Tank, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_afe118d8149774dbd570bee38352b43b2}\label{class_header_factory_afe118d8149774dbd570bee38352b43b2}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const double header\+Pressure, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&return\+Condensate, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{struct_heat_exchanger_1_1_output}{Heat\+Exchanger\+::\+Output} $>$ \&heat\+Exchanger\+Output, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&makeup\+Water, const \hyperlink{class_condensing_turbine}{Condensing\+Turbine} \&condensing\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&condensing\+Turbine) const
+\item 
+\mbox{\Hypertarget{class_header_factory_affb7bdf26093f8f662366a312b997d09}\label{class_header_factory_affb7bdf26093f8f662366a312b997d09}} 
+const \hyperlink{class_header}{Header} {\bfseries make} (const int header\+Count\+Input, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_af015658ac803d2fb4248f59847c40338}\label{class_header_factory_af015658ac803d2fb4248f59847c40338}} 
+double {\bfseries determine\+Low\+Header\+Pressure} (const int header\+Count\+Input, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_header_factory_a292dfee908d96fa136ae530667bd661d}\label{class_header_factory_a292dfee908d96fa136ae530667bd661d}} 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ {\bfseries select\+High\+Pressure\+Condensate\+Flash\+Tank} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&low\+Pressure\+Header\+Calculations\+Domain) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Header\+Factory.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_header_factory_af015658ac803d2fb4248f59847c40338}\label{class_header_factory_af015658ac803d2fb4248f59847c40338}} 
+\index{Header\+Factory@{Header\+Factory}!determine\+Low\+Header\+Pressure@{determine\+Low\+Header\+Pressure}}
+\index{determine\+Low\+Header\+Pressure@{determine\+Low\+Header\+Pressure}!Header\+Factory@{Header\+Factory}}
+\subsubsection{\texorpdfstring{determine\+Low\+Header\+Pressure()}{determineLowHeaderPressure()}}
+{\footnotesize\ttfamily double Header\+Factory\+::determine\+Low\+Header\+Pressure (\begin{DoxyParamCaption}\item[{const int}]{header\+Count\+Input,  }\item[{const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&}]{high\+Pressure\+Header\+Calculations\+Domain,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&}]{low\+Pressure\+Header\+Calculations\+Domain }\end{DoxyParamCaption}) const}
+
+Pressure from lowest pressure condensate. 
+
+Definition at line 318 of file Header\+Factory.\+cpp.
+
+\mbox{\Hypertarget{class_header_factory_a8e220fb9ed937623e9ca21e27672ec61}\label{class_header_factory_a8e220fb9ed937623e9ca21e27672ec61}} 
+\index{Header\+Factory@{Header\+Factory}!select\+High\+Pressure\+Condensate\+Flash\+Tank@{select\+High\+Pressure\+Condensate\+Flash\+Tank}}
+\index{select\+High\+Pressure\+Condensate\+Flash\+Tank@{select\+High\+Pressure\+Condensate\+Flash\+Tank}!Header\+Factory@{Header\+Factory}}
+\subsubsection{\texorpdfstring{select\+High\+Pressure\+Condensate\+Flash\+Tank()}{selectHighPressureCondensateFlashTank()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \hyperlink{class_flash_tank}{Flash\+Tank} $>$ Header\+Factory\+::select\+High\+Pressure\+Condensate\+Flash\+Tank (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&}]{medium\+Pressure\+Header\+Calculations\+Domain,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_low_pressure_header_calculations_domain}{Low\+Pressure\+Header\+Calculations\+Domain} $>$ \&}]{low\+Pressure\+Header\+Calculations\+Domain }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+selected one, possibly null. 
+\end{DoxyReturn}
+
+
+Definition at line 338 of file Header\+Factory.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/ssmt/domain/Header\+Factory.\+h\item 
+src/ssmt/domain/Header\+Factory.\+cpp\end{DoxyCompactItemize}

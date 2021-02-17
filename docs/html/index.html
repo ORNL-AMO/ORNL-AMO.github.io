@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AMO-Tools-Suite: AMO Tools Suite</title>
+<title>AMO-Tools-Suite: Fast C++ CSV Parser</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.3.4</span>
+   &#160;<span id="projectnumber">v.0.9.0</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -62,48 +62,107 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">AMO Tools Suite </div>  </div>
+<div class="title">Fast C++ CSV Parser </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>AMO Tools Suite is a cross-platform collection of calculations and tools to support industrial equipment modeling. See our hosted documentation for the latest release at <a href="https://ornl-amo.github.io/">ornl-amo.github.io</a></p>
-<h3>Dependencies</h3>
-<h4>C++</h4>
+<div class="textblock"><p>This is a small, easy-to-use and fast header-only library for reading comma separated value (CSV) files.</p>
+<h2>Features</h2>
 <ul>
-<li>make</li>
-<li>CMake (cmake-curses to use the ccmake gui)</li>
-<li>GCC 4.8.5 or later</li>
-<li>Doxygen (only for building documentation)</li>
+<li>Automatically rearranges columns by parsing the header line.</li>
+<li>Disk I/O and CSV-parsing are overlapped using threads for efficiency.</li>
+<li>Parsing features such as escaped strings can be enabled and disabled at compile time using templates. You only pay in speed for the features you actually use.</li>
+<li>Can read multiple GB files in reasonable time.</li>
+<li>Support for custom columns separators (i.e. Tab separated value files are supported), quote escaped strings, automatic space trimming.</li>
+<li>Works with <code>*</code>nix and Windows newlines and automatically ignores UTF-8 BOMs.</li>
+<li>Exception classes with enough context to format useful error messages. what() returns error messages ready to be shown to a user.</li>
 </ul>
-<h4>Node</h4>
+<h2>Getting Started</h2>
+<p>The following small example should contain most of the syntax you need to use the library.</p>
+<div class="fragment"><div class="line"><span class="preprocessor"># include &quot;csv.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(){</div><div class="line">  <a class="code" href="d3/d4e/classio_1_1_c_s_v_reader.html">io::CSVReader&lt;3&gt;</a> in(<span class="stringliteral">&quot;ram.csv&quot;</span>);</div><div class="line">  in.read_header(io::ignore_extra_column, <span class="stringliteral">&quot;vendor&quot;</span>, <span class="stringliteral">&quot;size&quot;</span>, <span class="stringliteral">&quot;speed&quot;</span>);</div><div class="line">  std::string vendor; <span class="keywordtype">int</span> size; <span class="keywordtype">double</span> speed;</div><div class="line">  <span class="keywordflow">while</span>(in.read_row(vendor, size, speed)){</div><div class="line">    <span class="comment">// do stuff with the data</span></div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2>Installation</h2>
+<p>The library only needs a standard conformant C++11 compiler. It has no further dependencies. The library is completely contained inside a single header file and therefore it is sufficient to copy this file to some place on your include path. The library does not have to be explicitly build.</p>
+<p>Note however, that threads are used and some compiler (for example GCC) require you to link against additional librarie to make it work. With GCC it is important to add -lpthread as the last item when linking, i.e. the order in</p>
+<div class="fragment"><div class="line">g++ -std=c++0x a.o b.o -o prog -lpthread</div></div><!-- fragment --><p>is important. If you for some reason do not want to use threads you can define CSV_IO_NO_THREAD before including the header.</p>
+<p>Remember that the library makes use of C++11 features and therefore you have to enable support for it (f.e. add -std=c++0x or -std=gnu++0x).</p>
+<p>The library was developed and tested with GCC 4.6.1</p>
+<p>Note that VS2013 is not C++11 compilant and will therefore not work out of the box. See <a href="https://code.google.com/p/fast-cpp-csv-parser/issues/detail?id=6">here</a> for what needs to be adjusted to make the code work.</p>
+<h2>Documentation</h2>
+<p>The libary provides two classes:</p>
 <ul>
-<li>Node <a href="https://nodejs.org/en/">https://nodejs.org/en/</a> v8 or v9</li>
-<li>gyp: follow instructions for the OS at [<a href="https://github.com/nodejs/node-gyp">https://github.com/nodejs/node-gyp</a>](node-gyp)<ul>
-<li>it also installs the correct python version</li>
+<li><code>LineReader</code>: A class to efficiently read large files line by line.</li>
+<li><code>CSVReader</code>: A class that efficiently reads large CSV files.</li>
 </ul>
-</li>
-</ul>
-<h3>Building</h3>
+<p>Note that everything is contained in the <code>io</code> namespace.</p>
+<h3><code>LineReader</code></h3>
+<div class="fragment"><div class="line"><span class="keyword">class </span>LineReader{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="comment">// Constructors</span></div><div class="line">  LineReader(some_string_type file_name);</div><div class="line">  LineReader(some_string_type file_name, std::FILE*source);</div><div class="line">  LineReader(some_string_type file_name, std::istream&amp;source);</div><div class="line">  LineReader(some_string_type file_name, std::unique_ptr&lt;ByteSourceBase&gt;source);</div><div class="line"></div><div class="line">  <span class="comment">// Reading</span></div><div class="line">  <span class="keywordtype">char</span>*next_line();</div><div class="line"></div><div class="line">  <span class="comment">// File Location</span></div><div class="line">  <span class="keywordtype">void</span> set_file_line(<span class="keywordtype">unsigned</span>);</div><div class="line">  <span class="keywordtype">unsigned</span> get_file_line()<span class="keyword">const</span>;</div><div class="line">  <span class="keywordtype">void</span> set_file_name(some_string_type file_name);</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span>*get_truncated_file_name()<span class="keyword">const</span>;</div><div class="line">};</div></div><!-- fragment --><p>The constructor takes a file name and optionally a data source. If no data source is provided the function tries to open the file with the given name and throws an <code>error::can_not_open_file exception</code> on failure. If a data source is provided then the file name is only used to format error messages. In that case you can essentially put any string there. Using a string that describes the data source results in more informative error messages.</p>
+<p><code>some_string_type</code> can be a <code>std::string</code> or a <code>char*</code>. If the data source is a <code>std::FILE*</code> then the library will take care of calling <code>std::fclose</code>. If it is a <code>std::istream</code> then the stream is not closed by the library. For best performance open the streams in binary mode. However using text mode also works. <code>ByteSourceBase</code> provides an interface that you can use to implement further data sources.</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>ByteSourceBase{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">int</span> read(<span class="keywordtype">char</span>*buffer, <span class="keywordtype">int</span> size)=0;</div><div class="line">  <span class="keyword">virtual</span> ~ByteSourceBase(){}</div><div class="line">};</div></div><!-- fragment --><p>The read function should fill the provided buffer with at most <code>size</code> bytes from the data source. It should return the number of bytes actually written to the buffer. If data source has run out of bytes (because for example an end of file was reached) then the function should return 0. If a fatal error occures then you can throw an exception. Note that the function can be called both from the main and the worker thread. However, it is guarenteed that they do not call the function at the same time.</p>
+<p>Lines are read by calling the <code>next_line</code> function. It returns a pointer to a null terminated C-string that contains the line. If the end of file is reached a null pointer is returned. The newline character is not included in the string. You may modify the string as long as you do not write past the null terminator. The string stays valid until the destructor is called or until next_line is called again. Windows and <code>*</code>nix newlines are handled transparently. UTF-8 BOMs are automatically ignored and missing newlines at the end of the file are no problem.</p>
+<p><b>Important:</b> There is a limit of 2^24-1 characters per line. If this limit is exceeded a <code>error::line_length_limit_exceeded</code> exception is thrown.</p>
+<p>Looping over all the lines in a file can be done in the following way. </p><div class="fragment"><div class="line">LineReader in(...);</div><div class="line"><span class="keywordflow">while</span>(<span class="keywordtype">char</span>*line = in.next_line()){</div><div class="line">  ...</div><div class="line">}</div></div><!-- fragment --><p>The remaining functions are mainly used used to format error messages. The file line indicates the current position in the file, i.e., after the first <code>next_line</code> call it is 1 and after the second 2. Before the first call it is 0. The file name is truncated as internally C-strings are used to avoid <code>std::bad_alloc</code> exceptions during error reporting.</p>
+<p><b>Note:</b> It is not possible to exchange the line termination character.</p>
+<h3><code>CSVReader</code></h3>
+<p><code>CSVReader</code> uses policies. These are classes with only static members to allow core functionality to be exchanged in an efficient way.</p>
+<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;</div><div class="line">  <span class="keywordtype">unsigned</span> column_count,</div><div class="line">  <span class="keyword">class </span>trim_policy = trim_chars&lt;&#39; &#39;, &#39;\t&#39;&gt;, </div><div class="line">  <span class="keyword">class </span>quote_policy = no_quote_escape&lt;&#39;,&#39;&gt;,</div><div class="line">  <span class="keyword">class </span>overflow_policy = throw_on_overflow,</div><div class="line">  <span class="keyword">class </span>comment_policy = no_comment</div><div class="line">&gt;</div><div class="line"><span class="keyword">class </span>CSVReader{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="comment">// Constructors</span></div><div class="line">  <span class="comment">// same as for LineReader</span></div><div class="line"></div><div class="line">  <span class="comment">// Parsing Header</span></div><div class="line">  <span class="keywordtype">void</span> read_header(ignore_column ignore_policy, some_string_type col_name1, some_string_type col_name2, ...);</div><div class="line">  <span class="keywordtype">void</span> set_header(some_string_type col_name1, some_string_type col_name2, ...);</div><div class="line">  <span class="keywordtype">bool</span> has_column(some_string_type col_name)<span class="keyword">const</span>;</div><div class="line"></div><div class="line">  <span class="comment">// Read</span></div><div class="line">  <span class="keywordtype">char</span>*next_line();</div><div class="line">  <span class="keywordtype">bool</span> read_row(ColType1&amp;col1, ColType2&amp;col2, ...);</div><div class="line"></div><div class="line">  <span class="comment">// File Location </span></div><div class="line">  <span class="keywordtype">void</span> set_file_line(<span class="keywordtype">unsigned</span>);</div><div class="line">  <span class="keywordtype">unsigned</span> get_file_line()<span class="keyword">const</span>;</div><div class="line">  <span class="keywordtype">void</span> set_file_name(some_string_type file_name);</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">char</span>*get_truncated_file_name()<span class="keyword">const</span>;</div><div class="line">};</div></div><!-- fragment --><p>The <code>column_count</code> template parameter indicates how many columns you want to read from the CSV file. This must not necessarily coincide with the actual number of columns in the file. The three policies govern various aspects of the parsing.</p>
+<p>The trim policy indicates what characters should be ignored at the begin and the end of every column. The default ignores spaces and tabs. This makes sure that</p>
+<div class="fragment"><div class="line">a,b,c</div><div class="line">1,2,3</div></div><!-- fragment --><p>is interpreted in the same way as</p>
+<div class="fragment"><div class="line">  a, b,   c</div><div class="line">1  , 2,   3</div></div><!-- fragment --><p>The trim_chars can take any number of template parameters. For example `trim_chars&lt;' ', '', '_'&gt; <code>is also valid. If no character should be trimmed use</code>trim_chars&lt;&gt;`.</p>
+<p>The quote policy indicates how string should be escaped. It also specifies the column separator. The predefined policies are:</p>
 <ul>
-<li>Edit the CMakeCache and enable desired build options via the ccmake tool: <code>ccmake .</code> and <code>make</code> to build</li>
-<li>If ccmake isn't available, use <code>cmake -D BUILD_TESTING:BOOL=ON -D BUILD_PACKAGE:BOOL=OFF --config Debug ./</code> and <code>cmake --build .</code> where config can be <code>Release</code>, <code>Debug</code>, <code>MinSizeRel</code> or <code>RelWithDebInfo</code></li>
-<li>To build node modules: <code>npm install</code> or if already installed, <code>node-gyp rebuild</code> to rebuild the modules</li>
+<li><code>no_quote_escape&lt;sep&gt;</code> : Strings are not escaped. "`sep`" is used as column separator.</li>
+<li><code>double_quote_escape&lt;sep, quote&gt;</code> : Strings are escaped using quotes. Quotes are escaped using two consecutive quotes. "`sep`" is used as column separator and "`quote`" as quoting character.</li>
 </ul>
-<h3>Unit Tests</h3>
+<p><b>Important</b>: When combining trimming and quoting the rows are first trimmed and then unquoted. A consequence is that spaces inside the quotes will be conserved. If you want to get rid of spaces inside the quotes, you need to remove them yourself.</p>
+<p><b>Important</b>: Quoting can be quite expensive. Disable it if you do not need it.</p>
+<p>The overflow policy indicates what should be done if the integers in the input are too large to fit into the variables. There following policies are predefined:</p>
 <ul>
-<li>To run the javascript tests for the node addons: <code>npm run test</code></li>
-<li>To build C++ unit tests directly, ensure the <code>BUILD_TESTING</code> flag is set then: <code>cmake --build . --target amo_tools_suite_tests</code></li>
-<li>On MacOS or Linux, the test executable can be found under the <code>bin</code> directory. On Windows, the executable can be found under either the <code>Debug</code> or <code>Release</code> directories, depending on CMake configuration</li>
+<li><code>throw_on_overflow</code> : Throw an <code>error::integer_overflow</code> or <code>error::integer_underflow</code> exception.</li>
+<li><code>ignore_overflow</code> : Do nothing and let the overflow happen.</li>
+<li><code>set_to_max_on_overflow</code> : Set the value to <code>numeric_limits&lt;...&gt;::max()</code> (or to the min-pendant).</li>
 </ul>
-<h3>Packaging</h3>
+<p>The comment policy allows to skip lines based on some criteria. Valid predefined policies are:</p>
 <ul>
-<li>Enable the <code>BUILD_PACKAGE</code> flag in the CMakeCache, then <code>cmake ./</code> then <code>make package</code></li>
-<li>Or use this directly for Windows: <code>cmake -D BUILD_TESTING:BOOL=OFF ./</code> and <code>cmake --build . --config Release --target PACKAGE</code></li>
-<li>To make package on Linux or Mac, run <code>ccmake.</code> and set BUILD_TESTING OFF, BUILD_PACKAGE ON, then configure and generate. Then <code>make package</code>.</li>
+<li><code>no_comment</code> : Do not ignore any line.</li>
+<li><code>empty_line_comment</code> : Ignore all lines that are empty or only contains spaces and tabs.</li>
+<li><code>single_line_comment&lt;com1, com2, ...&gt;</code> : Ignore all lines that start with com1 or com2 or ... as the first character. There may not be any space between the beginning of the line and the comment character.</li>
+<li><code>single_and_empty_line_comment&lt;com1, com2, ...&gt;</code> : Ignore all empty lines and single line comments.</li>
 </ul>
-<h3>Documentation</h3>
+<p>Examples:</p>
 <ul>
-<li>To generate documentation: <code>doxygen Doxyfile.in</code> </li>
+<li>`CSVReader&lt;4, trim_chars&lt;' '&gt;, double_quote_escape&lt;',','"'&gt; &gt;<code>reads 4 columns from a normal CSV file with string escaping enabled. *</code>CSVReader&lt;3, trim_chars&lt;' '&gt;, no_quote_escape&lt;''&gt;, single_line_comment&lt;'#'&gt; &gt;` reads 3 columns from a tab separated file with string escaping disabled. Lines starting with a # are ignored.</li>
 </ul>
+<p>The constructors and the file location functions are exactly the same as for <code>LineReader</code>. See its documentation for details.</p>
+<p>There are three methods that deal with headers. The <code>read_header</code> methods reads a line from the file and rearranges the columns to match that order. It also checks whether all necessary columns are present. The <code>set_header</code> method does <em>not</em> read any input. Use it if the file does not have any header. Obviously it is impossible to rearrange columns or check for their availability when using it. The order in the file and in the program must match when using <code>set_header</code>. The <code>has_column</code> method checks whether a column is present in the file. The first argument of <code>read_header</code> is a bitfield that determines how the function should react to column mismatches. The default behavior is to throw an <code>error::extra_column_in_header</code> exception if the file contains more columns than expected and an <code>error::missing_column_in_header</code> when there are not enough. This behavior can be altered using the following flags.</p>
+<ul>
+<li><code>ignore_no_column</code>: The default behavior, no flags are set</li>
+<li><code>ignore_extra_column</code>: If a column with a name is in the file but not in the argument list, then it is silently ignored.</li>
+<li><code>ignore_missing_column</code>: If a column with a name is not in the file but is in the argument list, then <code>read_row</code> will not modify the corresponding variable.</li>
+</ul>
+<p>When using <code>ignore_column_missing</code> it is a good idea to initialize the variables passed to <code>read_row</code> with a default value, for example:</p>
+<div class="fragment"><div class="line"><span class="comment">// The file only contains column &quot;a&quot;</span></div><div class="line">CSVReader&lt;2&gt;in(...);</div><div class="line">in.read_header(ignore_missing_column, <span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>);</div><div class="line"><span class="keywordtype">int</span> a,b = 42;</div><div class="line"><span class="keywordflow">while</span>(in.read_row(a,b)){</div><div class="line">  <span class="comment">// a contains the value from the file</span></div><div class="line">  <span class="comment">// b is left unchanged by read_row, i.e., it is 42</span></div><div class="line">}</div></div><!-- fragment --><p>If only some columns are optional or their default value depends on other columns you have to use <code>has_column</code>, for example:</p>
+<div class="fragment"><div class="line"><span class="comment">// The file only contains the columns &quot;a&quot; and &quot;b&quot;</span></div><div class="line">CSVReader&lt;2&gt;in(...);</div><div class="line">in.read_header(ignore_missing_column, <span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>, <span class="stringliteral">&quot;sum&quot;</span>);</div><div class="line"><span class="keywordflow">if</span>(!in.has_column(<span class="stringliteral">&quot;a&quot;</span>) || !in.has_column(<span class="stringliteral">&quot;b&quot;</span>))</div><div class="line">  <span class="keywordflow">throw</span> my_neat_error_class();</div><div class="line"><span class="keywordtype">bool</span> has_sum = in.has_column(<span class="stringliteral">&quot;sum&quot;</span>);</div><div class="line"><span class="keywordtype">int</span> a,b,sum;</div><div class="line"><span class="keywordflow">while</span>(in.read_row(a,b,sum)){</div><div class="line">  <span class="keywordflow">if</span>(!has_sum)</div><div class="line">    sum = a+b;</div><div class="line">}</div></div><!-- fragment --><p><b>Important</b>: Do not call <code>has_column</code> from within the read-loop. It would work correctly but significantly slowdown processing.</p>
+<p>If two columns have the same name an error::duplicated_column_in_header exception is thrown. If <code>read_header</code> is called but the file is empty a <code>error::header_missing</code> exception is thrown.</p>
+<p>The <code>next_line</code> functions reads a line without parsing it. It works analogous to <code>LineReader::next_line</code>. This can be used to skip broken lines in a CSV file. However, in nearly all applications you will want to use the <code>read_row</code> function.</p>
+<p>The <code>read_row</code> function reads a line, splits it into the columns and arranges them correctly. It trims the entries and unescapes them. If requested the content is interpreted as integer or as floating point. The variables passed to read_row may be of the following types.</p>
+<ul>
+<li>builtin signed integer: These are <code>signed char</code>, <code>short</code>, <code>int</code>, <code>long</code> and <code>long long</code>. The input must be encoded as a base 10 ASCII number optionally preceded by a + or -. The function detects whether the integer is too large would overflow (or underflow) and behaves as indicated by overflow_policy.</li>
+<li>builtin unsigned integer: Just as the signed counterparts except that a leading + or - is not allowed.</li>
+<li>builtin floating point: These are <code>float</code>, <code>double</code> and <code>long double</code>. The input may have a leading + or -. The number must be base 10 encoded. The decimal point may either be a dot or a comma. (Note that a comma will only work if it is not also used as column separator or the number is escaped.) A base 10 exponent may be specified using the "1e10" syntax. The "e" may be lower- or uppercase. Examples for valid floating points are "1", "-42.42" and "+123.456E789". The input is rounded to the next floating point or infinity if it is too large or small.</li>
+<li><code>char</code>: The column content must be a single character.</li>
+<li><code>std::string</code>: The column content is assigned to the string. The std::string is filled with the trimmed and unescaped version.</li>
+<li><code>char*</code>: A pointer directly into the buffer. The string is trimmed and unescaped and null terminated. This pointer stays valid until read_row is called again or the CSVReader is destroyed. Use this for user defined types.</li>
+</ul>
+<p>Note that there is no inherent overhead to using <code>char*</code> and then interpreting it compared to using one of the parsers directly build into <code>CSVReader</code>. The builtin number parsers are pure convenience. If you need a slightly different syntax then use <code>char*</code> and do the parsing yourself.</p>
+<h2>FAQ</h2>
+<p>Q: The library is throwing a std::system_error with code -1. How to get it to work?</p>
+<p>A: Your compiler's std::thread implementation is broken. Define CSV_IO_NO_THREAD to disable threading support.</p>
+<p>Q: My values are not just ints or strings. I want to parse my customized type. Is this possible?</p>
+<p>A: Read a <code>char*</code> and parse the string. At first this seems expensive but it is not as the pointer you get points directly into the memory buffer. In fact there is no inherent reason why a custom int-parser realized this way must be any slower than the int-parser build into the library. By reading a <code>char*</code> the library takes care of column reordering and quote escaping and leaves the actual parsing to you. Note that using a std::string is slower as it involves a memory copy.</p>
+<p>Q: I get lots of compiler errors when compiling the header! Please fix it. :(</p>
+<p>A: Have you enabled the C++11 mode of your compiler? If you use GCC you have to add -std=c++0x to the commandline. If this does not resolve the problem, then please open a ticket.</p>
+<p>Q: The library crashes when parsing large files! Please fix it. :(</p>
+<p>A: When using GCC have you linked against -lpthread? Read the installation section for details on how to do this. If this does not resolve the issue then please open a ticket. (The reason why it only crashes only on large files is that the first chuck is read synchronous and if the whole file fits into this chuck then no asynchronous call is performed.) Alternatively you can define CSV_IO_NO_THREAD.</p>
+<p>Q: Does the library support UTF?</p>
+<p>A: The library has basic UTF-8 support, or to be more precise it does not break when passing UTF-8 strings through it. If you read a <code>char*</code> then you get a pointer to the UTF-8 string. You will have to decode the string on your own. The separator, quoting, and commenting characters used by the library can only be ASCII characters. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
