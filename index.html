@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AMO Tools</title>
+    <title>AMO Tools Download Center</title>
+    <link rel="icon" href="./favicon.png">
 </head>
 
 <body id="body" onload="GetDesktop()">
-    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+    <div class="container-fluid">
         <div class="jumbotron banner">
-            <h3 class="display-3">AMO Tools Download Center <img src="./DOE-banner-color.png" class="rounded float-right" style="width: 10%; margin-bottom: 15px;"></img>
-            </h3>
-            <p class="lead" style="width: 75%;">
+                <img src="./DOE-banner-color.png" class="doe"></img>
+            <h1 class="center">AMO Tools Download Center</h1>
+            <p class="lead center">
                 AMO’s energy system and energy management software tools help manufacturers increase energy efficiency at the plant-level
                 and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and improve
                 efficiency in any facility by accessing the tools available here.
@@ -19,31 +20,32 @@
 
             <div class="row justify-content-end">
                 <div class="col">
-                    <div class="float-right">Oak Ridge National Laboratory - Advanced Manufacturing Office Tools</div>
+                    <div class=" lead center">Oak Ridge National Laboratory - Advanced Manufacturing Office Tools</div>
                 </div>
             </div>
             <div class="row justify-content-end">
                 <div class="col">
-                    <div class="float-right">For feedback on any of the tools please email: <a href="accawigk@ornl.gov">ORNL-AMO Tools Support</a></div>
+                    <div class="center">For feedback on any of the tools please email: <a href="mailto:accawigk@ornl.gov">ORNL-AMO Tools Support</a> 
+                    or click <a href="https://www.surveymonkey.com/r/DOE-AMO-TOOLS">here</a> to take our MEASUR survey on Survey Monkey.<br> Thank you for your feedback! </div>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center" style="margin-bottom: 25px;">
+        <div class="row" style="margin-bottom: 25px;">
             <div class="col-5">
                 <div id="desktop-list-group" class="list-group">
                     <div class="list-group-item download-title">
                         <div class="row align-items-center">
-                            <div class="col-2"><img src="./desktop-icon.png" class="rounded float-left" style="width: 100%; margin-bottom: 10px;"></div>
-                            <div class="col-10">
+                            <img src="./desktop-icon.png" class="rounded float-left" style="width: 10%; margin-bottom: 10px;">
+                            <div class="col-10 center">
                                 <h5><b>Desktop Application Downloads</b><span class="badge badge-success float-right" id="desktop-title"></span></h5>
                             </div>
                         </div>
-                        <p class="details">AMO-Tools-Desktop is an energy efficiency calculation application for use with industrial equipment
+                        <p class="details">MEASUR, <i>formerly known as AMO-Tools-Desktop</i>, is an energy efficiency calculation application for use with industrial equipment
                             such as pumps, furnaces, fans, and motors, as well as for industrial systems such as steam.
                         </p>
                         <p class="details">The application is based on AMO legacy tools, such as PSAT, PHAST, FSAT and the SSMT.</p>
                         <p class="details">Choose the proper installer to download for your operating system, and then run the installer after
-                            the download is finished to begin optimizing your facility</p>
+                            the download is finished to begin optimizing your facility.</p>
                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Desktop">https://github.com/ORNL-AMO/AMO-Tools-Desktop</a></p>
                     </div>
 
@@ -52,8 +54,8 @@
             <div class="col-5">
                 <div id="suite-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <div class="row align-items-center">
-                            <div class="col-2"><img src="./suite-icon.png" class="rounded float-left" style="width: 100%; margin-bottom: 10px;"></div>
+                            <div class="row align-items-center">
+                            <img src="./suite-icon.png" class="rounded float-left" style="width: 10%; margin-bottom: 10px;">
                             <div class="col-10">
                                 <h5><b>Tools Suite Downloads</b>
                                     <span class="badge badge-success float-right" id="suite-title"></span>
@@ -92,7 +94,7 @@
                         <h5><b>PHASTEx Downloads</b><span class="badge badge-success float-right" id="phastex-title"></span></h5>
                         <p class="details">PHASTex (Process Heating Assessment and Survey Tool - Excel Version) is an Excel workbook for calculating
                             energy efficiency in industrial fuel-fired furnaces.</p>
-                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel</p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.</p>
                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PHASTEx">https://github.com/ORNL-AMO/PHASTEx</a></p>
                     </div>
 
@@ -106,7 +108,7 @@
                     <div class="list-group-item download-title">
                         <h5><b>PEPEx Downloads</b><span class="badge badge-success float-right" id="pepex-title"></span></h5>
                         <p class="details">Plant Energy Profiler - Excel Version Tool</p>
-                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel</p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.</p>
                         <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PEPEx">https://github.com/ORNL-AMO/PEPEx</a></p>
                     </div>
 
@@ -136,6 +138,9 @@
         </div>
 
     </div>
+    <footer>
+        <img src="industrial-skyline.png" width="100%">
+    </footer>
     <script type="text/javascript" language="javascript">
         function GetDesktop() {
             var xhttp = new XMLHttpRequest();
@@ -152,27 +157,27 @@
                     
                     let debTest = isExt(element.name, '.deb');
                     if (debTest) {
-                        addDesktopListItem(element, 'AMO Desktop Linux (.deb)');
+                        addDesktopListItem(element, 'MEASUR Linux (.deb)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let tarTest = isExt(element.name, '.tar.gz');
                     if (tarTest) {
-                        addDesktopListItem(element, 'AMO Desktop Linux (.tar.gz)');
+                        addDesktopListItem(element, 'MEASUR Linux (.tar.gz)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let dmgTest = isExt(element.name, '.dmg');
                     if (dmgTest) {
-                        addDesktopListItem(element, 'AMO Desktop Mac (.dmg)');
+                        addDesktopListItem(element, 'MEASUR Mac (.dmg)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let zipTest = isExt(element.name, '.zip');
                     if (zipTest) {
-                        addDesktopListItem(element, 'AMO Desktop Mac (.zip)');
+                        addDesktopListItem(element, 'MEASUR Mac (.zip)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                     let exeTest = isExt(element.name, '.exe');
                     if (exeTest) {
-                        addDesktopListItem(element, 'AMO Desktop Windows (.exe)');
+                        addDesktopListItem(element, 'MEASUR Windows (.exe)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
                 }, this);
@@ -343,7 +348,7 @@
                     if (zTest) {
                         var a = document.createElement('a');
                         var list = document.getElementById('sankey-diagram-list-group');
-                        a.textContent = 'Dynamic Sankey Source(.zip)';
+                        a.textContent = 'Dynamic Sankey Source (.zip)';
                         a.className = "list-group-item list-group-item-action";
                         a.setAttribute("href", element.browser_download_url);
                         list.appendChild(a);
@@ -352,7 +357,7 @@
                     if (tarTest) {
                         var a = document.createElement('a');
                         var list = document.getElementById('sankey-diagram-list-group');
-                        a.textContent = 'Dynamic Sankey Source(.tar.gz)';
+                        a.textContent = 'Dynamic Sankey Source (.tar.gz)';
                         a.className = "list-group-item list-group-item-action";
                         a.setAttribute("href", element.browser_download_url);
                         list.appendChild(a);
@@ -496,6 +501,34 @@
         body {
             background-color: #D5D8DC;
         }
+        .center {
+            text-align: center;
+        }
+        .banner {
+            background-color: white;
+            display: block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .doe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%; 
+            margin-bottom: 15px;
+        }
+        #desktop-list-group {
+            width:112%;
+            margin-left: 10%;
+        }
+      #suite-list-group.list-group {
+        margin-left:21%;
+        margin-right:0%;
+        width:100%;
+      }
+      h1.center {
+         font-size:100px; 
+      }
     </style>
 
 
