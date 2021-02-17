@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['walllosses',['WallLosses',['../d5/d17/class_wall_losses.html#a7d46f259c632ecdcde5ae31468c03e2e',1,'WallLosses']]],
-  ['watercoolinglosses',['WaterCoolingLosses',['../d9/d96/class_water_cooling_losses.html#ac95601d8c56e7243ffa3e022819a112f',1,'WaterCoolingLosses']]]
+  ['velocity',['velocity',['../d5/dc5/class_head_tool_base.html#a0412306c4adda62e5840342b0d26ac06',1,'HeadToolBase::velocity(double diameter, double flow)'],['../d5/dc5/class_head_tool_base.html#a0412306c4adda62e5840342b0d26ac06',1,'HeadToolBase::velocity(double diameter, double flow)'],['../d5/dc5/class_head_tool_base.html#a0412306c4adda62e5840342b0d26ac06',1,'HeadToolBase::velocity(double diameter, double flow)']]],
+  ['velocityhead',['velocityHead',['../d5/dc5/class_head_tool_base.html#a461c3d53a92763ca08c9a5bbcbef83c3',1,'HeadToolBase::velocityHead(double velocity, double gravity)'],['../d5/dc5/class_head_tool_base.html#a461c3d53a92763ca08c9a5bbcbef83c3',1,'HeadToolBase::velocityHead(double velocity, double gravity)'],['../d5/dc5/class_head_tool_base.html#a461c3d53a92763ca08c9a5bbcbef83c3',1,'HeadToolBase::velocityHead(double velocity, double gravity)']]]
 ];

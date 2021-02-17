@@ -1,0 +1,108 @@
+\hypertarget{class_energy_and_cost_calculator}{}\section{Energy\+And\+Cost\+Calculator Class Reference}
+\label{class_energy_and_cost_calculator}\index{Energy\+And\+Cost\+Calculator@{Energy\+And\+Cost\+Calculator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa301f421bf405bd8a75ac190bb4cad3d}\label{class_energy_and_cost_calculator_aa301f421bf405bd8a75ac190bb4cad3d}} 
+\hyperlink{class_energy_and_cost_calculations_domain}{Energy\+And\+Cost\+Calculations\+Domain} {\bfseries calc} (const bool is\+Baseline\+Calc, const double baseline\+Power\+Demand, const \hyperlink{class_operations_input}{Operations\+Input} \&operations\+Input, const \hyperlink{class_boiler}{Boiler} \&boiler, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const double makeup\+Water\+Volume\+Flow\+Annual) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a25f512a60f88cc36af0fc0978d841c8a}\label{class_energy_and_cost_calculator_a25f512a60f88cc36af0fc0978d841c8a}} 
+double {\bfseries calc\+Power\+Generated} (const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_acea571a402a377985753ebfaebad6fcc}\label{class_energy_and_cost_calculator_acea571a402a377985753ebfaebad6fcc}} 
+double {\bfseries add\+Power\+Out\+To\+Power\+Generated} (const std\+::string \&name, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&turbine, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_ad96cc7f912704f33786868447da091c3}\label{class_energy_and_cost_calculator_ad96cc7f912704f33786868447da091c3}} 
+double {\bfseries calc\+Power\+Import} (const bool is\+Baseline\+Calc, const double site\+Power\+Import\+Input, const double baseline\+Power\+Demand, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a550d20d74d601e4f5e28e70f25565593}\label{class_energy_and_cost_calculator_a550d20d74d601e4f5e28e70f25565593}} 
+double {\bfseries calc\+Power\+Demand} (const double site\+Power\+Import, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a9618725f55b74948cb1eaf8e79ddf1c6}\label{class_energy_and_cost_calculator_a9618725f55b74948cb1eaf8e79ddf1c6}} 
+double {\bfseries calc\+Power\+Generation\+Cost} (const double site\+Power\+Import, const double electricity\+Costs, const double operating\+Hours\+Per\+Year) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa5a5f91e9ed5dab198eda79fc5b18d53}\label{class_energy_and_cost_calculator_aa5a5f91e9ed5dab198eda79fc5b18d53}} 
+double {\bfseries calc\+Boiler\+Fuel\+Cost} (const double fuel\+Energy\+Input, const double operating\+Hours\+Per\+Year\+Input, const double fuel\+Costs\+Input) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a5d919bd8a35b867cd3c1cd356906c77c}\label{class_energy_and_cost_calculator_a5d919bd8a35b867cd3c1cd356906c77c}} 
+double {\bfseries calc\+Makeup\+Water\+Cost} (const double make\+Up\+Water\+Costs\+Input, const double makeup\+Water\+Volume\+Flow\+Annual) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa9148a6587edea63d784dba51cbfca9b}\label{class_energy_and_cost_calculator_aa9148a6587edea63d784dba51cbfca9b}} 
+double {\bfseries calc\+Total\+Operating\+Cost} (const double power\+Generation\+Cost, const double boiler\+Fuel\+Cost, const double makeup\+Water\+Cost) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a24bf5affb772d9db90af9f95cf737f17}\label{class_energy_and_cost_calculator_a24bf5affb772d9db90af9f95cf737f17}} 
+double {\bfseries calc\+Boiler\+Fuel\+Usage} (const double fuel\+Energy\+Input, const double operating\+Hours\+Per\+Year\+Input) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa301f421bf405bd8a75ac190bb4cad3d}\label{class_energy_and_cost_calculator_aa301f421bf405bd8a75ac190bb4cad3d}} 
+\hyperlink{class_energy_and_cost_calculations_domain}{Energy\+And\+Cost\+Calculations\+Domain} {\bfseries calc} (const bool is\+Baseline\+Calc, const double baseline\+Power\+Demand, const \hyperlink{class_operations_input}{Operations\+Input} \&operations\+Input, const \hyperlink{class_boiler}{Boiler} \&boiler, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const double makeup\+Water\+Volume\+Flow\+Annual) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a25f512a60f88cc36af0fc0978d841c8a}\label{class_energy_and_cost_calculator_a25f512a60f88cc36af0fc0978d841c8a}} 
+double {\bfseries calc\+Power\+Generated} (const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_acea571a402a377985753ebfaebad6fcc}\label{class_energy_and_cost_calculator_acea571a402a377985753ebfaebad6fcc}} 
+double {\bfseries add\+Power\+Out\+To\+Power\+Generated} (const std\+::string \&name, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&turbine, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_ad96cc7f912704f33786868447da091c3}\label{class_energy_and_cost_calculator_ad96cc7f912704f33786868447da091c3}} 
+double {\bfseries calc\+Power\+Import} (const bool is\+Baseline\+Calc, const double site\+Power\+Import\+Input, const double baseline\+Power\+Demand, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a550d20d74d601e4f5e28e70f25565593}\label{class_energy_and_cost_calculator_a550d20d74d601e4f5e28e70f25565593}} 
+double {\bfseries calc\+Power\+Demand} (const double site\+Power\+Import, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a9618725f55b74948cb1eaf8e79ddf1c6}\label{class_energy_and_cost_calculator_a9618725f55b74948cb1eaf8e79ddf1c6}} 
+double {\bfseries calc\+Power\+Generation\+Cost} (const double site\+Power\+Import, const double electricity\+Costs, const double operating\+Hours\+Per\+Year) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa5a5f91e9ed5dab198eda79fc5b18d53}\label{class_energy_and_cost_calculator_aa5a5f91e9ed5dab198eda79fc5b18d53}} 
+double {\bfseries calc\+Boiler\+Fuel\+Cost} (const double fuel\+Energy\+Input, const double operating\+Hours\+Per\+Year\+Input, const double fuel\+Costs\+Input) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a5d919bd8a35b867cd3c1cd356906c77c}\label{class_energy_and_cost_calculator_a5d919bd8a35b867cd3c1cd356906c77c}} 
+double {\bfseries calc\+Makeup\+Water\+Cost} (const double make\+Up\+Water\+Costs\+Input, const double makeup\+Water\+Volume\+Flow\+Annual) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa9148a6587edea63d784dba51cbfca9b}\label{class_energy_and_cost_calculator_aa9148a6587edea63d784dba51cbfca9b}} 
+double {\bfseries calc\+Total\+Operating\+Cost} (const double power\+Generation\+Cost, const double boiler\+Fuel\+Cost, const double makeup\+Water\+Cost) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a24bf5affb772d9db90af9f95cf737f17}\label{class_energy_and_cost_calculator_a24bf5affb772d9db90af9f95cf737f17}} 
+double {\bfseries calc\+Boiler\+Fuel\+Usage} (const double fuel\+Energy\+Input, const double operating\+Hours\+Per\+Year\+Input) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa301f421bf405bd8a75ac190bb4cad3d}\label{class_energy_and_cost_calculator_aa301f421bf405bd8a75ac190bb4cad3d}} 
+\hyperlink{class_energy_and_cost_calculations_domain}{Energy\+And\+Cost\+Calculations\+Domain} {\bfseries calc} (const bool is\+Baseline\+Calc, const double baseline\+Power\+Demand, const \hyperlink{class_operations_input}{Operations\+Input} \&operations\+Input, const \hyperlink{class_boiler}{Boiler} \&boiler, const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain, const double makeup\+Water\+Volume\+Flow\+Annual) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a25f512a60f88cc36af0fc0978d841c8a}\label{class_energy_and_cost_calculator_a25f512a60f88cc36af0fc0978d841c8a}} 
+double {\bfseries calc\+Power\+Generated} (const \hyperlink{class_high_pressure_header_calculations_domain}{High\+Pressure\+Header\+Calculations\+Domain} \&high\+Pressure\+Header\+Calculations\+Domain, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_medium_pressure_header_calculations_domain}{Medium\+Pressure\+Header\+Calculations\+Domain} $>$ \&medium\+Pressure\+Header\+Calculations\+Domain) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_acea571a402a377985753ebfaebad6fcc}\label{class_energy_and_cost_calculator_acea571a402a377985753ebfaebad6fcc}} 
+double {\bfseries add\+Power\+Out\+To\+Power\+Generated} (const std\+::string \&name, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&turbine, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_ad96cc7f912704f33786868447da091c3}\label{class_energy_and_cost_calculator_ad96cc7f912704f33786868447da091c3}} 
+double {\bfseries calc\+Power\+Import} (const bool is\+Baseline\+Calc, const double site\+Power\+Import\+Input, const double baseline\+Power\+Demand, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a550d20d74d601e4f5e28e70f25565593}\label{class_energy_and_cost_calculator_a550d20d74d601e4f5e28e70f25565593}} 
+double {\bfseries calc\+Power\+Demand} (const double site\+Power\+Import, const double power\+Generated) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a9618725f55b74948cb1eaf8e79ddf1c6}\label{class_energy_and_cost_calculator_a9618725f55b74948cb1eaf8e79ddf1c6}} 
+double {\bfseries calc\+Power\+Generation\+Cost} (const double site\+Power\+Import, const double electricity\+Costs, const double operating\+Hours\+Per\+Year) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa5a5f91e9ed5dab198eda79fc5b18d53}\label{class_energy_and_cost_calculator_aa5a5f91e9ed5dab198eda79fc5b18d53}} 
+double {\bfseries calc\+Boiler\+Fuel\+Cost} (const double fuel\+Energy\+Input, const double operating\+Hours\+Per\+Year\+Input, const double fuel\+Costs\+Input) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a5d919bd8a35b867cd3c1cd356906c77c}\label{class_energy_and_cost_calculator_a5d919bd8a35b867cd3c1cd356906c77c}} 
+double {\bfseries calc\+Makeup\+Water\+Cost} (const double make\+Up\+Water\+Costs\+Input, const double makeup\+Water\+Volume\+Flow\+Annual) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_aa9148a6587edea63d784dba51cbfca9b}\label{class_energy_and_cost_calculator_aa9148a6587edea63d784dba51cbfca9b}} 
+double {\bfseries calc\+Total\+Operating\+Cost} (const double power\+Generation\+Cost, const double boiler\+Fuel\+Cost, const double makeup\+Water\+Cost) const
+\item 
+\mbox{\Hypertarget{class_energy_and_cost_calculator_a24bf5affb772d9db90af9f95cf737f17}\label{class_energy_and_cost_calculator_a24bf5affb772d9db90af9f95cf737f17}} 
+double {\bfseries calc\+Boiler\+Fuel\+Usage} (const double fuel\+Energy\+Input, const double operating\+Hours\+Per\+Year\+Input) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file Energy\+And\+Cost\+Calculator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/ssmt/service/energy\+\_\+and\+\_\+cost/Energy\+And\+Cost\+Calculator.\+h\item 
+src/ssmt/service/energy\+\_\+and\+\_\+cost/Energy\+And\+Cost\+Calculator.\+cpp\end{DoxyCompactItemize}

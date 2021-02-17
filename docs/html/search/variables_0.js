@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['annualcost',['annualCost',['../dc/d77/struct_p_s_a_t_result_1_1_result.html#a48964ead4e8849f21c2015e226d046cc',1,'PSATResult::Result']]],
-  ['annualenergy',['annualEnergy',['../dc/d77/struct_p_s_a_t_result_1_1_result.html#aadbf128fb74140ef7117fbac7d3f16e5',1,'PSATResult::Result']]]
+  ['annualcost',['annualCost',['../dc/df8/struct_p_s_a_t_result_1_1_output.html#a222e9c8df8c99f87abe372cad138d5f4',1,'PSATResult::Output']]],
+  ['annualenergy',['annualEnergy',['../dc/df8/struct_p_s_a_t_result_1_1_output.html#aa5c429ca2975c3222ed79e3847d1bf09',1,'PSATResult::Output']]]
 ];

@@ -1,0 +1,122 @@
+\hypertarget{class_steam_model_runner}{}\section{Steam\+Model\+Runner Class Reference}
+\label{class_steam_model_runner}\index{Steam\+Model\+Runner@{Steam\+Model\+Runner}}
+
+
+{\ttfamily \#include $<$Steam\+Model\+Runner.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_steam_model_calculations_domain}{Steam\+Model\+Calculations\+Domain} \hyperlink{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}{run} (const bool is\+Baseline\+Calc, const double baseline\+Power\+Demand, const \hyperlink{class_header_input}{Header\+Input} \&header\+Input, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const \hyperlink{class_turbine_input}{Turbine\+Input} \&turbine\+Input, const \hyperlink{class_operations_input}{Operations\+Input} \&operations\+Input) const
+\item 
+\hyperlink{class_steam_model_calculations_domain}{Steam\+Model\+Calculations\+Domain} \hyperlink{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}{run} (const bool is\+Baseline\+Calc, const double baseline\+Power\+Demand, const \hyperlink{class_header_input}{Header\+Input} \&header\+Input, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const \hyperlink{class_turbine_input}{Turbine\+Input} \&turbine\+Input, const \hyperlink{class_operations_input}{Operations\+Input} \&operations\+Input) const
+\item 
+\hyperlink{class_steam_model_calculations_domain}{Steam\+Model\+Calculations\+Domain} \hyperlink{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}{run} (const bool is\+Baseline\+Calc, const double baseline\+Power\+Demand, const \hyperlink{class_header_input}{Header\+Input} \&header\+Input, const \hyperlink{class_boiler_input}{Boiler\+Input} \&boiler\+Input, const \hyperlink{class_turbine_input}{Turbine\+Input} \&turbine\+Input, const \hyperlink{class_operations_input}{Operations\+Input} \&operations\+Input) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runs the Steam Model. 
+
+Definition at line 15 of file Steam\+Model\+Runner.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}\label{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}} 
+\index{Steam\+Model\+Runner@{Steam\+Model\+Runner}!run@{run}}
+\index{run@{run}!Steam\+Model\+Runner@{Steam\+Model\+Runner}}
+\subsubsection{\texorpdfstring{run()}{run()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \hyperlink{class_steam_model_calculations_domain}{Steam\+Model\+Calculations\+Domain} Steam\+Model\+Runner\+::run (\begin{DoxyParamCaption}\item[{const bool}]{is\+Baseline\+Calc,  }\item[{const double}]{baseline\+Power\+Demand,  }\item[{const \hyperlink{class_header_input}{Header\+Input} \&}]{header\+Input,  }\item[{const \hyperlink{class_boiler_input}{Boiler\+Input} \&}]{boiler\+Input,  }\item[{const \hyperlink{class_turbine_input}{Turbine\+Input} \&}]{turbine\+Input,  }\item[{const \hyperlink{class_operations_input}{Operations\+Input} \&}]{operations\+Input }\end{DoxyParamCaption}) const}
+
+Repeatedly run the Steam Model algorithm until the system balances. 
+\begin{DoxyParams}{Parameters}
+{\em is\+Baseline\+Calc} & true if this is a baseline calc run. \\
+\hline
+{\em baseline\+Power\+Demand} & Amount of the baseline power demand. \\
+\hline
+{\em header\+Input} & All of the headers input data. \\
+\hline
+{\em boiler\+Input} & The boiler input data. \\
+\hline
+{\em turbine\+Input} & All of the turbines input data. \\
+\hline
+{\em operations\+Input} & The operational input data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Steam Modeler processing results. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & when unable to attain balanced steam model. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 4 of file Steam\+Model\+Runner.\+cpp.
+
+\mbox{\Hypertarget{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}\label{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}} 
+\index{Steam\+Model\+Runner@{Steam\+Model\+Runner}!run@{run}}
+\index{run@{run}!Steam\+Model\+Runner@{Steam\+Model\+Runner}}
+\subsubsection{\texorpdfstring{run()}{run()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \hyperlink{class_steam_model_calculations_domain}{Steam\+Model\+Calculations\+Domain} Steam\+Model\+Runner\+::run (\begin{DoxyParamCaption}\item[{const bool}]{is\+Baseline\+Calc,  }\item[{const double}]{baseline\+Power\+Demand,  }\item[{const \hyperlink{class_header_input}{Header\+Input} \&}]{header\+Input,  }\item[{const \hyperlink{class_boiler_input}{Boiler\+Input} \&}]{boiler\+Input,  }\item[{const \hyperlink{class_turbine_input}{Turbine\+Input} \&}]{turbine\+Input,  }\item[{const \hyperlink{class_operations_input}{Operations\+Input} \&}]{operations\+Input }\end{DoxyParamCaption}) const}
+
+Repeatedly run the Steam Model algorithm until the system balances. 
+\begin{DoxyParams}{Parameters}
+{\em is\+Baseline\+Calc} & true if this is a baseline calc run. \\
+\hline
+{\em baseline\+Power\+Demand} & Amount of the baseline power demand. \\
+\hline
+{\em header\+Input} & All of the headers input data. \\
+\hline
+{\em boiler\+Input} & The boiler input data. \\
+\hline
+{\em turbine\+Input} & All of the turbines input data. \\
+\hline
+{\em operations\+Input} & The operational input data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Steam Modeler processing results. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & when unable to attain balanced steam model. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}\label{class_steam_model_runner_a5f64eb443a97375a8c113babc081f017}} 
+\index{Steam\+Model\+Runner@{Steam\+Model\+Runner}!run@{run}}
+\index{run@{run}!Steam\+Model\+Runner@{Steam\+Model\+Runner}}
+\subsubsection{\texorpdfstring{run()}{run()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \hyperlink{class_steam_model_calculations_domain}{Steam\+Model\+Calculations\+Domain} Steam\+Model\+Runner\+::run (\begin{DoxyParamCaption}\item[{const bool}]{is\+Baseline\+Calc,  }\item[{const double}]{baseline\+Power\+Demand,  }\item[{const \hyperlink{class_header_input}{Header\+Input} \&}]{header\+Input,  }\item[{const \hyperlink{class_boiler_input}{Boiler\+Input} \&}]{boiler\+Input,  }\item[{const \hyperlink{class_turbine_input}{Turbine\+Input} \&}]{turbine\+Input,  }\item[{const \hyperlink{class_operations_input}{Operations\+Input} \&}]{operations\+Input }\end{DoxyParamCaption}) const}
+
+Repeatedly run the Steam Model algorithm until the system balances. 
+\begin{DoxyParams}{Parameters}
+{\em is\+Baseline\+Calc} & true if this is a baseline calc run. \\
+\hline
+{\em baseline\+Power\+Demand} & Amount of the baseline power demand. \\
+\hline
+{\em header\+Input} & All of the headers input data. \\
+\hline
+{\em boiler\+Input} & The boiler input data. \\
+\hline
+{\em turbine\+Input} & All of the turbines input data. \\
+\hline
+{\em operations\+Input} & The operational input data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Steam Modeler processing results. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & when unable to attain balanced steam model. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/ssmt/service/Steam\+Model\+Runner.\+h\item 
+src/ssmt/service/Steam\+Model\+Runner.\+cpp\end{DoxyCompactItemize}

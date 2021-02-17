@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="smicon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AMO-Tools-Suite
-   &#160;<span id="projectnumber">v.0.2.29</span>
+   &#160;<span id="projectnumber">v.0.9.0</span>
    </div>
    <div id="projectbrief">Set of tools for calculating energy efficiency in industrial equipment</div>
   </td>
@@ -72,6 +72,9 @@ $(function() {
 </li>
 <li>SaturatedTemperature()
 : <a class="el" href="db/d40/class_saturated_temperature.html#ae0a4b1684a756ac8f91d3ebb646d6865">SaturatedTemperature</a>
+</li>
+<li>selectHighPressureCondensateFlashTank()
+: <a class="el" href="dc/d56/class_header_factory.html#a8e220fb9ed937623e9ca21e27672ec61">HeaderFactory</a>
 </li>
 <li>setActualEfficiency()
 : <a class="el" href="d4/d08/class_motor_efficiency.html#a7a5ad8d01fdc0a3bf93d952752487496">MotorEfficiency</a>
@@ -258,6 +261,9 @@ $(function() {
 <li>setGasType()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#a01b38762426c50e6ab22aefd674f30df">FlowCalculationsEnergyUse</a>
 </li>
+<li>setGeneratorEfficiency()
+: <a class="el" href="d6/de0/class_turbine.html#a51e9c5050a5be51b86dc23e690bd3f40">Turbine</a>
+</li>
 <li>setHead()
 : <a class="el" href="d0/d26/class_mover_efficiency.html#a1dce269494ecdfc348c8d0a3f9d33df6">MoverEfficiency</a>
 , <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#ac317c900ec68797cf051977147ea33da">OptimalPumpEfficiency</a>
@@ -291,13 +297,18 @@ $(function() {
 </li>
 <li>setInletMassFlow()
 : <a class="el" href="d5/dab/class_heat_loss.html#ac4154dc9922b6ddf3f2e7a10cc64c61f">HeatLoss</a>
-, <a class="el" href="d6/d6a/class_prv_with_desuperheating.html#a3b018b525bfb4106cc81ac982d9daa9b">PrvWithDesuperheating</a>
 , <a class="el" href="db/db1/class_prv_without_desuperheating.html#abeccff2dc91144452b34ca343ee63fa7">PrvWithoutDesuperheating</a>
 </li>
 <li>setInletPressure()
 : <a class="el" href="d5/dab/class_heat_loss.html#ab0a6b1f2a964d161d25758318f25f7e3">HeatLoss</a>
-, <a class="el" href="d6/d6a/class_prv_with_desuperheating.html#a83da43f7557db22242381e70f743fb7a">PrvWithDesuperheating</a>
 , <a class="el" href="db/db1/class_prv_without_desuperheating.html#a26039a0a228ca66f96e8402bf741b9d9">PrvWithoutDesuperheating</a>
+, <a class="el" href="d6/de0/class_turbine.html#a04996baab9a40d449a69c737c00be8e4">Turbine</a>
+</li>
+<li>setInletQuantity()
+: <a class="el" href="d6/de0/class_turbine.html#aecc05c70870fb11bbc0bb4fe5d8438bd">Turbine</a>
+</li>
+<li>setInletQuantityValue()
+: <a class="el" href="d6/de0/class_turbine.html#ac01a053462c83e21ecc2158e75477542">Turbine</a>
 </li>
 <li>setInlets()
 : <a class="el" href="d8/dc9/class_header.html#ae69b6f894210a6cd340e92222f8bc343">Header</a>
@@ -318,6 +329,9 @@ $(function() {
 <li>setInsideTemperature()
 : <a class="el" href="d7/dff/class_opening_losses.html#a895dcaa81bbb3dc823ec903480f05262">OpeningLosses</a>
 </li>
+<li>setIsentropicEfficiency()
+: <a class="el" href="d6/de0/class_turbine.html#ae67daa481ef48bcf8aef84bcccb4611d">Turbine</a>
+</li>
 <li>setKinematicViscosity()
 : <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#a00017e0bd100beb2f4b0bf2db5e3687f">OptimalPumpEfficiency</a>
 </li>
@@ -334,6 +348,9 @@ $(function() {
 <li>setLineFrequency()
 : <a class="el" href="d4/d08/class_motor_efficiency.html#a993b09941d330d3a46e0d72bd6dc65bb">MotorEfficiency</a>
 , <a class="el" href="d3/d52/class_motor_power_factor.html#a5186ccae4191cfc5b2b7c3bdbd166563">MotorPowerFactor</a>
+</li>
+<li>setMassFlowOrPowerOut()
+: <a class="el" href="d6/de0/class_turbine.html#a73522631e2eeefa8ea14d5b537e3e760">Turbine</a>
 </li>
 <li>setMeltingPoint()
 : <a class="el" href="d5/d58/class_solid_load_charge_material.html#a6c235b1c49be98b02829d37af9c38cb2">SolidLoadChargeMaterial</a>
@@ -382,8 +399,8 @@ $(function() {
 <li>setOpeningShape()
 : <a class="el" href="d7/dff/class_opening_losses.html#a19c28e02d1e736d74b3c82047d4d23b2">OpeningLosses</a>
 </li>
-<li>setOperatingFraction()
-: <a class="el" href="d9/d4e/class_annual_energy.html#a5c127c7d5e2a5e4f50559f8b546e8998">AnnualEnergy</a>
+<li>setoperatingHours()
+: <a class="el" href="d9/d4e/class_annual_energy.html#a803812f06ca88aca8a02601930e870cf">AnnualEnergy</a>
 </li>
 <li>setOperatingTime()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#ac82800d533502c7836238dcab1f39fac">FlowCalculationsEnergyUse</a>
@@ -395,8 +412,16 @@ $(function() {
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#ad4b324ecd8288d44c32d622bb26b1bff">FlowCalculationsEnergyUse</a>
 </li>
 <li>setOutletPressure()
-: <a class="el" href="d6/d6a/class_prv_with_desuperheating.html#ab89d8a884a81d1e3b056433dda988800">PrvWithDesuperheating</a>
-, <a class="el" href="db/db1/class_prv_without_desuperheating.html#a0f2a4597b58390e5c4a7c75b38bbebbc">PrvWithoutDesuperheating</a>
+: <a class="el" href="db/db1/class_prv_without_desuperheating.html#a0f2a4597b58390e5c4a7c75b38bbebbc">PrvWithoutDesuperheating</a>
+</li>
+<li>setOutletQuantity()
+: <a class="el" href="d6/de0/class_turbine.html#ad5ff4ba1657aac9519a6841336ec571c">Turbine</a>
+</li>
+<li>setOutletQuantityValue()
+: <a class="el" href="d6/de0/class_turbine.html#ab37326068f633280de8f8144b9c8eb89">Turbine</a>
+</li>
+<li>setOutletSteamPressure()
+: <a class="el" href="d6/de0/class_turbine.html#ab9612657de02e4523492b687917b4091">Turbine</a>
 </li>
 <li>setOutletTemperature()
 : <a class="el" href="d1/d12/class_atmosphere.html#a8f6589ab4e17d3c531bb7e0e771f4f80">Atmosphere</a>
@@ -431,14 +456,12 @@ $(function() {
 : <a class="el" href="d1/d53/class_boiler.html#a9c5b20cae6133c9174b12760f36d52c2">Boiler</a>
 , <a class="el" href="d8/d41/class_flash_tank.html#a30aa7a42d1547f61b176da4a15e8e8ee">FlashTank</a>
 , <a class="el" href="d5/dab/class_heat_loss.html#a7c125f1137f31eba8826a1aa3b905290">HeatLoss</a>
-, <a class="el" href="d6/d6a/class_prv_with_desuperheating.html#aed049483cd58d41501ce1461ad251230">PrvWithDesuperheating</a>
 , <a class="el" href="db/db1/class_prv_without_desuperheating.html#a212177b7a16c7452358df4120196c04b">PrvWithoutDesuperheating</a>
 </li>
 <li>setQuantityValue()
 : <a class="el" href="d1/d53/class_boiler.html#ac3450d88dba124529d59baf62c39e14a">Boiler</a>
 , <a class="el" href="d8/d41/class_flash_tank.html#ac7392743aeaf8de6ce368814ea42e236">FlashTank</a>
 , <a class="el" href="d5/dab/class_heat_loss.html#ae6b6c4ac28471d7bc94e3886c48a90bd">HeatLoss</a>
-, <a class="el" href="d6/d6a/class_prv_with_desuperheating.html#a9960e4be45699f09e65035832fff792a">PrvWithDesuperheating</a>
 , <a class="el" href="db/db1/class_prv_without_desuperheating.html#a5ed2d0f0f558705d482ed0502131757f">PrvWithoutDesuperheating</a>
 </li>
 <li>setRatio()
@@ -457,6 +480,9 @@ $(function() {
 </li>
 <li>setSectionType()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#add93257048914dbd920b6dc2be431b69">FlowCalculationsEnergyUse</a>
+</li>
+<li>setSolveFor()
+: <a class="el" href="d6/de0/class_turbine.html#a96f54a8fc572dae6c5298289de890f4d">Turbine</a>
 </li>
 <li>setSpecificGravity()
 : <a class="el" href="d4/db7/class_flow_calculations_energy_use.html#abafa34d337124a1487fb0c871ea8a24a">FlowCalculationsEnergyUse</a>
@@ -483,6 +509,10 @@ $(function() {
 <li>setSpecificHeatVapor()
 : <a class="el" href="d6/da8/class_gas_load_charge_material.html#a7498eba84bb8bdfc5344f0e44418260b">GasLoadChargeMaterial</a>
 , <a class="el" href="de/d8d/class_liquid_load_charge_material.html#ae95faf01cf6293ab282b1b7fe3b849e1">LiquidLoadChargeMaterial</a>
+</li>
+<li>setSpecifiedEfficiency()
+: <a class="el" href="d5/d96/class_optimal_motor_shaft_power.html#a92f7da022e380abbd8cfd308e8aa5e58">OptimalMotorShaftPower</a>
+, <a class="el" href="d2/d03/class_pump_shaft_power.html#a7d2c64ba11fb287d9b46f7d0890ee988">PumpShaftPower</a>
 </li>
 <li>setStageCount()
 : <a class="el" href="da/d7a/class_optimal_pump_efficiency.html#a5b0b2a24a87c1c8fc92aa96c6ba4b727">OptimalPumpEfficiency</a>
@@ -532,6 +562,9 @@ $(function() {
 </li>
 <li>setThickness()
 : <a class="el" href="d7/dff/class_opening_losses.html#a221cc88072e4f0975f15c6cd96781dea">OpeningLosses</a>
+</li>
+<li>setTurbineProperty()
+: <a class="el" href="d6/de0/class_turbine.html#abb3f16cefe52f4e9c7b32b2bb17a68ee">Turbine</a>
 </li>
 <li>setUnburnedCarbonInAsh()
 : <a class="el" href="d1/dfb/class_solid_liquid_flue_gas_material.html#adf052dd1bdceeab710a4986b1fd874b9">SolidLiquidFlueGasMaterial</a>
@@ -583,6 +616,9 @@ $(function() {
 </li>
 <li>SolidLoadChargeMaterial()
 : <a class="el" href="d5/d58/class_solid_load_charge_material.html#a9145db5518b94cfc1919b8d6ff809f5e">SolidLoadChargeMaterial</a>
+</li>
+<li>SteamBalanceException()
+: <a class="el" href="da/d91/class_steam_balance_exception.html#ac86eb72f6c1e138ae22f9ab97646e8b3">SteamBalanceException</a>
 </li>
 <li>SteamProperties()
 : <a class="el" href="d3/d53/class_steam_properties.html#a976e08ed0433943d469a8c2f75d2ac68">SteamProperties</a>

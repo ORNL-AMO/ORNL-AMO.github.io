@@ -1,0 +1,62 @@
+\hypertarget{class_steam_reducer}{}\section{Steam\+Reducer Class Reference}
+\label{class_steam_reducer}\index{Steam\+Reducer@{Steam\+Reducer}}
+
+
+{\ttfamily \#include $<$Steam\+Reducer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_steam_reducer_output}{Steam\+Reducer\+Output} \hyperlink{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}{reduce\+Steam\+Through\+High\+To\+Low\+Turbine} (const double additional\+Steam\+Needed, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine\+Ideal, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&high\+Pressure\+Header\+Output, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input) const
+\item 
+\hyperlink{class_steam_reducer_output}{Steam\+Reducer\+Output} \hyperlink{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}{reduce\+Steam\+Through\+High\+To\+Low\+Turbine} (const double additional\+Steam\+Needed, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine\+Ideal, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&high\+Pressure\+Header\+Output, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input) const
+\item 
+\hyperlink{class_steam_reducer_output}{Steam\+Reducer\+Output} \hyperlink{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}{reduce\+Steam\+Through\+High\+To\+Low\+Turbine} (const double additional\+Steam\+Needed, const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&high\+To\+Low\+Turbine\+Input, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&high\+To\+Low\+Pressure\+Turbine\+Ideal, const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&high\+Pressure\+Header\+Output, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&low\+Pressure\+Header\+Input) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reduce steam allocation from one turbine to another for balancing the system. 
+
+Definition at line 28 of file Steam\+Reducer.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}\label{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}} 
+\index{Steam\+Reducer@{Steam\+Reducer}!reduce\+Steam\+Through\+High\+To\+Low\+Turbine@{reduce\+Steam\+Through\+High\+To\+Low\+Turbine}}
+\index{reduce\+Steam\+Through\+High\+To\+Low\+Turbine@{reduce\+Steam\+Through\+High\+To\+Low\+Turbine}!Steam\+Reducer@{Steam\+Reducer}}
+\subsubsection{\texorpdfstring{reduce\+Steam\+Through\+High\+To\+Low\+Turbine()}{reduceSteamThroughHighToLowTurbine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \hyperlink{class_steam_reducer_output}{Steam\+Reducer\+Output} Steam\+Reducer\+::reduce\+Steam\+Through\+High\+To\+Low\+Turbine (\begin{DoxyParamCaption}\item[{const double}]{additional\+Steam\+Needed,  }\item[{const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&}]{high\+To\+Low\+Turbine\+Input,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&}]{high\+To\+Low\+Pressure\+Turbine,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&}]{high\+To\+Low\+Pressure\+Turbine\+Ideal,  }\item[{const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&}]{high\+Pressure\+Header\+Output,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&}]{low\+Pressure\+Header\+Input }\end{DoxyParamCaption}) const}
+
+Reduce steam from the high to low turbine when additional steam is needed. \begin{DoxyReturn}{Returns}
+Amount of steam still needed by the system after taking steam from turbine. 
+\end{DoxyReturn}
+
+
+Definition at line 4 of file Steam\+Reducer.\+cpp.
+
+\mbox{\Hypertarget{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}\label{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}} 
+\index{Steam\+Reducer@{Steam\+Reducer}!reduce\+Steam\+Through\+High\+To\+Low\+Turbine@{reduce\+Steam\+Through\+High\+To\+Low\+Turbine}}
+\index{reduce\+Steam\+Through\+High\+To\+Low\+Turbine@{reduce\+Steam\+Through\+High\+To\+Low\+Turbine}!Steam\+Reducer@{Steam\+Reducer}}
+\subsubsection{\texorpdfstring{reduce\+Steam\+Through\+High\+To\+Low\+Turbine()}{reduceSteamThroughHighToLowTurbine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \hyperlink{class_steam_reducer_output}{Steam\+Reducer\+Output} Steam\+Reducer\+::reduce\+Steam\+Through\+High\+To\+Low\+Turbine (\begin{DoxyParamCaption}\item[{const double}]{additional\+Steam\+Needed,  }\item[{const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&}]{high\+To\+Low\+Turbine\+Input,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&}]{high\+To\+Low\+Pressure\+Turbine,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&}]{high\+To\+Low\+Pressure\+Turbine\+Ideal,  }\item[{const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&}]{high\+Pressure\+Header\+Output,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&}]{low\+Pressure\+Header\+Input }\end{DoxyParamCaption}) const}
+
+Reduce steam from the high to low turbine when additional steam is needed. \begin{DoxyReturn}{Returns}
+Amount of steam still needed by the system after taking steam from turbine. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}\label{class_steam_reducer_a87ac83f6821db20e9908ee03b18c81b4}} 
+\index{Steam\+Reducer@{Steam\+Reducer}!reduce\+Steam\+Through\+High\+To\+Low\+Turbine@{reduce\+Steam\+Through\+High\+To\+Low\+Turbine}}
+\index{reduce\+Steam\+Through\+High\+To\+Low\+Turbine@{reduce\+Steam\+Through\+High\+To\+Low\+Turbine}!Steam\+Reducer@{Steam\+Reducer}}
+\subsubsection{\texorpdfstring{reduce\+Steam\+Through\+High\+To\+Low\+Turbine()}{reduceSteamThroughHighToLowTurbine()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \hyperlink{class_steam_reducer_output}{Steam\+Reducer\+Output} Steam\+Reducer\+::reduce\+Steam\+Through\+High\+To\+Low\+Turbine (\begin{DoxyParamCaption}\item[{const double}]{additional\+Steam\+Needed,  }\item[{const \hyperlink{class_pressure_turbine}{Pressure\+Turbine} \&}]{high\+To\+Low\+Turbine\+Input,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&}]{high\+To\+Low\+Pressure\+Turbine,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_turbine}{Turbine} $>$ \&}]{high\+To\+Low\+Pressure\+Turbine\+Ideal,  }\item[{const \hyperlink{struct_steam_system_modeler_tool_1_1_fluid_properties}{Steam\+System\+Modeler\+Tool\+::\+Fluid\+Properties} \&}]{high\+Pressure\+Header\+Output,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_header_not_highest_pressure}{Header\+Not\+Highest\+Pressure} $>$ \&}]{low\+Pressure\+Header\+Input }\end{DoxyParamCaption}) const}
+
+Reduce steam from the high to low turbine when additional steam is needed. \begin{DoxyReturn}{Returns}
+Amount of steam still needed by the system after taking steam from turbine. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+C\+Pack\+\_\+\+Packages/\+Darwin/\+S\+T\+G\+Z/amo\+\_\+tools\+\_\+suite-\/-\/\+Darwin-\/x86\+\_\+64/amo\+\_\+tools\+\_\+suite/include/ssmt/service/Steam\+Reducer.\+h\item 
+src/ssmt/service/Steam\+Reducer.\+cpp\end{DoxyCompactItemize}
