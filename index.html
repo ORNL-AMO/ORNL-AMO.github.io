@@ -227,6 +227,11 @@
                         addDesktopListItem(element, 'MEASUR Linux (.tar.gz)');
                         totalDownloads = totalDownloads + element.download_count;
                     }
+                    let appImageTest = isExt(element.name, '.AppImage');
+                    if (appImageTest) {
+                        addDesktopListItem(element, 'MEASUR Linux (.AppImage)');
+                        totalDownloads = totalDownloads + element.download_count;
+                    }
                     let dmgTest = isExt(element.name, '.dmg');
                     if (dmgTest) {
                         addDesktopListItem(element, 'MEASUR Mac (.dmg)');
@@ -315,16 +320,16 @@
             if (response.assets) {
                 let totalDownloads = 0;
                 response.assets.forEach(function (element) {
-                    let zTest = isExt(element.name, '.Z');
-                    if (zTest) {
-                        totalDownloads = totalDownloads + element.download_count;
-                        addVerifiListItem(element, 'VERIFI Linux (.Z)');
-                    }
                     let tarTest = isExt(element.name, '.tar.gz');
                     let macTest = isExt(element.name, 'Darwin');
                     if (tarTest && !macTest) {
                         totalDownloads = totalDownloads + element.download_count;
                         addVerifiListItem(element, 'VERIFI Linux (.tar.gz)');
+                    }
+                    let appImageTest = isExt(element.name, '.AppImage');
+                    if (appImageTest) {
+                        addVerifiListItem(element, 'VERIFI Linux (.AppImage)');
+                        totalDownloads = totalDownloads + element.download_count;
                     }
                     let dmgTest = isExt(element.name, '.dmg');
                     if (dmgTest) {
