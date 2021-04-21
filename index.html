@@ -10,11 +10,13 @@
 <body id="body" onload="GetDesktop()">
     <div class="container-fluid">
         <div class="jumbotron banner">
-                <img src="./DOE-banner-color.png" class="doe"></img>
+            <img src="./DOE-banner-color.png" class="doe"></img>
             <h1 class="center">AMO Tools Download Center</h1>
             <p class="lead center">
-                AMO’s energy system and energy management software tools help manufacturers increase energy efficiency at the plant-level
-                and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and improve
+                AMO’s energy system and energy management software tools help manufacturers increase energy efficiency
+                at the plant-level
+                and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and
+                improve
                 efficiency in any facility by accessing the tools available here.
             </p>
 
@@ -25,65 +27,112 @@
             </div>
             <div class="row justify-content-end">
                 <div class="col">
-                    <div class="center">For feedback on any of the tools please email: <a href="mailto:accawigk@ornl.gov">ORNL-AMO Tools Support</a> 
-                    or click <a href="https://www.surveymonkey.com/r/DOE-AMO-TOOLS">here</a> to take our MEASUR survey on Survey Monkey.<br> Thank you for your feedback! </div>
+                    <div class="center">For feedback on any of the tools please email: <a
+                            href="mailto:accawigk@ornl.gov">ORNL-AMO Tools Support</a>
+                        or click <a href="https://www.surveymonkey.com/r/DOE-AMO-TOOLS">here</a> to take our MEASUR
+                        survey on Survey Monkey.<br> Thank you for your feedback! </div>
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-bottom: 25px;">
+        <div class="row justify-content-center" style="margin-bottom: 25px;">
             <div class="col-5">
                 <div id="desktop-list-group" class="list-group">
                     <div class="list-group-item download-title">
                         <div class="row align-items-center">
-                            <img src="./desktop-icon.png" class="rounded float-left" style="width: 10%; margin-bottom: 10px;">
+                            <img src="./desktop-icon.png" class="rounded float-left"
+                                style="width: 10%; margin-bottom: 10px;">
                             <div class="col-10 center">
-                                <h5><b>Desktop Application Downloads</b><span class="badge badge-success float-right" id="desktop-title"></span></h5>
+                                <h5><b>Desktop Application Downloads</b><span class="badge badge-success float-right"
+                                        id="desktop-title"></span></h5>
                             </div>
                         </div>
-                        <p class="details">MEASUR, <i>formerly known as AMO-Tools-Desktop</i>, is an energy efficiency calculation application for use with industrial equipment
+                        <p class="details">MEASUR, <i>formerly known as AMO-Tools-Desktop</i>, is an energy efficiency
+                            calculation application for use with industrial equipment
                             such as pumps, furnaces, fans, and motors, as well as for industrial systems such as steam.
                         </p>
-                        <p class="details">The application is based on AMO legacy tools, such as PSAT, PHAST, FSAT and the SSMT.</p>
-                        <p class="details">Choose the proper installer to download for your operating system, and then run the installer after
+                        <p class="details">The application is based on AMO legacy tools, such as PSAT, PHAST, FSAT and
+                            the SSMT.</p>
+                        <p class="details">Choose the proper installer to download for your operating system, and then
+                            run the installer after
                             the download is finished to begin optimizing your facility.</p>
-                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Desktop">https://github.com/ORNL-AMO/AMO-Tools-Desktop</a></p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/AMO-Tools-Desktop">https://github.com/ORNL-AMO/AMO-Tools-Desktop</a>
+                        </p>
                     </div>
 
                 </div>
             </div>
+
+            <div class="col-5">
+                <div id="verifi-list-group" class="list-group">
+                    <div class="list-group-item download-title">
+                        <div class="row align-items-center">
+                            <img src="./verifi-icon.png" class="rounded float-left"
+                                style="width: 10%; margin-bottom: 10px;">
+                            <div class="col-10 center">
+                                <h5><b>VERIFI Downloads</b><span class="badge badge-success float-right"
+                                        id="verifi-title"></span></h5>
+                            </div>
+                        </div>
+                        <p class="details">The Department of Energy Advanced Manufacturing Office has tasked Oak Ridge
+                            National Laboratory to develop a tool to track, visualize, analyze and even forecast
+                            facility utility data in industrial settings. This tool will incorporate and expand on
+                            several existing DOE tools (EnPI, EnPI Lite, Energy Footprint Tool, Plant Energy Profiler),
+                            most of which currently are excel-based or excel-add ons. This project will integrate them
+                            into a common, open-source framework which is harmonized with other DOE software tools –
+                            mainly the DOE’s MEASUR tool suite.
+                        </p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/VERIFI">https://github.com/ORNL-AMO/VERIFI</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
             <div class="col-5">
                 <div id="suite-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                            <div class="row align-items-center">
-                            <img src="./suite-icon.png" class="rounded float-left" style="width: 10%; margin-bottom: 10px;">
+                        <div class="row align-items-center">
+                            <img src="./suite-icon.png" class="rounded float-left"
+                                style="width: 10%; margin-bottom: 10px;">
                             <div class="col-10">
                                 <h5><b>Tools Suite Downloads</b>
                                     <span class="badge badge-success float-right" id="suite-title"></span>
                                 </h5>
                             </div>
                         </div>
-                        <p class="details">This is a pre-release version of the U.S. Department of Energy (DOE) Advanced Manufacturing Office
+                        <p class="details">This is a pre-release version of the U.S. Department of Energy (DOE) Advanced
+                            Manufacturing Office
                             (AMO) Tools Suite.</p>
-                        <p class="details">The suite can be installed locally using a downloaded version from the list below by running the
+                        <p class="details">The suite can be installed locally using a downloaded version from the list
+                            below by running the
                             following command: <b>npm install /path/to/download</b></p>
-                        <p class="details">The suite can also be installed from npm: <b>npm install amo-tools-suite</b></p>
-                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/AMO-Tools-Suite">https://github.com/ORNL-AMO/AMO-Tools-Suite</a></p>
-                        <p class="details">Latest release documentation: <a href="docs/html/index.html">Documentation</a></p>
+                        <p class="details">The suite can also be installed from npm: <b>npm install amo-tools-suite</b>
+                        </p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/AMO-Tools-Suite">https://github.com/ORNL-AMO/AMO-Tools-Suite</a>
+                        </p>
+                        <p class="details">Latest release documentation: <a
+                                href="docs/html/index.html">Documentation</a></p>
                     </div>
 
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center" style="margin-bottom: 25px;">
             <div class="col-5">
                 <div id="enpi-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>EnPI Downloads</b><span class="badge badge-success float-right" id="enpi-title"></span></h5>
-                        <p class="details">The EnPI V5.0 is a regression analysis based tool designed to help plant and corporate managers establish
-                            a normalized baseline of energy consumption and track annual progress of energy performance indicators
+                        <h5><b>EnPI Downloads</b><span class="badge badge-success float-right" id="enpi-title"></span>
+                        </h5>
+                        <p class="details">The EnPI V5.0 is a regression analysis based tool designed to help plant and
+                            corporate managers establish
+                            a normalized baseline of energy consumption and track annual progress of energy performance
+                            indicators
                             (EnPIs).
                         </p>
-                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/EnPI">https://github.com/ORNL-AMO/EnPI</a></p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/EnPI">https://github.com/ORNL-AMO/EnPI</a></p>
                     </div>
 
                 </div>
@@ -91,25 +140,29 @@
             <div class="col-5">
                 <div id="phastex-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>PHASTEx Downloads</b><span class="badge badge-success float-right" id="phastex-title"></span></h5>
-                        <p class="details">PHASTex (Process Heating Assessment and Survey Tool - Excel Version) is an Excel workbook for calculating
+                        <h5><b>PHASTEx Downloads</b><span class="badge badge-success float-right"
+                                id="phastex-title"></span></h5>
+                        <p class="details">PHASTex (Process Heating Assessment and Survey Tool - Excel Version) is an
+                            Excel workbook for calculating
                             energy efficiency in industrial fuel-fired furnaces.</p>
-                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.</p>
-                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PHASTEx">https://github.com/ORNL-AMO/PHASTEx</a></p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.
+                        </p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/PHASTEx">https://github.com/ORNL-AMO/PHASTEx</a></p>
                     </div>
 
                 </div>
             </div>
-        </div>
-
-        <div class="row justify-content-center" style="margin-bottom: 25px;">
             <div class="col-5">
                 <div id="pepex-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>PEPEx Downloads</b><span class="badge badge-success float-right" id="pepex-title"></span></h5>
+                        <h5><b>PEPEx Downloads</b><span class="badge badge-success float-right" id="pepex-title"></span>
+                        </h5>
                         <p class="details">Plant Energy Profiler - Excel Version Tool</p>
-                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.</p>
-                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/PEPEx">https://github.com/ORNL-AMO/PEPEx</a></p>
+                        <p class="details">No installation required, simply open the spreadsheet within Microsoft Excel.
+                        </p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/PEPEx">https://github.com/ORNL-AMO/PEPEx</a></p>
                     </div>
 
                 </div>
@@ -117,21 +170,31 @@
             <div class="col-5">
                 <div id="desktop-digitizer-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>Desktop Digitizer Downloads</b><span class="badge badge-success float-right" id="desktop-digitizer-title"></span></h5>
-                        <p class="details">The Desktop Digitizer is an electron based desktop application allowing the user to digitize curves. It is based off the WebPlotDigitizer by Ankit Rohatgi.</p>
-                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/Desktop-Digitizer">https://github.com/ORNL-AMO/Desktop-Digitizer</a></p>
+                        <h5><b>Desktop Digitizer Downloads</b><span class="badge badge-success float-right"
+                                id="desktop-digitizer-title"></span></h5>
+                        <p class="details">The Desktop Digitizer is an electron based desktop application allowing the
+                            user to digitize curves. It is based off the WebPlotDigitizer by Ankit Rohatgi.</p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/Desktop-Digitizer">https://github.com/ORNL-AMO/Desktop-Digitizer</a>
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center" style="margin-bottom: 25px;">
             <div class="col-5">
                 <div id="sankey-diagram-list-group" class="list-group">
                     <div class="list-group-item download-title">
-                        <h5><b>Dynamic Sankey Downloads</b><span class="badge badge-success float-right" id="sankey-diagram-title"></span></h5>
-                        <p class="details">The Dynamic Sankey is a web-based tool to allow users to create custom Sankey diagrams. A Sankey Diagram is often used to show flow through a system. Currently, the Sankey Diagram takes inputs through the input boxes associated with each arrow. From there, the Sankey Diagram should detect changes and re-adjust itself to reflect those changes. The colored gradient of the Sankey also reflect the flow through the system.</p>
-                        <p class="details">Try out a hosted version for yourself <a href="https://hyperion.ornl.gov/Dynamic-Sankey-develop/">here</a>.</p>
-                        <p class="details">For more information visit: <a href="https://github.com/ORNL-AMO/Dynamic-Sankey">https://github.com/ORNL-AMO/Dynamic-Sankey</a></p>
+                        <h5><b>Dynamic Sankey Downloads</b><span class="badge badge-success float-right"
+                                id="sankey-diagram-title"></span></h5>
+                        <p class="details">The Dynamic Sankey is a web-based tool to allow users to create custom Sankey
+                            diagrams. A Sankey Diagram is often used to show flow through a system. Currently, the
+                            Sankey Diagram takes inputs through the input boxes associated with each arrow. From there,
+                            the Sankey Diagram should detect changes and re-adjust itself to reflect those changes. The
+                            colored gradient of the Sankey also reflect the flow through the system.</p>
+                        <p class="details">Try out a hosted version for yourself <a
+                                href="https://hyperion.ornl.gov/Dynamic-Sankey-develop/">here</a>.</p>
+                        <p class="details">For more information visit: <a
+                                href="https://github.com/ORNL-AMO/Dynamic-Sankey">https://github.com/ORNL-AMO/Dynamic-Sankey</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -154,7 +217,6 @@
             if (response.assets) {
                 let totalDownloads = 0;
                 response.assets.forEach(function (element) {
-                    
                     let debTest = isExt(element.name, '.deb');
                     if (debTest) {
                         addDesktopListItem(element, 'MEASUR Linux (.deb)');
@@ -188,6 +250,7 @@
                 list.appendChild(div);
             }
             GetSuite();
+            GetVERIFI();
             GetENPI();
             GetPHASTEx();
             GetDesktopDigitizer();
@@ -233,6 +296,54 @@
                 }, this);
                 var div = document.createElement('div');
                 var list = document.getElementById('suite-list-group');
+                div.textContent = 'Total Downloads: ' + totalDownloads;
+                div.className = "list-group-item total-downloads";
+                list.appendChild(div);
+            }
+        }
+
+
+        function GetVERIFI() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/VERIFI/releases/latest", false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+            let version = document.createTextNode(' ' + response.tag_name);
+            document.getElementById('verifi-title').appendChild(version);
+            console.log(response);
+            if (response.assets) {
+                let totalDownloads = 0;
+                response.assets.forEach(function (element) {
+                    let zTest = isExt(element.name, '.Z');
+                    if (zTest) {
+                        totalDownloads = totalDownloads + element.download_count;
+                        addVerifiListItem(element, 'VERIFI Linux (.Z)');
+                    }
+                    let tarTest = isExt(element.name, '.tar.gz');
+                    let macTest = isExt(element.name, 'Darwin');
+                    if (tarTest && !macTest) {
+                        totalDownloads = totalDownloads + element.download_count;
+                        addVerifiListItem(element, 'VERIFI Linux (.tar.gz)');
+                    }
+                    if (tarTest && macTest) {
+                        totalDownloads = totalDownloads + element.download_count;
+                        addVerifiListItem(element, 'VERIFI Mac (.tar.gz)');
+                    }
+                    let shTest = isExt(element.name, '.sh');
+                    if (shTest) {
+                        totalDownloads = totalDownloads + element.download_count;
+                        const s = (macTest) ? 'Mac (.sh)' : 'Linux (.sh)';
+                        addVerifiListItem(element, 'VERIFI ' + s);
+                    }
+                    let exeTest = isExt(element.name, '.exe');
+                    if (exeTest) {
+                        totalDownloads = totalDownloads + element.download_count;
+                        addVerifiListItem(element, 'VERIFI Windows (.exe)');
+                    }
+                }, this);
+                var div = document.createElement('div');
+                var list = document.getElementById('verifi-list-group');
                 div.textContent = 'Total Downloads: ' + totalDownloads;
                 div.className = "list-group-item total-downloads";
                 list.appendChild(div);
@@ -306,7 +417,7 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-//            console.log(response);
+            //            console.log(response);
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('pepex-title').appendChild(version);
             if (response.assets) {
@@ -378,7 +489,7 @@
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
-//            console.log(response);
+            //            console.log(response);
             let version = document.createTextNode(' ' + response.tag_name);
             document.getElementById('desktop-digitizer-title').appendChild(version);
             if (response.assets) {
@@ -424,7 +535,8 @@
 
         function isExt(name, ext) {
             let extExp = name.indexOf(ext);
-            if (extExp !== -1) {
+            let extBlockmap = name.indexOf("blockmap");
+            if (extExp !== -1 && extBlockmap == -1) {
                 return true;
             } else {
                 return false;
@@ -447,14 +559,25 @@
             a.setAttribute("href", element.browser_download_url);
             list.appendChild(a);
         }
+        function addVerifiListItem(element, label) {
+            var a = document.createElement('a');
+            var list = document.getElementById('verifi-list-group');
+            a.textContent = label;
+            a.className = "list-group-item list-group-item-action";
+            a.setAttribute("href", element.browser_download_url);
+            list.appendChild(a);
+        }
     </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
 
     <style>
@@ -466,7 +589,7 @@
         }
 
         a {
-            color: #196F3D;
+            /* color: #196F3D; */
         }
 
         .banner {
@@ -501,34 +624,33 @@
         body {
             background-color: #D5D8DC;
         }
+
         .center {
             text-align: center;
         }
+
         .banner {
             background-color: white;
             display: block;
-            margin-left:auto;
-            margin-right:auto;
+            margin-left: auto;
+            margin-right: auto;
         }
+
         .doe {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 40%; 
+            width: 40%;
             margin-bottom: 15px;
         }
-        #desktop-list-group {
-            width:112%;
-            margin-left: 10%;
+
+        .col-5 {
+            padding-bottom: 1rem;
         }
-      #suite-list-group.list-group {
-        margin-left:21%;
-        margin-right:0%;
-        width:100%;
-      }
-      h1.center {
-         font-size:100px; 
-      }
+
+        h1.center {
+            font-size: 75px;
+        }
     </style>
 
 
