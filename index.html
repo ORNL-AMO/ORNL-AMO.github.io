@@ -326,15 +326,10 @@
                         totalDownloads = totalDownloads + element.download_count;
                         addVerifiListItem(element, 'VERIFI Linux (.tar.gz)');
                     }
-                    if (tarTest && macTest) {
+                    let dmgTest = isExt(element.name, '.dmg');
+                    if (dmgTest) {
+                        addVerifiListItem(element, 'VERIFI Mac (.dmg)');
                         totalDownloads = totalDownloads + element.download_count;
-                        addVerifiListItem(element, 'VERIFI Mac (.tar.gz)');
-                    }
-                    let shTest = isExt(element.name, '.sh');
-                    if (shTest) {
-                        totalDownloads = totalDownloads + element.download_count;
-                        const s = (macTest) ? 'Mac (.sh)' : 'Linux (.sh)';
-                        addVerifiListItem(element, 'VERIFI ' + s);
                     }
                     let exeTest = isExt(element.name, '.exe');
                     if (exeTest) {
