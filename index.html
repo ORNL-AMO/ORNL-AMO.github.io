@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AMO Tools Download Center</title>
+    <title>Energy Management Software Download Center</title>
     <link rel="icon" href="./favicon.png">
 </head>
 
@@ -11,9 +11,9 @@
     <div class="container-fluid">
         <div class="jumbotron banner">
             <img src="./DOE-banner-color.png" class="doe"></img>
-            <h1 class="center">AMO Tools Download Center</h1>
+            <h2 class="center">Energy Management Software Download Center</h2>
             <p class="lead center">
-                AMO’s energy system and energy management software tools help manufacturers increase energy efficiency
+                ORNL's energy system and energy management software tools help manufacturers increase energy efficiency
                 at the plant-level
                 and in specific systems. Learn step-by-step ways to identify opportunities, monitor progress, and
                 improve
@@ -22,13 +22,13 @@
 
             <div class="row justify-content-end">
                 <div class="col">
-                    <div class=" lead center">Oak Ridge National Laboratory - Advanced Manufacturing Office Tools</div>
+                    <div class=" lead center">Oak Ridge National Laboratory - Energy Management Software</div>
                 </div>
             </div>
             <div class="row justify-content-end">
                 <div class="col">
                     <div class="center">For feedback on any of the tools please email: <a
-                            href="mailto:accawigk@ornl.gov">ORNL-AMO Tools Support</a>
+                            href="mailto:accawigk@ornl.gov">ORNL Energy Management Software Support</a>
                         or click <a href="https://www.surveymonkey.com/r/DOE-AMO-TOOLS">here</a> to take our MEASUR
                         survey on Survey Monkey.<br> Thank you for your feedback! </div>
                 </div>
@@ -42,7 +42,7 @@
                             <img src="./desktop-icon.png" class="rounded float-left"
                                 style="width: 10%; margin-bottom: 10px;">
                             <div class="col-10 center">
-                                <h5><b>Desktop Application Downloads</b><span class="badge badge-success float-right"
+                                <h5><b>MEASUR Application Downloads</b><span class="badge badge-success float-right"
                                         id="desktop-title"></span></h5>
                             </div>
                         </div>
@@ -57,6 +57,18 @@
                             the download is finished to begin optimizing your facility.</p>
                         <p class="details">For more information visit: <a
                                 href="https://github.com/ORNL-AMO/AMO-Tools-Desktop">https://github.com/ORNL-AMO/AMO-Tools-Desktop</a>
+                        </p>
+                        <p class="alert alert-info">
+                            Occassionally this page has trouble loading the links to the latest installers. This is
+                            something we are working on. In the meantime, if the
+                            download links do not appear, you can
+                            download directly from GitHub at: <a
+                                href="https://github.com/ORNL-AMO/AMO-Tools-Desktop/releases/latest">https://github.com/ORNL-AMO/AMO-Tools-Desktop/releases/latest</a>
+                            under the "Assets" at the bottom of the page.
+                        </p>
+                        <p class="alert alert-info">
+                            Additionally, if you would prefer to use a web version of the application in this browser
+                            you can go directly to <a href="https://measur.ornl.gov">https://measur.ornl.gov</a>
                         </p>
                     </div>
 
@@ -74,7 +86,8 @@
                                         id="verifi-title"></span></h5>
                             </div>
                         </div>
-                        <p class="details">The Department of Energy Advanced Manufacturing Office has tasked Oak Ridge
+                        <p class="details">The Department of Energy Industrial Efficiency and Decarbonization Office
+                            has tasked Oak Ridge
                             National Laboratory to develop a tool to track, visualize, analyze and even forecast
                             facility utility data in industrial settings. This tool will incorporate and expand on
                             several existing DOE tools (EnPI, EnPI Lite, Energy Footprint Tool, Plant Energy Profiler),
@@ -84,6 +97,19 @@
                         </p>
                         <p class="details">For more information visit: <a
                                 href="https://github.com/ORNL-AMO/VERIFI">https://github.com/ORNL-AMO/VERIFI</a>
+                        </p>
+
+                        <p class="alert alert-info">
+                            Occassionally this page has trouble loading the links to the latest installers. This is
+                            something we are working on. In the meantime, if the
+                            download links do not appear, you can
+                            download installers directly from GitHub at: <a
+                                href="https://github.com/ORNL-AMO/VERIFI/releases/latest">https://github.com/ORNL-AMO/VERIFI/releases/latest</a>
+                            under the "Assets" at the bottom of the page.
+                        </p>
+                        <p class="alert alert-info">
+                            Additionally, if you would prefer to use a web version of the application in this browser
+                            you can go directly to <a href="https://verifi.ornl.gov">https://verifi.ornl.gov</a>
                         </p>
                     </div>
 
@@ -206,53 +232,64 @@
     </footer>
     <script type="text/javascript" language="javascript">
         function GetDesktop() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/latest", false);
-            xhttp.setRequestHeader("Content-type", "application/json");
-            xhttp.send();
-            var response = JSON.parse(xhttp.responseText);
-            // console.log(response)
-            let version = document.createTextNode(' ' + response.tag_name);
-            document.getElementById('desktop-title').appendChild(version);
-            if (response.assets) {
-                let totalDownloads = 0;
-                response.assets.forEach(function (element) {
-                    let debTest = isExt(element.name, '.deb');
-                    if (debTest) {
-                        addDesktopListItem(element, 'MEASUR Linux (.deb)');
-                        totalDownloads = totalDownloads + element.download_count;
-                    }
-                    let tarTest = isExt(element.name, '.tar.gz');
-                    if (tarTest) {
-                        addDesktopListItem(element, 'MEASUR Linux (.tar.gz)');
-                        totalDownloads = totalDownloads + element.download_count;
-                    }
-                    let appImageTest = isExt(element.name, '.AppImage');
-                    if (appImageTest) {
-                        addDesktopListItem(element, 'MEASUR Linux (.AppImage)');
-                        totalDownloads = totalDownloads + element.download_count;
-                    }
-                    let dmgTest = isExt(element.name, '.dmg');
-                    if (dmgTest) {
-                        addDesktopListItem(element, 'MEASUR Mac (.dmg)');
-                        totalDownloads = totalDownloads + element.download_count;
-                    }
-                    let zipTest = isExt(element.name, '.zip');
-                    if (zipTest) {
-                        addDesktopListItem(element, 'MEASUR Mac (.zip)');
-                        totalDownloads = totalDownloads + element.download_count;
-                    }
-                    let exeTest = isExt(element.name, '.exe');
-                    if (exeTest) {
-                        addDesktopListItem(element, 'MEASUR Windows (.exe)');
-                        totalDownloads = totalDownloads + element.download_count;
-                    }
-                }, this);
-                var div = document.createElement('div');
-                var list = document.getElementById('desktop-list-group');
-                div.textContent = 'Total Downloads ' + version.wholeText + ': ' + totalDownloads;
-                div.className = "list-group-item total-downloads";
-                list.appendChild(div);
+            try {
+                var xhttp = new XMLHttpRequest();
+
+                onerror = (event) => {
+                    console.log(event)
+                }
+
+                xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Desktop/releases/latest", false);
+                xhttp.setRequestHeader("Content-type", "application/json");
+                xhttp.send();
+                var response = JSON.parse(xhttp.responseText);
+                console.log(response)
+                // console.log(response)
+                let version = document.createTextNode(' ' + response.tag_name);
+                document.getElementById('desktop-title').appendChild(version);
+                if (response.assets) {
+                    let totalDownloads = 0;
+                    response.assets.forEach(function (element) {
+                        let debTest = isExt(element.name, '.deb');
+                        if (debTest) {
+                            addDesktopListItem(element, 'MEASUR Linux (.deb)');
+                            totalDownloads = totalDownloads + element.download_count;
+                        }
+                        let tarTest = isExt(element.name, '.tar.gz');
+                        if (tarTest) {
+                            addDesktopListItem(element, 'MEASUR Linux (.tar.gz)');
+                            totalDownloads = totalDownloads + element.download_count;
+                        }
+                        let appImageTest = isExt(element.name, '.AppImage');
+                        if (appImageTest) {
+                            addDesktopListItem(element, 'MEASUR Linux (.AppImage)');
+                            totalDownloads = totalDownloads + element.download_count;
+                        }
+                        let dmgTest = isExt(element.name, '.dmg');
+                        if (dmgTest) {
+                            addDesktopListItem(element, 'MEASUR Mac (.dmg)');
+                            totalDownloads = totalDownloads + element.download_count;
+                        }
+                        let zipTest = isExt(element.name, '.zip');
+                        if (zipTest) {
+                            addDesktopListItem(element, 'MEASUR Mac (.zip)');
+                            totalDownloads = totalDownloads + element.download_count;
+                        }
+                        let exeTest = isExt(element.name, '.exe');
+                        if (exeTest) {
+                            addDesktopListItem(element, 'MEASUR Windows (.exe)');
+                            totalDownloads = totalDownloads + element.download_count;
+                        }
+                    }, this);
+                    var div = document.createElement('div');
+                    var list = document.getElementById('desktop-list-group');
+                    div.textContent = 'Total Downloads ' + version.wholeText + ': ' + totalDownloads;
+                    div.className = "list-group-item total-downloads";
+                    list.appendChild(div);
+                }
+            } catch (err) {
+                console.log('ERRAWR');
+                console.log(err);
             }
             GetSuite();
             GetVERIFI();
