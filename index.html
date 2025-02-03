@@ -129,16 +129,17 @@
                                 </h5>
                             </div>
                         </div>
-                        <p class="details">This is a pre-release version of the U.S. Department of Energy (DOE) Advanced
-                            Manufacturing Office
-                            (AMO) Tools Suite.</p>
+                        <p class="details">This is a pre-release version of the U.S. Department of Energy
+                            Advanced Manufacturing and Materials Technologies Office and the Industrial Efficiency & Decarbonization Office (DOE AMMTO IEDO)
+                            Tools Suite.</p>
                         <p class="details">The suite can be installed locally using a downloaded version from the list
                             below by running the
                             following command: <b>npm install /path/to/download</b></p>
-                        <p class="details">The suite can also be installed from npm: <b>npm install amo-tools-suite</b>
+                        <p class="details">The suite can also be installed from npm:
+                            <a href="https://www.npmjs.com/package/measur-tools-suite"><b>npm install measur-tools-suite</b></a>
                         </p>
                         <p class="details">For more information visit: <a
-                                href="https://github.com/ORNL-AMO/AMO-Tools-Suite">https://github.com/ORNL-AMO/AMO-Tools-Suite</a>
+                                href="https://github.com/ORNL-AMO/MEASUR-Tools-Suite">https://github.com/ORNL-AMO/MEASUR-Tools-Suite</a>
                         </p>
                         <p class="details">Latest release documentation: <a
                                 href="docs/html/index.html">Documentation</a></p>
@@ -304,7 +305,7 @@
 
         function GetSuite() {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/AMO-Tools-Suite/releases/latest", false);
+            xhttp.open("GET", "https://api.github.com/repos/ORNL-AMO/MEASUR-Tools-Suite/releases/latest", false);
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send();
             var response = JSON.parse(xhttp.responseText);
